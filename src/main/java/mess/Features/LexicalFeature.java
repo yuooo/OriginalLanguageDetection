@@ -1,4 +1,4 @@
-package com.mess.main.Features;
+package mess.Features;
 
 import weka.core.Instances;
 

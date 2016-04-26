@@ -1,4 +1,4 @@
-package com.mess.main.Algorithm;
+package mess.Algorithm;
 
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Evaluation;
