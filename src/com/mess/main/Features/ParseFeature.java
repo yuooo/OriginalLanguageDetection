@@ -1,4 +1,4 @@
-package com.mess.Features;
+package com.mess.main.Features;
 
 /**
  * Created by jessicahoffmann on 24/04/2016.

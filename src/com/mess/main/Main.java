@@ -1,4 +1,4 @@
-package com.mess;
+package com.mess.main;
 
 public class Main {
 
