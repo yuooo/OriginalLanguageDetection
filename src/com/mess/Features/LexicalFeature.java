@@ -1,15 +1,25 @@
 package com.mess.Features;
 
-import weka.core.Instance;
+import weka.core.Instances;
 
 /**
  * Created by jessicahoffmann on 24/04/2016.
  */
 public class LexicalFeature extends Features {
-
     // TODO
-    @Override
-    public Instance toWeka() {
+    public Instances computeUnigram(String pathFile) {
         return null;
     }
+
+    // TODO
+    public Instances computeBigram(String pathFile) {
+        return null;
+    }
+
+    // TODO
+    public Instances computeFunctionWords(String pathFile) {
+        return null;
+    }
+
+
 }
