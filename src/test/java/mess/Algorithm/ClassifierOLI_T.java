@@ -1,6 +1,7 @@
 package mess.Algorithm;
 
 import org.junit.Test;
+import weka.classifiers.Evaluation;
 import weka.classifiers.functions.Logistic;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
@@ -9,6 +10,7 @@ import weka.filters.unsupervised.attribute.NumericToNominal;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Random;
 
 import static org.junit.Assert.*;
 
@@ -89,6 +91,40 @@ public class ClassifierOLI_T {
 
         cloli.train(data);
 
+        Evaluation eval = new Evaluation(data);
+        eval.crossValidateModel(cloli.m_classifier, data, 10, new Random(1));
+        System.out.println(eval.toSummaryString());
+
+    }
+
+    @Test
+    public void train2() throws Exception {
+        assertEquals(1,1);
+
+        ClassifierOLI cloli = new ClassifierOLI("");
+        assertEquals(cloli.m_classifier.getClass(), Logistic.class);
+
+        //TODO: test switch option
+
+        ConverterUtils.DataSource source = new ConverterUtils.DataSource("Data/weka/train_weka2.csv");
+        Instances data = source.getDataSet();
+        if (data.classIndex() == -1)
+            data.setClassIndex(data.numAttributes() - 1);
+        NumericToNominal convert= new NumericToNominal();
+        String[] options= new String[2];
+        options[0]="-R";
+        options[1]="4";  //range of variables to make numeric
+
+        convert.setOptions(options);
+        convert.setInputFormat(data);
+
+        data= Filter.useFilter(data, convert);
+
+        cloli.train(data);
+
+        Evaluation eval = new Evaluation(data);
+        eval.crossValidateModel(cloli.m_classifier, data, 10, new Random(1));
+        System.out.println(eval.toSummaryString());
 
     }
 
