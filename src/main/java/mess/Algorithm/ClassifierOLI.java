@@ -4,7 +4,7 @@ import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayesMultinomial;
 import weka.classifiers.bayes.NaiveBayesMultinomialText;
-import weka.classifiers.functions.SimpleLogistic;
+import weka.classifiers.functions.Logistic;
 import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
 
@@ -24,13 +24,13 @@ public class ClassifierOLI {
         switch (cls.toLowerCase()) {
             case "rf": m_classifier = new RandomForest();
                 break;
-            case "lr": m_classifier = new SimpleLogistic();
+            case "lr": m_classifier = new Logistic();
                 break;
             case "nb": m_classifier = new NaiveBayesMultinomial();
                 break;
             case "nbtxt": m_classifier = new NaiveBayesMultinomialText();
                 break;
-            default: m_classifier = new SimpleLogistic();
+            default: m_classifier = new Logistic();
                 break;
         }
     }
