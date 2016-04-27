@@ -1,22 +1,38 @@
 package mess.Features;
 
 import weka.core.Instances;
+import weka.core.converters.ArffSaver;
 import weka.core.converters.TextDirectoryLoader;
 import weka.core.tokenizers.NGramTokenizer;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by jessicahoffmann on 24/04/2016.
  */
 public class LexicalFeature extends Features {
-    public Instances computeUnigram(String pathFile) throws Exception {
-        // load the data
+    Instances m_data = null;
+    private boolean m_isLoaded = false;
+
+
+    public Instances loadRawTxt(String pathFile) throws IOException {
         TextDirectoryLoader txtLoader = new TextDirectoryLoader();
         txtLoader.setDirectory(new File(pathFile));
         Instances inputInstances = txtLoader.getDataSet();
+        m_data = inputInstances;
+        m_isLoaded = true;
+        return inputInstances;
+    }
+
+    public Instances computeUnigram() throws Exception {
+        // assert init
+        assert m_isLoaded;
+
+        // load the data
+        Instances inputInstances = m_data;
 
         // Set the tokenizer
         NGramTokenizer tokenizer = new NGramTokenizer();
@@ -34,7 +50,31 @@ public class LexicalFeature extends Features {
 
         // Filter the input instances into the output ones
         Instances outputInstances = Filter.useFilter(inputInstances,filter);
+
+        // add to allFeat
+        m_allFeat = Instances.mergeInstances(m_allFeat, outputInstances);
         return outputInstances;
+    }
+
+    public Instances computeUnigram(Instances inst) throws Exception {
+        m_data = inst;
+        m_isLoaded = true;
+        return computeUnigram();
+    }
+
+    private void saveARFF(Instances inst, String fileOut) throws IOException {
+        ArffSaver saver = new ArffSaver();
+        saver.setInstances(inst);
+        saver.setFile(new File(fileOut));
+        saver.writeBatch();
+    }
+
+    public void saveData(String fileOut) throws IOException {
+        saveARFF(m_data, fileOut);
+    }
+
+    public void saveFeatures(String fileOut) throws IOException {
+        saveARFF(m_allFeat, fileOut);
     }
 
     // TODO

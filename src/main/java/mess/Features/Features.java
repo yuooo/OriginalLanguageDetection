@@ -6,10 +6,10 @@ import weka.core.Instances;
  * Created by jessicahoffmann on 24/04/2016.
  */
 public abstract class Features {
-    private Instances allFeat = null;
+    protected Instances m_allFeat = null;
 
     public Instances toWeka() {
-        return this.allFeat;
+        return this.m_allFeat;
     }
 
 }

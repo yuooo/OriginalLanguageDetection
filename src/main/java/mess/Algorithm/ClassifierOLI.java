@@ -25,6 +25,10 @@ public class ClassifierOLI {
         this.m_classifier = m_classifier;
     }
 
+    public ClassifierOLI() {
+        m_classifier = new Logistic();
+    }
+
     public ClassifierOLI(String cls) {
         switch (cls.toLowerCase()) {
             case "rf": m_classifier = new RandomForest();
