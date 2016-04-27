@@ -3,6 +3,19 @@ package mess;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	    // load data
+
+        // compute lexical features
+
+        // computer parse features
+
+        // compute homemade features
+
+        // combine features
+
+        // train/test
+
+        // confusion matrix
+
     }
 }
