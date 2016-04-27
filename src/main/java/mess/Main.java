@@ -8,13 +8,15 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 	    // load data
-
-        // compute lexical features
         System.out.println("Start Loadind.\n");
         LexicalFeature feat = new LexicalFeature();
+        feat.loadRawTxt("Data/txt_clean/");
+
+        // compute lexical features
+
 
         System.out.println("Start Lexical features.\n\n");
-        feat.computeUnigram("Data/txt_clean/");
+        feat.computeUnigram();
 
 
         // computer parse features
