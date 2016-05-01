@@ -1,4 +1,4 @@
-package main.java.mess.preprocessing;
+package mess.preprocessing;
 
 /**
  * Created by mad4672 on 4/28/16.

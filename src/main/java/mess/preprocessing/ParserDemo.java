@@ -1,4 +1,4 @@
-package main.java.mess.preprocessing;
+package mess.preprocessing;
 
 import java.util.Collection;
 import java.util.List;

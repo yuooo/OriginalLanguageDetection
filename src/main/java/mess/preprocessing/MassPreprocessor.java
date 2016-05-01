@@ -33,15 +33,7 @@ public class MassPreprocessor {
             this.value = value;
         }
 
-        //public int getIndex() {
-        //    return index;
-        //}
-
-        //public int getValue() {
-        //    return value;
-        //}
-
-        public static int size() {
+        static int size() {
             int size = 0;
             for (SizeSentenceMapping s : values()) {
                 size++;
@@ -49,7 +41,6 @@ public class MassPreprocessor {
             return size;
         }
 
-        //public Size_Sentence_Mapping
     }
     /**
      * Takes a directory and does two things:
@@ -60,12 +51,38 @@ public class MassPreprocessor {
      */
     public static final int NUMBER_OF_SENTENCES = 1000;
 
+    /**
+     * Takes either a single text file or a whole set of files, and converts them to either trees, text, or both.
+     * Usage: MassPreprocessor [-text] [-tree] [-oneNovel novelName] rootDirectory
+     * @param args could be the following:
+     *             -text returns text files.
+     *             -tree returns tree files.
+     *             -oneNovel novel_file runs for one specified file. NOTE: In this mode, the rootDirectory MUST be the language of the book!
+     *             rootDirectory the directory in which files are to be converted. Subdirectories need to have language names, and the novel names need to be
+     *             in the language directories after that.
+     */
+
     public static void main(String[] args) {
-        //for (SizeSentenceMapping s : SizeSentenceMapping.values()) {
-        //    System.out.println(s.getIndex());
-        //}
-        //System.out.println(SizeSentenceMapping.size());
-        String directory = args[0];
+        int arg = 0;
+        boolean txtFlag = false;
+        boolean treeFlag = false;
+        boolean oneNovel = false;
+        String oneNovelName = null;
+        while (args[arg].startsWith("-")) {
+            if (args[arg].equals("-text")) {
+                txtFlag = true;
+            } else if (args[arg].equals("-tree")) {
+                treeFlag = true;
+            } else if (args[arg].equals("-oneNovel")) {
+                arg++;
+                oneNovel = true;
+                oneNovelName = new File(args[arg]).getName();
+            } else  {
+                throw new IllegalArgumentException("Invald option given: " + args[arg]);
+            }
+            arg++;
+        }
+        String directory = args[arg];
         File rootDirectory = new File(directory);
         if (!rootDirectory.isDirectory()) {
             System.err.println("ERROR: " + rootDirectory.getName() + "is not a directory!");
@@ -73,27 +90,60 @@ public class MassPreprocessor {
             //String parserModel = "Data/trees/englishPCFG.ser.gz";
             //LexicalizedParser lp = LexicalizedParser.loadModel(parserModel);
             //writeTrees(lp, rootDirectory);
-            writeVaryingSentenceBlocks(rootDirectory);
+            if (txtFlag) {
+                writeToFiles(rootDirectory, oneNovelName, "text");
+            } if (treeFlag) {
+                writeToFiles(rootDirectory, oneNovelName, "tree");
+            }
         }
     }
 
 
 
-    public static void writeVaryingSentenceBlocks (File directory) {
-        File[] languages = directory.listFiles();
-        outerloop:
+    private static void writeToFiles (File directory, String oneNovelName, String type) {
+        File[] languages;
+        if (oneNovelName != null) {
+            languages = new File[1];
+            languages[0] = directory;
+        } else{
+            languages= directory.listFiles();
+        }
+        LexicalizedParser lp = null;
+        String dataDirectory = null;
+        switch(type) {
+            case "tree":
+                dataDirectory = "trees";
+                String parserModel = "Data/trees/englishPCFG.ser.gz";
+                lp = LexicalizedParser.loadModel(parserModel);
+                break;
+            case "text":
+                dataDirectory = "txt_sentence_blocks";
+                break;
+        }
+        //outerloop:
         for (int i = 0; i < languages.length; i++) {
             File[] languageDirectories = new File[SizeSentenceMapping.size()];
+            File[] novels;
+            if (oneNovelName != null) {
+                novels = new File[1];
+                novels[0] = new File(directory.getAbsolutePath() + "/" + oneNovelName);
+            } else {
+                novels = languages[i].listFiles();
+            }
+
+
+
             for (SizeSentenceMapping s: SizeSentenceMapping.values()) {
-                languageDirectories[s.index] = new File("Data/txt_sentence_blocks/" + s.value + "/" + languages[i].getName());
+                languageDirectories[s.index] = new File("Data/" + dataDirectory + "/" + s.value + "/" + languages[i].getName());
                 //if (!languageDirectories[s.index].exists()) {
                 //    languageDirectories[s.index].mkdirs();
                 //}
             }
-            File[] novels = languages[i].listFiles();
+
             for (int j = 0; j < novels.length; j++) {
-                if (j == 1) break outerloop;
-                String noSuffixNovel = novels[j].getName().substring(0, novels[j].getName().length()-4);
+
+                String noSuffixNovel = novels[j].getName().substring(0, novels[j].getName().length() - 4);
+
                 //two arrays to handle our enumerated cases as created in txt_sentence_blocks
                 PrintWriter[] outputs = new PrintWriter[SizeSentenceMapping.size()];
                 String[] fileRootNames = new String[SizeSentenceMapping.size()];
@@ -122,19 +172,38 @@ public class MassPreprocessor {
                     int countSentences = 0;
                     while (it.hasNext()) {
                         List<HasWord> sentence = it.next();
-                        String str = sentenceToString(sentence);
                         countSentences++;
-                        for (SizeSentenceMapping s : SizeSentenceMapping.values()) {
-                            outputs[s.index].print(str);
-                            outputs[s.index].println();
-                            if (countSentences % s.value == 0) {
-                                outputs[s.index].flush();
-                                outputs[s.index].close();
-                                counters[s.index]++;
-                                File temp = createNewNumberedFile(fileRootNames[s.index], counters[s.index]);
-                                outputs[s.index] = new PrintWriter(temp);
-                            }
+                        switch (type) {
+                            case "text":
+                                String str = sentenceToString(sentence);
+                                for (SizeSentenceMapping s : SizeSentenceMapping.values()) {
+                                    outputs[s.index].print(str);
+                                    outputs[s.index].println();
+                                    if (countSentences % s.value == 0) {
+                                        outputs[s.index].flush();
+                                        outputs[s.index].close();
+                                        counters[s.index]++;
+                                        File temp = createNewNumberedFile(fileRootNames[s.index], counters[s.index]);
+                                        outputs[s.index] = new PrintWriter(temp);
+                                    }
+                                }
+                                break;
+                            case "tree":
+                                Tree parse = lp.apply(sentence);
+                                for (SizeSentenceMapping s : SizeSentenceMapping.values()) {
+                                    parse.pennPrint(outputs[s.index]);
+                                    outputs[s.index].println();
+                                    if (countSentences % s.value == 0) {
+                                        outputs[s.index].flush();
+                                        outputs[s.index].close();
+                                        counters[s.index]++;
+                                        File temp = createNewNumberedFile(fileRootNames[s.index], counters[s.index]);
+                                        outputs[s.index] = new PrintWriter(temp);
+                                    }
+                                }
+                                break;
                         }
+
                     }
                 } catch (IOException e) {
                     System.err.println("Exception caught: " + e);
@@ -153,83 +222,6 @@ public class MassPreprocessor {
         }
     }
 
-    /**
-     * Writes both a 1000 sentence variation of our original text AND a tree parsed version of it too.
-     * @param lp
-     * @param directory
-     */
-    public static void writeTrees(LexicalizedParser lp, File directory) {
-        File[] languages = directory.listFiles();
-        outerloop:
-        for (int i = 0; i < languages.length; i++) {
-            File[] novels = languages[i].listFiles();
-            for (int j = 0; j < novels.length; j++) {
-                if (j == 1) break outerloop;
-                //if (j == 1) System.out.println("Failed to break out of loop completely!");
-                String txt = novels[j].getAbsolutePath();
-                txt = txt.substring(0, txt.length()-4);
-                txt = txt + "_1000sentences.txt";
-                File textFile = new File(txt);
-                String treeName =  "Data/trees/" + languages[i].getName() + "/"  + textFile.getName();;
-                File treeFile = new File(treeName);
-                System.err.println("Processing " + textFile.getName() + ":");
-                //first, outputing the text file of just 1000 sentences. not the prettiest way of doing things but I think it'll work.
-                /*try {
-                    textFile.createNewFile();
-                    BufferedWriter textOutputStream = new BufferedWriter(new PrintWriter(textFile));
-                    Reader textReader = new BufferedReader(new FileReader(novels[j]));
-
-                    //a bit ugly, but I have to read a character at a time in order to find punctuation.
-                    // If we hit 1000 sentences, I make sure the next character isn't a quotation mark to properly ensure
-                    //quotes are closed in our final sentence
-                    int countPunct = 0;
-                    do {
-                        int c = textReader.read();
-                        if (c == -1)
-                            break;
-                        char d = (char) c;
-                        textOutputStream.write(c);
-                        if ((char) c == '.' || (char) c == '?' || (char) c == '!') {
-                            countPunct++;
-                            if (countPunct == 1000) {
-                                c = textReader.read();
-                                if ((char) c == '"') {
-                                    textOutputStream.write(c);
-                                }
-                            }
-                            textOutputStream.flush();
-                        }
-
-                    } while(countPunct < NUMBER_OF_SENTENCES);
-                    textOutputStream.close();
-                } catch (IOException e) {
-                    System.err.println("Exception caught: " + e);
-                }*/
-
-
-                //next, outputting the penn tree using the Stanford parser.
-                try {
-                    treeFile.createNewFile();
-                    PrintWriter treeOutputStream = new PrintWriter(treeFile);
-                    DocumentPreprocessor p = new DocumentPreprocessor(novels[j].getAbsolutePath());
-                    Iterator<List<HasWord>> it = p.iterator();
-                    for (int k = 0; k < NUMBER_OF_SENTENCES; k++) {
-                        List<HasWord> sentence = it.next();
-                        Tree parse = lp.apply(sentence);
-                        parse.pennPrint(treeOutputStream);
-                        treeOutputStream.println();
-                        treeOutputStream.flush();
-                    }
-                    treeOutputStream.close();
-                } catch (IOException e) {
-                    System.err.println("Exception caught: " + e);
-                }
-
-            }
-
-        }
-
-    }
 
     public static String sentenceToString(List<HasWord> sentence) {
         String s = "";

@@ -1,4 +1,4 @@
-package main.java.mess.preprocessing;
+package mess.preprocessing;
 
 import org.apache.pdfbox.tools.ExtractText;
 import org.apache.tools.ant.DirectoryScanner;

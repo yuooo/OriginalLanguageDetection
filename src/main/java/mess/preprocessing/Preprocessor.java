@@ -1,4 +1,4 @@
-package main.java.mess.preprocessing;
+package mess.preprocessing;
 
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
@@ -7,11 +7,14 @@ import edu.stanford.nlp.trees.GrammaticalStructure;
 import edu.stanford.nlp.trees.GrammaticalStructureFactory;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreebankLanguagePack;
+import org.w3c.dom.css.DocumentCSS;
 
+import javax.print.Doc;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -26,9 +29,8 @@ public class Preprocessor {
      */
 
     /**
-     * Takes a file in a .txt format and returns the trees of it.
-     *
-     * @param args
+     * Takes a file in a .txt format and returns the trees of it. This will write to a file in Data/trees/arg[0]/arg[1]
+     * @param args arg[0] should be the language (the directory American/French/Russian/other language, arg[1] should be the novel name (INCLUDING .txt)
      */
     public static void main(String[] args) {
         String language = args[0];
@@ -44,10 +46,19 @@ public class Preprocessor {
         }
     }
 
+    /**
+     * This is almost the same as demoDP in demo parser, except writes to a file instead of outputting it on the terminal.
+     * @param lp
+     * @param filename
+     * @param outputfile
+     */
     public static void writeTrees(LexicalizedParser lp, String filename, File outputfile) {
         try {
             PrintWriter outputStream = new PrintWriter(outputfile);
-            for (List<HasWord> sentence : new DocumentPreprocessor(filename)) {
+            DocumentPreprocessor p = new DocumentPreprocessor(filename);
+            Iterator<List<HasWord>> it = p.iterator();
+            for (int i = 0; i < 1000; i++) {
+                List<HasWord> sentence = it.next();
                 Tree parse = lp.apply(sentence);
                 parse.pennPrint(outputStream);
                 outputStream.println();
