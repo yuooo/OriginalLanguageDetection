@@ -76,6 +76,9 @@ public class ClassifierOLI {
     public double trainCV(Instances data) throws Exception {
         Evaluation eval = new Evaluation(data);
         eval.crossValidateModel(m_classifier, data, 10, new Random(1));
+        System.out.println(eval.toSummaryString());
+        System.out.println(eval.toClassDetailsString());
+        System.out.println(eval.toMatrixString());
         return eval.pctCorrect();
     }
 

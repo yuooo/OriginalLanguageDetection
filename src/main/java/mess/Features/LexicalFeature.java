@@ -52,7 +52,7 @@ public class LexicalFeature extends Features {
         Instances outputInstances = Filter.useFilter(inputInstances,filter);
 
         // add to allFeat
-        m_allFeat = Instances.mergeInstances(m_allFeat, outputInstances);
+        safeMerge(outputInstances);
         return outputInstances;
     }
 
@@ -86,6 +86,4 @@ public class LexicalFeature extends Features {
     public Instances computeFunctionWords(String pathFile) {
         return null;
     }
-
-
 }
