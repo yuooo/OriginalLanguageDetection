@@ -83,6 +83,10 @@ public class ClassifierOLI {
         assert m_trained = true;
         Evaluation eval = new Evaluation(data);
         eval.evaluateModel(m_classifier, dataTest);
+
+        System.out.println(eval.toSummaryString());
+        System.out.println(eval.toClassDetailsString());
+        System.out.println(eval.toMatrixString());
         return eval.pctCorrect();
     }
 }

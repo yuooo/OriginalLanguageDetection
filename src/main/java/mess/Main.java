@@ -10,7 +10,7 @@ public class Main {
 	    // load data
         System.out.println("Start Loadind.\n");
         LexicalFeature feat = new LexicalFeature();
-        feat.loadRawTxt("Data/txt_clean/");
+        feat.loadRawTxt("Data/txt_sentence_blocks/500/");
 
         // compute lexical features
 
