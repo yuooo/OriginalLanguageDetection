@@ -1,0 +1,55 @@
+README for our project:
+Search for a name to find instructions as explained by that person. So search MATT for code that Matt wrote, JESSICA for Jessica's and LAKSHMI for Lakshmi's.
+
+
+MATT:
+TOC:
+SplitFile
+MassPreprocessor
+
+SplitFile:
+NOTE: ONLY TEXT WORKS, DON'T TRY ON TREES YET!
+
+Allows a user to split either text files or tree files. Both use \n to delimit, but differ slightly in delimitation:
+      Text uses \n to delimit per sentence
+      Tree delimits using \n as the only character on the line to note that a tree has finished.
+
+User can indicate number of files they want using -trainnum # and -testnum # to determine. The sum of those make the number of files extracted.
+      Defaults are 19 and 1 for train and test, respectively.
+      The train files will be written first, then the test files will be written second. Example, with 19 train files and 1 test file, our code writes 19 files first for training, then 1 for testing.
+
+ The command should look something like this (hyphenated command order doesn't matter... BUT must have options, then root_directory must be first and destination_directory must be second!)
+
+      SplitFile -tree/-text [-seednum #] [-trainnum #] [-testnum #] source_directory destination_directory
+
+Arguments explained below.
+
+-tree/text: Need to call either -tree or -text or neither will execute. Can't call both in one run, otherwise you get an error message.
+      -text uses \n to delimit per sentence
+      -tree delimits using \n as the only character on the line to note that a Penn tree has finished.  
+
+-seednum: Set the number of seeds per file by using the -seeds option. Default is 100.
+
+-trainnum: Sets the number of files to write to create our training set, per novel. Default is 19.
+
+-testnum: Sets the number of files to write to create our training set, per novel. Default is 1.
+
+source_directory: Needs to have languages in subdirectories, and these languages contain the novels in text or tree format.
+
+destination_directory: Will write into this directory (it doesn't need to exist yet) train/ and test/ directories. From each, the languages, and all chunks of all novels will be written in there.
+
+
+MassPreprocessor:
+
+
+
+
+JESSICA:
+
+
+
+
+
+
+
+LAKSHMI:
