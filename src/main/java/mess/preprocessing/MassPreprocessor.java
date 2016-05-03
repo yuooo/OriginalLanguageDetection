@@ -117,7 +117,7 @@ public class MassPreprocessor {
                 lp = LexicalizedParser.loadModel(parserModel);
                 break;
             case "text":
-                dataDirectory = "txt_sentence_blocks";
+                dataDirectory = "txt_sentence_blocks_CORRECT";
                 break;
         }
         //outerloop:
@@ -149,7 +149,7 @@ public class MassPreprocessor {
                 String[] fileRootNames = new String[SizeSentenceMapping.size()];
                 int[] counters = new int[SizeSentenceMapping.size()];
                 for (SizeSentenceMapping s : SizeSentenceMapping.values()) {
-                    File newFile = new File(languageDirectories[s.index].getAbsolutePath() + "/" + noSuffixNovel);
+                    File newFile = new File(languageDirectories[s.index].getAbsolutePath());
                     if (!newFile.exists()) {
                         newFile.mkdirs();
                     }
