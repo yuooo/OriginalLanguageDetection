@@ -2,6 +2,7 @@ package mess.Features;
 
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
+import weka.core.converters.ConverterUtils;
 import weka.core.converters.TextDirectoryLoader;
 import weka.core.tokenizers.NGramTokenizer;
 import weka.filters.Filter;
@@ -62,12 +63,28 @@ public class LexicalFeature extends Features {
         return computeUnigram();
     }
 
+
+
+    private void loadARFF(Instances inst, String fileIn) throws Exception {
+        ConverterUtils.DataSource source = new ConverterUtils.DataSource(fileIn);
+        inst = source.getDataSet();
+    }
+
+    public void loadData(String fileIn) throws Exception {
+        loadARFF(m_data, fileIn);
+    }
+
+    public void loadFeatures(String fileIn) throws Exception {
+        loadARFF(m_allFeat, fileIn);
+    }
+
     private void saveARFF(Instances inst, String fileOut) throws IOException {
         ArffSaver saver = new ArffSaver();
         saver.setInstances(inst);
         saver.setFile(new File(fileOut));
         saver.writeBatch();
     }
+
 
     public void saveData(String fileOut) throws IOException {
         saveARFF(m_data, fileOut);
