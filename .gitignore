@@ -1,2 +1,4 @@
 .idea
 OriginalLanguageDetection.iml
+src/main/main.iml
+src/test/test.imls
