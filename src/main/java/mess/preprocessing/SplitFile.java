@@ -1,6 +1,11 @@
 package mess.preprocessing;
 
+import edu.stanford.nlp.parser.lexparser.Options;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.trees.Treebank;
+
 import java.io.*;
+import java.util.Iterator;
 
 /**
  * Created by mad4672 on 5/3/16.
@@ -124,24 +129,62 @@ public class SplitFile {
                     //max number of stuff we want to read is based on our inputs
                     int maxFiles = testNum + trainNum;
                     int maxLines = maxFiles * seedNum;
-                    int lineCount = 1;
+                    int lineCount = 0;
                     int fileCount = 1;
-                    File currentFile = createNewNumberedFile(trainDirectoryLanguages[i].getAbsolutePath() + "/" + fileShortName, fileCount);
+                    //File currentFile = createNewNumberedFile(trainDirectoryLanguages[i].getAbsolutePath() + "/" + fileShortName, fileCount);
+                    String pathToUse =  (fileCount <= trainNum) ?  trainDirectoryLanguages[i].getAbsolutePath() :
+                            testDirectoryLanguages[i].getAbsolutePath();
+                    File currentFile = createNewNumberedFile(pathToUse + "/" + fileShortName, fileCount);
                     PrintWriter pw = new PrintWriter(currentFile);
-                    while ((line = read.readLine()) != null && lineCount < maxLines ) {
-                        //when our lineCount mod seedNum is 0, we want to create another PrintWriter
-                        if (lineCount % seedNum == 0) {
-                            fileCount++;
-                            //put in train or test, depending on our current file count.
-                            String pathToUse =  (fileCount <= trainNum) ?  trainDirectoryLanguages[i].getAbsolutePath() :
-                                    testDirectoryLanguages[i].getAbsolutePath();
-                            currentFile = createNewNumberedFile(pathToUse + "/" + fileShortName, fileCount);
-                            pw.flush();
-                            pw.close();
-                            pw = new PrintWriter(currentFile);
-                        }
-                        pw.println(line);
-                        lineCount++;
+
+                    //this is the part that varies based on calling for text or trees.
+                    switch (type) {
+                        case "text":
+                            while ((line = read.readLine()) != null && lineCount < maxLines ) {
+                                pw.println(line);
+                                lineCount++;
+                                //when our lineCount mod seedNum is 0, we want to create another PrintWriter
+                                if (lineCount % seedNum == 0) {
+                                    fileCount++;
+                                    //put in train or test, depending on our current file count.
+                                    if (fileCount <= maxFiles) {
+                                        pathToUse = (fileCount <= trainNum) ? trainDirectoryLanguages[i].getAbsolutePath() :
+                                                testDirectoryLanguages[i].getAbsolutePath();
+                                        currentFile = createNewNumberedFile(pathToUse + "/" + fileShortName, fileCount);
+                                        pw.flush();
+                                        pw.close();
+                                        pw = new PrintWriter(currentFile);
+                                    }
+                                }
+                            }
+                            break;
+                        case "tree":
+                            //need to build a Treebank... lifting code from HW 3 to aid in this.
+                            Options op = new Options();
+                            op.doDep = false;
+                            op.doPCFG = true;
+                            op.setOptions("-goodPCFG", "-evals", "tsv");
+                            Treebank treeBank = op.tlpParams.diskTreebank();
+                            treeBank.loadPath(novels[j]);
+                            Iterator<Tree> it = treeBank.iterator();
+                            while((it.hasNext()) && lineCount < maxLines) {
+                                lineCount++;
+                                Tree t = it.next();
+                                t.pennPrint(pw);
+                                if (lineCount % seedNum == 0) {
+                                    fileCount++;
+                                    //put in train or test, depending on our current file count.
+                                    if (fileCount <= maxFiles) {
+                                        pathToUse = (fileCount <= trainNum) ? trainDirectoryLanguages[i].getAbsolutePath() :
+                                                testDirectoryLanguages[i].getAbsolutePath();
+                                        currentFile = createNewNumberedFile(pathToUse + "/" + fileShortName, fileCount);
+                                        pw.flush();
+                                        pw.close();
+                                        pw = new PrintWriter(currentFile);
+                                    }
+                                }
+                            }
+                            break;
                     }
                     pw.flush();
                     pw.close();

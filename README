@@ -7,9 +7,7 @@ TOC:
 SplitFile
 MassPreprocessor
 
-SplitFile:
-NOTE: ONLY TEXT WORKS, DON'T TRY ON TREES YET!
-
+SplitFile: (Now does trees)
 Allows a user to split either text files or tree files. Both use \n to delimit, but differ slightly in delimitation:
       Text uses \n to delimit per sentence
       Tree delimits using \n as the only character on the line to note that a tree has finished.
