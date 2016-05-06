@@ -45,6 +45,7 @@ public class TreeToSentenceHandler {
         Tree t = it.next();
         List<Word> words = t.yieldWords();
         List<Label> preYield = t.preTerminalYield();
+        t.pennPrint();
         return new TextPOSDouble(words, preYield);
     }
 
@@ -65,6 +66,9 @@ public class TreeToSentenceHandler {
         File file = new File(args[0]);
         TreeToSentenceHandler t = new TreeToSentenceHandler(file);
         TextPOSDouble test= t.generateSentence();
+        System.out.println(test.getWords());
+        System.out.println(test.getPOS());
+        test= t.generateSentence();
         System.out.println(test.getWords());
         System.out.println(test.getPOS());
     }
