@@ -133,6 +133,9 @@ public class MassPreprocessor {
                 break;
         }
         for (int i = 0; i < languages.length; i++) {
+            if (languages[i].getName().startsWith(".")) {
+                continue;
+            }
             File languageDirectory = new File("Data/" + dataDirectory + "/" + languages[i].getName());
             File[] novels;
             if (oneNovelName != null) {
@@ -144,6 +147,9 @@ public class MassPreprocessor {
 
             //write either text or trees for each novel in our given directory.
             for (int j = 0; j < novels.length; j++) {
+                if (novels[j].getName().startsWith(".")) {
+                    continue;
+                }
                 //PrintWriter[] outputs = new PrintWriter[1];
 
                 File newFile = new File(languageDirectory.getAbsolutePath());
