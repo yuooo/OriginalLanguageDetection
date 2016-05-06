@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class MassPreprocessor {
 
-    //makes doing everything associated with these values much easier, plus allows us to more flexibly add future sentence values if needed.
+    //this enum is no longer needed but I'm so proud having written it (my first ever enum!) that I'm just gonna keep this here...
     private enum SizeSentenceMapping {
         ONE (0, 1),
         FIVE (1, 5),
@@ -60,14 +60,15 @@ public class MassPreprocessor {
      *             -oneNovel novel_file runs for one specified file. NOTE: In this mode, the rootDirectory MUST be the language of the book!
      *             rootDirectory the directory in which files are to be converted. Subdirectories need to have language names, and the novel names need to be
      *             in the language directories after that.
+     *             -outputDirectory Output will go into this directory instead of the default directories
      */
 
     public static void main(String[] args) {
         int arg = 0;
         boolean txtFlag = false;
         boolean treeFlag = false;
-        boolean oneNovel = false;
         String oneNovelName = null;
+        String textDirectory = null, treeDirectory  = null;
         while (args[arg].startsWith("-")) {
             if (args[arg].equals("-text")) {
                 txtFlag = true;
@@ -75,8 +76,13 @@ public class MassPreprocessor {
                 treeFlag = true;
             } else if (args[arg].equals("-oneNovel")) {
                 arg++;
-                oneNovel = true;
                 oneNovelName = new File(args[arg]).getName();
+            } else if (args[arg].equals("-textDirectory")) {
+                arg++;
+                textDirectory = new File(args[arg]).getName();
+            } else if (args[arg].equals("-treeDirectory")) {
+                arg++;
+                textDirectory = new File(args[arg]).getName();
             } else  {
                 throw new IllegalArgumentException("Invald option given: " + args[arg]);
             }
@@ -87,21 +93,20 @@ public class MassPreprocessor {
         if (!rootDirectory.isDirectory()) {
             System.err.println("ERROR: " + rootDirectory.getName() + "is not a directory!");
         } else {
-            //String parserModel = "Data/trees/englishPCFG.ser.gz";
-            //LexicalizedParser lp = LexicalizedParser.loadModel(parserModel);
-            //writeTrees(lp, rootDirectory);
             if (txtFlag) {
-                writeToFiles(rootDirectory, oneNovelName, "text");
+                writeToFiles(rootDirectory, oneNovelName, "text", textDirectory);
             } if (treeFlag) {
-                writeToFiles(rootDirectory, oneNovelName, "tree");
+                writeToFiles(rootDirectory, oneNovelName, "tree", treeDirectory);
             }
         }
     }
 
 
 
-    private static void writeToFiles (File directory, String oneNovelName, String type) {
+    private static void writeToFiles (File directory, String oneNovelName, String type, String outputDirectory) {
         File[] languages;
+
+        //really hacky way of doing one novel, otherwise we list all languages.
         if (oneNovelName != null) {
             languages = new File[1];
             languages[0] = directory;
@@ -109,20 +114,26 @@ public class MassPreprocessor {
             languages= directory.listFiles();
         }
         LexicalizedParser lp = null;
+
+        //dataDirectory can either be what we put into our command line or a default generic name.
         String dataDirectory = null;
+        if (outputDirectory != null) {
+            dataDirectory = outputDirectory;
+        }
         switch(type) {
             case "tree":
-                dataDirectory = "trees";
+                if (dataDirectory == null)
+                    dataDirectory = "trees_merged";
                 String parserModel = "Data/trees/englishPCFG.ser.gz";
                 lp = LexicalizedParser.loadModel(parserModel);
                 break;
             case "text":
-                dataDirectory = "txt_sentence_blocks_CORRECT";
+                if (dataDirectory == null)
+                    dataDirectory = "txt_sentence_blocks_merged";
                 break;
         }
-        //outerloop:
         for (int i = 0; i < languages.length; i++) {
-            File[] languageDirectories = new File[SizeSentenceMapping.size()];
+            File languageDirectory = new File("Data/" + dataDirectory + "/" + languages[i].getName());
             File[] novels;
             if (oneNovelName != null) {
                 novels = new File[1];
@@ -131,91 +142,42 @@ public class MassPreprocessor {
                 novels = languages[i].listFiles();
             }
 
-
-
-            for (SizeSentenceMapping s: SizeSentenceMapping.values()) {
-                languageDirectories[s.index] = new File("Data/" + dataDirectory + "/" + s.value + "/" + languages[i].getName());
-                //if (!languageDirectories[s.index].exists()) {
-                //    languageDirectories[s.index].mkdirs();
-                //}
-            }
-
+            //write either text or trees for each novel in our given directory.
             for (int j = 0; j < novels.length; j++) {
+                //PrintWriter[] outputs = new PrintWriter[1];
 
-                String noSuffixNovel = novels[j].getName().substring(0, novels[j].getName().length() - 4);
-
-                //two arrays to handle our enumerated cases as created in txt_sentence_blocks
-                PrintWriter[] outputs = new PrintWriter[SizeSentenceMapping.size()];
-                String[] fileRootNames = new String[SizeSentenceMapping.size()];
-                int[] counters = new int[SizeSentenceMapping.size()];
-                for (SizeSentenceMapping s : SizeSentenceMapping.values()) {
-                    File newFile = new File(languageDirectories[s.index].getAbsolutePath());
-                    if (!newFile.exists()) {
-                        newFile.mkdirs();
-                    }
-                    String pathWithNovelName = newFile.getAbsolutePath() + "/" + noSuffixNovel;
-                    fileRootNames[s.index] = pathWithNovelName;
-                    counters[s.index] = 1;
-                    File temp = createNewNumberedFile(pathWithNovelName, counters[s.index]);
-                    try {
-                        outputs[s.index] = new PrintWriter(temp);
-                    } catch (FileNotFoundException e) {
-                        System.err.println("Could not create file for " + temp.getName() + "!");
-                    }
+                File newFile = new File(languageDirectory.getAbsolutePath());
+                if (!newFile.exists()) {
+                    newFile.mkdirs();
                 }
-
-                System.err.println("Processing " + novels[j].getName() + ":");
-                //first, outputing the text file of just 1000 sentences. not the prettiest way of doing things but I think it'll work.
+                String pathWithNovelName = newFile.getAbsolutePath() + "/" + novels[j].getName();
+                File temp = new File(pathWithNovelName);
                 try {
+                    PrintWriter output = new PrintWriter(temp);
+                    System.err.println("Processing " + novels[j].getName() + ":");
+
+                    //Calls Stanford Parser tool to detect sentences and split words for purposes of both text and trees...
+                    //Very, very useful. Reads the entirety of a novel.
                     DocumentPreprocessor p = new DocumentPreprocessor(novels[j].getAbsolutePath());
                     Iterator<List<HasWord>> it = p.iterator();
-                    int countSentences = 0;
                     while (it.hasNext()) {
                         List<HasWord> sentence = it.next();
-                        countSentences++;
+                        //for text, just convert to a String and print it. for tree, apply the parse to a sentence and pennPrint it.
                         switch (type) {
                             case "text":
                                 String str = sentenceToString(sentence);
-                                for (SizeSentenceMapping s : SizeSentenceMapping.values()) {
-                                    outputs[s.index].print(str);
-                                    outputs[s.index].println();
-                                    if (countSentences % s.value == 0) {
-                                        outputs[s.index].flush();
-                                        outputs[s.index].close();
-                                        counters[s.index]++;
-                                        File temp = createNewNumberedFile(fileRootNames[s.index], counters[s.index]);
-                                        outputs[s.index] = new PrintWriter(temp);
-                                    }
-                                }
+                                output.println(str);
                                 break;
                             case "tree":
                                 Tree parse = lp.apply(sentence);
-                                for (SizeSentenceMapping s : SizeSentenceMapping.values()) {
-                                    parse.pennPrint(outputs[s.index]);
-                                    outputs[s.index].println();
-                                    if (countSentences % s.value == 0) {
-                                        outputs[s.index].flush();
-                                        outputs[s.index].close();
-                                        counters[s.index]++;
-                                        File temp = createNewNumberedFile(fileRootNames[s.index], counters[s.index]);
-                                        outputs[s.index] = new PrintWriter(temp);
-                                    }
-                                }
+                                parse.pennPrint(output);
                                 break;
                         }
-
                     }
-                } catch (IOException e) {
-                    System.err.println("Exception caught: " + e);
-                }
-
-                //ensure PrintWriters Finish
-                //try{Thread.sleep(5000);}catch (InterruptedException e){}
-
-                //delete the last file of each directory... likely not going to be empty so just delete it.
-                for (SizeSentenceMapping s : SizeSentenceMapping.values()) {
-                    File temp = createNewNumberedFile(fileRootNames[s.index], counters[s.index]);
-                    temp.delete();
+                    output.flush();
+                    output.close();
+                } catch (FileNotFoundException e) {
+                    System.err.println("Could not create file for " + temp.getName() + "!");
                 }
 
             }
