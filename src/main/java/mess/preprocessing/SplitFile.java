@@ -113,6 +113,9 @@ public class SplitFile {
         File[] trainDirectoryLanguages = new File[languages.length];
         File[] testDirectoryLanguages = new File[languages.length];
         for (int i = 0; i < languages.length; i++) {
+            if (languages[i].getName().startsWith(".")) {
+                continue;
+            }
             trainDirectoryLanguages[i] = new File(trainDirectory.getAbsolutePath() + "/" + languages[i].getName());
             testDirectoryLanguages[i] = new File(testDirectory.getAbsolutePath() + "/" + languages[i].getName());
             makeNewDirectoryIfNotExists(trainDirectoryLanguages[i]);
@@ -121,6 +124,9 @@ public class SplitFile {
             File[] novels = languages[i].listFiles();
             for (int j = 0; j < novels.length; j++) {
                 //Only gonna work on sentences for now.
+                if (novels[j].getName().startsWith(".")) {
+                    continue;
+                }
                 try {
                     BufferedReader read = new BufferedReader(new FileReader(novels[j]));
                     //name w/o .txt
