@@ -10,17 +10,20 @@ import static mess.utils.Utils.pT;
 public class Main {
 
     public static void main(String[] args) throws Exception {
+        String sizeSlice = "500/";
+
 	    // load data
         T();
         System.out.println("Start Loadind.");
         LexicalFeature feat = new LexicalFeature();
-        feat.loadRawTxt("Data/short_pipeline/train/");
+
+        feat.loadRawTxt("Data/txt_sentence_blocks_CORRECT/" + sizeSlice);
         pT("Load");
 
         // save data
         T();
         System.out.println("Start Saving.");
-        feat.saveData("Data/weka/sentences_blocks/short_pipeline/train/train.arff");
+        feat.saveData("Data/weka/sentences_blocks/" + sizeSlice + "train.arff");
         pT("Save data");
 
         // compute lexical features
@@ -32,7 +35,7 @@ public class Main {
         // save lexical features
         T();
         System.out.println("Save Lexical features.");
-        feat.saveFeatures("Data/weka/unigram_feat/short_pipeline/train/unigram.arff");
+        feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram.arff");
         pT("Save unigram");
 
         // test
