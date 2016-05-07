@@ -7,4 +7,3 @@ do
     gsed -e "/^CHAPTER\|^BOOK\|^VOLUME/Id" -e "/^PART/d" $file > $file_out
 done
 
-
