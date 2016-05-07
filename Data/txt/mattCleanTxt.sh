@@ -22,33 +22,43 @@
 #2. Take one token and add it to grep. Ask if it's OK to remove this line.
 #3. IF so, remove. If not, get the next line.
 
-LANGUAGE=$1
-TEXT=$2
+TYPE=$1
+LANGUAGE=$2
+TEXT=$3
+FILE="${TYPE}/${LANGUAGE}/${TEXT}"
+OUTPUTFILE="../txt_clean_new/${TYPE}/${LANGUAGE}/${TEXT::-4}_clean.txt"
 shift
 shift
+shift
+TMP=`mktemp`
+#echo $TMP
+TMP2=`mktemp`
+#echo $TMP2
+cat $FILE > $TMP
 for arg in "$@"
 do
-    echo "Is this output OK? (y/n)"
-    grep $arg $TEXT
-    while [1]; do
+    pcregrep -M "$arg" ${TYPE}/${LANGUAGE}/${TEXT} #> some_sample_file.txt
+
+    while [ 1 ]; do
+        echo "Is this output OK? (y/n)"
 	read answer
 	if [ "$answer" == "y" ]; then
-	    echo "Do sed stuff!"
+	    #ARRAY+=("$arg")
+	    perl -0777 -pe "s/${arg}//gm" $TMP > $TMP2
+	    DEL=$TMP
+	    TMP=$TMP2
+	    rm $DEL
+	    TMP2=`mktemp`
 	    break
-	elif [ "$answer" == "n"]; then
+	elif [ "$answer" == "n" ]; then
 	    break
 	else
 	    echo "Please answer y or n."
 	fi
     done
 done
-
-
-for file in $1/*
-do
-    filename_out="${file%.*}"
-    file_out="../txt_clean_new/${filename_out}_clean.txt"
-    echo $file_out 
-    sed -e "/^CHAPTER\|^BOOK\|^VOLUME/Id" -e "/^PART/d" $file > $file_out
-done
+#replace underscores
+tr < $TMP '_' ' ' > $TMP2
+cat $TMP2 > $OUTPUTFILE
+rm  $TMP $TMP2 #some_sample_file.txt
 
