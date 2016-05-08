@@ -36,6 +36,7 @@ public class Main {
         T();
         System.out.println("Save Lexical features.");
         feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram.arff");
+        feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram.csv");
         pT("Save unigram");
 
         // test
@@ -61,7 +62,8 @@ public class Main {
         // save lexical features
         T();
         System.out.println("Save Lexical features.");
-        feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram_test.arff");
+        feat_test.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram_test.arff");
+        feat_test.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram_test.csv");
         pT("Save unigram test");
 
         // combine features
