@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Start Loadind.");
         LexicalFeature feat = new LexicalFeature();
 
-        feat.loadRawTxt("Data/txt_sentence_blocks_CORRECT/" + sizeSlice);
+        feat.loadRawTxt("Data/blocks/" + sizeSlice + "train/");
         pT("Load");
 
         // save data
@@ -43,13 +43,13 @@ public class Main {
         T();
         System.out.println("Start Loadind test.");
         LexicalFeature feat_test = new LexicalFeature();
-        feat_test.loadRawTxt("Data/short_pipeline/train/");
+        feat_test.loadRawTxt("Data/blocks/" + sizeSlice + "test/");
         pT("Load test.");
 
         // save data
         T();
         System.out.println("Start Saving test.");
-        feat_test.saveData("Data/weka/sentences_blocks/short_pipeline/test/test.arff");
+        feat_test.saveData("Data/weka/sentences_blocks/" + sizeSlice + "test.arff");
         pT("Save data test");
 
         // compute lexical features
@@ -61,7 +61,7 @@ public class Main {
         // save lexical features
         T();
         System.out.println("Save Lexical features.");
-        feat.saveFeatures("Data/weka/unigram_feat/short_pipeline/test/unigram.arff");
+        feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram_test.arff");
         pT("Save unigram test");
 
         // combine features
@@ -84,8 +84,6 @@ public class Main {
         ClassifierOLI cloli = new ClassifierOLI("rf");
         cloli.train(allFeat);
         pT("Train");
-
-
 
         cloli.test(allFeat, allFeat_test);
 
