@@ -36,13 +36,8 @@ Arguments explained below.
 
 -trainall: Sets number of train files to be generated to an impractical number, forcing the code to exit when the reader is finished reading lines.
     Also throws away the last file as it is most likely incomplete.
-    
 -trainnum: Sets the number of files to write to create our training set, per novel. Default is 0.
 
--testall: Sets number of test files to be generated to an impractical number, forcing the code to exit when the reader is finished reading lines.
-    Also throws away the last file as it is most likely incomplete.
-
--testnum: Sets the number of files to write to create our training set, per novel. Default is 0.
 
 source_directory: Needs to have languages in subdirectories, and these languages contain the novels in text or tree format.
 
