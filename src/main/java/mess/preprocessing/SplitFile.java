@@ -18,7 +18,7 @@ public class SplitFile {
      *      Text uses \n to delimit per sentence
      *      Tree delimits using \n as the only character on the line to note that a tree has finished.
      * User can indicate number of files they want using -trainnum # and -testnum # to determine. The sum of those make the number of files extracted.
-     *      Defaults are 19 and 1 for train and test, respectively.
+     *      Defaults are 0 for both train and test, respectively.
      *      The train files will be read in first, then the test files will be read in second. Example, with 19 train files and 1 test file, our code
      *      reads in 19 files first for training, then 1 for testing.
      * Set the number of seeds per file by using the -seeds option. Default is 100.
@@ -37,8 +37,8 @@ public class SplitFile {
     public static void main(String[] args) {
         int arg = 0;
         int seedNum = 100;
-        int trainNum = 19;
-        int testNum = 1;
+        int trainNum = 0;
+        int testNum = 0;
         boolean treeFlag = false;
         boolean textFlag = false;
         //handle options
@@ -62,6 +62,12 @@ public class SplitFile {
                    arg++;
                    testNum = Integer.parseInt(args[arg]);
                    break;
+               case ("-trainall"):
+                   trainNum = Integer.MAX_VALUE;
+                   break;
+               case ("-testall"):
+                   testNum = Integer.MAX_VALUE;
+                   break;
                default:
                    throw new IllegalArgumentException("Unrecognized command: " + args[arg]);
            }
@@ -76,15 +82,20 @@ public class SplitFile {
             System.exit(2);
         }
 
+        if (trainNum == Integer.MAX_VALUE && testNum == Integer.MAX_VALUE) {
+            System.err.println("Can't max both train and test values!");
+            System.exit(3);
+        }
+
         if (!sourceDirectory.isDirectory()) {
             System.err.println("ERROR: " + sourceDirectory.getName() + "is not a directory!");
-            System.exit(3);
+            System.exit(4);
         }
         if (!destinationDirectory.exists()) {
             destinationDirectory.mkdirs();
         } else if (!destinationDirectory.isDirectory()) {
             System.err.println("ERROR: " + destinationDirectory.getName() + "is not a directory!");
-            System.exit(4);
+            System.exit(5);
         }
 
         if (treeFlag) {
@@ -95,18 +106,17 @@ public class SplitFile {
     }
 
     //here's where the magic happens.
-    private static void createSeededFiles(String type, int seedNum, int trainNum, int testNum,
-                                          File sourceDirectory, File destinationDirectory) {
+    private static void createSeededFiles(String type, int seedNum, int trainNum, int testNum, File sourceDirectory,
+                                          File destinationDirectory) {
 
         File trainDirectory = new File(destinationDirectory.getAbsolutePath() + "/train");
-        if(!trainDirectory.exists()) {
+        if(trainNum > 0 && !trainDirectory.exists()) {
             trainDirectory.mkdir();
         }
         File testDirectory = new File(destinationDirectory.getAbsolutePath() + "/test");
-        if(!testDirectory.exists()) {
+        if(testNum > 0 && !testDirectory.exists()) {
             testDirectory.mkdir();
         }
-
 
         //for each language, we want to create a directory for that language, then parse trees/sentences through each of the novels listed there
         File[] languages = sourceDirectory.listFiles();
@@ -118,12 +128,13 @@ public class SplitFile {
             }
             trainDirectoryLanguages[i] = new File(trainDirectory.getAbsolutePath() + "/" + languages[i].getName());
             testDirectoryLanguages[i] = new File(testDirectory.getAbsolutePath() + "/" + languages[i].getName());
-            makeNewDirectoryIfNotExists(trainDirectoryLanguages[i]);
-            makeNewDirectoryIfNotExists(testDirectoryLanguages[i]);
+            if (trainNum > 0)
+                makeNewDirectoryIfNotExists(trainDirectoryLanguages[i]);
+            if (testNum > 0)
+                makeNewDirectoryIfNotExists(testDirectoryLanguages[i]);
 
             File[] novels = languages[i].listFiles();
             for (int j = 0; j < novels.length; j++) {
-                //Only gonna work on sentences for now.
                 if (novels[j].getName().startsWith(".")) {
                     continue;
                 }
@@ -134,7 +145,7 @@ public class SplitFile {
                     String line;
                     //max number of stuff we want to read is based on our inputs
                     int maxFiles = testNum + trainNum;
-                    int maxLines = maxFiles * seedNum;
+                    long maxLines = (long) maxFiles * (long) seedNum;
                     int lineCount = 0;
                     int fileCount = 1;
                     //File currentFile = createNewNumberedFile(trainDirectoryLanguages[i].getAbsolutePath() + "/" + fileShortName, fileCount);
@@ -194,6 +205,11 @@ public class SplitFile {
                     }
                     pw.flush();
                     pw.close();
+                    //if our values are maxed, our reader will reach the end, delete the last file because chances are, it's incomplete.
+                    if (trainNum == Integer.MAX_VALUE || testNum == Integer.MAX_VALUE) {
+                        currentFile = createNewNumberedFile(pathToUse + "/" + fileShortName, fileCount);
+                        currentFile.delete();
+                    }
                 } catch (IOException e) {
                     System.err.println("Exception caught while reading " + novels[j] + ":");
                     e.printStackTrace();

@@ -8,6 +8,12 @@ SplitFile
 MassPreprocessor
 
 SplitFile: (Now does trees)
+CHANGES:
+-two new options: -trainall and -testall. this puts as many complete files as can possibly be put by setting trainFiles/testFile counts to MAX_INT, respectively.
+ only one can be selected at a time, otherwise the program will exit.
+-Now defaults train and test numbers are 0.
+-Doesn't make the directories when they're not needed.
+
 Allows a user to split either text files or tree files. Both use \n to delimit, but differ slightly in delimitation:
       Text uses \n to delimit per sentence
       Tree delimits using \n as the only character on the line to note that a tree has finished.
@@ -18,7 +24,7 @@ User can indicate number of files they want using -trainnum # and -testnum # to 
 
  The command should look something like this (hyphenated command order doesn't matter... BUT must have options, then root_directory must be first and destination_directory must be second!)
 
-      SplitFile -tree/-text [-seednum #] [-trainnum #] [-testnum #] source_directory destination_directory
+      SplitFile -tree/-text [-seednum #] [-trainall/-trainnum #] [-testall/-testnum #] source_directory destination_directory
 
 Arguments explained below.
 
@@ -28,9 +34,15 @@ Arguments explained below.
 
 -seednum: Set the number of seeds per file by using the -seeds option. Default is 100.
 
--trainnum: Sets the number of files to write to create our training set, per novel. Default is 19.
+-trainall: Sets number of train files to be generated to an impractical number, forcing the code to exit when the reader is finished reading lines.
+    Also throws away the last file as it is most likely incomplete.
+    
+-trainnum: Sets the number of files to write to create our training set, per novel. Default is 0.
 
--testnum: Sets the number of files to write to create our training set, per novel. Default is 1.
+-testall: Sets number of test files to be generated to an impractical number, forcing the code to exit when the reader is finished reading lines.
+    Also throws away the last file as it is most likely incomplete.
+
+-testnum: Sets the number of files to write to create our training set, per novel. Default is 0.
 
 source_directory: Needs to have languages in subdirectories, and these languages contain the novels in text or tree format.
 
