@@ -65,17 +65,18 @@ public class LexicalFeature extends Features {
 
 
 
-    private void loadARFF(Instances inst, String fileIn) throws Exception {
+    private Instances loadARFF(String fileIn) throws Exception {
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(fileIn);
-        inst = source.getDataSet();
+        Instances inst = source.getDataSet();
+        return inst;
     }
 
     public void loadData(String fileIn) throws Exception {
-        loadARFF(m_data, fileIn);
+        this.m_data = loadARFF(fileIn);
     }
 
     public void loadFeatures(String fileIn) throws Exception {
-        loadARFF(m_allFeat, fileIn);
+        this.m_allFeat = loadARFF(fileIn);
     }
 
     private void saveARFF(Instances inst, String fileOut) throws IOException {
