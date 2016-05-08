@@ -3,10 +3,11 @@ package mess.Features;
 import org.junit.Test;
 import weka.core.Instances;
 
-import static mess.utils.Utils.*;
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import java.util.Arrays;
+
+import static mess.utils.Utils.T;
+import static mess.utils.Utils.pT;
+import static org.junit.Assert.*;
 
 /**
  * Created by jessicahoffmann on 27/04/2016.
@@ -41,11 +42,45 @@ public class LexicalFeature_T {
         assertEquals(inst1.numInstances(), inst2.numInstances(), 1);
         assertEquals(inst1.numAttributes(), inst2.numAttributes(), 1);
 
+        System.out.println(Arrays.toString(inst1.firstInstance().toDoubleArray()));
+        System.out.println(Arrays.toString(inst2.firstInstance().toDoubleArray()));
+
         for (int i = 0; i < inst1.numInstances(); i++)
         {
             assertArrayEquals(inst1.instance(i).toDoubleArray(), inst2.instance(i).toDoubleArray(), 1);
+//            System.out.println(inst1.instance(i).classValue());
         }
 
+    }
+
+    @Test
+    public void loadFeatures() throws Exception {
+        String sizeSlice = "500/";
+
+        // load data
+        LexicalFeature feat1 = new LexicalFeature();
+
+        feat1.loadRawTxt("Data/blocks/" + sizeSlice + "train/");
+        feat1.computeUnigram();
+
+
+        LexicalFeature feat2 = new LexicalFeature();
+        feat2.loadFeatures("Data/weka/unigram_feat/500/unigram.arff");
+        assertNotNull(feat2.m_allFeat);
+
+        Instances inst1 = feat1.m_allFeat;
+        Instances inst2 = feat2.m_allFeat;
+
+        assertEquals(inst1.numInstances(), inst2.numInstances(), 1);
+        assertEquals(inst1.numAttributes(), inst2.numAttributes(), 1);
+
+//        System.out.println(Arrays.toString(inst1.firstInstance().toDoubleArray()));
+//        System.out.println(Arrays.toString(inst2.firstInstance().toDoubleArray()));
+
+        for (int i = 0; i < inst1.numInstances(); i++) {
+            assertArrayEquals(inst1.instance(i).toDoubleArray(), inst2.instance(i).toDoubleArray(), 1);
+//            System.out.println(inst1.instance(i).classValue());
+        }
     }
 
     @Test

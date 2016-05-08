@@ -2,6 +2,7 @@ package mess.Features;
 
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
+import weka.core.converters.CSVSaver;
 import weka.core.converters.ConverterUtils;
 import weka.core.converters.TextDirectoryLoader;
 import weka.core.tokenizers.NGramTokenizer;
@@ -87,12 +88,29 @@ public class LexicalFeature extends Features {
     }
 
 
+
     public void saveData(String fileOut) throws IOException {
         saveARFF(m_data, fileOut);
     }
 
     public void saveFeatures(String fileOut) throws IOException {
         saveARFF(m_allFeat, fileOut);
+    }
+
+
+    private void saveCSV(Instances inst, String fileOut) throws IOException {
+        CSVSaver saver = new CSVSaver();
+        saver.setInstances(inst);
+        saver.setFile(new File(fileOut));
+        saver.writeBatch();
+    }
+
+    public void saveDataCSV(String fileOut) throws IOException {
+        saveCSV(m_data, fileOut);
+    }
+
+    public void saveFeaturesCSV(String fileOut) throws IOException {
+        saveCSV(m_allFeat, fileOut);
     }
 
     // TODO
