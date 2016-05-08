@@ -38,17 +38,19 @@ destination_directory: Will write into this directory (it doesn't need to exist 
 
 ***************************************
 
+UPDATED: -oneNovelName now takes in the whole path, instead of having to split the name and rootDirectory.
+
 MassPreprocessor: This flexible class takes a novel in text format and prints out either one of two things (or possibly both):
     -a tokenized text file (one sentence per line), or
     -a Penn tree file, one sentence per tree.
 
-Usage: MassPreprocessor [-text] [-tree] [-oneNovel novelName] [-textDirectory directory] [-treeDirectory directory]  rootDirectory
+Usage: MassPreprocessor [-text] [-tree] [-oneNovel novelName] [-textDirectory directory] [-treeDirectory directory]  [rootDirectory]
 
 Arguments: (all are optional except for rootDirectory, but you won't get very far without stating either -text or -tree.
         -text: returns text files.
         -tree: returns tree files.
             Both -text and -tree can be called at the same time.
-        -oneNovel novel_file: runs only for novel_file. NOTE: In this mode, the rootDirectory MUST include the language of the book!
+        -oneNovel novel_file: runs only for novel_file. Please include the path in the name (Local or absolute path names are both OK). Also rootDirectory will not be read anymore.
         -textDirectory directory: Text output will go into the Data/directory directory instead of the default directory created by the code (txt_sentence_blocks_merged).
         -treeDirectory directory: Tree output will go into the Data/directory directory instead of the default directory created by the code (trees_merged).
             NOTE: Only a name must be provided for -textDirectory and -treeDirectory. DO NOT provide the whole directory, otherwise it won't work.

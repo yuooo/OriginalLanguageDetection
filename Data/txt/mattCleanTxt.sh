@@ -22,14 +22,21 @@
 #2. Take one token and add it to grep. Ask if it's OK to remove this line.
 #3. IF so, remove. If not, get the next line.
 
-TYPE=$1
-LANGUAGE=$2
-TEXT=$3
-FILE="${TYPE}/${LANGUAGE}/${TEXT}"
+
+IFS='/' read -ra ADDR <<< "$1"
+TYPE=${ADDR[0]}
+LANGUAGE=${ADDR[1]}
+TEXT=${ADDR[2]}
+echo $TYPE
+echo $LANGUAGE
+echo $TEXT
+FILE=$1
+#echo $FILE
 OUTPUTFILE="../txt_clean_new/${TYPE}/${LANGUAGE}/${TEXT::-4}_clean.txt"
+#echo $OUTPUTFILE
 shift
-shift
-shift
+#shift
+#shift
 TMP=`mktemp`
 #echo $TMP
 TMP2=`mktemp`

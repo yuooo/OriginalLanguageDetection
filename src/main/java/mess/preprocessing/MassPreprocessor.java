@@ -67,16 +67,16 @@ public class MassPreprocessor {
         int arg = 0;
         boolean txtFlag = false;
         boolean treeFlag = false;
-        String oneNovelName = null;
+        File oneNovel = null;
         String textDirectory = null, treeDirectory  = null;
-        while (args[arg].startsWith("-")) {
+        while (arg < args.length && args[arg].startsWith("-")) {
             if (args[arg].equals("-text")) {
                 txtFlag = true;
             } else if (args[arg].equals("-tree")) {
                 treeFlag = true;
             } else if (args[arg].equals("-oneNovel")) {
                 arg++;
-                oneNovelName = new File(args[arg]).getName();
+                oneNovel = new File(args[arg]);
             } else if (args[arg].equals("-textDirectory")) {
                 arg++;
                 textDirectory = new File(args[arg]).getName();
@@ -88,17 +88,28 @@ public class MassPreprocessor {
             }
             arg++;
         }
-        String directory = args[arg];
-        File rootDirectory = new File(directory);
-        if (!rootDirectory.isDirectory()) {
-            System.err.println("ERROR: " + rootDirectory.getName() + "is not a directory!");
+        if (oneNovel == null) {
+            String directory = args[arg];
+            File rootDirectory = new File(directory);
+            if (!rootDirectory.isDirectory()) {
+                System.err.println("ERROR: " + rootDirectory.getName() + "is not a directory!");
+            } else {
+                if (txtFlag) {
+                    writeToFiles(rootDirectory, null, "text", textDirectory);
+                } if (treeFlag) {
+                    writeToFiles(rootDirectory, null, "tree", treeDirectory);
+                }
+            }
         } else {
+            File rootDirectory = oneNovel.getParentFile();
+            String oneNovelName = oneNovel.getName();
             if (txtFlag) {
                 writeToFiles(rootDirectory, oneNovelName, "text", textDirectory);
             } if (treeFlag) {
                 writeToFiles(rootDirectory, oneNovelName, "tree", treeDirectory);
             }
         }
+
     }
 
 

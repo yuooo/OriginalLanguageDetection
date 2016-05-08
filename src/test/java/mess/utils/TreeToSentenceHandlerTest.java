@@ -8,7 +8,8 @@ import static org.junit.Assert.*;
 public class TreeToSentenceHandlerTest {
     @org.junit.Test
     public void generateSentence() throws Exception {
-
+        assertEquals(0, 0, 0.1);
+        assertEquals("a", "a");
     }
 
     @org.junit.Test
