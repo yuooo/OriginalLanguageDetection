@@ -17,14 +17,27 @@ public class Main {
         System.out.println("Start Loadind.");
         LexicalFeature feat = new LexicalFeature();
 
-        feat.loadRawTxt("Data/blocks/" + sizeSlice + "train/");
+        feat.loadRawTxt("Data/blocks/" + sizeSlice + "train/", true);
         pT("Load");
 
         // save data
         T();
         System.out.println("Start Saving.");
-        feat.saveData("Data/weka/sentences_blocks/" + sizeSlice + "train.arff");
+        feat.saveData("Data/weka/sentences_blocks/" + sizeSlice + "train.arff", true);
         pT("Save data");
+
+        // test
+        // load data
+        T();
+        System.out.println("Start Loadind test.");
+        feat.loadRawTxt("Data/blocks/" + sizeSlice + "test/", false);
+        pT("Load test.");
+
+        // save data
+        T();
+        System.out.println("Start Saving test.");
+        feat.saveData("Data/weka/sentences_blocks/" + sizeSlice + "test.arff", false);
+        pT("Save data test");
 
         // compute lexical features
         T();
@@ -35,40 +48,17 @@ public class Main {
         // save lexical features
         T();
         System.out.println("Save Lexical features.");
-        feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram.arff");
-        feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram.csv");
+        feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram.arff", true);
+        feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram.csv", true);
+        feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram_test.arff", false);
+        feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram_test.csv", false);
         pT("Save unigram");
 
-        // test
-        // load data
-        T();
-        System.out.println("Start Loadind test.");
-        LexicalFeature feat_test = new LexicalFeature();
-        feat_test.loadRawTxt("Data/blocks/" + sizeSlice + "test/");
-        pT("Load test.");
-
-        // save data
-        T();
-        System.out.println("Start Saving test.");
-        feat_test.saveData("Data/weka/sentences_blocks/" + sizeSlice + "test.arff");
-        pT("Save data test");
-
-        // compute lexical features
-        T();
-        System.out.println("Start Lexical features test.");
-        feat_test.computeUnigram();
-        pT("Compute unigram test ");
-
-        // save lexical features
-        T();
-        System.out.println("Save Lexical features.");
-        feat_test.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram_test.arff");
-        feat_test.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram_test.csv");
-        pT("Save unigram test");
 
         // combine features
         System.out.println("Start combining.");
-        Instances allFeat_test = feat_test.toWeka();
+        Instances allFeat = feat.trainToWeka();
+        Instances allFeat_test = feat.testToWeka();
 
         // computer parse features
         System.out.println("Start parse features.");
@@ -76,9 +66,6 @@ public class Main {
         // compute homemade features
         System.out.println("Start homemade features.");
 
-        // combine features
-        System.out.println("Start combining.");
-        Instances allFeat = feat.toWeka();
 
         // train/test
         T();
