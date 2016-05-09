@@ -45,6 +45,12 @@ public class Main {
         feat.computeUnigram();
         pT("Compute unigram");
 
+        // function words
+        T();
+        System.out.println("Function words.");
+        feat.computeFunctionWords();
+        pT();
+
         // save lexical features
         T();
         System.out.println("Save Lexical features.");
@@ -53,6 +59,8 @@ public class Main {
         feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram_test.arff", false);
         feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram_test.csv", false);
         pT("Save unigram");
+
+
 
 
         // combine features

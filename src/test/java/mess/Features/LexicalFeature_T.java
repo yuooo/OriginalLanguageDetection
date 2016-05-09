@@ -91,6 +91,9 @@ public class LexicalFeature_T {
 
     @Test
     public void computeFunctionWords() throws Exception {
+        LexicalFeature feat = new LexicalFeature();
+        feat.loadData("Data/arff/small_dataset.arff", true);
+        feat.loadData("Data/arff/small_dataset.arff", false);
 
     }
 
@@ -115,4 +118,6 @@ public class LexicalFeature_T {
         endTime = System.currentTimeMillis();
         System.out.println("Total execution time: " + (endTime - startTime)/1000 );
     }
+
+
 }

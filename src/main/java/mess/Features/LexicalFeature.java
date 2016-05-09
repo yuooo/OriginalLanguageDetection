@@ -1,11 +1,13 @@
 package mess.Features;
 
+import edu.stanford.nlp.util.ArrayUtils;
 import weka.core.Instances;
 import weka.core.tokenizers.NGramTokenizer;
 import weka.filters.Filter;
-import weka.filters.supervised.attribute.AttributeSelection;
+import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,11 +15,15 @@ import java.util.List;
  * Created by jessicahoffmann on 24/04/2016.
  */
 public class LexicalFeature extends Features {
-    private boolean m_isUnigram = false;
+    private boolean m_isUnigram_train = false;
+    private boolean m_isUnigram_test = false;
+
+    private Instances m_unigram;
+    private Instances m_unigram_test;
 
 
 
-    public Instances computeUnigram() throws Exception {
+    public void computeUnigram() throws Exception {
         // assert init
         assert m_isLoaded_train;
 
@@ -42,22 +48,24 @@ public class LexicalFeature extends Features {
         Instances outputInstances = Filter.useFilter(inputInstances,filter);
 
         // add to allFeat
+        m_unigram = outputInstances;
         safeMerge(outputInstances, true);
-        m_isUnigram = true;
+        m_isUnigram_train = true;
 
         // compute the test instances
         Instances inputTest = m_data_test;
         Instances outputTest = Filter.useFilter(inputTest,filter);
+        m_unigram_test = outputTest;
         safeMerge(outputTest, false);
-        return outputInstances;
+        m_isUnigram_test = true;
     }
 
 
 
-    public Instances computeUnigram(Instances inst) throws Exception {
+    public void computeUnigram(Instances inst) throws Exception {
         m_data_train = inst;
         m_isLoaded_train = true;
-        return computeUnigram();
+        computeUnigram();
     }
 
     // TODO
@@ -66,15 +74,16 @@ public class LexicalFeature extends Features {
     }
 
 
-    public Instances computeFunctionWords() {
-        assert m_isUnigram;
+    public Instances computeFunctionWords() throws Exception {
+        assert m_isUnigram_train;
+        assert m_isUnigram_test;
         List<String> functionWordList = Arrays.asList("a", "about", "above", "above", "across", "after", "afterwards",
                 "again", "against", "all", "almost", "alone", "along", "already", "also", "although", "always", "am",
                 "among", "amongst", "amoungst", "amount", "an", "and", "another", "any", "anyhow", "anyone", "anything",
                 "anyway", "anywhere", "are", "around", "as", "at", "back", "be", "became", "because", "become", "becomes",
                 "becoming", "been", "before", "beforehand", "behind", "being", "below", "beside", "besides", "between",
                 "beyond", "bill", "both", "bottom", "but", "by", "call", "can", "cannot", "cant", "co", "con", "could",
-                "couldnt", "cry", "de", "describe", "detail", "do", "done", "down", "due", "during", "each", "eg",
+                "couldnt", "cry", "describe", "detail", "do", "done", "down", "due", "during", "each", "eg",
                 "eight", "either", "eleven", "else", "elsewhere", "empty", "enough", "etc", "even", "ever", "every",
                 "everyone", "everything", "everywhere", "except", "few", "fifteen", "fify", "fill", "find", "fire",
                 "first", "five", "for", "former", "formerly", "forty", "found", "four", "from", "front", "full",
@@ -97,8 +106,30 @@ public class LexicalFeature extends Features {
                 "whenever", "where", "whereafter", "whereas", "whereby", "wherein", "whereupon", "wherever", "whether",
                 "which", "while", "whither", "who", "whoever", "whole", "whom", "whose", "why", "will", "with",
                 "within", "without", "would", "yet", "you", "your", "yours", "yourself", "yourselves", "the");
-        AttributeSelection filter = new AttributeSelection();
-
+        Remove filter = new Remove();
+        List<Integer> toRemove = new ArrayList<Integer>();
+        for (int i=1; i<m_unigram.numAttributes(); i++) {
+            if (!functionWordList.contains(m_unigram.attribute(i).name())) {
+                toRemove.add(i);
+            }
+        }
+        Integer[] wrapperArr = toRemove.toArray(new Integer[toRemove.size()]);
+        int[] toRem = ArrayUtils.toPrimitive(wrapperArr);
+        filter.setAttributeIndicesArray(toRem);
+        filter.setInputFormat(m_unigram);
+        m_allFeat_train = Filter.useFilter(m_unigram, filter);
+        m_allFeat_test = Filter.useFilter(m_unigram_test, filter);
         return null;
+    }
+
+    public void loadFeatures(String fileIn, boolean train) throws Exception {
+        if (train) {
+            this.m_allFeat_train = Features.loadARFF(fileIn);
+            this.m_isUnigram_train = true;
+        }
+        else {
+            this.m_allFeat_test = Features.loadARFF(fileIn);
+            this.m_isUnigram_test = true;
+        }
     }
 }

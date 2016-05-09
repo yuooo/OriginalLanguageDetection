@@ -62,7 +62,7 @@ public abstract class Features {
         }
     }
 
-    private Instances loadARFF(String fileIn) throws Exception {
+    public static Instances loadARFF(String fileIn) throws Exception {
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(fileIn);
         Instances inst = source.getDataSet();
         return inst;
