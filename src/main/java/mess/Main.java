@@ -47,8 +47,8 @@ public class Main {
 
         // function words
         T();
-        System.out.println("Function words.");
-        feat.computeFunctionWords();
+        System.out.println("Most common words.");
+        feat.computeMostCommon();
         pT();
 
         // save lexical features

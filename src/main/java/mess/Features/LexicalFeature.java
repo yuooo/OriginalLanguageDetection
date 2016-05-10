@@ -7,9 +7,11 @@ import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Created by jessicahoffmann on 24/04/2016.
@@ -74,7 +76,7 @@ public class LexicalFeature extends Features {
     }
 
 
-    public Instances computeFunctionWords() throws Exception {
+    public void computeFunctionWords() throws Exception {
         assert m_isUnigram_train;
         assert m_isUnigram_test;
         List<String> functionWordList = Arrays.asList("a", "about", "above", "above", "across", "after", "afterwards",
@@ -119,7 +121,6 @@ public class LexicalFeature extends Features {
         filter.setInputFormat(m_unigram);
         m_allFeat_train = Filter.useFilter(m_unigram, filter);
         m_allFeat_test = Filter.useFilter(m_unigram_test, filter);
-        return null;
     }
 
     public void loadFeatures(String fileIn, boolean train) throws Exception {
@@ -131,5 +132,30 @@ public class LexicalFeature extends Features {
             this.m_allFeat_test = Features.loadARFF(fileIn);
             this.m_isUnigram_test = true;
         }
+    }
+
+    public void computeMostCommon() throws Exception {
+        assert m_isUnigram_train;
+        assert m_isUnigram_test;
+        Scanner s = new Scanner(new File("resources/mostCommon.txt"));
+        ArrayList<String> mostCommonList = new ArrayList<String>();
+        while (s.hasNext()){
+            mostCommonList.add(s.next());
+        }
+        s.close();
+
+        Remove filter = new Remove();
+        List<Integer> toRemove = new ArrayList<Integer>();
+        for (int i=1; i<m_unigram.numAttributes(); i++) {
+            if (!mostCommonList.contains(m_unigram.attribute(i).name())) {
+                toRemove.add(i);
+            }
+        }
+        Integer[] wrapperArr = toRemove.toArray(new Integer[toRemove.size()]);
+        int[] toRem = ArrayUtils.toPrimitive(wrapperArr);
+        filter.setAttributeIndicesArray(toRem);
+        filter.setInputFormat(m_unigram);
+        m_allFeat_train = Filter.useFilter(m_unigram, filter);
+        m_allFeat_test = Filter.useFilter(m_unigram_test, filter);
     }
 }
