@@ -119,5 +119,10 @@ public class LexicalFeature_T {
         System.out.println("Total execution time: " + (endTime - startTime)/1000 );
     }
 
+    @Test
+    public void computeEtymology() throws Exception {
+        LexicalFeature feat = new LexicalFeature();
+        feat.computeEtymology();
 
+    }
 }

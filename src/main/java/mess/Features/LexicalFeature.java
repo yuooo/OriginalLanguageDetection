@@ -1,5 +1,12 @@
 package mess.Features;
 
+import de.tudarmstadt.ukp.jwktl.JWKTL;
+import de.tudarmstadt.ukp.jwktl.api.IWikiString;
+import de.tudarmstadt.ukp.jwktl.api.IWiktionaryEdition;
+import de.tudarmstadt.ukp.jwktl.api.IWiktionaryEntry;
+import de.tudarmstadt.ukp.jwktl.api.WiktionaryFormatter;
+import de.tudarmstadt.ukp.jwktl.api.filter.WiktionaryEntryFilter;
+import de.tudarmstadt.ukp.jwktl.api.util.Language;
 import edu.stanford.nlp.util.ArrayUtils;
 import weka.core.Instances;
 import weka.core.tokenizers.NGramTokenizer;
@@ -171,6 +178,26 @@ public class LexicalFeature extends Features {
 
     //TODO
     public void computeEtymology() {
+        // Connect to the Wiktionary database.
+        IWiktionaryEdition wkt = JWKTL.openEdition(new File("resources/wikiDirectory"));
+        WiktionaryEntryFilter filter = new WiktionaryEntryFilter();
+        filter.setAllowedWordLanguages(Language.ENGLISH);
+
+        List<IWiktionaryEntry> entries = wkt.getEntriesForWord("to", true);
+        for (IWiktionaryEntry entry : entries) {
+            // we take only the first English entry
+            if ((entry.getWordEtymology() != null) && (entry.getWordLanguage() == Language.ENGLISH)) {
+                System.out.println(WiktionaryFormatter.instance().formatHeader(entry));
+//                System.out.println(entry.getWordEtymology().getText());
+//                System.out.println(entry.getWordEtymology().getPlainText());
+                System.out.println(entry.getWordEtymology().getWikiLinks());
+                System.out.println(Arrays.toString(entry.getWordEtymology().getWikiLinks().toArray()));
+                IWikiString s = entry.getWordEtymology();
+            }
+        }
+
+        // Close the database connection.
+        wkt.close();
 
     }
 }
