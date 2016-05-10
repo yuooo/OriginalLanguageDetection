@@ -44,4 +44,7 @@ public class TextPOSTreeTriple {
         return POS;
     }
 
+    public Tree getTree() {
+        return tree;
+    }
 }

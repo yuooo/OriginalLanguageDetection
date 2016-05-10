@@ -168,6 +168,16 @@ public class LexicalFeature extends Features {
 
     //TODO
     public void computePOS() {
+        /**From Matt:
+        //You actually need to load another file separately for the trees.
+        //Here's what you have to do:
+            1. Input the directory for the trees ("Data/trees/[train OR test]"
+            2. For each file:
+                a. Call TreeToSentenceHandler h = new TreeToSentenceHandler(file)
+                b. while (h.hasNext)
+                    i. TextPOSTreeTriple t = h.generateSentence()
+                    ii. List<String> POSSentenct = h.POS() //***this is your POS sentence.***
+         */
 
     }
 
