@@ -2,6 +2,7 @@ package mess.utils;
 
 import edu.stanford.nlp.ling.Label;
 import edu.stanford.nlp.ling.Word;
+import edu.stanford.nlp.trees.Tree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,11 +10,13 @@ import java.util.List;
 /**
  * Created by mad4672 on 5/6/16.
  */
-public class TextPOSDouble {
+public class TextPOSTreeTriple {
     private List<String> words;
     private List<String> POS;
+    private Tree tree;
 
-    TextPOSDouble(List<Word> words, List<Label> preYield) {
+
+    TextPOSTreeTriple(List<Word> words, List<Label> preYield, Tree tree) {
         this.words = new ArrayList<>();
         POS = new ArrayList<>();
         for (Word w : words) {
@@ -22,6 +25,7 @@ public class TextPOSDouble {
         for (Label l : preYield) {
             POS.add(l.value());
         }
+        this.tree = tree;
     }
 
     /**

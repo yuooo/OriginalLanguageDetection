@@ -28,16 +28,16 @@ public class LexicalFeature_T {
         System.out.println("Start Loadind.");
         LexicalFeature feat1 = new LexicalFeature();
 
-        feat1.loadRawTxt("Data/blocks/" + sizeSlice + "train/");
+        feat1.loadRawTxt("Data/blocks/" + sizeSlice + "train/", true);
         pT("Load");
 
 
         LexicalFeature feat2 = new LexicalFeature();
-        feat2.loadData("Data/weka/sentences_blocks/500/train.arff");
-        assertNotNull(feat2.m_data);
+        feat2.loadData("Data/weka/sentences_blocks/500/train.arff", true);
+        assertNotNull(feat2.m_data_train);
 
-        Instances inst1 = feat1.m_data;
-        Instances inst2 = feat2.m_data;
+        Instances inst1 = feat1.m_data_train;
+        Instances inst2 = feat2.m_data_train;
 
         assertEquals(inst1.numInstances(), inst2.numInstances(), 1);
         assertEquals(inst1.numAttributes(), inst2.numAttributes(), 1);
@@ -60,16 +60,17 @@ public class LexicalFeature_T {
         // load data
         LexicalFeature feat1 = new LexicalFeature();
 
-        feat1.loadRawTxt("Data/blocks/" + sizeSlice + "train/");
+        feat1.loadRawTxt("Data/blocks/" + sizeSlice + "train/", true);
+        feat1.m_data_test = feat1.m_data_train;
         feat1.computeUnigram();
 
 
         LexicalFeature feat2 = new LexicalFeature();
-        feat2.loadFeatures("Data/weka/unigram_feat/500/unigram.arff");
-        assertNotNull(feat2.m_allFeat);
+        feat2.loadFeatures("Data/weka/unigram_feat/500/unigram.arff", true);
+        assertNotNull(feat2.m_allFeat_train);
 
-        Instances inst1 = feat1.m_allFeat;
-        Instances inst2 = feat2.m_allFeat;
+        Instances inst1 = feat1.m_allFeat_train;
+        Instances inst2 = feat2.m_allFeat_train;
 
         assertEquals(inst1.numInstances(), inst2.numInstances(), 1);
         assertEquals(inst1.numAttributes(), inst2.numAttributes(), 1);
@@ -90,6 +91,9 @@ public class LexicalFeature_T {
 
     @Test
     public void computeFunctionWords() throws Exception {
+        LexicalFeature feat = new LexicalFeature();
+        feat.loadData("Data/arff/small_dataset.arff", true);
+        feat.loadData("Data/arff/small_dataset.arff", false);
 
     }
 
@@ -99,19 +103,26 @@ public class LexicalFeature_T {
         long startTime = System.currentTimeMillis();
 
         LexicalFeature feat = new LexicalFeature();
-        feat.loadRawTxt("Data/txt_clean/");
+        feat.loadRawTxt("Data/txt_clean/", true);
 
         long endTime = System.currentTimeMillis();
         System.out.println("Total execution time: " + (endTime - startTime)/1000 );
 
-        assertEquals(feat.m_data.getClass(), Instances.class);
-        System.out.println("Class index " + feat.m_data.classIndex());
-        System.out.println("num inst " + feat.m_data.numInstances());
-        System.out.println("num attr " + feat.m_data.numAttributes());
+        assertEquals(feat.m_data_train.getClass(), Instances.class);
+        System.out.println("Class index " + feat.m_data_train.classIndex());
+        System.out.println("num inst " + feat.m_data_train.numInstances());
+        System.out.println("num attr " + feat.m_data_train.numAttributes());
 
         startTime = System.currentTimeMillis();
-        feat.saveData("Data/arff/small_dataset.arff");
+        feat.saveData("Data/arff/small_dataset.arff", true);
         endTime = System.currentTimeMillis();
         System.out.println("Total execution time: " + (endTime - startTime)/1000 );
+    }
+
+    @Test
+    public void computeEtymology() throws Exception {
+        LexicalFeature feat = new LexicalFeature();
+        feat.computeEtymology();
+
     }
 }
