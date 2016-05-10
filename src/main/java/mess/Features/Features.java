@@ -13,45 +13,79 @@ import java.io.IOException;
  * Created by jessicahoffmann on 24/04/2016.
  */
 public abstract class Features {
-    protected Instances m_allFeat = null;
+    protected Instances m_allFeat_train = null;
+    protected Instances m_allFeat_test = null;
 
-    public Instances m_data = null;
-    protected boolean m_isLoaded = false;
+    public Instances m_data_train = null;
+    public Instances m_data_test = null;
 
-    public Instances loadRawTxt(String pathFile) throws IOException {
+    protected boolean m_isLoaded_train = false;
+    protected boolean m_isLoaded_test = false;
+
+    public Instances loadRawTxt(String pathFile, boolean train) throws IOException {
         TextDirectoryLoader txtLoader = new TextDirectoryLoader();
         txtLoader.setDirectory(new File(pathFile));
         Instances inputInstances = txtLoader.getDataSet();
-        m_data = inputInstances;
-        m_isLoaded = true;
+        if (train) {
+            m_data_train = inputInstances;
+            m_isLoaded_train = true;
+        }
+        else {
+            m_data_test = inputInstances;
+            m_isLoaded_test = true;
+        }
         return inputInstances;
     }
 
-    public Instances toWeka() {
-        return this.m_allFeat;
+    public Instances trainToWeka() {
+        return this.m_allFeat_train;
     }
 
-    protected void safeMerge(Instances inst) {
-        if (m_allFeat == null) {
-            m_allFeat = inst;
+    public Instances testToWeka() {
+        return this.m_allFeat_test;
+    }
+
+    protected void safeMerge(Instances inst, boolean train) {
+        if (train) {
+            if (m_allFeat_train == null) {
+                m_allFeat_train = inst;
+            } else {
+                Instances.mergeInstances(m_allFeat_train, inst);
+            }
         }
         else {
-            Instances.mergeInstances(m_allFeat, inst);
+            if (m_allFeat_test == null) {
+                m_allFeat_test = inst;
+            } else {
+                Instances.mergeInstances(m_allFeat_test, inst);
+            }
         }
     }
 
-    private Instances loadARFF(String fileIn) throws Exception {
+    public static Instances loadARFF(String fileIn) throws Exception {
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(fileIn);
         Instances inst = source.getDataSet();
         return inst;
     }
 
-    public void loadData(String fileIn) throws Exception {
-        this.m_data = loadARFF(fileIn);
+    public void loadData(String fileIn, boolean train) throws Exception {
+        if (train) {
+            this.m_data_train = loadARFF(fileIn);
+            this.m_isLoaded_train = true;
+        }
+        else {
+            this.m_data_test = loadARFF(fileIn);
+            this.m_isLoaded_test = true;
+        }
     }
 
-    public void loadFeatures(String fileIn) throws Exception {
-        this.m_allFeat = loadARFF(fileIn);
+    public void loadFeatures(String fileIn, boolean train) throws Exception {
+        if (train) {
+            this.m_allFeat_train = loadARFF(fileIn);
+        }
+        else {
+            this.m_allFeat_test = loadARFF(fileIn);
+        }
     }
 
     private void saveARFF(Instances inst, String fileOut) throws IOException {
@@ -61,14 +95,22 @@ public abstract class Features {
         saver.writeBatch();
     }
 
-
-
-    public void saveData(String fileOut) throws IOException {
-        saveARFF(m_data, fileOut);
+    public void saveData(String fileOut, boolean train) throws IOException {
+        if (train) {
+            saveARFF(m_data_train, fileOut);
+        }
+        else {
+            saveARFF(m_data_test, fileOut);
+        }
     }
 
-    public void saveFeatures(String fileOut) throws IOException {
-        saveARFF(m_allFeat, fileOut);
+    public void saveFeatures(String fileOut, boolean train) throws IOException {
+        if (train) {
+            saveARFF(m_allFeat_train, fileOut);
+        }
+        else {
+            saveARFF(m_allFeat_test, fileOut);
+        }
     }
 
 
@@ -79,12 +121,22 @@ public abstract class Features {
         saver.writeBatch();
     }
 
-    public void saveDataCSV(String fileOut) throws IOException {
-        saveCSV(m_data, fileOut);
+    public void saveDataCSV(String fileOut, boolean train) throws IOException {
+        if (train) {
+            saveCSV(m_data_train, fileOut);
+        }
+        else {
+            saveCSV(m_data_test, fileOut);
+        }
     }
 
-    public void saveFeaturesCSV(String fileOut) throws IOException {
-        saveCSV(m_allFeat, fileOut);
+    public void saveFeaturesCSV(String fileOut, boolean train) throws IOException {
+        if (train) {
+            saveCSV(m_allFeat_train, fileOut);
+        }
+        else {
+            saveCSV(m_allFeat_test, fileOut);
+        }
     }
 
 }

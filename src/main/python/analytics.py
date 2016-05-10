@@ -45,7 +45,7 @@ def print_top(n, clf, class_labels, words):
     """Prints features with the highest coefficient values, per class"""
     for i, class_label in enumerate(class_labels):
         top10 = np.argsort(clf.coef_[i])[::-1][:n]
-        print("%s: %s" % (class_label,
+        print("%s: %s\n" % (class_label,
               " ".join(words[j] for j in top10)))
     
 
@@ -92,15 +92,27 @@ x_t = x_t[:, ind_21]
 #   ===========================================================================
 
 lr = OneVsRestClassifier(LogisticRegression())
+print "lr"
 preview(lr, x, y, x_t, y_t)
-print_top(30, lr, class_label, words)
+print_top(50, lr, class_label, words)
+print
 
 #%%
 rf = RandomForestClassifier()
-
+print "rf"
 preview(rf, x, y, x_t, y_t)
+print
 
 #%%
 xgb = OneVsRestClassifier(XGBClassifier())
 
+print "xgb"
 preview(xgb, x, y, x_t, y_t)
+print
+
+#%%
+svm = OneVsRestClassifier(SVC())
+
+print "svm"
+preview(xgb, x, y, x_t, y_t)
+print 
