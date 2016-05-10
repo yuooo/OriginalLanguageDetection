@@ -41,12 +41,12 @@ public class TreeToSentenceHandler {
      * Iterates over a sentence in the Treebank and generates a TextPOSDouble object.
      * @return a Double that has a list of the words in a sentence, and a list of POS in the same sentence.
      */
-    public TextPOSDouble generateSentence() {
+    public TextPOSTreeTriple generateSentence() {
         Tree t = it.next();
         List<Word> words = t.yieldWords();
         List<Label> preYield = t.preTerminalYield();
         t.pennPrint();
-        return new TextPOSDouble(words, preYield);
+        return new TextPOSTreeTriple(words, preYield, t);
     }
 
     /**
@@ -65,7 +65,7 @@ public class TreeToSentenceHandler {
     public static void main(String[] args) {
         File file = new File(args[0]);
         TreeToSentenceHandler t = new TreeToSentenceHandler(file);
-        TextPOSDouble test= t.generateSentence();
+        TextPOSTreeTriple test= t.generateSentence();
         System.out.println(test.getWords());
         System.out.println(test.getPOS());
         test= t.generateSentence();
