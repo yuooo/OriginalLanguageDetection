@@ -158,4 +158,19 @@ public class LexicalFeature extends Features {
         m_allFeat_train = Filter.useFilter(m_unigram, filter);
         m_allFeat_test = Filter.useFilter(m_unigram_test, filter);
     }
+
+    //TODO
+    public void computePOS() {
+
+    }
+
+    //TODO
+    public void computePOSbi() {
+
+    }
+
+    //TODO
+    public void computeEtymology() {
+
+    }
 }
