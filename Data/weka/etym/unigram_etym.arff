@@ -1,0 +1,10 @@
+@relation _Users_jessicahoffmann_IdeaProjects_OriginalLanguageDetection_Data_weka_etym
+@attribute text string
+@attribute @@class@@ {American,French,Russian}
+
+@data
+'the dog eats the cat.',French
+'Oh, I love cats.',French
+'***, cats are dogs',American
+'cat eats the love cat',Russian
+'cat boat damnation doom is chess arabic philosophy',Russian

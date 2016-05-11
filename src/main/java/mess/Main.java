@@ -51,6 +51,12 @@ public class Main {
         feat.computeMostCommon();
         pT();
 
+        // etymology
+        T();
+        System.out.println("Etymology.");
+        feat.computeEtymology();
+        pT("Etymology");
+
         // save lexical features
         T();
         System.out.println("Save Lexical features.");
