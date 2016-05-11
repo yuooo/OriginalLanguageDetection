@@ -130,6 +130,9 @@ public class MassPreprocessor {
         String dataDirectory = null;
         if (outputDirectory != null) {
             dataDirectory = outputDirectory;
+            //if (!outputDirectory.exists()) {
+
+            //}
         }
         switch(type) {
             case "tree":

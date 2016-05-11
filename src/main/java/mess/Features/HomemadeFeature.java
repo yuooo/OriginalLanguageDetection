@@ -1,7 +1,9 @@
 package mess.Features;
 
 import mess.utils.POS;
+import mess.utils.TreeToSentenceHandler;
 
+import java.io.File;
 import java.util.EnumMap;
 import java.util.EnumSet;
 import java.util.Set;
@@ -124,7 +126,11 @@ public class HomemadeFeature extends Features {
     }
 
     public void computeHomemadeFeatures () {
+        File file = new File ("Data/blocks/500/train/American/The_Adventures_of_Huckleberry_Finn_clean_00001.txt");
+        //TreeToSentenceHandler t = new TreeToSentenceHandler();
         //Massive Mapping: File to HomemadeFeatureVector.
+
+
         // FeatureCounterFactory (FeatureCounterFactory takes in Features you're trying to compute and creates FeatureCounters. Has a
                 //bunch of numbers, then we compute the ratios that we need at the very end and put them into HomemadeFeatureVector.
         //For each file

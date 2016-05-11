@@ -45,7 +45,7 @@ public class TreeToSentenceHandler {
         Tree t = it.next();
         List<Word> words = t.yieldWords();
         List<Label> preYield = t.preTerminalYield();
-        t.pennPrint();
+        //t.pennPrint();
         return new TextPOSTreeTriple(words, preYield, t);
     }
 
