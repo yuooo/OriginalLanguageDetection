@@ -142,17 +142,20 @@ public class HomemadeFeature extends Features {
     //Here, If a sentence has more than one clause, complex. Otherwise, simple.
     //ALSO... If there is an IN inside a PP, DECREMENT conjunctions.
 
+
+    //ISSUES SO FAR:
+    //PPs are in PPs... I hope this isn't common and was just because of an omitted subject.
     public void computeHomemadeFeatures (TextPOSTreeTriple t, int simpleSentence, int complexSentence, int prepositions, int conjunctions) {
 
         List<String> words = t.getWords();
         List<String> POStags = t.getPOS();
         for (int i = 0; i < words.size(); i++) {
             String word = words.get(i);
-            if (word.length() == 1) {
-                System.out.print(word + " ");
-            }
+            //if (word.length() == 1) {
+            //    System.out.print(word + " ");
+            //}
 
-            //kinda ugly, but hey... think this is the cleanest way to prevent punctuation errors.
+            //kinda ugly, but hey... think this is the cleanest way to prevent punctuation crashing my POS Enum.
             if (word.matches("([\\.\\?!,;:\\-\\(\\)\\[\\]'`])+")){
                 continue;
             }
@@ -163,7 +166,7 @@ public class HomemadeFeature extends Features {
                 switch (feat) {
                     case "Word":
                         v.incrementFeature(HomemadeFeatureCounterMapping.TotalWords);
-                        wordType.add(word);
+                        wordType.add(word.toLowerCase());
                         break;
                     case "FV":
                         v.incrementFeature(HomemadeFeatureCounterMapping.FiniteVerbs);
@@ -201,6 +204,8 @@ public class HomemadeFeature extends Features {
         v.addToFeature(HomemadeFeatureCounterMapping.ComplexSentences, complexSentence);
         v.addToFeature(HomemadeFeatureCounterMapping.Prepositions, prepositions);
         v.addToFeature(HomemadeFeatureCounterMapping.Conjunctions, conjunctions);
+        //increment total sentences
+        v.incrementFeature(HomemadeFeatureCounterMapping.TotalSentences);
 
 
 
