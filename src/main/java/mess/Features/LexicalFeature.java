@@ -11,6 +11,7 @@ import weka.core.Attribute;
 import weka.core.DenseInstance;
 import weka.core.Instance;
 import weka.core.Instances;
+import weka.core.converters.TextDirectoryLoader;
 import weka.core.tokenizers.NGramTokenizer;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Remove;
@@ -198,18 +199,35 @@ public class LexicalFeature extends Features {
         // Filter the input instances into the output ones
         Instances outputInstances = Filter.useFilter(inputInstances,filter);
 
+        // Remove @@class@@
+        Remove rem = new Remove();
+        int[] toRem = {0};
+        rem.setAttributeIndicesArray(toRem);
+        rem.setInputFormat(outputInstances);
+        outputInstances = Filter.useFilter(outputInstances, rem);
+        renamedPOS(outputInstances);
+
         // add to allFeat
         safeMerge(outputInstances, true);
 
         // compute the test instances
         Instances inputTest = m_POS_test;
         Instances outputTest = Filter.useFilter(inputTest,filter);
+        outputTest = Filter.useFilter(outputTest, rem);
+
+        renamedPOS(outputTest);
         safeMerge(outputTest, false);
     }
 
     //TODO
     public void computePOSbi() {
 
+    }
+
+    private void renamedPOS(Instances inst) {
+        for (int iAtt=0; iAtt< inst.numAttributes(); iAtt++) {
+            inst.renameAttribute(iAtt, inst.attribute(iAtt).name() + "POS");
+        }
     }
 
     public void computeEtymology() throws IOException {
@@ -404,5 +422,17 @@ public class LexicalFeature extends Features {
         // Close the database connection.
         wkt.close();
 
+    }
+
+    public void loadPOS(String fileIn, boolean train) throws Exception {
+        TextDirectoryLoader txtLoader = new TextDirectoryLoader();
+        txtLoader.setDirectory(new File(fileIn));
+        Instances inputInstances = txtLoader.getDataSet();
+        if (train) {
+            m_POS = inputInstances;
+        }
+        else {
+            m_POS_test = inputInstances;
+        }
     }
 }

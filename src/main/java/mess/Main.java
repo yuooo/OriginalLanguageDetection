@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Start Loadind.");
         LexicalFeature feat = new LexicalFeature();
 
-        feat.loadRawTxt("Data/blocks/" + sizeSlice + "train/", true);
+        feat.loadRawTxt("Data/block_text/" + sizeSlice + "train/", true);
         pT("Load");
 
         // save data
@@ -30,7 +30,7 @@ public class Main {
         // load data
         T();
         System.out.println("Start Loadind test.");
-        feat.loadRawTxt("Data/blocks/" + sizeSlice + "test/", false);
+        feat.loadRawTxt("Data/block_text/" + sizeSlice + "test/", false);
         pT("Load test.");
 
         // save data
@@ -56,6 +56,19 @@ public class Main {
         System.out.println("Etymology.");
         feat.computeEtymology();
         pT("Etymology");
+
+        // load POS
+        T();
+        System.out.println("Load POS.");
+        feat.loadPOS("Data/block_POS/" + sizeSlice +"train/", true);
+        feat.loadPOS("Data/block_POS/" + sizeSlice +"test/", false);
+        pT("Load POS");
+
+        // compute POS
+        T();
+        System.out.println("Compute POS.");
+        feat.computePOS();
+        pT("Compute POS");
 
         // save lexical features
         T();
