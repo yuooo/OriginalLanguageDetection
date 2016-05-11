@@ -66,11 +66,11 @@ public class ParseFeature extends Features {
                 while (!treeNodes.isEmpty()) {
                     Tree tNode = treeNodes.remove();
                     children = tNode.getChildrenAsList();
-                    System.out.println(tNode);
+                    System.out.println(tNode.nodeString());
                     System.out.println("Children: ");
                     String key = tNode.nodeString();
                     for (Tree child : children) {
-                        //System.out.println(child.nodeString());
+                        System.out.print(child.nodeString() + " ");
                         if (child.isLeaf()) {
                             continue;
                         }
@@ -79,6 +79,7 @@ public class ParseFeature extends Features {
                         //System.out.println(child1.firstChild().firstChild().nodeString());
                         key = key + "_" + child.nodeString();
                     }
+                    System.out.println();
                     System.out.println(key);
                     System.out.println("");
                     if (featuresCounts.containsKey(key)) {
