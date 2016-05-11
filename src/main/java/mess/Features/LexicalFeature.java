@@ -30,6 +30,11 @@ public class LexicalFeature extends Features {
     private Instances m_unigram;
     private Instances m_unigram_test;
 
+    private boolean m_isLoaded_POS = false;
+
+    private Instances m_POS;
+    private Instances m_POS_test;
+
 
 
     public void computeUnigram() throws Exception {
@@ -167,19 +172,39 @@ public class LexicalFeature extends Features {
         m_allFeat_test = Filter.useFilter(m_unigram_test, filter);
     }
 
-    //TODO
-    public void computePOS() {
-        /**From Matt:
-        //You actually need to load another file separately for the trees.
-        //Here's what you have to do:
-            1. Input the directory for the trees ("Data/trees/[train OR test]"
-            2. For each file:
-                a. Call TreeToSentenceHandler h = new TreeToSentenceHandler(file)
-                b. while (h.hasNext)
-                    i. TextPOSTreeTriple t = h.generateSentence()
-                    ii. List<String> POSSentenct = h.POS() //***this is your POS sentence.***
-         */
 
+    public void computePOS() throws Exception {
+        // assert init
+        assert m_isLoaded_POS;
+
+        // load the data
+        Instances inputInstances = m_POS;
+
+        // Set the tokenizer
+        NGramTokenizer tokenizer = new NGramTokenizer();
+        // We want unigrams
+        tokenizer.setNGramMinSize(1);
+        tokenizer.setNGramMaxSize(1);
+
+        // Set the filter
+        StringToWordVector filter = new StringToWordVector();
+        filter.setInputFormat(inputInstances);
+        filter.setTokenizer(tokenizer);
+        filter.setWordsToKeep(1000000);
+        filter.setDoNotOperateOnPerClassBasis(true);
+        filter.setLowerCaseTokens(true);
+        filter.setOutputWordCounts(true);
+
+        // Filter the input instances into the output ones
+        Instances outputInstances = Filter.useFilter(inputInstances,filter);
+
+        // add to allFeat
+        safeMerge(outputInstances, true);
+
+        // compute the test instances
+        Instances inputTest = m_POS_test;
+        Instances outputTest = Filter.useFilter(inputTest,filter);
+        safeMerge(outputTest, false);
     }
 
     //TODO
@@ -187,7 +212,6 @@ public class LexicalFeature extends Features {
 
     }
 
-    //TODO
     public void computeEtymology() throws IOException {
         assert m_isUnigram_train;
         assert m_isUnigram_test;
@@ -208,7 +232,6 @@ public class LexicalFeature extends Features {
 
         // Create Instance
         ArrayList<Attribute> etymInstance = new ArrayList<Attribute>();
-
 
         // lookup all etymologies of all words
         boolean first = false;
@@ -305,7 +328,6 @@ public class LexicalFeature extends Features {
 
         // test
         Instances etymInstances_test = new Instances("Rel", etymInstance, m_unigram_test.numInstances());
-
         for (int iInstance=0; iInstance < m_unigram_test.numInstances(); iInstance++) {
             Instance newInstance = new DenseInstance(nAttributes);
             for (int iAtt=0; iAtt<nAttributes;iAtt++) {
@@ -369,6 +391,7 @@ public class LexicalFeature extends Features {
         return l;
     }
 
+    // TODO
     public void computeLemma() {
         assert m_isUnigram_train;
         assert m_isUnigram_test;
