@@ -50,14 +50,16 @@ public abstract class Features {
             if (m_allFeat_train == null) {
                 m_allFeat_train = inst;
             } else {
-                Instances.mergeInstances(m_allFeat_train, inst);
+                m_allFeat_train = Instances.mergeInstances(m_allFeat_train, inst);
+                m_allFeat_train.setClassIndex(0);
             }
         }
         else {
             if (m_allFeat_test == null) {
                 m_allFeat_test = inst;
             } else {
-                Instances.mergeInstances(m_allFeat_test, inst);
+                m_allFeat_test = Instances.mergeInstances(m_allFeat_test, inst);
+                m_allFeat_test.setClassIndex(0);
             }
         }
     }

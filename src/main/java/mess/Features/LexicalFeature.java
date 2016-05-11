@@ -1,13 +1,15 @@
 package mess.Features;
 
 import de.tudarmstadt.ukp.jwktl.JWKTL;
-import de.tudarmstadt.ukp.jwktl.api.IWikiString;
 import de.tudarmstadt.ukp.jwktl.api.IWiktionaryEdition;
 import de.tudarmstadt.ukp.jwktl.api.IWiktionaryEntry;
-import de.tudarmstadt.ukp.jwktl.api.WiktionaryFormatter;
-import de.tudarmstadt.ukp.jwktl.api.filter.WiktionaryEntryFilter;
+import de.tudarmstadt.ukp.jwktl.api.PartOfSpeech;
 import de.tudarmstadt.ukp.jwktl.api.util.Language;
 import edu.stanford.nlp.util.ArrayUtils;
+import edu.stanford.nlp.util.StringUtils;
+import weka.core.Attribute;
+import weka.core.DenseInstance;
+import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.tokenizers.NGramTokenizer;
 import weka.filters.Filter;
@@ -15,10 +17,8 @@ import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.io.IOException;
+import java.util.*;
 
 /**
  * Created by jessicahoffmann on 24/04/2016.
@@ -29,6 +29,11 @@ public class LexicalFeature extends Features {
 
     private Instances m_unigram;
     private Instances m_unigram_test;
+
+    private boolean m_isLoaded_POS = false;
+
+    private Instances m_POS;
+    private Instances m_POS_test;
 
 
 
@@ -52,6 +57,7 @@ public class LexicalFeature extends Features {
         filter.setWordsToKeep(1000000);
         filter.setDoNotOperateOnPerClassBasis(true);
         filter.setLowerCaseTokens(true);
+        filter.setOutputWordCounts(true);
 
         // Filter the input instances into the output ones
         Instances outputInstances = Filter.useFilter(inputInstances,filter);
@@ -166,19 +172,39 @@ public class LexicalFeature extends Features {
         m_allFeat_test = Filter.useFilter(m_unigram_test, filter);
     }
 
-    //TODO
-    public void computePOS() {
-        /**From Matt:
-        //You actually need to load another file separately for the trees.
-        //Here's what you have to do:
-            1. Input the directory for the trees ("Data/trees/[train OR test]"
-            2. For each file:
-                a. Call TreeToSentenceHandler h = new TreeToSentenceHandler(file)
-                b. while (h.hasNext)
-                    i. TextPOSTreeTriple t = h.generateSentence()
-                    ii. List<String> POSSentenct = h.POS() //***this is your POS sentence.***
-         */
 
+    public void computePOS() throws Exception {
+        // assert init
+        assert m_isLoaded_POS;
+
+        // load the data
+        Instances inputInstances = m_POS;
+
+        // Set the tokenizer
+        NGramTokenizer tokenizer = new NGramTokenizer();
+        // We want unigrams
+        tokenizer.setNGramMinSize(1);
+        tokenizer.setNGramMaxSize(1);
+
+        // Set the filter
+        StringToWordVector filter = new StringToWordVector();
+        filter.setInputFormat(inputInstances);
+        filter.setTokenizer(tokenizer);
+        filter.setWordsToKeep(1000000);
+        filter.setDoNotOperateOnPerClassBasis(true);
+        filter.setLowerCaseTokens(true);
+        filter.setOutputWordCounts(true);
+
+        // Filter the input instances into the output ones
+        Instances outputInstances = Filter.useFilter(inputInstances,filter);
+
+        // add to allFeat
+        safeMerge(outputInstances, true);
+
+        // compute the test instances
+        Instances inputTest = m_POS_test;
+        Instances outputTest = Filter.useFilter(inputTest,filter);
+        safeMerge(outputTest, false);
     }
 
     //TODO
@@ -186,25 +212,194 @@ public class LexicalFeature extends Features {
 
     }
 
-    //TODO
-    public void computeEtymology() {
+    public void computeEtymology() throws IOException {
+        assert m_isUnigram_train;
+        assert m_isUnigram_test;
         // Connect to the Wiktionary database.
         IWiktionaryEdition wkt = JWKTL.openEdition(new File("resources/wikiDirectory"));
-        WiktionaryEntryFilter filter = new WiktionaryEntryFilter();
-        filter.setAllowedWordLanguages(Language.ENGLISH);
 
-        List<IWiktionaryEntry> entries = wkt.getEntriesForWord("to", true);
-        for (IWiktionaryEntry entry : entries) {
-            // we take only the first English entry
-            if ((entry.getWordEtymology() != null) && (entry.getWordLanguage() == Language.ENGLISH)) {
-                System.out.println(WiktionaryFormatter.instance().formatHeader(entry));
-//                System.out.println(entry.getWordEtymology().getText());
-//                System.out.println(entry.getWordEtymology().getPlainText());
-                System.out.println(entry.getWordEtymology().getWikiLinks());
-                System.out.println(Arrays.toString(entry.getWordEtymology().getWikiLinks().toArray()));
-                IWikiString s = entry.getWordEtymology();
+        // Get map of all attributes
+        HashMap<String,Integer> etymologyToEtymAttribute = new HashMap<>();
+        HashMap<String,Integer> wordToEtymologyList = new HashMap<>();
+        HashMap<Integer,String> attributeToWord = new HashMap<>();
+        List<List<String>> wordToEtymology = new ArrayList<>();
+
+        wordToEtymology.add(new ArrayList<String>());
+
+        int nAttributes = 0;
+        int nGoodWords = 0;
+        String currWord;
+
+        // Create Instance
+        ArrayList<Attribute> etymInstance = new ArrayList<Attribute>();
+
+        // lookup all etymologies of all words
+        boolean first = false;
+        for (int iWord = 1; iWord < m_unigram.numAttributes(); iWord++) {
+            List<String> lEtym = new ArrayList<>();
+            currWord = m_unigram.attribute(iWord).name();
+            if (StringUtils.isAlpha(currWord) ) {
+                // look up current word
+                List<IWiktionaryEntry> entries = wkt.getEntriesForWord(currWord, true);
+
+                // only keep the first (=most common) English entry
+                first = false;
+                for (IWiktionaryEntry entry : entries) {
+                    if (first) {
+                        break;
+                    }
+                    if ((entry.getWordEtymology() != null) && (entry.getWordLanguage() == Language.ENGLISH)) {
+                        first = true;
+                        if (!goodEntry(entry)) {
+                            break;
+                        }
+                        // remember the index of this word
+                        wordToEtymologyList.put(currWord, nGoodWords);
+                        attributeToWord.put(iWord, currWord);
+                        nGoodWords++;
+
+                        //remember the etymologies of this word
+                        lEtym = getEtymologiesFromPlainText(entry.getWordEtymology().getText());
+
+//                        System.out.println(currWord);
+//                        System.out.println(Arrays.toString(lEtym.toArray()));
+
+                        // remember all etymologies
+                        for (String etym : lEtym) {
+                            // check if we've seen this etymology before
+                            if (!etymologyToEtymAttribute.containsKey(etym)) {
+                                etymologyToEtymAttribute.put(etym, nAttributes);
+                                nAttributes++;
+                                etymInstance.add(new Attribute("etyl:" + etym));
+                            }
+                        }
+
+                    }
+                }
+            }
+            wordToEtymology.add(lEtym);
+        }
+//        int i=0;
+//        for (List<String> l: wordToEtymology) {
+//            System.out.println(attributeToWord.get(i) + Arrays.toString(l.toArray()));
+//            i++;
+//        }
+
+        // Create an empty training set
+        Instances etymInstances = new Instances("Rel", etymInstance, m_unigram.numInstances());
+
+        Instance currInstance;
+        String word;
+        List<String> lEtym;
+        double val;
+//        for (int iAtt=0; iAtt<nAttributes;iAtt++) {
+//                System.out.printf(etymInstances.attribute(iAtt).name() + ", ");
+//        }
+//        System.out.println(etymInstances.numAttributes());
+
+        // train
+        for (int iInstance=0; iInstance < m_unigram.numInstances(); iInstance++) {
+            Instance newInstance = new DenseInstance(nAttributes);
+            for (int iAtt=0; iAtt<nAttributes;iAtt++) {
+                newInstance.setValue(iAtt, 0);
+            }
+            currInstance = m_unigram.instance(iInstance);
+
+            // compute etymologies for one instance
+            for (int iWord=1; iWord < m_unigram.numAttributes(); iWord++) {
+                if (currInstance.value(iWord) > 0 && attributeToWord.containsKey(iWord)) {
+                    lEtym = wordToEtymology.get(iWord);
+//                    System.out.printf(attributeToWord.get(iWord) + " ");
+//                    System.out.printf("%n");
+                    for (String etym : lEtym) {
+//                        System.out.printf(etym + " " + etymologyToEtymAttribute.get(etym) +", ");
+                        val = newInstance.value(etymologyToEtymAttribute.get(etym));
+                        newInstance.setValue(etymologyToEtymAttribute.get(etym), val + 1);
+                    }
+//                    System.out.printf("%n");
+                }
+
+            }
+//            System.out.println(Arrays.toString(newInstance.toDoubleArray()));
+            etymInstances.add(newInstance);
+        }
+
+        safeMerge(etymInstances, true);
+
+        // test
+        Instances etymInstances_test = new Instances("Rel", etymInstance, m_unigram_test.numInstances());
+        for (int iInstance=0; iInstance < m_unigram_test.numInstances(); iInstance++) {
+            Instance newInstance = new DenseInstance(nAttributes);
+            for (int iAtt=0; iAtt<nAttributes;iAtt++) {
+                newInstance.setValue(iAtt, 0);
+            }
+            currInstance = m_unigram_test.instance(iInstance);
+
+            // compute etymologies for one instance
+            for (int iWord=1; iWord < m_unigram_test.numAttributes(); iWord++) {
+                if (currInstance.value(iWord) > 0 && attributeToWord.containsKey(iWord)) {
+                    lEtym = wordToEtymology.get(iWord);
+//                    System.out.printf(attributeToWord.get(iWord) + " ");
+//                    System.out.printf("%n");
+                    for (String etym : lEtym) {
+//                        System.out.printf(etym + " " + etymologyToEtymAttribute.get(etym) +", ");
+                        val = newInstance.value(etymologyToEtymAttribute.get(etym));
+                        newInstance.setValue(etymologyToEtymAttribute.get(etym), val + 1);
+                    }
+//                    System.out.printf("%n");
+                }
+
+            }
+//            System.out.println(Arrays.toString(newInstance.toDoubleArray()));
+            etymInstances_test.add(newInstance);
+        }
+
+        safeMerge(etymInstances_test, false);
+
+        wkt.close();
+
+    }
+
+    private boolean goodEntry(IWiktionaryEntry entry) {
+        boolean b = true;
+        b = ((entry.getPartOfSpeech() == PartOfSpeech.ADJECTIVE) ||
+                (entry.getPartOfSpeech() == PartOfSpeech.ADVERB) || (entry.getPartOfSpeech() == PartOfSpeech.NOUN) ||
+                (entry.getPartOfSpeech() == PartOfSpeech.VERB));
+        return b;
+    }
+
+    private String getEtymFromPattern(String pattern) {
+        String s;
+        assert pattern.startsWith("{{etyl|");
+        int iLetter = 7;
+//        System.out.println(pattern);
+        while ((pattern.charAt(iLetter) != '|') && pattern.charAt(iLetter) != '}') {
+            iLetter++;
+        }
+        s = pattern.substring(7, iLetter);
+        return s;
+    }
+
+    private List<String> getEtymologiesFromPlainText(String descr) {
+        List<String> l = new ArrayList<>();
+        String[] lWords = descr.split("[ ]+");
+        for (String word: lWords) {
+            if (word.startsWith("{{etyl|") && word.endsWith("}}")) {
+                l.add(getEtymFromPattern(word));
             }
         }
+        return l;
+    }
+
+    // TODO
+    public void computeLemma() {
+        assert m_isUnigram_train;
+        assert m_isUnigram_test;
+
+        // Connect to the Wiktionary database.
+        IWiktionaryEdition wkt = JWKTL.openEdition(new File("resources/wikiDirectory"));
+
+
 
         // Close the database connection.
         wkt.close();

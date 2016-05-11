@@ -122,7 +122,13 @@ public class LexicalFeature_T {
     @Test
     public void computeEtymology() throws Exception {
         LexicalFeature feat = new LexicalFeature();
+        feat.loadData("Data/weka/etym/unigram_etym.arff", true);
+        feat.loadData("Data/weka/etym/unigram_etym.arff", false);
+        feat.saveData("Data/weka/etym/data.arff", true);
+        feat.computeUnigram();
+        feat.saveFeatures("Data/weka/etym/uni.arff", true);
         feat.computeEtymology();
+        feat.saveFeatures("Data/weka/etym/feat.arff", true);
 
     }
 }
