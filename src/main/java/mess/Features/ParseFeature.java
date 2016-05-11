@@ -134,8 +134,11 @@ public class ParseFeature extends Features {
                         }
                         else {
                             //Integer[] arr = Collections.nCopies(n, 0).toArray(new Integer[0]); ??????
-                            List<Integer> arr = new ArrayList<>();
+                            List<Integer> arr = new ArrayList<>(n);
                             //arr[j]++;
+                            for (k = 0; k < j; k++) {
+                                arr.add(k, 0);
+                            }
                             arr.add(j, 1);
                             featuresCounts.put(key, arr);
                         }
@@ -156,7 +159,7 @@ public class ParseFeature extends Features {
             homemadeMaps.add(ratios);
             System.out.println(featuresCounts.toString());
         }
-
+        /*
         //Compute Homemade Instances
         Set<HomemadeFeature.HomemadeFeatureRatioNames> s = new TreeSet<>();
         for (EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double> m : homemadeMaps) {
@@ -167,14 +170,25 @@ public class ParseFeature extends Features {
             Attribute a = new Attribute(f.toString());
             list.add(a);
         }
+
+        //TODO: One Instances class per directory.
         Instances homemadeIns = new Instances("homemade", list, homemadeMaps.size());
         for (int i = 0; i < homemadeMaps.size(); i++) {
             Instance inst = new DenseInstance(HomemadeFeature.HomemadeFeatureRatioNames.size());
             for (Attribute a : list) {
                 inst.setValue(a, homemadeMaps.get(i).get(HomemadeFeature.HomemadeFeatureRatioNames.valueOf(a.name())));
             }
-        }
+        }*/
         //TODO: Compute the instances for slices, and return these?.
+        //TODO: What's there that's left for both the HomemadeFeatures and ParseFeatures?
+        /**
+         * 1. Make sure that the HomemadeFeatures actually work.
+         * 2. Make sure that the ParseFeatures with their changes also work.
+         * 3. Create Instances for ParseFeatures.
+         * 4. Make sure these are correct.
+         * 5. Make tests for both ParseFeatures and HomemadeFeatures.
+         * 6. Have them all merge together???
+         */
     }
 
     public static Treebank makeTreebankie(String treebankPath, Options op, FileFilter filt) {

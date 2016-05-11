@@ -126,7 +126,7 @@ public class HomemadeFeature extends Features {
         //for (POS p : map.keySet()) {
 
         //}
-        HomemadeFeatureVector v = new HomemadeFeatureVector();
+        v = new HomemadeFeatureVector();
         wordType = new HashSet<>();
 
     }
@@ -153,7 +153,7 @@ public class HomemadeFeature extends Features {
             }
 
             //kinda ugly, but hey... think this is the cleanest way to prevent punctuation errors.
-            if (word.matches("([\\.\\?!;:\\-\\(\\)\\[\\]]|['`]{2})")){
+            if (word.matches("([\\.\\?!,;:\\-\\(\\)\\[\\]'`])+")){
                 continue;
             }
             String POSStr = POStags.get(i);
