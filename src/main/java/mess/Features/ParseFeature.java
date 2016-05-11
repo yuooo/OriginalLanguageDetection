@@ -62,7 +62,7 @@ public class ParseFeature extends Features {
             while (ite.hasNext()) {
                 Queue<Tree> treeNodes = new LinkedList<Tree>();
                 t1 = ite.next();
-                treeNodes.add(t1);
+                treeNodes.add(t1.firstChild());
                 while (!treeNodes.isEmpty()) {
                     Tree tNode = treeNodes.remove();
                     children = tNode.getChildrenAsList();
@@ -71,7 +71,7 @@ public class ParseFeature extends Features {
                     String key = tNode.nodeString();
                     for (Tree child : children) {
                         //System.out.println(child.nodeString());
-                        if (child.isLeaf()) {
+                        if (child.isLeaf() || child.firstChild().isLeaf()) {
                             continue;
                         }
                         treeNodes.add(child);
