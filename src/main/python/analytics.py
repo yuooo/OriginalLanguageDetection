@@ -94,7 +94,7 @@ x_t = x_t[:, ind_21]
 lr = OneVsRestClassifier(LogisticRegression())
 print "lr"
 preview(lr, x, y, x_t, y_t)
-print_top(50, lr, class_label, words)
+print_top(100, lr, class_label, words)
 print
 
 #%%
