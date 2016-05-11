@@ -1,0 +1,8355 @@
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD came)
+      (PRT (RP up))
+      (PP (TO to)
+        (NP (DT the) (NN table)))
+      (, ,)
+      (S
+        (VP
+          (VP (VBG beaming)
+            (PP (IN with)
+              (NP (NN delight))))
+          (CC and)
+          (VP (VBG seeming)
+            (S
+              (VP (TO to)
+                (VP (VB expect)
+                  (NP (NN something))
+                  (PP (IN with)
+                    (NP (NN childish)))
+                  (, ,)
+                  (ADJP (JJ impatient))))))
+          (, ,)
+          (CC and)
+          (VP (VBG confiding)
+            (NP (NN curiosity))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN light))
+        (PP (IN in)
+          (NP (PRP$ her) (NNS eyes))))
+      (VP (VBD gladdened)
+        (NP (DT the) (NN soul))))
+    (: --)
+    (S
+      (NP (NNP Alyosha))
+      (VP (VBD felt)
+        (NP (DT that))))
+    (. .)))
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP
+        (NP (NN something) (RB else))
+        (PP (IN in)
+          (NP (PRP her))))
+      (SBAR
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (PRP he))
+            (VP
+              (VP (MD could) (RB not)
+                (VP (VB understand)))
+              (, ,)
+              (CC or)
+              (VP (MD would) (RB not)
+                (VP (VB have)
+                  (VP (VBN been)
+                    (ADJP (JJ able)
+                      (S
+                        (VP (TO to)
+                          (VP (VB define)))))))))))
+        (, ,)
+        (CC and)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (ADVP (RB yet))
+            (VP
+              (ADVP (RB perhaps))
+              (ADVP (RB unconsciously))
+              (VBD affected)
+              (NP (PRP him)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP
+        (NP (DT that) (NN softness))
+        (, ,)
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ voluptuousness)
+              (PP (IN of)
+                (NP (PRP$ her) (JJ bodily) (NNS movements)))
+              (, ,)
+              (SBAR (IN that)
+                (S
+                  (NP (NN catlike))
+                  (VP (VBZ noiselessness)))))))))
+    (. .)))
+(ROOT
+  (S (CC Yet)
+    (NP (PRP it))
+    (VP (VBD was)
+      (NP (DT a) (JJ vigorous) (, ,) (JJ ample) (NN body)))
+    (. .)))
+(ROOT
+  (SINV
+    (PP (IN Under)
+      (NP (DT the) (NN shawl)))
+    (VP (MD could)
+      (VP (VB be)
+        (VP (VBN seen))))
+    (NP
+      (NP (JJ full) (JJ broad) (NNS shoulders))
+      (, ,)
+      (NP (DT a) (JJ high) (, ,)
+        (ADJP (RB still) (RB quite) (JJ girlish))
+        (NN bosom)))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP$ Her) (NN figure))
+    (VP (VBD suggested)
+      (NP
+        (NP (DT the) (NNS lines))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (NNP Venus))
+              (PP (IN of)
+                (NP (NNP Milo))))
+            (, ,)
+            (SBAR (IN though)
+              (FRAG
+                (ADVP (RB already)))))))
+      (PP (IN in)
+        (NP
+          (ADJP (RB somewhat) (JJ exaggerated))
+          (NNS proportions))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (MD could)
+      (VP (VB be)
+        (VP (VBN divined))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS Connoisseurs))
+        (PP (IN of)
+          (NP (JJ Russian) (NN beauty))))
+      (VP (MD could)
+        (VP (VB have)
+          (VP (VBN foretold)
+            (PP (IN with)
+              (NP (NN certainty)))
+            (SBAR
+              (SBAR (IN that)
+                (S
+                  (NP (DT this) (JJ fresh) (, ,) (RB still) (JJ youthful) (NN beauty))
+                  (VP (MD would)
+                    (VP (VB lose)
+                      (NP (PRP$ its) (NN harmony))
+                      (PP (IN by)
+                        (NP
+                          (NP (DT the) (NN age))
+                          (PP (IN of)
+                            (NP (CD thirty)))
+                          (, ,)
+                          (VP (MD would)
+                            (VP (`` ``) (VB spread) ('' '')))))))))
+              (: ;)
+              (SBAR (IN that)
+                (S
+                  (NP (DT the) (NN face))
+                  (VP (MD would)
+                    (VP (VB become)
+                      (ADVP (RB puffy))))))
+              (, ,)
+              (CC and)
+              (SBAR (IN that)
+                (S
+                  (NP (NNS wrinkles))
+                  (VP (MD would)
+                    (ADVP (RB very) (RB soon))
+                    (VP
+                      (VP (VB appear)
+                        (PP (IN upon)
+                          (NP (PRP$ her) (NN forehead))))
+                      (CC and)
+                      (VP (VB round)
+                        (NP (DT the) (NNS eyes))))))))))))
+    (: ;)
+    (S
+      (NP (DT the) (NN complexion))
+      (VP (MD would)
+        (VP (VB grow)
+          (ADJP (JJ coarse)
+            (CC and)
+            (JJ red))
+          (ADVP (RB perhaps))
+          (: --)
+          (PP (IN in)
+            (NP (NN fact)))
+          (, ,)
+          (SBAR (IN that)
+            (S
+              (NP (PRP it))
+              (VP (VBD was)
+                (NP
+                  (NP (DT the) (NN beauty))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NN moment))
+                      (, ,)
+                      (NP
+                        (NP (DT the) (JJ fleeting) (NN beauty))
+                        (SBAR
+                          (WHNP (WDT which))
+                          (S
+                            (VP (VBZ is)
+                              (ADVP (RB so) (RB often))
+                              (VP (VBN met)
+                                (PP (IN with)
+                                  (PP (IN in)
+                                    (NP (JJ Russian) (NNS women))))))))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Alyosha))
+        (, ,)
+        (PP (IN of)
+          (NP (NN course)))
+        (, ,))
+      (VP (VBD did) (RB not)
+        (VP (VB think)
+          (PP (IN of)
+            (NP (DT this))))))
+    (: ;)
+    (CC but)
+    (S
+      (SBAR (IN though)
+        (S
+          (NP (PRP he))
+          (VP (VBD was)
+            (VP (VBN fascinated)))))
+      (, ,)
+      (ADVP (RB yet))
+      (NP (PRP he))
+      (VP (VBD wondered)
+        (UCP
+          (PP (IN with)
+            (NP (DT an) (JJ unpleasant) (NN sensation)))
+          (, ,)
+          (CC and)
+          (SBAR (IN as)
+            (S
+              (NP (PRP it))
+              (VP (VBD were)
+                (ADVP (RB regretfully))
+                (, ,)
+                (SBAR
+                  (WHADVP (WRB why))
+                  (S
+                    (NP (PRP she))
+                    (VP
+                      (VP (VBD drawled)
+                        (PP (IN in)
+                          (NP (DT that) (NN way))))
+                      (CC and)
+                      (VP (MD could) (RB not)
+                        (VP (VB speak)
+                          (ADVP (RB naturally)))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD did)
+      (ADVP (RB so))
+      (ADVP (RB evidently))
+      (S
+        (VP (VBG feeling)
+          (SBAR
+            (S
+              (NP (EX there))
+              (VP (VBD was)
+                (NP
+                  (NP (DT a) (NN charm))
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the)
+                        (ADJP (JJ exaggerated) (, ,) (JJ honeyed))
+                        (NN modulation))
+                      (PP (IN of)
+                        (NP (DT the) (NN syllables))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was) (, ,)
+      (PP (IN of)
+        (NP (NN course)))
+      (, ,)
+      (ADVP (RB only))
+      (NP
+        (NP (DT a) (JJ bad) (, ,) (JJ underbred) (NN habit))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD showed)
+              (NP
+                (NP (JJ bad) (NN education))
+                (CC and)
+                (NP
+                  (NP (DT a) (JJ false) (NN idea))
+                  (PP (IN of)
+                    (NP (JJ good) (NNS manners))))))))))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (ADVP (RB yet))
+    (NP
+      (NP (DT this) (NN intonation)
+        (CC and)
+        (NN manner))
+      (PP (IN of)
+        (NP (NN speaking))))
+    (VP (VBD impressed)
+      (NP (NNP Alyosha))
+      (PP (IN as)
+        (NP
+          (ADJP (RB almost) (RB incredibly))
+          (NNS incongruous)))
+      (PP (IN with)
+        (NP
+          (NP (DT the)
+            (ADJP (RB childishly) (JJ simple)
+              (CC and)
+              (JJ happy))
+            (NN expression))
+          (PP (IN of)
+            (NP
+              (NP (PRP$ her) (NN face))
+              (, ,)
+              (NP
+                (NP (DT the) (JJ soft) (, ,) (JJ babyish) (NN joy))
+                (PP (IN in)
+                  (NP (PRP$ her) (NNS eyes)))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Katerina) (NNP Ivanovna))
+    (ADVP (IN at) (RB once))
+    (VP (VBD made)
+      (SBAR
+        (S
+          (NP (PRP her))
+          (VP (VBP sit)
+            (S
+              (S
+                (ADVP (RB down)
+                  (PP (IN in)
+                    (NP (DT an) (NN arm) (NN chair))))
+                (VP (VBG facing)
+                  (NP (NNP Alyosha))))
+              (, ,)
+              (CC and)
+              (S
+                (ADVP (RB ecstatically))
+                (VP (VBN kissed)
+                  (NP (PRP$ her) (JJ several) (NNS times))
+                  (PP (IN on)
+                    (NP (PRP$ her) (VBG smiling) (NNS lips))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD seemed)
+      (ADVP (RB quite)
+        (PP (IN in)
+          (NP (NN love))))
+      (PP (IN with)
+        (NP (PRP her))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (DT This))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ first) (NN time))
+          (SBAR
+            (S
+              (NP (PRP we))
+              (VP (VBP 've)
+                (VP (VBN met) (, ,)
+                  (NP (NNP Alexey) (NNP Fyodorovitch)))))))))
+    (, ,) ('' '')
+    (NP (PRP she))
+    (VP (VBD said)
+      (ADVP (RB rapturously)))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (VP (VBD wanted)
+      (S
+        (VP (TO to)
+          (VP (VB know)
+            (NP (PRP her)))))
+      (, ,)
+      (S
+        (VP (TO to)
+          (VP (VB see)
+            (NP (PRP her))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD wanted)
+        (S
+          (VP (TO to)
+            (VP (VB go)
+              (PP (TO to)
+                (NP (PRP her))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBD 'd)
+        (ADVP (DT no) (RBR sooner))
+        (VP (VBN expressed)
+          (NP (DT the) (NN wish))
+          (SBAR (IN than)
+            (S
+              (NP (PRP she))
+              (VP (VBD came)
+                (PP (TO to)
+                  (NP (PRP me)))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD knew)
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (MD should)
+            (VP (VB settle)
+              (NP (NN everything))
+              (ADVP (RB together))
+              (: --)
+              (FRAG
+                (NP (NN everything))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP$ My) (NN heart))
+      (VP (VBD told)
+        (NP (PRP me))
+        (ADVP (RB so))))
+    (: --)
+    (S
+      (S
+        (NP (PRP I))
+        (VP (VBD was)
+          (VP (VBN begged)
+            (S (RB not)
+              (VP (TO to)
+                (VP (VB take)
+                  (NP (DT the) (NN step))))))))
+      (, ,)
+      (CC but)
+      (S
+        (S
+          (NP (PRP I))
+          (VP (VBD foresaw)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (MD would)
+                  (VP (VB be)
+                    (NP
+                      (NP (DT a) (NN way))
+                      (PP (RB out) (IN of)
+                        (NP (DT the) (NN difficulty))))))))))
+        (, ,)
+        (CC and)
+        (S
+          (NP (PRP I))
+          (VP (VBD was) (RB not)
+            (VP (VBN mistaken))))))
+    (. .)))
+(ROOT
+  (SINV
+    (S
+      (NP (NNP Grushenka))
+      (VP (VBZ has)
+        (VP (VBN explained)
+          (NP (NN everything))
+          (PP (TO to)
+            (NP (PRP me))))))
+    (, ,)
+    (VP (VBD told)
+      (NP (PRP me)))
+    (NP
+      (NP (DT all))
+      (SBAR
+        (S
+          (NP (PRP she))
+          (VP (VBZ means)
+            (S
+              (VP (TO to)
+                (VP (VB do))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD flew)
+        (ADVP (RB here))
+        (PP (IN like)
+          (NP
+            (NP (DT an) (NN angel))
+            (PP (IN of)
+              (NP (NN goodness))))))
+      (CC and)
+      (VP (VBD brought)
+        (S
+          (NP (PRP us))
+          (UCP (NN peace)
+            (CC and)
+            (JJ joy)))))
+    (. .) ('' '')))
+(ROOT
+  (SINV (`` ``)
+    (S
+      (NP (PRP You))
+      (VP (VBD did) (RB not)
+        (VP (VB disdain)
+          (NP (PRP me))
+          (, ,)
+          (FRAG
+            (ADJP (JJ sweet))
+            (, ,)
+            (NP
+              (ADJP (JJ excellent))
+              (JJ young) (NN lady))))))
+    (, ,) ('' '')
+    (VP (VBD drawled)
+      (NP
+        (NP (NNP Grushenka))
+        (PP (IN in)
+          (NP (PRP$ her) (NN sing?song)))))
+    (NP
+      (NP (NN voice))
+      (, ,)
+      (RRC
+        (ADVP (RB still))
+        (PP (IN with)
+          (NP
+            (NP (DT the) (JJ same) (JJ charming) (NN smile))
+            (PP (IN of)
+              (NP (NN delight)))))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (S
+      (VP (VBP Do) (RB n't)
+        (VP (VB dare)
+          (S
+            (VP (TO to)
+              (VP (VB speak)
+                (PP (TO to)
+                  (NP (PRP me)))
+                (PP (IN like)
+                  (NP (DT that)))))))))
+    (PRN (, ,)
+      (S
+        (NP (PRP you))
+        (VP (VBZ sorceress)))
+      (, ,))
+    (NP (PRP you))
+    (VP (VBZ witch))
+    (. !)))
+(ROOT
+  (S
+    (VP (VB Disdain)
+      (NP (PRP you)))
+    (. !)))
+(ROOT
+  (S
+    (ADVP (RB Here))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD must)
+      (VP (VB kiss)
+        (NP
+          (NP (PRP$ your) (JJR lower) (NN lip))
+          (ADJP (RB once) (JJR more)))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ looks)
+        (SBAR (RB as) (IN though)
+          (S
+            (NP (PRP it))
+            (VP (VBD were)
+              (ADJP (JJ swollen)))))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP (RB now))
+      (NP (PRP it))
+      (VP (MD will)
+        (VP (VB be)
+          (ADJP
+            (ADJP (JJR more))
+            (ADVP (RB so))
+            (, ,)
+            (CC and)
+            (ADVP (RBR more)
+              (CC and)
+              (RBR more))))))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Look)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (PRP she))
+          (VP (VBZ laughs)))))
+    (, ,)
+    (NP (NNP Alexey) (NNP Fyodorovitch))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ does)
+      (S
+        (NP
+          (NP (CD one) (POS 's))
+          (NN heart))
+        (ADJP (JJ good)
+          (S
+            (VP (TO to)
+              (VP (VB see)
+                (NP (DT the) (NN angel))))))))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (S
+      (NP (NNP Alyosha))
+      (VP (VBD flushed)))
+    (, ,)
+    (CC and)
+    (S
+      (NP (JJ faint) (, ,) (JJ imperceptible) (NNS shivers))
+      (VP (VBD kept)
+        (S
+          (VP (VBG running)
+            (PRT (RP down))
+            (NP (PRP him))))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP You))
+      (VP (VBP make)
+        (ADVP (RB so) (RB much))
+        (PP (IN of)
+          (NP
+            (NP (PRP me))
+            (, ,)
+            (NP
+              (ADJP (RB dear))
+              (JJ young) (NN lady))))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP (RB perhaps))
+      (NP (PRP I))
+      (VP (VBP am) (RB not)
+        (ADVP (IN at) (DT all))
+        (ADJP (JJ worthy)
+          (PP (IN of)
+            (NP (PRP$ your) (NN kindness))))))
+    (. .) ('' '')))
+(ROOT
+  (S (`` ``) (RB Not)
+    (VP (VBZ worthy))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ 's) (RB not)
+      (ADJP (JJ worthy)
+        (PP (IN of)
+          (NP (PRP it)))))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Katerina) (NNP Ivanovna))
+    (VP (VBD cried)
+      (ADVP (RB again))
+      (PP (IN with)
+        (NP (DT the) (JJ same) (NN warmth))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP You))
+      (VP (VBP know)))
+    (, ,)
+    (NP (NNP Alexey) (NNP Fyodorovitch))
+    (, ,)
+    (PRN
+      (S
+        (NP (PRP we))
+        (VP (VBP 're)
+          (ADJP (JJ fanciful)))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP 're)
+      (ADJP (JJ self?willed) (, ,)
+        (CC but)
+        (JJ proudest))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (JJ proud))
+          (PP (IN in)
+            (NP (PRP$ our) (JJ little) (NN heart))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP 're)
+      (ADJP (JJ noble))
+      (PRN (, ,)
+        (S
+          (NP (PRP we))
+          (VP (VBP 're)
+            (ADJP (JJ generous))
+            (, ,)
+            (NP (NNP Alexey) (NNP Fyodorovitch))))
+        (, ,))
+      (S
+        (VP (VB let)
+          (S
+            (NP (PRP me))
+            (VP (VB tell)
+              (NP (PRP you)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (ADVP (RB only))
+      (VP (VBN been)
+        (ADJP (JJ unfortunate))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD were)
+      (ADJP (RB too) (JJ ready)
+        (S
+          (VP (TO to)
+            (VP (VB make)
+              (NP (DT every) (NN sacrifice))
+              (PP (IN for)
+                (NP
+                  (NP (DT an) (NN unworthy))
+                  (, ,)
+                  (ADVP (RB perhaps))
+                  (, ,)
+                  (CC or)
+                  (NP (JJ fickle) (NN man)))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBD was)
+        (NP
+          (NP (CD one) (NN man))
+          (: --)
+          (NP (CD one)))))
+    (, ,)
+    (NP (DT an) (NN officer))
+    (ADVP (RB too))
+    (PRN (, ,)
+      (S
+        (NP (PRP we))
+        (VP (VBD loved)
+          (NP (PRP him))))
+      (, ,))
+    (NP (PRP we))
+    (VP (VBD sacrificed)
+      (NP (NN everything))
+      (PP (TO to)
+        (NP (PRP him))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (S
+        (NP (DT That))
+        (VP (VBD was)
+          (ADVP (RB long) (RB ago))
+          (, ,)
+          (ADVP
+            (NP (CD five) (NNS years))
+            (RB ago))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (PRP he))
+        (VP (VBZ has)
+          (VP (VBN forgotten)
+            (NP (PRP us))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ has)
+      (VP (VBN married)))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (SBAR (RB Now)
+        (S
+          (NP (PRP he))
+          (VP (VBZ is)
+            (NP (DT a) (NN widower)))))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBZ has)
+        (VP (VBN written)
+          (PRN (, ,)
+            (S
+              (NP (PRP he))
+              (VP (VBZ is)
+                (VP (VBG coming)
+                  (ADVP (RB here)))))
+            (, ,)))))
+    (CC and)
+    (, ,)
+    (PRN
+      (SINV (VBP do)
+        (NP (PRP you))
+        (VP (VB know))))
+    (, ,)
+    (S
+      (NP (PRP we))
+      (VP (VBP 've)
+        (VP (VBN loved)
+          (NP
+            (NP (PRP him))
+            (, ,)
+            (NP
+              (NP (NN none))
+              (PP (CC but)
+                (NP (PRP him))))
+            (, ,))
+          (NP (PDT all) (DT this) (NN time)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBP 've)
+        (VP (VBN loved)
+          (NP (PRP him))
+          (NP (PDT all) (PRP$ our) (NN life)))))
+    (. !)))
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (MD will)
+        (VP (VB come))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Grushenka))
+      (VP (MD will)
+        (VP (VB be)
+          (ADJP (JJ happy))
+          (ADVP (RB again)))))
+    (. .)))
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT the) (JJ last) (CD five) (NNS years)))
+    (NP (PRP she))
+    (VP (VBZ 's)
+      (VP (VBN been)
+        (VP (VBN wretched))))
+    (. .)))
+(ROOT
+  (SBARQ (CC But)
+    (WHNP (WP who))
+    (SQ (MD can)
+      (VP (VB reproach)
+        (NP
+          (NP (PRP her))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (MD can)
+                (VP (VB boast)
+                  (PP (IN of)
+                    (NP (PRP$ her) (NN favor))))))))))
+    (. ?)))
+(ROOT
+  (FRAG
+    (NP (RB Only) (DT that) (JJ bedridden) (JJ old) (NN merchant))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP he))
+      (VP (VBZ is)
+        (ADVP (RBR more)
+          (PP (IN like)
+            (NP
+              (NP (PRP$ her) (NN father))
+              (, ,)
+              (NP (PRP$ her) (NN friend))
+              (, ,))))
+        (NP (PRP$ her) (NN protector))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD found)
+      (NP (PRP her))
+      (PP
+        (ADVP (RB then))
+        (IN in)
+        (NP (NN despair)))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (NN agony))
+          (, ,)
+          (VP (VBN deserted)
+            (PP (IN by)
+              (NP
+                (NP (DT the) (NN man))
+                (SBAR
+                  (S
+                    (NP (PRP she))
+                    (VP (VBD loved))))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (VBD was)
+        (ADJP (JJ ready)
+          (S
+            (VP (TO to)
+              (VP (VB drown)
+                (NP (PRP herself))
+                (ADVP (RB then))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (JJ old) (NN merchant))
+      (VP (VBD saved)
+        (NP (PRP her) (: --)
+          (SBAR
+            (S
+              (VP (VBD saved)
+                (NP (PRP her))))))))
+    (. !) ('' '')))
+(ROOT
+  (S (`` ``)
+    (NP (PRP You))
+    (VP (VBP defend)
+      (NP (PRP me))
+      (ADVP (RB very) (RB kindly))
+      (, ,)
+      (S
+        (VP (VBG dear)
+          (NP (JJ young) (NN lady)))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP are)
+        (PP (IN in)
+          (NP
+            (NP (DT a) (JJ great) (NN hurry))
+            (PP (IN about)
+              (NP (NN everything)))))))
+    (, ,) ('' '')
+    (NP (NNP Grushenka))
+    (VP (VBD drawled)
+      (ADVP (RB again)))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (VP (VB Defend)
+      (NP (PRP you)))
+    (. !)))
+(ROOT
+  (SQ (VBZ Is)
+    (NP (PRP it))
+    (NP
+      (NP (IN for))
+      (SBAR
+        (S
+          (NP (PRP me))
+          (VP (TO to)
+            (VP (VB defend)
+              (NP (PRP you)))))))
+    (. ?)))
+(ROOT
+  (SQ (NNP Should)
+    (NP (PRP I))
+    (VP (VB dare)
+      (S
+        (VP (TO to)
+          (VP (VB defend)
+            (NP (PRP you))))))
+    (. ?)))
+(ROOT
+  (S
+    (NP
+      (NP (NNP Grushenka))
+      (, ,)
+      (NP (NN angel))
+      (, ,))
+    (VP (VBP give)
+      (NP (PRP me))
+      (NP (PRP$ your) (NN hand)))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Look)
+      (PP (IN at)
+        (NP
+          (NP (DT that) (JJ charming) (JJ soft) (JJ little) (NN hand))
+          (, ,)
+          (NP (NNP Alexey) (NNP Fyodorovitch)))))
+    (. !)))
+(ROOT
+  (S
+    (VP (VB Look)
+      (PP (IN at)
+        (NP (PRP it))))
+    (. !)))
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP
+        (VP (VBZ has)
+          (VP (VBN brought)
+            (NP (PRP me))
+            (NP (NN happiness))))
+        (CC and)
+        (VP (VBZ has)
+          (VP (VBN lifted)
+            (NP (PRP me))
+            (PRT (RP up))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB kiss)
+                (NP (PRP it))
+                (, ,)
+                (ADVP (RB outside)
+                  (CC and)
+                  (RB inside))
+                (, ,)
+                (ADVP (RB here)))))
+          (, ,)
+          (ADVP (RB here))
+          (, ,)
+          (ADVP (RB here)))))
+    (. !) ('' '')))
+(ROOT
+  (S (CC And)
+    (NP (CD three) (NNS times))
+    (NP (PRP she))
+    (VP (VBD kissed)
+      (NP
+        (NP (DT the)
+          (ADJP
+            (ADJP
+              (ADVP (RB certainly))
+              (JJ charming))
+            (PRN (, ,) (IN though)
+              (ADJP (RB rather) (JJ fat))
+              (, ,)))
+          (NN hand))
+        (PP (IN of)
+          (NP (NNP Grushenka))))
+      (PP (IN in)
+        (NP
+          (NP (DT a) (NN sort))
+          (PP (IN of)
+            (NP (NN rapture))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD held)
+        (PRT (RP out))
+        (NP (PRP$ her) (NN hand))
+        (PP (IN with)
+          (NP (DT a) (JJ charming) (JJ musical) (, ,) (JJ nervous) (JJ little) (NN laugh))))
+      (, ,)
+      (VP (VBD watched)
+        (NP (DT the) (`` ``)
+          (NX (JJ sweet) (JJ young) (NN lady))))
+      (, ,) ('' '')
+      (CC and)
+      (VP
+        (ADVP (RB obviously))
+        (VBD liked)
+        (S
+          (VP (VBG having)
+            (NP (PRP$ her) (NN hand))
+            (VP (VBN kissed))))))
+    (. .)))
+(ROOT
+  (SINV (`` ``)
+    (S
+      (ADVP (RB Perhaps))
+      (NP (EX there))
+      (VP (VBZ 's)
+        (ADVP (RB rather))
+        (ADJP (RB too) (RB much) (JJ rapture))))
+    (, ,) ('' '')
+    (VP (VBD thought))
+    (NP (NNP Alyosha))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD blushed))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD felt)
+      (NP (DT a) (JJ peculiar) (NN uneasiness))
+      (PP (IN at)
+        (NP (NN heart)))
+      (NP (DT the) (JJ whole) (NN time)))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP You))
+    (VP (MD wo) (RB n't)
+      (VP (VB make)
+        (SBAR
+          (S
+            (NP (PRP me))
+            (VP (VBP blush) (, ,)
+              (NP
+                (NP
+                  (ADJP (RB dear))
+                  (JJ young) (NN lady))
+                (, ,)
+                (VP (VBG kissing)
+                  (NP (PRP$ my) (NN hand))
+                  (PP (IN like)
+                    (NP
+                      (NP (DT this))
+                      (PP (IN before)
+                        (NP (NNP Alexey) (NNP Fyodorovitch))))))))))))
+    (. .) ('' '')))
+(ROOT
+  (S (`` ``)
+    (VP (VB Do)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBD meant)
+                  (S
+                    (VP (TO to)
+                      (VP (VB make)
+                        (SBAR
+                          (S
+                            (NP (PRP you))
+                            (VP (VBP blush))))))))))))))
+    (. ?) ('' '')))
+(ROOT
+  (S
+    (VP (VBD said)
+      (NP
+        (NP (NNP Katerina) (NNP Ivanovna))
+        (, ,)
+        (ADJP (RB somewhat) (VBN surprised))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (INTJ (UH Ah))
+    (, ,)
+    (NP (PRP$ my))
+    (VP (VBZ dear) (, ,)
+      (SBAR
+        (WHNP (WRB how) (JJ little))
+        (S
+          (NP (PRP you))
+          (VP (VBP understand)
+            (NP (PRP me))))))
+    (. !) ('' '')))
+(ROOT
+  (S (`` ``)
+    (NP (NNP Yes))
+    (PRN (, ,)
+      (CC and)
+      (S
+        (NP (PRP you))
+        (VP
+          (ADVP (RB too) (RB perhaps) (RB quite))
+          (VBD misunderstand)
+          (NP (PRP me))))
+      (, ,))
+    (VP (VBZ dear)
+      (NP (JJ young) (NN lady)))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (ADJP (RB so) (JJ good))
+      (SBAR (IN as)
+        (S
+          (NP (PRP I))
+          (VP (VBP seem)
+            (PP (TO to)
+              (NP (PRP you)))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 've)
+        (NP (DT a) (JJ bad) (NN heart))))
+    (: ;)
+    (S
+      (NP (PRP I))
+      (VP (MD will)
+        (VP (VB have)
+          (NP (PRP$ my) (JJ own) (NN way)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD fascinated)
+      (NP
+        (NP (JJ poor) (NNP Dmitri) (NNP Fyodorovitch))
+        (NP (DT that) (NN day)))
+      (PP
+        (ADVP (RB simply))
+        (IN for)
+        (NP (NN fun))))
+    (. .) ('' '')))
+(ROOT
+  (S (`` ``)
+    (CC But)
+    (ADVP (RB now))
+    (NP (PRP you))
+    (VP (MD 'll)
+      (VP (VB save)
+        (NP (PRP him))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 've)
+      (VP (VBN given)
+        (NP (PRP me))
+        (NP (PRP$ your) (NN word))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD 'll)
+      (VP (VB explain)
+        (NP (PRP it))
+        (ADVP (RB all)
+          (PP (TO to)
+            (NP (PRP him))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD 'll)
+      (VP (VB break)
+        (PP (TO to)
+          (NP (PRP him)))
+        (SBAR (IN that)
+          (S
+            (NP (PRP you))
+            (VP (VBP have)
+              (ADVP (RB long))
+              (VP (VBN loved)
+                (NP
+                  (NP (DT another) (NN man))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ is)
+                        (ADVP (RB now))
+                        (VP (VBG offering)
+                          (NP (PRP you))
+                          (NP (PRP$ his) (NN hand)))))))))))))
+    (. .) ('' '')))
+(ROOT
+  (FRAG (`` ``)
+    (INTJ (UH Oh) (, ,) (UH no))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did) (RB n't)
+      (VP (VB give)
+        (NP (PRP you))
+        (NP (PRP$ my) (NN word)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (NP (DT that))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBD kept)
+            (S
+              (VP (VBG talking)
+                (PP (IN about)
+                  (NP (DT that)))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did) (RB n't)
+      (VP (VB give)
+        (NP (PRP you))
+        (NP (PRP$ my) (NN word))))
+    (. .) ('' '')))
+(ROOT
+  (SINV (`` ``)
+    (S
+      (ADVP (RB Then))
+      (NP (PRP I))
+      (VP (VBD did) (RB n't)
+        (ADVP (RB quite))
+        (VP (VB understand)
+          (NP (PRP you)))))
+    (, ,) ('' '')
+    (VP (VBD said))
+    (NP
+      (NP (NNP Katerina) (NNP Ivanovna))
+      (ADVP (RB slowly)))
+    (, ,)
+    (S
+      (VP (VBG turning)
+        (NP (DT a) (JJ little) (NN pale))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP You))
+      (VP (VBD promised)))
+    (: --) ('' '')
+    (S (`` ``)
+      (S
+        (INTJ (UH Oh) (, ,) (UH no))
+        (, ,)
+        (S
+          (VP (VBG angel)
+            (NP (NN lady))))
+        (, ,)
+        (NP (PRP I))
+        (VP (VBP 've)
+          (VP (VBN promised)
+            (NP (NN nothing)))))
+      (, ,) ('' '')
+      (NP (NNP Grushenka))
+      (VP (VBZ interrupted)
+        (UCP
+          (ADVP (RB softly))
+          (CC and)
+          (PP
+            (ADVP (RB evenly))
+            (, ,)
+            (ADVP (RB still))
+            (IN with)
+            (NP (DT the) (JJ same) (NN gay)
+              (CC and)
+              (JJ simple) (NN expression))))))
+    (. .)))
+(ROOT
+  (SINV (`` ``)
+    (S
+      (NP (PRP You))
+      (VP (VBP see)
+        (ADVP (IN at) (RB once))))
+    (, ,)
+    (VP (VBZ dear))
+    (NP
+      (NP (JJ young) (NN lady))
+      (, ,)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (DT a) (JJ willful) (NN wretch) (NN I))
+          (VP (VBP am)
+            (PP (VBN compared)
+              (PP (IN with)
+                (NP (PRP you))))))))
+    (. .)))
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP want)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (NP (DT a) (NN thing))))))))
+    (NP (PRP I))
+    (VP (VBP do)
+      (NP (PRP it)))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD may)
+      (VP (VB have)
+        (VP (VBN made)
+          (S
+            (NP (PRP you))
+            (ADVP
+              (NP (DT some) (NN promise))
+              (RB just)))
+          (ADVP (RB now)))))
+    (. .)))
+(ROOT
+  (S
+    (S (CC But)
+      (ADVP (RB now) (RB again))
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (VP (VBG thinking))))
+    (: :)
+    (S
+      (NP (PRP I))
+      (VP (MD may)
+        (VP (VB take)
+          (PP (TO to)
+            (NP (NNP Mitya)))
+          (ADVP (RB again)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD liked)
+      (NP (PRP him))
+      (ADVP (RB very)
+        (ADVP
+          (ADVP (RB much) (RB once))
+          (PRN (: --)
+            (S
+              (VP (VBD liked)
+                (NP (PRP him)))))
+          (PP (IN for)
+            (NP (RB almost) (DT a) (JJ whole) (NN hour))))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Now) (RB maybe))
+    (NP (PRP I))
+    (VP (MD shall)
+      (VP (VB go)
+        (CC and)
+        (VB tell)
+        (NP (PRP him))
+        (S
+          (VP (TO to)
+            (VP (VB stay)
+              (PP (IN with)
+                (NP
+                  (NP (PRP me))
+                  (PP (IN from)
+                    (NP (DT this) (NN day)))))
+              (ADVP (RB forward)))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP see)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (RB so) (JJ changeable)))
+    (. .) ('' '')))
+(ROOT
+  (S (`` ``)
+    (S
+      (ADVP (RB Just))
+      (ADVP (RB now))
+      (NP (PRP you))
+      (VP
+        (VP (VBD said))
+        (: --)
+        (NP
+          (NP (NN something))
+          (ADJP (RB quite) (JJ different)))))
+    (, ,) ('' '')
+    (NP (NNP Katerina) (NNP Ivanovna))
+    (VP (VBZ whispered)
+      (ADVP (RB faintly)))
+    (. .)))
+(ROOT
+  (FRAG
+    (INTJ (`` ``) (UH Ah))
+    (, ,)
+    (ADVP (RB just) (RB now))
+    (. !)))
+(ROOT
+  (S (CC But)
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP know))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (PP (JJ such)
+        (NP (DT a) (JJ soft?hearted) (, ,) (JJ silly) (NN creature))))
+    (. .)))
+(ROOT
+  (S (RB Only)
+    (VP (VB think)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP he))
+          (VP (VBZ 's)
+            (VP (VBN gone)
+              (PRT (RP through))
+              (PP (IN on)
+                (NP (PRP$ my) (NN account))))))))
+    (. !)))
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if)
+      (S
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP I))
+            (VP (VBP go)
+              (NP (NN home)))))
+        (NP (PRP I))
+        (VP (VBP feel)
+          (ADJP (JJ sorry))
+          (PP (IN for)
+            (NP (PRP him))))))
+    (. ?)))
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ then)))
+    (. ?) ('' '')))
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP I))
+      (VP
+        (ADVP (RB never))
+        (VBN expected)))
+    (: --) ('' '')
+    (S
+      (INTJ (`` ``) (UH Ah))
+      (, ,)
+      (ADJP (JJ young))
+      (VP (VBZ lady) (, ,)
+        (SBAR
+          (WHADVP (WRB how)
+            (ADJP (JJ good)
+              (CC and)
+              (JJ generous)))
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (PP (VBN compared)
+                (PP (IN with)
+                  (NP (PRP me)))))))))
+    (. !)))
+(ROOT
+  (S
+    (S
+      (ADVP (RB Now))
+      (ADVP (RB perhaps))
+      (NP (PRP you))
+      (VP (MD wo) (RB n't)
+        (VP (VB care)
+          (PP (IN for)
+            (NP
+              (NP (DT a) (JJ silly) (NN creature))
+              (PP (IN like)
+                (NP (PRP me))))))))
+    (, ,)
+    (ADVP (RB now))
+    (S
+      (NP (PRP you))
+      (VP (VBP know)
+        (NP (PRP$ my) (NN character))))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (PRP$ your) (JJ sweet) (JJ little) (NN hand))
+        (, ,)
+        (NP (JJ angelic) (NN lady))
+        (, ,) ('' '')
+        (SBAR
+          (SBAR
+            (S
+              (NP (PRP she))
+              (VP (VBD said)
+                (ADVP (RB tenderly)))))
+          (, ,)
+          (CC and)
+          (SBAR (IN with)
+            (S
+              (NP
+                (NP (DT a) (NN sort))
+                (PP (IN of)
+                  (NP (NN reverence))))
+              (VP (VBD took)
+                (NP
+                  (NP (NNP Katerina) (NNP Ivanovna) (POS 's))
+                  (NN hand))))))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (ADVP (RB Here))
+    (, ,)
+    (PP (IN dear)
+      (NP (JJ young) (NN lady)))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP
+        (VP (VB take)
+          (NP (PRP$ your) (NN hand)))
+        (CC and)
+        (VP (VB kiss)
+          (NP (PRP it))
+          (SBAR (IN as)
+            (S
+              (NP (PRP you))
+              (VP (VBD did)
+                (NP (NN mine))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBD kissed)
+        (NP (NN mine))
+        (NP (CD three) (NNS times))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (MD ought)
+        (S
+          (VP (TO to)
+            (VP (VB kiss)
+              (NP (PRP$ yours)
+                (QP (CD three) (CD hundred))
+                (NNS times))
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (ADVP (RB even))
+                    (PP (IN with)
+                      (NP (PRP you)))))))))))
+    (. .)))
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (, ,)
+    (VP
+      (ADVP (CC but))
+      (VB let)
+      (NP (DT that) (NN pass)))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (ADVP (RB then))
+    (NP (PRP it))
+    (VP (MD shall)
+      (VP (VB be)
+        (PP (IN as)
+          (NP (NNP God) (NNS wills)))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Perhaps))
+    (NP (PRP I))
+    (VP (MD shall)
+      (VP
+        (VP (VB be)
+          (NP (PRP$ your) (NN slave))
+          (ADVP (RB entirely)))
+        (CC and)
+        (VP (VB want)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (NP (PRP$ your) (NN bidding))
+                (PP (IN like)
+                  (NP (DT a) (NN slave)))))))))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP it))
+        (VP
+          (VP (VB be)
+            (PP (IN as)
+              (NP (NNP God) (NNS wills)))
+            (, ,)
+            (PP (IN without)
+              (NP (DT any) (NNS agreements))))
+          (CC and)
+          (VP (VBZ promises)))))
+    (. .)))
+(ROOT
+  (S
+    (FRAG
+      (X (WP What))
+      (NP (DT a) (JJ sweet) (NN hand)))
+    (: --)
+    (S
+      (X
+        (X (WP what))
+        (NP (DT a) (JJ sweet) (NN hand)))
+      (NP (PRP you))
+      (VP (VBP have)))
+    (. !)))
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBZ sweet)
+        (NP (JJ young) (NN lady))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBZ incredible)
+      (NP (NN beauty)))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (NP (PRP She))
+    (ADVP (RB slowly))
+    (VP (VBD raised)
+      (NP
+        (NP (DT the) (NNS hands))
+        (PP
+          (PP (TO to)
+            (NP (PRP$ her) (NNS lips)))
+          (, ,)
+          (PP (IN with)
+            (NP (DT the) (JJ strange) (NN object)))
+          (ADVP (RB indeed)))
+        (PP (IN of) (`` ``)
+          (S
+            (VP (VBG being)
+              (ADVP (RB even))))
+          ('' '')))
+      (PP (IN with)
+        (NP (PRP her)))
+      (PP (IN in)
+        (NP (NNS kisses))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Katerina) (NNP Ivanovna))
+    (VP (VBD did) (RB not)
+      (VP (VB take)
+        (NP (PRP$ her) (NN hand))
+        (ADVP (RB away))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD listened)
+      (PP (IN with)
+        (NP (JJ timid) (NN hope)))
+      (PP (TO to)
+        (NP (DT the) (JJ last) (NNS words)))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP
+            (NP (NNP Grushenka) (POS 's))
+            (NN promise)
+            (S
+              (VP (TO to)
+                (VP (VB do)
+                  (NP (PRP$ her) (NN bidding))
+                  (SBAR (IN like)
+                    (S
+                      (NP (DT a) (NN slave))
+                      (VP (VBD was)
+                        (ADJP (RB very) (JJ strangely)))))))))
+          (VP (VBD expressed)))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (VBD looked)
+        (ADVP (RB intently))
+        (PP (IN into)
+          (NP (PRP$ her) (NNS eyes)))))
+    (: ;)
+    (S
+      (NP (PRP she))
+      (ADVP (RB still))
+      (VP (VBD saw)
+        (PP (IN in)
+          (NP (DT those) (NNS eyes)))
+        (NP
+          (NP (DT the) (JJ same) (NN simple?hearted))
+          (, ,)
+          (NP
+            (NP (VBG confiding) (NN expression))
+            (, ,)
+            (NP (DT the) (JJ same) (JJ bright) (NN gayety))))))
+    (. .)))
+(ROOT
+  (SINV (`` ``)
+    (S
+      (NP (PRP She))
+      (VP (VBZ 's)
+        (ADVP (RB perhaps))
+        (ADJP (RB too) (JJ na?ve))))
+    (, ,) ('' '')
+    (VP (VBD thought))
+    (NP
+      (NP (NNP Katerina) (NNP Ivanovna))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (DT a) (NN gleam))
+          (PP (IN of)
+            (NP (NN hope))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Grushenka))
+    (ADVP (RB meanwhile))
+    (VP (VBD seemed)
+      (ADJP (JJ enthusiastic))
+      (PP (IN over)
+        (NP (DT the) (`` ``) (JJ sweet) (NN hand))))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD raised)
+      (NP (PRP it))
+      (ADVP (RB deliberately))
+      (PP (TO to)
+        (NP (PRP$ her) (NNS lips))))
+    (. .)))
+(ROOT
+  (S (CC But)
+    (NP (PRP she))
+    (VP (VBD held)
+      (NP (PRP it))
+      (PP (IN for)
+        (NP
+          (NP (CD two)
+            (CC or)
+            (CD three) (NNS minutes))
+          (PP (IN near)
+            (NP (PRP$ her) (NNS lips)))))
+      (, ,)
+      (PP (IN as)
+        (S
+          (ADVP (RB though))
+          (VP (VBG reconsidering)
+            (NP (NN something))))))
+    (. .)))
+(ROOT
+  (SBARQ (`` ``)
+    (SBAR
+      (WHADVP (WRB Do))
+      (S
+        (NP (PRP you))
+        (VP (VBP know))))
+    (PRN (, ,)
+      (S
+        (NP (NN angel) (NN lady))
+        (, ,) ('' '')
+        (NP (PRP she))
+        (VP
+          (ADVP (RB suddenly))
+          (VBD drawled)
+          (PP (IN in)
+            (NP (DT an)
+              (ADJP
+                (ADJP (RB even) (RBR more) (JJ soft))
+                (CC and)
+                (ADJP (JJ sugary)))
+              (NN voice)))))
+      (, ,))
+    (`` ``)
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB know) (, ,)
+        (ADVP (IN after) (DT all))
+        (, ,)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP think)
+              (SBAR
+                (S
+                  (NP (PRP I))
+                  (VP (MD wo) (RB n't)
+                    (VP (VB kiss)
+                      (NP (PRP$ your) (NN hand)))))))))))
+    (. ?) ('' '')))
+(ROOT
+  (S (CC And)
+    (NP (PRP she))
+    (VP (VBD laughed)
+      (NP (DT a) (JJ little) (NN merry) (NN laugh)))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (PP (IN As))
+    (NP (PRP you))
+    (VP (VBP please))
+    (. .)))
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ 's)
+      (NP
+        (NP (DT the) (NN matter))
+        (PP (IN with)
+          (NP (PRP you)))))
+    (. ?) ('' '')))
+(ROOT
+  (S
+    (VP (VBD said)
+      (NP (NNP Katerina) (NNP Ivanovna))
+      (, ,)
+      (S
+        (VP (VBG starting)
+          (ADVP (RB suddenly)))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (S
+      (ADVP (IN So) (DT that))
+      (NP (PRP you))
+      (VP (MD may)
+        (VP (VB be)
+          (VP (VBN left)
+            (S
+              (VP (TO to)
+                (VP (VB remember)
+                  (SBAR (IN that)
+                    (S
+                      (NP (PRP you))
+                      (VP (VBD kissed)
+                        (NP (PRP$ my) (NN hand))))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBD did) (RB n't)
+        (VP (VB kiss)
+          (NP (PRP$ yours)))))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ sudden) (NN gleam))
+        (PP (IN in)
+          (NP (PRP$ her) (NNS eyes)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD looked)
+      (PP (IN with)
+        (NP (JJ awful) (NNS intentness)))
+      (PP (IN at)
+        (NP (NNP Katerina) (NNP Ivanovna))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (NNP Insolent))
+    (VP (VBZ creature))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (VP (VBN cried)
+      (NP (NNP Katerina) (NNP Ivanovna))
+      (, ,)
+      (PP (IN as)
+        (S
+          (ADVP (RB though))
+          (VP
+            (ADVP (RB suddenly))
+            (VBG grasping)
+            (NP (NN something))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD flushed)
+        (ADVP (DT all) (RP over)))
+      (CC and)
+      (VP (VBD leapt)
+        (PRT (RP up))
+        (PP (IN from)
+          (NP (PRP$ her) (NN seat)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Grushenka))
+    (ADVP (RB too))
+    (VP
+      (VP (VBD got)
+        (PRT (RP up)))
+      (, ,)
+      (CC but)
+      (VP
+        (PP (IN without)
+          (NP (NN haste)))))
+    (. .)))
+(ROOT
+  (S
+    (S (`` ``) (IN So)
+      (NP (PRP I))
+      (VP (MD shall)
+        (VP (VB tell)
+          (NP
+            (NP (NNP Mitya))
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (PRP you))
+                (VP (VBD kissed)
+                  (NP (PRP$ my) (NN hand)))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBD did) (RB n't)
+        (VP (VB kiss)
+          (NP (PRP$ yours))
+          (ADVP (IN at) (DT all)))))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (ADVP (WRB how))
+    (NP (PRP he))
+    (VP (MD will)
+      (VP (VB laugh)))
+    (. !) ('' '')))
+(ROOT
+  (S (`` ``)
+    (NP (NNP Vile))
+    (VP (VBP slut))
+    (. !)))
+(ROOT
+  (S
+    (VP (VB Go)
+      (PRT (RP away)))
+    (. !) ('' '')))
+(ROOT
+  (FRAG
+    (INTJ (`` ``) (UH Ah))
+    (, ,)
+    (PP (IN for)
+      (NP (NN shame)))
+    (, ,)
+    (NP (JJ young) (NN lady))
+    (. !)))
+(ROOT
+  (FRAG
+    (INTJ (UH Ah))
+    (, ,)
+    (PP (IN for)
+      (NP (NN shame))
+      (. !))))
+(ROOT
+  (SINV
+    (S
+      (NP (DT That))
+      (VP (VBZ 's)
+        (VP (VBG unbecoming)
+          (PP (IN for)
+            (NP (PRP you))))))
+    (, ,)
+    (VP (VBZ dear))
+    (NP
+      (NP (JJ young) (NN lady))
+      (, ,)
+      (NP
+        (NP (DT a) (NN word))
+        (PP (IN like)
+          (NP (DT that)))))
+    (. .) ('' '')))
+(ROOT
+  (S (`` ``)
+    (VP (VB Go)
+      (PRT (RP away)))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (NP
+        (NP (DT a) (NN creature))
+        (PP (IN for)
+          (NP (NN sale)))))
+    (. !) ('' '')))
+(ROOT
+  (NP (NNP screamed) (NNP Katerina) (NNP Ivanovna) (. .)))
+(ROOT
+  (S
+    (NP (DT Every) (NN feature))
+    (VP (VBD was)
+      (VP (VBG working)
+        (PP (IN in)
+          (NP (PRP$ her)
+            (ADJP (RB utterly) (JJ distorted))
+            (NN face)))))
+    (. .)))
+(ROOT
+  (PP (`` ``) (IN For)
+    (NP (NN sale) (RB indeed))
+    (. !)))
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBD used)
+        (S
+          (VP (TO to)
+            (VP (VB visit)
+              (NP (NNS gentlemen))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN dusk))
+                  (PP (IN for)
+                    (NP (NN money)))))
+              (ADVP (RB once)))))))
+    (: ;)
+    (S
+      (NP (PRP you))
+      (VP (VBD brought)
+        (NP (PRP$ your) (NN beauty))
+        (PP (IN for)
+          (NP (NN sale)))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP see)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP know))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (S
+      (NP (NNP Katerina) (NNP Ivanovna))
+      (VP
+        (VP (VBD shrieked))
+        (, ,)
+        (CC and)
+        (VP (MD would)
+          (VP (VB have)
+            (VP (VBN rushed)
+              (PP (IN at)
+                (NP (PRP her))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NNP Alyosha))
+      (VP (VBD held)
+        (NP (PRP her))
+        (PP (IN with)
+          (NP (PDT all) (PRP$ his) (NN strength)))))
+    (. .)))
+(ROOT
+  (FRAG (`` ``)
+    (NP (RB Not) (DT a) (NN step))
+    (, ,) (RB not)
+    (NP (DT a) (NN word))
+    (. !)))
+(ROOT
+  (S
+    (S
+      (VP (VBP Do) (RB n't)
+        (VP (VB speak))))
+    (, ,)
+    (VP (VBP do) (RB n't)
+      (VP (VB answer)
+        (NP (PRP her))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (MD 'll)
+        (VP (VB go)
+          (PRT (RP away)))))
+    (: --)
+    (S
+      (NP (PRP she))
+      (VP (MD 'll)
+        (VP (VB go)
+          (PP (IN at)
+            (NP (RB once))))))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT that) (NN instant)))
+    (NP
+      (NP (NNP Katerina) (NNP Ivanovna) (POS 's))
+      (CD two) (NNS aunts))
+    (VP (VBD ran)
+      (PP
+        (PP (IN in)
+          (PP (IN at)
+            (NP (PRP$ her) (NN cry))))
+        (, ,)
+        (CC and)
+        (PP (IN with)
+          (NP (PRP them))))
+      (NP (DT a) (NN maid?servant)))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT All))
+    (VP (VBN hurried)
+      (PP (TO to)
+        (NP (PRP her))))
+    (. .)))
+(ROOT
+  (SINV (`` ``)
+    (S
+      (NP (PRP I))
+      (VP (MD will)
+        (VP (VB go)
+          (PRT (RP away)))))
+    (, ,) ('' '')
+    (VP (VBD said))
+    (NP (NNP Grushenka))
+    (, ,)
+    (S
+      (VP (VBG taking)
+        (PRT (RP up))
+        (NP (PRP$ her) (NN mantle))
+        (PP (IN from)
+          (NP (DT the) (NN sofa)))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (NNP Alyosha))
+      (, ,)
+      (NP (NN darling))
+      (, ,))
+    (VP (VBP see)
+      (NP (PRP me))
+      (ADVP (RB home)))
+    (. !) ('' '')))
+(ROOT
+  (S (`` ``)
+    (VP
+      (VP
+        (VP (VB Go)
+          (PRT (RP away)))
+        (: --)
+        (VP (VB go)
+          (PRT (RP away))))
+      (, ,)
+      (VP (VB make)
+        (NP (NN haste))))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (VP (VBN cried)
+      (NP (NNP Alyosha))
+      (, ,)
+      (S
+        (VP (VBG clasping)
+          (NP (PRP$ his) (NNS hands))
+          (ADVP (RB imploringly)))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (PP (IN Dear)
+      (NP (JJ little) (NNP Alyosha)))
+    (, ,)
+    (VP (VBP see)
+      (NP (PRP me))
+      (ADVP (RB home)))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN got)
+        (NP (DT a)
+          (ADJP (RB pretty) (JJ little))
+          (NN story))
+        (S
+          (VP (TO to)
+            (VP (VB tell)
+              (NP (PRP you))
+              (PP (IN on)
+                (NP (DT the) (NN way))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD got)
+      (PRT (RP up))
+      (NP
+        (NP (DT this) (NN scene))
+        (PP (IN for)
+          (NP
+            (NP (PRP$ your) (NN benefit))
+            (, ,)
+            (NP (NNP Alyosha))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (VP (VB See)
+        (NP (PRP me))
+        (ADVP (RB home))))
+    (, ,)
+    (S
+      (S
+        (ADJP (RB dear)))
+      (, ,)
+      (NP (PRP you))
+      (VP (MD 'll)
+        (VP (VB be)
+          (ADJP (JJ glad)
+            (PP (IN of)
+              (NP (PRP it))))
+          (ADVP (RB afterwards)))))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD turned)
+      (ADVP (RB away))
+      (, ,)
+      (S
+        (VP (VBG wringing)
+          (NP (PRP$ his) (NNS hands)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Grushenka))
+    (VP (VBD ran)
+      (PRT (RP out))
+      (PP (IN of)
+        (NP (DT the) (NN house)))
+      (, ,)
+      (S
+        (VP (VBG laughing)
+          (ADVP (RB musically)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Katerina) (NNP Ivanovna))
+    (VP (VBD went)
+      (PP (IN into)
+        (NP
+          (NP (DT a) (NN fit))
+          (PP (IN of)
+            (NP (NNS hysterics))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBD sobbed))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN shaken)
+          (PP (IN with)
+            (NP (NNS convulsions))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT Every) (CD one) (NN fussed))
+    (VP (VBP round)
+      (NP (PRP her)))
+    (. .)))
+(ROOT
+  (SINV (`` ``)
+    (S
+      (NP (PRP I))
+      (VP (VBD warned)
+        (NP (PRP you))))
+    (, ,) ('' '')
+    (VP (VBD said))
+    (NP
+      (NP (DT the) (JJR elder))
+      (PP (IN of)
+        (NP (PRP$ her) (NNS aunts))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (VP (VBD tried)
+      (S
+        (VP (TO to)
+          (VP (VB prevent)
+            (S
+              (NP (PRP your))
+              (VP (VBG doing)
+                (NP (DT this))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (ADJP (RB too) (JJ impulsive)))
+    (. .)))
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD could)
+      (NP (PRP you))
+      (VP (VB do)
+        (NP (PDT such) (DT a) (NN thing))))
+    (. ?)))
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP do) (RB n't)
+        (VP (VB know)
+          (NP (DT these) (NNS creatures)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP say)
+        (SBAR
+          (S
+            (NP (PRP she))
+            (VP (VBZ 's)
+              (ADJP
+                (ADJP (JJR worse))
+                (PP (IN than)
+                  (NP
+                    (NP (DT any))
+                    (PP (IN of)
+                      (NP (PRP them)))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (ADJP (RB too) (JJ self?willed)))
+    (. .) ('' '')))
+(ROOT
+  (S (`` ``)
+    (NP (PRP She))
+    (VP (VBZ 's)
+      (NP (DT a) (NNS tigress)))
+    (. !) ('' '')))
+(ROOT
+  (NP (NNP yelled) (NNP Katerina) (NNP Ivanovna) (. .)))
+(ROOT
+  (SBARQ (`` ``)
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (PRP you))
+      (VP (VB hold)
+        (NP
+          (NP (PRP me))
+          (, ,)
+          (NP (NNP Alexey) (NNP Fyodorovitch)))))
+    (. ?)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB have)
+        (VP
+          (VP (VBN beaten)
+            (NP (PRP her)))
+          (: --)
+          (VP (VBN beaten))
+          (NP (PRP her)))))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (MD could) (RB not)
+        (VP (VB control)
+          (NP (PRP herself))
+          (PP (IN before)
+            (NP (NNP Alyosha))))))
+    (: ;)
+    (S
+      (ADVP (RB perhaps))
+      (NP (PRP she))
+      (VP (VBD did) (RB not)
+        (VP (VB care)
+          (PP (TO to))
+          (, ,)
+          (ADVP (RB indeed)))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP She))
+    (VP (MD ought)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN flogged)
+              (PP (IN in)
+                (NP
+                  (NP (NN public))
+                  (PP (IN on)
+                    (NP (DT a) (NN scaffold))))))))))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD withdrew)
+      (PP (IN towards)
+        (NP (DT the) (NN door))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (ADVP (CC But))
+    (, ,)
+    (NP (PRP$ my))
+    (VP (VBZ God))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (VP (VBN cried)
+      (NP (NNP Katerina) (NNP Ivanovna))
+      (, ,)
+      (S
+        (VP (VBG clasping)
+          (NP (PRP$ her) (NNS hands)))))
+    (. .)))
+(ROOT
+  (NP
+    (S (`` ``)
+      (NP (PRP He))
+      (VP (VBZ !)))))
+(ROOT
+  (FRAG
+    (NP (PRP He))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD could)
+      (VP (VB be)
+        (ADJP
+          (ADJP (RB so) (JJ dishonorable))
+          (, ,)
+          (ADJP (RB so) (JJ inhuman)))))
+    (. !)))
+(ROOT
+  (S
+    (INTJ (WRB Why))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD told)
+      (NP
+        (NP (DT that) (NN creature))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBD happened)
+              (PP (IN on)
+                (NP (DT that) (JJ fatal) (, ,) (JJ accursed) (NN day))))))))
+    (. !)))
+(ROOT
+  (S (`` `)
+    (NP (PRP You))
+    (VP (VBD brought)
+      (NP (PRP$ your) (NN beauty))
+      (PP (IN for)
+        (NP
+          (NP (NN sale))
+          (, ,)
+          (NP
+            (ADJP (RB dear))
+            (JJ young) (NN lady)))))
+    (. .) ('' ')))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ knows)
+      (NP (PRP it)))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN brother))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (NN scoundrel))
+        (, ,)
+        (NP (NNP Alexey) (NNP Fyodorovitch))))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (S
+      (NP (NNP Alyosha))
+      (VP (VBD wanted)
+        (S
+          (VP (TO to)
+            (VP (VB say)
+              (NP (NN something)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP he))
+      (VP (MD could) (RB n't)
+        (VP (VB find)
+          (NP (DT a) (NN word)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP$ His) (NN heart))
+    (VP (VBD ached))
+    (. .)))
+(ROOT
+  (S
+    (VP (`` ``) (VB Go)
+      (ADVP (RB away)))
+    (, ,)
+    (NP (NNP Alexey) (NNP Fyodorovitch))
+    (. !)))
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (ADJP (JJ shameful))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJ awful)
+        (PP (IN for)
+          (NP (PRP me)))))
+    (. !)))
+(ROOT
+  (S
+    (PP (TO To)
+      (NP (NN morrow)))
+    (, ,)
+    (NP (PRP I))
+    (VP
+      (VP (VB beg)
+        (NP (PRP you))
+        (PP (IN on)
+          (NP (PRP$ my) (NNS knees))))
+      (, ,)
+      (VP (VB come)
+        (NP (NN to?morrow))))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Do) (RB n't)
+      (VP (VB condemn)
+        (NP (PRP me))))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Forgive)
+      (NP (PRP me)))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP I))
+            (VP (MD shall)
+              (VP (VB do)
+                (PP (IN with)
+                  (NP (PRP myself)))
+                (ADVP (RB now))))))))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD walked)
+      (PRT (RP out))
+      (PP (IN into)
+        (NP
+          (NP (DT the) (NN street))
+          (VP (VBG reeling)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD could)
+      (VP (VB have)
+        (VP (VBD wept)
+          (SBAR (IN as)
+            (S
+              (NP (PRP she))
+              (VP (VBD did)))))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Suddenly))
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN overtaken)
+        (PP (IN by)
+          (NP (DT the) (NN maid)))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (DT The) (JJ young) (NN lady))
+      (VP (VBD forgot)
+        (S
+          (VP (TO to)
+            (VP (VB give)
+              (NP (PRP you))
+              (NP
+                (NP (DT this) (NN letter))
+                (PP (IN from)
+                  (NP (NNP Madame) (NNP Hohlakov)))))))))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (VP (VBN been)
+          (VP (VBN left)
+            (PP (IN with)
+              (NP (PRP us)))
+            (PP (IN since)
+              (NP (NN dinner?time)))))))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP
+      (VP (VBD took)
+        (NP (DT the)
+          (ADJP (RB little) (JJ pink))
+          (NN envelope) (NN mechanically)))
+      (CC and)
+      (VP (VBD put)
+        (NP
+          (NP (PRP it))
+          (, ,)
+          (ADJP (RB almost) (JJ unconsciously))
+          (, ,))
+        (PP (IN into)
+          (NP (PRP$ his) (NN pocket)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was) (RB not)
+      (ADJP
+        (ADJP (RB much) (JJR more)
+          (PP (IN than)
+            (NP
+              (NP (NNS three?quarters))
+              (PP (IN of)
+                (NP
+                  (NP (DT a) (NN mile))
+                  (PP (IN from)
+                    (NP (DT the) (NN town))))))))
+        (PP (TO to)
+          (NP (DT the) (NN monastery)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD walked)
+      (ADVP (RB quickly))
+      (PP (IN along)
+        (NP (DT the) (NN road)))
+      (, ,)
+      (PP (IN at)
+        (NP
+          (NP (DT that) (NN hour))
+          (VP (VBN deserted)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADJP
+        (ADJP (RB almost) (JJ night))
+        (, ,)
+        (CC and)
+        (ADJP (RB too) (JJ dark)))
+      (S
+        (VP (TO to)
+          (VP (VB see)
+            (NP (NN anything))
+            (ADVP (RB clearly))
+            (PP (IN at)
+              (ADVP
+                (NP (CD thirty) (NNS paces))
+                (RB ahead)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD were)
+      (ADJP (JJ cross?roads) (RB half?way)))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT A) (NN figure))
+    (VP (VBD came)
+      (PP (IN into)
+        (NP (NN sight)))
+      (PP (IN under)
+        (NP
+          (NP (DT a) (JJ solitary) (NN willow))
+          (PP (IN at)
+            (NP (DT the) (NNS cross?roads))))))
+    (. .)))
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (SBAR (RB soon) (IN as)
+          (S
+            (NP (NNP Alyosha))
+            (VP (VBD reached)
+              (NP (DT the) (JJ cross) (NNS roads)))))
+        (NP (DT the) (NN figure))
+        (VP
+          (VP (VBD moved)
+            (PRT (RP out)))
+          (CC and)
+          (VP (VBD rushed)
+            (PP (IN at)
+              (NP (PRP him)))))))
+    (, ,)
+    (NP (NN shouting))
+    (VP (VBZ savagely) (: :) (`` ``)
+      (NP
+        (NP (PRP$ Your) (NN money))
+        (CC or)
+        (NP (PRP$ your) (NN life))))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (S (`` ``) (IN So)
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP (PRP you))))
+    (, ,)
+    (NP (NNP Mitya))
+    (, ,) ('' '')
+    (NP (NNP cried) (NNP Alyosha))
+    (PRN (, ,)
+      (PP (IN in)
+        (NP (NN surprise)))
+      (, ,))
+    (ADVP (RB violently))
+    (VP (VBD startled)
+      (ADVP (RB however)))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (NNP Ha) (NNP ha))
+    (VP (VBP ha))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBD did) (RB n't)
+      (VP (VB expect)
+        (NP (PRP me))))
+    (. ?)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD wondered)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (VP (TO to)
+            (VP (VB wait)
+              (PP (IN for)
+                (NP (PRP you))))))))
+    (. .)))
+(ROOT
+  (FRAG
+    (PP (IN By)
+      (NP (PRP$ her) (NN house)))
+    (. ?)))
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBP are)
+        (NP
+          (NP (CD three) (NNS ways))
+          (PP (IN from)
+            (NP (PRP it))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (MD might)
+        (VP (VB have)
+          (VP (VBN missed)
+            (NP (PRP you))))))
+    (. .)))
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (JJ last) (NN I) (NN thought))
+        (PP (IN of)
+          (S
+            (VP (VBG waiting)
+              (ADVP (RB here))
+              (, ,)
+              (SBAR (IN for)
+                (S
+                  (NP (PRP you))
+                  (VP (VBD had)
+                    (S
+                      (VP (TO to)
+                        (VP (VB pass)
+                          (ADVP (RB here)))))))))))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT no) (JJ other) (NN way))
+        (PP (TO to)
+          (NP (DT the) (NN monastery)))))
+    (. .)))
+(ROOT
+  (S
+    (INTJ (UH Come))
+    (, ,)
+    (VP (VB tell)
+      (NP (PRP me))
+      (NP (DT the) (NN truth)))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Crush)
+      (NP (PRP me))
+      (PP (IN like)
+        (NP (DT a) (NN beetle))))
+    (. .)))
+(ROOT
+  (SBARQ (CC But)
+    (WHNP (WP what))
+    (SQ
+      (VP (VBZ 's)
+        (NP (DT the) (NN matter))))
+    (. ?) ('' '')))
+(ROOT
+  (NP
+    (NP (`` ``) (NN Nothing) (, ,) (NN brother))
+    (: --)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP
+          (NP (DT the) (NN fright))
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBD gave)
+                (NP (PRP me))))))))
+    (. .)))
+(ROOT
+  (FRAG
+    (INTJ (UH Oh))
+    (, ,)
+    (NP (NNP Dmitri))
+    (. !)))
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Father) (POS 's))
+      (NN blood))
+    (PP (RB just)
+      (ADVP (RB now)))
+    (. .) ('' '')))
+(ROOT
+  (S (-LRB- -LRB-)
+    (S
+      (NP (NNP Alyosha))
+      (VP (VBD began)
+        (S
+          (VP (TO to)
+            (VP (VB cry))))))
+    (PRN (, ,)
+      (S
+        (NP (PRP he))
+        (VP (VBD had)
+          (VP (VBN been)
+            (PP (IN on)
+              (NP
+                (NP (DT the) (NN verge))
+                (PP (IN of)
+                  (NP (NNS tears)))))
+            (PP (IN for)
+              (NP (DT a) (JJ long) (NN time))))))
+      (, ,))
+    (CC and)
+    (ADVP (RB now))
+    (S
+      (NP (NN something))
+      (VP (VBD seemed)
+        (PP (TO to)
+          (NP (NN snap)))
+        (PP (IN in)
+          (NP (PRP$ his) (NN soul)))))
+    (. .) (-RRB- -RRB-)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP You))
+    (VP
+      (ADVP (RB almost))
+      (VBD killed)
+      (NP (PRP him))
+      (PRN (: --)
+        (S
+          (VP (VBD cursed)
+            (SBAR
+              (WHNP
+                (NP (PRP him))
+                (PRN (: --)
+                  (CC and)
+                  (ADVP (RB now))))
+              (PRN (: --)
+                (ADVP (RB here))
+                (: --))
+              (S
+                (NP (PRP you))
+                (VP (VBP 're)
+                  (VP (VBG making)
+                    (NP (NNS jokes))))))))
+        (: --))
+      (`` `)
+      (NP
+        (NP (PRP$ Your) (NN money))
+        (CC or)
+        (NP (PRP$ your) (NN life))))
+    (. !) ('' ') ('' '')))
+(ROOT
+  (FRAG
+    (INTJ (`` ``) (UH Well))
+    (, ,)
+    (NP
+      (NP (WP what))
+      (PP (IN of)
+        (NP (DT that))))
+    (. ?)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's) (RB not)
+      (NP
+        (NP (NN seemly))
+        (: --)
+        (SQ (VBZ is)
+          (NP (DT that))
+          (NP (PRP it))
+          (. ?))))))
+(ROOT
+  (FRAG
+    (NP
+      (NP (RB Not) (JJ suitable))
+      (PP (IN in)
+        (NP (PRP$ my) (NN position))))
+    (. ?) ('' '')))
+(ROOT
+  (NP
+    (NP (`` ``)
+      (ADJP (DT No)
+        (PRN (: --)
+          (S
+            (NP (PRP I))
+            (ADJP (JJ only)))
+          (: --)))
+      ('' '') (NNS ``))
+    (ADJP (JJ Stay))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Look)
+      (PP (IN at)
+        (NP (DT the) (NN night))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP see)
+      (NP (WP what))
+      (NP (DT a) (JJ dark) (NN night))
+      (, ,)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBZ clouds) (, ,)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (DT a) (NN wind))
+                (VP (VBZ has)
+                  (VP (VBN risen)))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hid)
+      (ADVP (RB here))
+      (PP (IN under)
+        (NP
+          (NP (DT the) (NN willow))
+          (VP (VBG waiting)
+            (PP (IN for)
+              (NP (PRP you)))))))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (SBAR (IN as)
+      (S
+        (NP (NNP God))
+        (VP (VBZ 's)
+          (ADJP (JJ above)))))
+    (, ,)
+    (NP (PRP I))
+    (ADVP (RB suddenly))
+    (VP (VBD thought) (, ,)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (VP (VBP go)
+            (PP (IN on)
+              (PP (IN in)
+                (NP (NN misery))))
+            (ADVP (DT any) (RBR longer))
+            (, ,)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (VP (VBZ is)
+                  (S
+                    (NP (EX there))
+                    (VP (TO to)
+                      (VP (VB wait)
+                        (PP (IN for))))))))))))
+    (. ?)))
+(ROOT
+  (S
+    (ADVP (RB Here))
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP
+        (NP (DT a) (NN willow))
+        (, ,)
+        (NP (DT a) (NN handkerchief))
+        (, ,)
+        (NP (DT a) (NN shirt))
+        (, ,)
+        (SBAR
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (MD can)
+                (VP (VB twist)
+                  (NP (PRP them))
+                  (PP (IN into)
+                    (NP
+                      (NP
+                        (NP (DT a) (NN rope))
+                        (PP (IN in)
+                          (NP (DT a) (NN minute))))
+                      (, ,)
+                      (CC and)
+                      (NP
+                        (NP (NNS braces))
+                        (PP (IN besides)))))))))
+          (, ,)
+          (CC and)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (VP (VBP go)
+                (PP (IN on)
+                  (S
+                    (VP (VBG burdening)
+                      (NP (DT the) (NN earth))))))))))
+      (, ,)
+      (S
+        (VP (VBG dishonoring)
+          (NP (PRP it))
+          (PP (IN with)
+            (NP (PRP$ my) (JJ vile) (NN presence))))))
+    (. ?)))
+(ROOT
+  (S
+    (S (CC And)
+      (ADVP (RB then))
+      (NP (PRP I))
+      (VP (VBD heard)
+        (S
+          (NP (PRP you))
+          (VP (VBG coming)))))
+    (: --)
+    (S
+      (NP (NNP Heavens))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBD was)
+        (SBAR (RB as) (IN though)
+          (S
+            (NP (NN something))
+            (VP (VBD flew)
+              (ADVP (RB down)
+                (PP (TO to)
+                  (NP (PRP me))))
+              (ADVP (RB suddenly)))))))
+    (. .)))
+(ROOT
+  (S (IN So)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN man))
+        (, ,)
+        (NP (RB then))
+        (, ,)
+        (SBAR
+          (WHNP (WP whom))
+          (S
+            (NP (PRP I))
+            (VP (VBP love))))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Here))
+    (NP (PRP he))
+    (VP (VBZ is) (, ,)
+      (FRAG
+        (NP
+          (NP (DT that) (NN man))
+          (, ,)
+          (NP
+            (NP (PRP$ my)
+              (ADJP (RB dear))
+              (JJ little) (NN brother))
+            (, ,)
+            (SBAR
+              (WHNP (WP whom))
+              (S
+                (NP (PRP I))
+                (VP (VBP love)
+                  (NP
+                    (NP
+                      (QP (JJR more) (IN than)
+                        (NP (DT any) (CD one))))
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (NN world))
+                        (, ,)
+                        (NP
+                          (NP (DT the) (JJ only) (NN one))
+                          (SBAR
+                            (S
+                              (NP (PRP I))
+                              (VP (VBP love)
+                                (PP (IN in)
+                                  (NP (DT the) (NN world)))))))))))))))))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (VBD loved)
+      (NP (PRP you))
+      (ADVP
+        (ADVP (RB so) (RB much))
+        (, ,)
+        (ADVP (RB so) (RB much)))
+      (PP (IN at)
+        (NP (DT that) (NN moment)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (VP (VBD thought) (, ,) (`` `)
+            (S
+              (NP (PRP I))
+              (VP (MD 'll)
+                (VP (VB fall)
+                  (PP (IN on)
+                    (NP (PRP$ his) (NN neck)))
+                  (PP (IN at)
+                    (NP (RB once))))))))))
+    (. .) ('' ')))
+(ROOT
+  (S (RB Then)
+    (NP (DT a) (JJ stupid) (NN idea))
+    (VP (VBD struck)
+      (NP (PRP me))
+      (, ,)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB have)
+              (NP
+                (NP (DT a) (NN joke))
+                (PP (IN with)
+                  (NP (PRP you)))))
+            (CC and)
+            (VP (VB scare)
+              (NP (PRP you)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD shouted) (, ,)
+      (PP (IN like)
+        (NP
+          (NP (DT a) (NN fool))
+          (, ,) (`` `)
+          (NP (PRP$ Your) (NN money)))))
+    (. !) ('' ')))
+(ROOT
+  (S
+    (S
+      (VP (VB Forgive)
+        (NP (PRP$ my) (NN foolery))))
+    (: --)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (NP (JJ only) (NN nonsense))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBZ 's)
+        (ADJP (NN nothing) (JJ unseemly)
+          (PP (IN in)
+            (NP
+              (NP (PRP$ my) (NN soul))
+              (: ...))))))
+    (. .)))
+(ROOT
+  (S
+    (VP
+      (VP (VB Damn)
+        (S
+          (NP (PRP it))
+          (NP (DT all))))
+      (, ,)
+      (VP (VB tell)
+        (NP (PRP me))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ 's)
+              (VP (VBN happened)))))))
+    (. .)))
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB say)))
+    (. ?)))
+(ROOT
+  (S
+    (ADVP (RB Strike))
+    (NP (PRP me))
+    (, ,)
+    (S
+      (VP (VB crush)
+        (NP (PRP me))))
+    (, ,)
+    (VP (VBP do) (RB n't)
+      (VP (VB spare)
+        (NP (PRP me))))
+    (. !)))
+(ROOT
+  (FRAG
+    (S
+      (VP (VBG Was)
+        (S
+          (NP (PRP she))
+          (ADJP (JJ furious)))))
+    (. ?) ('' '')))
+(ROOT
+  (S (`` ``)
+    (VP (VBZ No) (, ,)
+      (PP (RB not)
+        (NP (DT that)))
+      (: ...))
+    (. .)))
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP
+        (NP (NN nothing))
+        (PP (IN like)
+          (NP
+            (NP (DT that))
+            (, ,)
+            (NP (NNP Mitya))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (EX There))
+    (: --)
+    (NP (PRP I))
+    (VP (VBD found)
+      (NP (PRP them))
+      (ADVP (DT both) (RB there)))
+    (. .) ('' '')))
+(ROOT
+  (FRAG (`` ``)
+    (INTJ (UH Both))
+    (. ?)))
+(ROOT
+  (FRAG
+    (S
+      (VP (VBG Whom)))
+    (. ?) ('' '')))
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (NNP Grushenka))
+      (PP (IN at)
+        (NP (NNP Katerina) (NNP Ivanovna))))
+    (VP (VBZ 's))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Dmitri))
+    (VP (VBD was)
+      (VP (VBN struck)
+        (S
+          (ADJP (JJ dumb)))))
+    (. .)))
+(ROOT
+  (INTJ (`` ``) (UH Impossible) (. !) ('' '')))
+(ROOT
+  (S
+    (NP (PRP he))
+    (VP (VBD cried))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP You))
+    (VP (VBP 're)
+      (VP (VBG raving)))
+    (. !)))
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Grushenka))
+      (PP (IN with)
+        (NP (PRP her))))
+    (. ?) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD described)
+      (NP
+        (NP (DT all))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD had)
+              (VP (VBN happened)
+                (PP (IN from)
+                  (NP
+                    (NP (DT the) (NN moment))
+                    (SBAR
+                      (S
+                        (NP (PRP he))
+                        (VP (VBD went)
+                          (PP (IN in)
+                            (PP (TO to)
+                              (NP (NNP Katerina) (NNP Ivanovna) (POS 's)))))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (CD ten) (NNS minutes))
+        (VP (VBG telling)
+          (NP (PRP$ his) (NN story)))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (MD ca) (RB n't)
+        (VP (VB be)
+          (VP (VBN said)
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (VP (VBN told)
+                    (S
+                      (NP (PRP it))
+                      (ADJP (JJ fluently)
+                        (CC and)
+                        (JJ consecutively)))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP he))
+      (VP (VBD seemed)
+        (S
+          (VP (TO to)
+            (VP (VB make)
+              (S
+                (NP (PRP it))
+                (ADJP (JJ clear))))))
+        (, ,)
+        (S
+          (S (RB not)
+            (VP (VBG omitting)
+              (NP
+                (NP (DT any) (NN word)
+                  (CC or)
+                  (NN action))
+                (PP (IN of)
+                  (NP (NN significance))))))
+          (, ,)
+          (CC and)
+          (S
+            (ADVP (RB vividly))
+            (VP (VBG describing) (, ,)
+              (ADVP (RB often))
+              (PP (IN in)
+                (NP
+                  (NP (CD one) (NN word))
+                  (, ,)
+                  (NP (PRP$ his) (JJ own) (NNS sensations)))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (NNP Dmitri))
+      (VP (VBD listened)
+        (PP (IN in)
+          (NP (NN silence)))
+        (, ,)
+        (S
+          (VP (VBG gazing)
+            (PP (IN at)
+              (NP (PRP him)))
+            (PP (IN with)
+              (NP (DT a) (JJ terrible) (JJ fixed) (NN stare)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (ADJP (JJ clear)
+          (PP (TO to)
+            (NP (NNP Alyosha))))
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP
+              (VP (VBD understood)
+                (S
+                  (NP (PRP it))
+                  (NP (DT all))))
+              (, ,)
+              (CC and)
+              (VP (VBD had)
+                (VP (VBN grasped)
+                  (NP (DT every) (NN point)))))))))
+    (. .)))
+(ROOT
+  (S (CC But)
+    (SBAR (IN as)
+      (S
+        (NP (DT the) (NN story))
+        (VP (VBD went)
+          (PRT (RP on)))))
+    (, ,)
+    (NP (PRP$ his) (NN face))
+    (VP (VBD became)
+      (ADJP
+        (ADJP (RB not) (RB merely) (JJ gloomy))
+        (, ,)
+        (CC but)
+        (ADJP (JJ menacing))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD scowled)))
+    (PRN (, ,)
+      (S
+        (NP (PRP he))
+        (VP (VBD clenched)
+          (NP (PRP$ his) (NNS teeth))))
+      (, ,))
+    (CC and)
+    (S
+      (NP (PRP$ his) (JJ fixed) (NN stare))
+      (VP (VBD became)
+        (ADJP (RB still)
+          (ADJP (RBR more) (JJ rigid))
+          (, ,)
+          (ADJP (RBR more) (JJ concentrated))
+          (, ,)
+          (ADJP (RBR more) (JJ terrible))
+          (, ,))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (S
+              (ADVP (RB suddenly))
+              (, ,)
+              (SBAR (IN with)
+                (S
+                  (NP
+                    (NP (JJ incredible) (NN rapidity))
+                    (, ,)
+                    (NP (PRP$ his) (JJ wrathful) (, ,) (JJ savage) (NN face)))
+                  (VP (VBD changed))))
+              (, ,)
+              (NP (PRP$ his)
+                (ADJP (RB tightly) (VBN compressed))
+                (NNS lips))
+              (VP (VBD parted)))
+            (, ,)
+            (CC and)
+            (S
+              (NP (NNP Dmitri) (NNP Fyodorovitch))
+              (VP (VBD broke)
+                (PP (IN into)
+                  (NP (JJ uncontrolled) (, ,) (JJ spontaneous) (NN laughter)))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB literally))
+    (VP (VBD shook)
+      (PP (IN with)
+        (NP (NN laughter))))
+    (. .)))
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT a) (JJ long) (NN time)))
+    (NP (PRP he))
+    (VP (MD could) (RB not)
+      (VP (VB speak)))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (CC So)
+    (NP (PRP she))
+    (VP (MD would) (RB n't)
+      (VP (VB kiss)
+        (NP (PRP$ her) (NN hand))))
+    (. !)))
+(ROOT
+  (S (IN So)
+    (NP (PRP she))
+    (VP (VBD did) (RB n't)
+      (VP (VB kiss)
+        (NP (PRP it))
+        (: ;)
+        (SBAR (IN so)
+          (S
+            (NP (PRP she))
+            (VP (VBD ran)
+              (PRT (RP away)))))))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (S
+      (NP (PRP he))
+      (VP (VBD kept)
+        (S
+          (VP (VBG exclaiming)
+            (PP (IN with)
+              (NP (JJ hysterical) (NN delight)))))))
+    (: ;)
+    (S
+      (NP (NN insolent))
+      (VP (VBD delight)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (MD might)
+              (VP (VB have)
+                (VP (VBN been)
+                  (VP (VBN called) (, ,)
+                    (SBAR (IN if)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBD had) (RB not)
+                          (VP (VBN been)
+                            (ADJP (RB so) (JJ spontaneous))))))))))))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (CC So)
+    (NP (DT the) (JJ other) (NN one))
+    (VP (VBD called)
+      (NP (PRP$ her) (NNS tigress)))
+    (. !)))
+(ROOT
+  (FRAG (CC And)
+    (NP
+      (NP (DT a) (NNS tigress))
+      (SBAR
+        (S
+          (NP (PRP she))
+          (VP (VBZ is)))))
+    (. !)))
+(ROOT
+  (S (IN So)
+    (NP (PRP she))
+    (VP (MD ought)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN flogged)
+              (PP (IN on)
+                (NP (DT a) (NN scaffold))))))))
+    (. ?)))
+(ROOT
+  (S
+    (INTJ (UH Yes) (, ,) (UH yes))
+    (, ,)
+    (ADVP (RB so))
+    (NP (PRP she))
+    (VP (MD ought))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBZ 's)
+        (SBAR
+          (WHADJP (RB just) (WP what))
+          (S
+            (NP (PRP I))
+            (VP (VBP think))))))
+    (: ;)
+    (S
+      (NP (PRP she))
+      (VP (MD ought)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (VP (VBN been)
+                (ADVP (RB long) (RB ago))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (SBAR (IN like)
+          (S
+            (NP
+              (NP (DT this))
+              (, ,)
+              (NP (NN brother))
+              (, ,))
+            (VP (VBP let)
+              (S
+                (NP (PRP her))
+                (VP (VB be)
+                  (VP (VBN punished)))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (MD must)
+        (VP (VB get)
+          (ADVP (RBR better))
+          (ADVP (RB first)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP understand)
+      (NP
+        (NP (DT the) (NN queen))
+        (PP (IN of)
+          (NP (NN impudence)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP (PRP her))
+      (ADVP (DT all) (RP over)))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBD saw)
+      (NP (PRP her))
+      (PP
+        (ADVP (DT all))
+        (IN over) (IN in)
+        (NP
+          (NP (DT that) (NN hand?kissing))
+          (, ,)
+          (NP (DT the) (NN she?devil)))))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ 's)
+      (VP (VBN magnificent)
+        (PP (IN in)
+          (NP (PRP$ her) (JJ own) (NN line)))))
+    (. !)))
+(ROOT
+  (S (IN So)
+    (NP (PRP she))
+    (VP (VBD ran)
+      (NP (NN home)))
+    (. ?)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP (VB go)
+        (PRN (: --)
+          (S
+            (VP (VB ah)))
+          (: --))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (MD 'll)
+              (VP (VB run)
+                (PP (TO to)
+                  (NP (PRP her)))))))))
+    (. !)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (, ,)
+    (S
+      (VP (VBP do) (RB n't)
+        (VP (VB blame)
+          (NP (PRP me)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP agree)
+      (SBAR (IN that)
+        (S
+          (NP (NN hanging))
+          (VP (VBZ is)
+            (ADJP (RB too) (JJ good)
+              (PP (IN for)
+                (NP (PRP her))))))))
+    (. .) ('' '')))
+(ROOT
+  (S (`` ``)
+    (CC But)
+    (NP (NNP Katerina))
+    (VP (VBZ Ivanovna))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (VP (VB exclaimed)
+      (NP (NNP Alyosha))
+      (ADVP (RB sorrowfully)))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (VP (VBP see)
+      (NP (PRP her))
+      (, ,)
+      (ADVP (RB too)))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP see)
+      (ADJP (JJ right)
+        (PP (IN through)
+          (NP (PRP her))))
+      (, ,)
+      (SBAR (IN as)
+        (S
+          (NP (PRP I))
+          (VP (VBP 've)
+            (ADVP (RB never))
+            (VP (VBN done)
+              (ADVP (RB before)))))))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (JJ regular) (NN discovery))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (CD four) (NNS continents))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN world))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ is))))))))
+        (, ,)
+        (PP (IN of)
+          (NP (DT the) (CD five)))))
+    (. !)))
+(ROOT
+  (FRAG
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (DT a) (NN thing))
+        (VP (TO to)
+          (VP (VB do)))))
+    (. !)))
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (ADVP (RB just))
+      (PP (IN like)
+        (NP
+          (NP (NNP Katya))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD was) (RB not)
+                (ADJP (JJ afraid)
+                  (S
+                    (VP (TO to)
+                      (VP
+                        (VP (VB face)
+                          (NP (DT a) (JJ coarse) (, ,) (JJ unmannerly) (NN officer)))
+                        (CC and)
+                        (VP (VB risk)
+                          (NP
+                            (NP (DT a) (JJ deadly) (NN insult))
+                            (PP (IN on)
+                              (NP (DT a) (JJ generous) (NN impulse))))
+                          (S
+                            (VP (TO to)
+                              (VP (VB save)
+                                (NP (PRP$ her) (NN father))))))))))))))))
+    (. !)))
+(ROOT
+  (FRAG (CC But)
+    (NP
+      (NP (DT the) (NN pride))
+      (, ,)
+      (NP (DT the) (NN recklessness))
+      (, ,)
+      (NP
+        (NP (DT the) (NN defiance))
+        (PP (IN of)
+          (NP
+            (NP (NN fate))
+            (, ,)
+            (NP (DT the) (JJ unbounded) (NN defiance))))))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP say)
+      (SBAR (IN that)
+        (S
+          (NP (NN aunt))
+          (VP (VBD tried)
+            (S
+              (VP (TO to)
+                (VP (VB stop)
+                  (NP (PRP her)))))))))
+    (. ?)))
+(ROOT
+  (S
+    (NP (DT That) (NN aunt))
+    (PRN (, ,)
+      (S
+        (NP (PRP you))
+        (VP (VBP know)))
+      (, ,))
+    (VP (VBZ is)
+      (ADJP (JJ overbearing))
+      (, ,)
+      (INTJ (UH herself)))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ 's)
+      (NP
+        (NP
+          (NP (DT the) (NN sister))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (DT the) (NN general) (POS 's))
+                (NN widow))
+              (PP (IN in)
+                (NP (NNP Moscow))))))
+        (, ,)
+        (CC and)
+        (RB even)
+        (NP
+          (NP (JJR more) (NN stuck?up))
+          (PP (IN than)
+            (NP (PRP she))))))
+    (. .)))
+(ROOT
+  (S (CC But)
+    (NP (PRP$ her) (NN husband))
+    (VP (VBD was)
+      (VP (VBN caught)
+        (S
+          (VP (VBG stealing)
+            (NP (NN government) (NN money))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD lost)
+        (NP
+          (NP (NN everything))
+          (, ,)
+          (NP (PRP$ his) (NN estate))
+          (CC and)
+          (NP (DT all)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (JJ proud) (NN wife))
+      (VP
+        (VP (VBD had)
+          (S
+            (VP (TO to)
+              (VP (VB lower)
+                (NP (PRP$ her) (NNS colors))))))
+        (, ,)
+        (CC and)
+        (VP (VBZ has) (RB n't)
+          (VP (VBN raised)
+            (S
+              (NP (PRP them))
+              (ADVP (RB since)))))))
+    (. .)))
+(ROOT
+  (S
+    (S (IN So)
+      (NP (PRP she))
+      (VP (VBD tried)
+        (S
+          (VP (TO to)
+            (VP (VB prevent)
+              (NP (NNP Katya)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP she))
+      (VP (MD would) (RB n't)
+        (VP (VB listen)
+          (PP (TO to)
+            (NP (PRP her))))))
+    (. !)))
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (VBZ thinks)
+        (SBAR
+          (S
+            (NP (PRP she))
+            (VP (MD can)
+              (VP (VB overcome)
+                (NP (NN everything))))))))
+    (, ,)
+    (NP (DT that) (NN everything))
+    (VP (MD will)
+      (VP (VB give)
+        (NP (NN way))
+        (PP (TO to)
+          (NP (PRP her)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD thought)
+      (SBAR
+        (S
+          (NP (PRP she))
+          (VP (MD could)
+            (VP (VB bewitch)
+              (NP (NNP Grushenka))
+              (SBAR
+                (SBAR (IN if)
+                  (S
+                    (S
+                      (NP (PRP she))
+                      (VP (VBD liked)))
+                    (, ,)
+                    (CC and)
+                    (S
+                      (NP (PRP she))
+                      (VP (VBD believed)
+                        (S
+                          (NP (PRP it))
+                          (NP (PRP herself)))))
+                    (: :)
+                    (S
+                      (NP (PRP she))
+                      (VP (VBZ plays)
+                        (NP (DT a) (NN part))
+                        (PP (TO to)
+                          (NP (PRP herself)))))))
+                (, ,)
+                (CC and)
+                (SBAR
+                  (WHNP (WP$ whose) (NNS fault))
+                  (S
+                    (VP (VBZ is)
+                      (NP (PRP it)))))))))))
+    (. ?)))
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB think)
+      (SBAR
+        (S
+          (NP (PRP she))
+          (VP (VBD kissed)
+            (NP
+              (NP (NNP Grushenka) (POS 's))
+              (NN hand))
+            (ADVP (RB first))
+            (PRN (, ,)
+              (PP (IN on)
+                (NP (NN purpose)))
+              (, ,))
+            (PP (IN with)
+              (NP (DT a) (NN motive)))))))
+    (. ?)))
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (NP (PRP she))
+    (ADVP (RB really))
+    (VP (VBD was)
+      (VP (VBN fascinated)
+        (PP (IN by)
+          (NP
+            (NP (NNP Grushenka))
+            (, ,)
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ 's)
+                  (S
+                    (VP (TO to)
+                      (VP (VB say) (, ,)
+                        (PP (RB not)
+                          (PP (IN by)
+                            (NP (NNP Grushenka)))
+                          (, ,)
+                          (CC but)
+                          (PP (IN by)
+                            (NP
+                              (NP (PRP$ her) (JJ own) (NN dream))
+                              (, ,)
+                              (NP (PRP$ her) (JJ own) (NN delusion)))))
+                        (: --)
+                        (SBAR (IN because)
+                          (S
+                            (NP (PRP it))
+                            (VP (VBD was)
+                              (NP
+                                (NP (PRP$ her) (NN dream))
+                                (, ,)
+                                (NP (PRP$ her) (NN delusion))))))))))))))))
+    (. !)))
+(ROOT
+  (SBARQ
+    (FRAG
+      (NP (NNP Alyosha))
+      (, ,)
+      (ADVP (RB darling)))
+    (, ,)
+    (SBARQ
+      (WHADVP (WRB how))
+      (SQ (VBD did)
+        (NP (PRP you))
+        (VP (VB escape)
+          (PP (IN from)
+            (NP
+              (NP (PRP them))
+              (, ,)
+              (NP (DT those) (NNS women)))))))
+    (. ?)))
+(ROOT
+  (SQ (VBD Did)
+    (NP (PRP you))
+    (VP
+      (VP (VB pick)
+        (PRT (RP up))
+        (NP (PRP$ your) (NN cassock)))
+      (CC and)
+      (VP (VB run)))
+    (. ?)))
+(ROOT
+  (S
+    (NP (NNP Ha) (NNP ha))
+    (VP (VBP ha))
+    (. !) ('' '')))
+(ROOT
+  (S (`` ``)
+    (INTJ (UH Brother))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP do) (RB n't)
+      (VP (VB seem)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (VP (VBN noticed)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP 've)
+                      (VP (VBN insulted)
+                        (NP (NNP Katerina) (NNP Ivanovna))
+                        (PP (IN by)
+                          (S
+                            (VP (VBG telling)
+                              (NP
+                                (NP (NNP Grushenka))
+                                (PP (IN about)
+                                  (NP (DT that) (NN day)))))))))))))))))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (NP (PRP she))
+    (VP (VBD flung)
+      (NP (PRP it))
+      (PP (IN in)
+        (NP (PRP$ her) (NN face)))
+      (SBAR (RB just) (RB now) (IN that)
+        (S
+          (NP (PRP she))
+          (VP (VBD had)
+            (VP (VBN gone)
+              (PP (TO to)
+                (NP
+                  (NP (NNS gentlemen))
+                  (PP (IN in)
+                    (NP (NN secret)))))
+              (S
+                (VP (TO to)
+                  (VP (VB sell)
+                    (NP (PRP$ her) (NN beauty))))))))))
+    (. !)))
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Brother))
+      (, ,)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (MD could)
+            (VP (VB be)
+              (ADJP (JJR worse))
+              (PP (IN than)
+                (NP (DT that) (NN insult))))))))
+    (. ?) ('' '')))
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (VP (VBD worried)
+          (SBAR
+            (S
+              (NP (NNP Alyosha))
+              (ADVP (RBR more)
+                (PP (IN than)
+                  (NP (NN anything))))
+              (VP (VBD was)
+                (NP
+                  (NP (DT that))
+                  (, ,)
+                  (RRC
+                    (ADJP (JJ incredible))
+                    (SBAR (IN as)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBD seemed))))))))))))
+    (, ,)
+    (NP (PRP$ his) (NN brother))
+    (VP (VBD appeared)
+      (ADVP (VBN pleased)
+        (PP (IN at)
+          (NP
+            (NP (NNP Katerina) (NNP Ivanovna) (POS 's))
+            (NN humiliation)))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (VP (VB Bah))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Dmitri))
+    (VP
+      (VP (VBD frowned)
+        (ADVP (RB fiercely)))
+      (, ,)
+      (CC and)
+      (VP (VBD struck)
+        (NP (PRP$ his) (NN forehead))
+        (PP (IN with)
+          (NP (PRP$ his) (NN hand)))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (ADVP (RB only) (RB now))
+      (VP (VBD realized)
+        (NP (PRP it))
+        (, ,)
+        (SBAR (IN though)
+          (S
+            (NP (NNP Alyosha))
+            (VP (VBD had)
+              (ADVP (RB just))
+              (VP (VBN told)
+                (NP
+                  (NP
+                    (NP (PRP him))
+                    (PP (IN of)
+                      (NP (DT the) (NN insult))))
+                  (, ,)
+                  (CC and)
+                  (NP
+                    (NP (NNP Katerina) (NNP Ivanovna) (POS 's))
+                    (NN cry)))))))))
+    (: :) (`` ``)
+    (S
+      (NP (PRP$ Your) (NN brother))
+      (VP (VBZ is)
+        (NP (DT a) (NN scoundrel))))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (INTJ (`` ``) (UH Yes))
+    (, ,)
+    (ADVP (RB perhaps))
+    (, ,)
+    (NP (PRP I))
+    (ADVP (RB really))
+    (VP (VBD did)
+      (VP (VB tell)
+        (NP
+          (NP (NNP Grushenka))
+          (PP (IN about)
+            (NP (DT that) (`` `) (JJ fatal) (NN day))))
+        (, ,) ('' ')
+        (SBAR (IN as)
+          (S
+            (NP (NNP Katya))
+            (VP (VBZ calls)
+              (NP (PRP it)))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (INTJ (UH Yes))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBD did)
+        (VP (VB tell)
+          (NP (PRP her)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP remember))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP
+        (NP (DT that) (NN time))
+        (PP (IN at)
+          (NP (NNP Mokroe)))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD was)
+        (ADJP (JJ drunk))))
+    (, ,)
+    (NP (DT the) (NNS gypsies))
+    (VP (VBD were)
+      (VP (VBG singing)))
+    (: ...) (. .)))
+(ROOT
+  (S (CC But)
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBG sobbing)))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD was)
+        (VP
+          (VP (VBG sobbing)
+            (ADVP (RB then)))
+          (, ,)
+          (VP (VBG kneeling))
+          (CC and)
+          (VP (VBG praying)
+            (PP (TO to)
+              (NP
+                (NP (NNP Katya) (POS 's))
+                (NN image)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Grushenka))
+      (VP (VBD understood)
+        (NP (PRP it))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD understood)
+      (NP (PRP it))
+      (ADVP (DT all) (RB then)))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP remember)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBD cried)
+      (NP (PRP herself)))
+    (: ...) (. .)))
+(ROOT
+  (S
+    (VP (VB Damn)
+      (S
+        (NP (PRP it))
+        (NP (DT all))))
+    (. !)))
+(ROOT
+  (S (CC But)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (VBN bound)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADVP (RB so) (RB now)))))))
+    (: ...) (. .)))
+(ROOT
+  (S (RB Then)
+    (NP (PRP she))
+    (VP
+      (VP (VBD cried))
+      (, ,)
+      (CC but)
+      (ADVP (RB now))
+      (`` `)
+      (NP
+        (NP (DT the) (NN dagger))
+        (PP (IN in)
+          (NP (DT the) (NN heart) (POS ')))))
+    (. !)))
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NNS women))
+          (VP (VBP are)))))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD looked)
+        (PRT (RP down)))
+      (CC and)
+      (VP (VBD sank)
+        (PP (IN into)
+          (NP (NN thought)))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (INTJ (UH Yes))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP am)
+      (NP
+        (NP (DT a) (NN scoundrel))
+        (, ,)
+        (NP (DT a) (JJ thorough) (NN scoundrel))))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (NP (PRP he))
+    (VP (VBD said)
+      (ADVP (RB suddenly))
+      (, ,)
+      (PP (IN in)
+        (NP (DT a) (JJ gloomy) (NN voice))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP It))
+      (VP (VBZ does) (RB n't)
+        (VP (VB matter)
+          (SBAR (IN whether)
+            (S
+              (NP (PRP I))
+              (VP (VBD cried)))
+            (CC or)
+            (RB not)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (NP (DT a) (NN scoundrel)))
+    (. !)))
+(ROOT
+  (S
+    (VP (VB Tell)
+      (NP (PRP her))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP accept)
+            (NP
+              (NP (DT the) (NN name))
+              (, ,)
+              (SBAR (IN if)
+                (S
+                  (NP (DT that))
+                  (VP (VBZ 's)
+                    (NP (DT any) (NN comfort))))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (VP (VB Come)))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ 's)
+      (ADJP (JJ enough)))
+    (. .)))
+(ROOT
+  (FRAG
+    (ADVP (RB Good?by))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT no) (NN use))
+        (VP (VBG talking))))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's) (RB not)
+      (ADJP (JJ amusing)))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP go)
+      (NP (PRP$ your) (NN way)
+        (CC and)
+        (NN I) (NN mine)))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB want)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (NP (PRP you))
+              (PP
+                (ADVP (RB again))
+                (IN except) (IN as)
+                (NP (DT a) (JJ last) (NN resource))))))))
+    (. .)))
+(ROOT
+  (FRAG
+    (ADJP (JJ Good)
+      (PP (IN by)))
+    (, ,)
+    (NP (NNP Alexey))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (ADVP (RB warmly))
+      (VP (VBD pressed)
+        (NP
+          (NP (NNP Alyosha) (POS 's))
+          (NN hand))))
+    (, ,)
+    (CC and)
+    (S
+      (S
+        (VP
+          (ADVP (RB still))
+          (VBG looking)
+          (ADVP (RB down))
+          (, ,)
+          (PP (IN without)
+            (S
+              (VP (VBG raising)
+                (NP (PRP$ his) (NN head)))))))
+      (, ,)
+      (SBAR (RB as) (IN though)
+        (S
+          (VP (VBG tearing)
+            (NP (PRP himself))
+            (ADVP (RB away)))))
+      (, ,)
+      (VP (VBD turned)
+        (ADVP (RB rapidly))
+        (PP (IN towards)
+          (NP (DT the) (NN town)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD looked)
+      (PP (IN after)
+        (NP (PRP him)))
+      (, ,)
+      (S
+        (ADJP (JJ unable)
+          (S
+            (VP (TO to)
+              (VP (VB believe)
+                (SBAR
+                  (S
+                    (NP (PRP he))
+                    (VP (MD would)
+                      (VP (VB go)
+                        (ADVP (RB away) (RB so))
+                        (ADVP (RB abruptly))))))))))))
+    (. .)))
+(ROOT
+  (FRAG (`` ``)
+    (NP
+      (NP (NNP Stay))
+      (, ,)
+      (NP (NNP Alexey))
+      (, ,)
+      (NP
+        (NP (CD one) (JJR more) (NN confession))
+        (PP (TO to)
+          (NP
+            (NP (PRP you))
+            (ADVP (RB alone))))))
+    (. !) ('' '')))
+(ROOT
+  (NP
+    (NP
+      (NP (JJ cried) (NNP Dmitri))
+      (, ,)
+      (ADVP (RB suddenly)))
+    (VP (VBG turning)
+      (ADVP (RB back)))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (VP (VB Look)
+      (PP (IN at)
+        (NP (PRP me))))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Look)
+      (PP (IN at)
+        (NP (PRP me)))
+      (ADVP (RB well)))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP see)
+        (ADVP (RB here))
+        (, ,)
+        (ADVP (RB here))))
+    (: --)
+    (S
+      (NP (EX there))
+      (VP (VBZ 's)
+        (NP
+          (NP (JJ terrible) (NN disgrace))
+          (PP (IN in)
+            (NP
+              (NP (NN store))
+              (PP (IN for)
+                (NP (PRP me))))))))
+    (. .) ('' '')))
+(ROOT
+  (S (-LRB- -LRB-)
+    (S
+      (SBAR (IN As)
+        (S
+          (NP (PRP he))
+          (VP (VBD said) (`` ``)
+            (NP (RB here)))))
+      (, ,) ('' '')
+      (NP (NNP Dmitri))
+      (VP (VBD struck)
+        (NP (PRP$ his) (NN chest))
+        (PP (IN with)
+          (NP (PRP$ his) (NN fist)))
+        (PP (IN with)
+          (NP (DT a) (JJ strange) (NN air)))
+        (, ,)
+        (SBAR (RB as) (IN though)
+          (S
+            (NP (DT the) (NN dishonor))
+            (VP (VBD lay)
+              (ADVP (RB precisely))
+              (PP (IN on)
+                (NP (PRP$ his) (NN chest)))
+              (, ,)
+              (PP (IN in)
+                (NP (DT some) (NN spot)))
+              (, ,)
+              (PP (IN in)
+                (NP (DT a) (NN pocket)))
+              (, ,)
+              (ADVP (RB perhaps)))))))
+    (, ,)
+    (CC or)
+    (S
+      (NP (NN hanging))
+      (VP (VBP round)
+        (NP (PRP$ his) (NN neck))))
+    (. .) (-RRB- -RRB-)))
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP You))
+      (VP (VBP know)
+        (NP (PRP me))
+        (ADVP (RB now))))
+    (, ,)
+    (NP
+      (NP (DT a) (NN scoundrel))
+      (, ,)
+      (NP (DT an) (JJ avowed) (NN scoundrel))
+      (, ,))
+    (VP (CC but)
+      (VP (VBD let)
+        (S
+          (NP (PRP me))
+          (VP (VB tell)
+            (NP (PRP you))
+            (SBAR (IN that)
+              (S
+                (NP (PRP I))
+                (VP (VBP 've)
+                  (ADVP (RB never))
+                  (VP (VBN done)
+                    (NP (NN anything))
+                    (ADVP (RB before)))))))))
+      (CC and)
+      (VP
+        (ADVP (RB never))
+        (VBD shall)
+        (ADVP (RB again))
+        (, ,)
+        (S
+          (NP
+            (NP (NN anything))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD can)
+                  (VP (VB compare)
+                    (PP (IN in)
+                      (NP (NNS baseness)))
+                    (PP (IN with)
+                      (NP
+                        (NP (DT the) (NN dishonor))
+                        (SBAR
+                          (WHNP (WDT which))
+                          (S
+                            (NP (PRP I))
+                            (VP (VBP bear)
+                              (ADVP (RB now))
+                              (PP (IN at)
+                                (NP
+                                  (NP (DT this) (JJ very) (NN minute))
+                                  (PP (IN on)
+                                    (NP (PRP$ my) (NN breast))))
+                                (, ,)
+                                (ADVP (RB here)))
+                              (, ,)
+                              (ADVP (RB here)))))
+                        (, ,)
+                        (SBAR
+                          (WHNP (WDT which))
+                          (S
+                            (VP (MD will)
+                              (VP (VB come)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB pass))))))))))
+                    (, ,)
+                    (SBAR (IN though)
+                      (S
+                        (NP (PRP I))
+                        (VP (VBP 'm)
+                          (ADJP (RB perfectly) (JJ free)
+                            (S
+                              (VP (TO to)
+                                (VP (VB stop)
+                                  (NP (PRP it)))))))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (MD can)
+        (VP (VB stop)
+          (NP (PRP it))))
+      (CC or)
+      (VP (VBP carry)
+        (NP (PRP it))
+        (PP (IN through))
+        (, ,) (VBP note)
+        (NP (DT that))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (INTJ (UH Well))
+      (, ,)
+      (VP (VB let)
+        (S
+          (NP (PRP me))
+          (VP (VB tell)
+            (NP (PRP you))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD shall)
+      (VP (VB carry)
+        (NP (PRP it))
+        (PRT (RP through))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP sha) (RB n't)
+      (VP (VB stop)
+        (NP (PRP it))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD told)
+        (S
+          (NP (PRP you)))
+        (NP (NN everything))
+        (ADVP (RB just))
+        (ADVP (RB now))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBD did) (RB n't)
+        (VP (VB tell)
+          (NP (PRP you) (DT this))
+          (, ,)
+          (SBAR (IN because) (RB even)
+            (S
+              (NP (PRP I))
+              (VP (VBD had)
+                (NP
+                  (NP (RB not) (NN brass) (RB enough))
+                  (PP (IN for)
+                    (NP (PRP it))))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD can)
+        (ADVP (RB still))
+        (VP (VB pull)
+          (PRT (RP up)))))
+    (: ;)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP I))
+          (VP (VBP do))))
+      (, ,)
+      (NP (PRP I))
+      (VP (MD can)
+        (VP (VB give)
+          (PRT (RP back))
+          (NP
+            (NP (DT the) (JJ full) (NN half))
+            (PP (IN of)
+              (NP (PRP$ my) (VBN lost) (NN honor) (NN to?morrow)))))))
+    (. .)))
+(ROOT
+  (S (CC But)
+    (NP (PRP I))
+    (VP (VBP sha) (RB n't)
+      (VP (VB pull)
+        (PRT (RP up))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD shall)
+        (VP (VB carry)
+          (PRT (RP out))
+          (NP (PRP$ my) (NN base) (NN plan)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (MD can)
+        (VP (VB bear)
+          (NP (NN witness))
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (VBD told)
+                (NP (PRP you))
+                (ADVP (RB so) (RB beforehand))))))))
+    (. .)))
+(ROOT
+  (FRAG
+    (NP (NNS Darkness)
+      (CC and)
+      (NN destruction))
+    (. !)))
+(ROOT
+  (S
+    (NP (NNP No))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB explain)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD 'll)
+      (VP (VB find)
+        (PRT (RP out))
+        (PP (IN in)
+          (NP (JJ due) (NN time)))))
+    (. .)))
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ filthy) (NN back?alley))
+      (CC and)
+      (NP (DT the) (PRP she)))
+    (VP (VBZ devil))
+    (. .)))
+(ROOT
+  (FRAG
+    (ADVP (RB Good?by))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (VP (VB Do) (RB n't)
+        (ADVP (RB pray))
+        (PP (IN for)
+          (NP (PRP me)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (ADJP (JJ worth)
+        (NP (PRP it))))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (NP (EX there))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT no) (NN need))
+        (, ,)
+        (NP
+          (NP (DT no) (NN need))
+          (PP (IN at)
+            (NP (DT all))))))
+    (: ...) (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB need)
+        (NP (PRP it))))
+    (. !)))
+(ROOT
+  (ADVP (RB Away) (. !) ('' '')))
+(ROOT
+  (S (CC And)
+    (NP (PRP he))
+    (ADVP (RB suddenly))
+    (VP (VBD retreated) (, ,)
+      (S
+        (NP (DT this) (NN time))
+        (ADVP (RB finally))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD went)
+      (PP (IN towards)
+        (NP (DT the) (NN monastery))))
+    (. .)))
+(ROOT
+  (FRAG (`` ``)
+    (INTJ (UH What))
+    (. ?)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD shall)
+      (ADVP (RB never))
+      (VP (VB see)
+        (NP (PRP him))
+        (ADVP (RB again))))
+    (. !)))
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (PRP he))
+      (VP (VBG saying)))
+    (. ?) ('' '')))
+(ROOT
+  (S
+    (NP (PRP he))
+    (VP (VBD wondered)
+      (ADVP (RB wildly)))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (INTJ (WRB Why))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD shall)
+      (ADVP (RB certainly))
+      (VP (VB see)
+        (S
+          (NP (PRP him))
+          (ADJP (JJ to?morrow)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD shall)
+      (VP (VB look)
+        (NP (PRP him))
+        (PRT (RP up))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD shall)
+      (VP (VB make)
+        (NP
+          (NP (DT a) (NN point))
+          (PP (IN of)
+            (NP (PRP it))))))
+    (. .)))
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ does)
+      (NP (PRP he))
+      (VP (VB mean)))
+    (. ?) ('' '')))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD went)
+        (ADVP (RB round)
+          (NP (DT the) (NN monastery))))
+      (, ,)
+      (CC and)
+      (VP (VBD crossed)
+        (NP (DT the) (NN pine?wood))
+        (PP (TO to)
+          (NP (DT the) (NN hermitage)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT The) (NN door))
+    (VP (VBD was)
+      (VP (VBN opened)
+        (PP (TO to)
+          (NP (PRP him)))
+        (, ,)
+        (SBAR (IN though)
+          (S
+            (NP (DT no) (NN one))
+            (VP (VBD was)
+              (VP (VBN admitted)
+                (PP (IN at)
+                  (NP (DT that) (NN hour)))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN tremor))
+        (PP (IN in)
+          (NP (PRP$ his) (NN heart))))
+      (SBAR (IN as)
+        (S
+          (NP (PRP he))
+          (VP (VBD went)
+            (PP (IN into)
+              (NP
+                (NP (NNP Father) (NNP Zossima) (POS 's))
+                (NN cell)))))))
+    (. .)))
+(ROOT
+  (SBARQ (`` ``)
+    (WHADVP (WRB Why))
+    (PRN (, ,)
+      (S
+        (VP (VB why)))
+      (, ,))
+    (SQ (VBD had)
+      (NP (PRP he))
+      (VP (VBN gone)
+        (ADVP (RB forth))))
+    (. ?)))
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD had)
+      (NP (PRP he))
+      (VP (VBN sent)
+        (NP (PRP him))
+        (PP (IN into)
+          (NP (DT the) (NN world)))))
+    (. ?)))
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBD was)
+      (NP (NN peace)))
+    (. .)))
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBD was)
+      (ADJP (JJ holiness)))
+    (. .)))
+(ROOT
+  (S (CC But)
+    (S
+      (S
+        (NP (EX there))
+        (VP (VBD was)
+          (NP (NN confusion))))
+      (, ,)
+      (NP (EX there))
+      (VP (VBD was)
+        (NP
+          (NP (NNS darkness))
+          (SBAR
+            (WHPP (IN in)
+              (WHNP (WDT which)))
+            (S
+              (NP (PRP one))
+              (VP
+                (VP (VBD lost)
+                  (NP
+                    (NP (CD one) (POS 's))
+                    (NN way)))
+                (CC and)
+                (VP (VBD went)
+                  (ADVP (RB astray))
+                  (PP (IN at)
+                    (NP (RB once))))))))))
+    (: ...) ('' '')
+    (PP (IN In)
+      (NP
+        (NP (DT the) (NN cell))
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (VBD found)
+              (NP
+                (NP (DT the) (NNP novice) (NNP Porfiry)
+                  (CC and)
+                  (NNP Father) (NNP Pa?ssy))
+                (, ,)
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBD came)
+                      (NP (DT every) (NN hour)
+                        (S
+                          (VP (TO to)
+                            (VP (VB inquire)
+                              (PP (IN after)
+                                (NP (NNP Father) (NNP Zossima))))))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD learnt)
+      (PP (IN with)
+        (NP (NN alarm)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP he))
+          (VP (VBD was)
+            (VP (VBG getting)
+              (ADJP (JJR worse)
+                (CC and)
+                (JJR worse)))))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Even))
+    (NP
+      (NP (PRP$ his) (JJ usual) (NN discourse))
+      (PP (IN with)
+        (NP (DT the) (NNS brothers))))
+    (VP (MD could) (RB not)
+      (VP (VB take)
+        (NP
+          (NP (NN place))
+          (NP (DT that) (NN day)))))
+    (. .)))
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT a) (NN rule)))
+    (NP (DT every) (NN evening))
+    (PP (IN after)
+      (NP (NN service)))
+    (NP (DT the) (NNS monks))
+    (VP
+      (VP (VBD flocked)
+        (PP (IN into)
+          (NP
+            (NP (NNP Father) (NNP Zossima) (POS 's))
+            (NN cell))))
+      (, ,)
+      (CC and)
+      (VP
+        (ADVP (DT all))
+        (VBD confessed)
+        (ADVP (RB aloud))
+        (NP
+          (NP (PRP$ their) (NNS sins))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN day))
+              (, ,)
+              (NP (PRP$ their) (JJ sinful) (NNS thoughts))
+              (CC and)
+              (NP (NNS temptations))))
+          (: ;)
+          (NP (RB even) (PRP$ their) (NNS disputes))))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (EX there))
+          (VP (VBD had)
+            (VP (VBN been)
+              (NP (DT any)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT Some))
+    (VP (VBD confessed)
+      (S
+        (VP (VBG kneeling))))
+    (. .)))
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJR elder) (NN absolved))
+      (, ,)
+      (ADJP (JJ reconciled) (, ,) (JJ exhorted))
+      (, ,))
+    (VP (VBN imposed)
+      (UCP
+        (ADJP (JJ penance))
+        (, ,)
+        (ADJP (VBN blessed))
+        (, ,)
+        (CC and)
+        (VP (VBD dismissed)
+          (NP (PRP them)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (PP (IN against)
+        (NP
+          (NP (DT this) (JJ general) (`` ``) (NN confession) ('' ''))
+          (SBAR (IN that)
+            (S
+              (NP
+                (NP (DT the) (NNS opponents))
+                (PP (IN of) (`` ``)
+                  (NP (NNS elders))
+                  ('' '')))
+              (VP (VBD protested) (, ,)
+                (S
+                  (VP (VBG maintaining)
+                    (SBAR (IN that)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBD was)
+                          (NP
+                            (NP (DT a) (NN profanation))
+                            (PP (IN of)
+                              (NP
+                                (NP (DT the) (NN sacrament))
+                                (PP (IN of)
+                                  (NP (NN confession))))))
+                          (, ,)
+                          (ADVP (RB almost)
+                            (NP (DT a) (NN sacrilege)))))))))))))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP (DT this))
+          (VP (VBD was)
+            (NP (RB quite) (DT a) (JJ different) (NN thing))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP They))
+    (ADVP (RB even))
+    (VP (VBD represented)
+      (PP (TO to)
+        (NP (DT the) (NN diocesan) (NNS authorities)))
+      (SBAR (IN that)
+        (S
+          (NP (JJ such) (NNS confessions))
+          (VP (VBZ attained)
+            (NP (DT no) (JJ good) (NN object))
+            (PRN (, ,)
+              (CC but)
+              (ADVP (RB actually)))
+            (PP (TO to)
+              (NP
+                (NP (DT a) (JJ large) (NN extent))
+                (VP (VBN led)
+                  (PP (TO to)
+                    (NP (NN sin)
+                      (CC and)
+                      (NN temptation))))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (JJ Many))
+        (PP (IN of)
+          (NP (DT the) (NNS brothers))))
+      (VP
+        (VP (VBD disliked)
+          (S
+            (VP (VBG going)
+              (PP (TO to)
+                (NP (DT the) (NN elder))))))
+        (, ,)
+        (CC and)
+        (VP (VBD went)
+          (PP (IN against)
+            (NP (PRP$ their) (JJ own) (NN will)))
+          (SBAR (IN because)
+            (S
+              (NP (DT every) (NN one))
+              (VP (VBD went)))))))
+    (, ,)
+    (CC and)
+    (S
+      (PP (IN for)
+        (NP (NN fear)))
+      (NP (PRP they))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN accused)
+            (PP (IN of)
+              (NP (NN pride)
+                (CC and)
+                (JJ rebellious) (NNS ideas)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBD said)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT some))
+            (PP (IN of)
+              (NP (DT the) (NNS monks))))
+          (VP (VBD agreed)
+            (ADVP (RB beforehand))
+            (, ,)
+            (S
+              (VP (VBG saying) (, ,) (`` ``)
+                (S
+                  (NP (PRP I))
+                  (VP (MD 'll)
+                    (VP (VB confess)
+                      (S
+                        (S
+                          (NP (PRP I))
+                          (VP (VBD lost)
+                            (NP (PRP$ my) (NN temper))
+                            (PP (IN with)
+                              (NP (PRP you)))
+                            (NP (DT this) (NN morning))))
+                        (, ,)
+                        (CC and)
+                        (S
+                          (NP (PRP you))
+                          (VP (VBP confirm)
+                            (NP (PRP it)))))
+                      (, ,) ('' '')
+                      (ADVP (RB simply))
+                      (SBAR (IN in) (NN order)
+                        (S
+                          (VP (TO to)
+                            (VP (VB have)
+                              (NP (NN something))
+                              (S
+                                (VP (TO to)
+                                  (VP (VB say)))))))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD knew)
+      (SBAR (IN that)
+        (S
+          (NP (DT this))
+          (ADVP (RB actually))
+          (VP (VBD happened)
+            (ADVP (RB sometimes))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD knew) (, ,)
+      (ADVP (RB too))
+      (, ,)
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBD were)
+            (PP (IN among)
+              (NP (DT the) (NNS monks)))
+            (NP
+              (NP (DT some))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (ADVP (RB deeply))
+                  (VP (VBD resented)
+                    (NP (DT the) (NN fact))
+                    (SBAR (IN that)
+                      (S
+                        (NP
+                          (NP (NNS letters))
+                          (PP (IN from)
+                            (NP (NNS relations))))
+                        (VP (VBD were)
+                          (ADVP (RB habitually))
+                          (VP (VBN taken)
+                            (PP (TO to)
+                              (NP (DT the) (NN elder))))))))))))))
+      (, ,)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN opened)
+              (CC and)
+              (VBN read)
+              (PP (IN by)
+                (NP (PRP him)))
+              (PP (IN before)
+                (NP
+                  (NP (DT those))
+                  (SBAR
+                    (WHPP (TO to)
+                      (WHNP (WP whom)))
+                    (S
+                      (NP (PRP they))
+                      (VP (VBD were)
+                        (VP (VBN addressed))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN assumed) (, ,)
+        (PP (IN of)
+          (NP (NN course)))
+        (, ,)
+        (SBAR (IN that)
+          (S
+            (NP (PDT all) (DT this))
+            (VP (VBD was)
+              (UCP
+                (VP (VBN done)
+                  (UCP
+                    (ADVP (RB freely))
+                    (, ,)
+                    (CC and)
+                    (PP (IN in)
+                      (NP (JJ good) (NN faith))))
+                  (, ,)
+                  (PP (IN by)
+                    (NP
+                      (NP (NN way))
+                      (PP (IN of)
+                        (NP (JJ voluntary) (NN submission))))))
+                (CC and)
+                (ADJP (JJ salutary) (NN guidance))))))))
+    (. .)))
+(ROOT
+  (S (CC But)
+    (, ,)
+    (PP (IN in)
+      (NP (NN fact)))
+    (, ,)
+    (NP (EX there))
+    (VP (VBD was)
+      (ADVP (RB sometimes))
+      (ADJP
+        (ADJP
+          (NP (DT no) (RB little))
+          (JJ insincerity))
+        (, ,)
+        (CC and)
+        (ADJP (JJ much)))
+      (SBAR (IN that)
+        (S
+          (VP (VBD was)
+            (ADJP (JJ false)
+              (CC and)
+              (JJ strained))
+            (PP (IN in)
+              (NP (DT this) (NN practice)))))))
+    (. .)))
+(ROOT
+  (S (CC Yet)
+    (NP
+      (NP (DT the)
+        (ADJP
+          (ADJP (JJR older))
+          (CC and)
+          (ADJP (RBR more) (JJ experienced))))
+      (PP (IN of)
+        (NP (DT the) (NNS monks))))
+    (VP (VBD adhered)
+      (PP (TO to)
+        (NP (PRP$ their) (NN opinion)))
+      (, ,)
+      (S
+        (VP (VBG arguing)
+          (SBAR (IN that) (`` ``)
+            (S
+              (S
+                (PP (IN for)
+                  (NP
+                    (NP (DT those))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBP have)
+                          (VP (VBN come)
+                            (PP (IN within)
+                              (S
+                                (NP (DT these) (NNS walls))
+                                (ADVP (RB sincerely))
+                                (VP (VBG seeking)
+                                  (NP (NN salvation)))))))))))
+                (, ,)
+                (NP
+                  (NP (JJ such) (NN obedience))
+                  (CC and)
+                  (NP (NN sacrifice)))
+                (VP (MD will)
+                  (ADVP (RB certainly))
+                  (VP (VB be)
+                    (UCP
+                      (ADJP (JJ salutary))
+                      (CC and)
+                      (PP (IN of)
+                        (NP (JJ great) (NN benefit)))))))
+              (: ;)
+              (S
+                (NP
+                  (NP (DT those))
+                  (, ,)
+                  (PP (IN on)
+                    (NP
+                      (NP (DT the) (JJ other) (NN hand))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (VBP find)
+                            (SBAR
+                              (S
+                                (NP (PRP it))
+                                (VP
+                                  (VP (VBZ irksome))
+                                  (, ,)
+                                  (CC and)
+                                  (VP (VBD repine))))))))))
+                  (, ,))
+                (VP
+                  (VP (VBP are)
+                    (ADJP (DT no) (JJ true) (JJ monks)))
+                  (, ,)
+                  (CC and)
+                  (VP (VBP have)
+                    (VP (VBN made)
+                      (NP (DT a) (NN mistake))
+                      (PP (IN in)
+                        (S
+                          (VP (VBG entering)
+                            (NP (DT the) (NN monastery)))))))))
+              (: --)
+              (S
+                (NP (PRP$ their) (JJ proper) (NN place))
+                (VP (VBZ is)
+                  (PP (IN in)
+                    (NP (DT the) (NN world))))))))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Even))
+    (PP (IN in)
+      (NP (DT the) (NN temple)))
+    (NP (PRP one))
+    (VP (MD can) (RB not)
+      (VP (VB be)
+        (ADJP (JJ safe)
+          (PP (IN from)
+            (NP
+              (NP (NN sin))
+              (CC and)
+              (NP (DT the) (NNP devil)))))))
+    (. .)))
+(ROOT
+  (S (IN So)
+    (NP (PRP it))
+    (VP (VBD was)
+      (ADJP (RB no) (JJ good))
+      (S
+        (VP (VBG taking)
+          (NP (PRP it))
+          (ADVP (RB too) (RB much))
+          (PP (IN into)
+            (NP (NN account))))))
+    (. .) ('' '')))
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP He))
+      (VP (VBZ is)
+        (ADJP (JJR weaker))))
+    (, ,)
+    (NP (DT a) (NNS drowsiness))
+    (VP (VBZ has)
+      (VP (VBN come)
+        (PP (IN over)
+          (NP (PRP him)))
+        (PRN (, ,) ('' '')
+          (S
+            (NP (NNP Father) (NNP Pa?ssy))
+            (VP (VBN whispered)
+              (PP (TO to)
+                (NP (NNP Alyosha)))))
+          (, ,))
+        (SBAR (IN as)
+          (S
+            (NP (PRP he))
+            (VP (VBN blessed)
+              (NP (PRP him)))))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP (JJ difficult)
+        (S
+          (VP (TO to)
+            (VP (VB rouse)
+              (NP (PRP him)))))))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (NP (PRP he))
+    (VP (MD must) (RB not)
+      (VP (VB be)
+        (VP (VBN roused))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD waked)
+        (PRT (RP up))
+        (PP (IN for)
+          (NP (CD five) (NNS minutes))))
+      (, ,)
+      (VP (VBD sent)
+        (NP (PRP$ his) (NN blessing))
+        (PP (TO to)
+          (NP (DT the) (NNS brothers))))
+      (, ,)
+      (CC and)
+      (VP (VBD begged)
+        (NP (PRP$ their) (NNS prayers))
+        (PP (IN for)
+          (NP (PRP him)))
+        (PP (IN at)
+          (NP (NN night)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ intends)
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (NP (DT the) (NN sacrament))
+            (ADVP (RB again))
+            (PP (IN in)
+              (NP (DT the) (NN morning)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD remembered)
+      (NP (PRP you))
+      (, ,)
+      (ADVP (RB Alexey)))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD asked)
+        (SBAR (IN whether)
+          (S
+            (NP (PRP you))
+            (VP (VBD had)
+              (VP (VBN gone)
+                (PRT (RP away)))))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN told)
+          (SBAR (IN that)
+            (S
+              (NP (PRP you))
+              (VP (VBD were)
+                (PP (IN in)
+                  (NP (DT the) (NN town)))))))))
+    (. .)))
+(ROOT
+  (S (`` `)
+    (S
+      (NP (PRP I))
+      (VP (VBN blessed)
+        (NP (PRP him))
+        (PP (IN for)
+          (NP (DT that) (NN work)))))
+    (, ,) ('' ')
+    (PRN
+      (S
+        (NP (PRP he))
+        (VP (VBD said))))
+    (, ,) (`` `)
+    (S
+      (S
+        (NP (PRP$ his) (NN place))
+        (VP (VBZ is)
+          (ADVP (RB there))))
+      (, ,) (RB not)
+      (S
+        (ADVP (RB here))
+        (, ,)
+        (PP (IN for)
+          (ADVP (RB awhile)))))
+    (. .) ('' ')))
+(ROOT
+  (S
+    (NP (DT Those))
+    (VP (VBD were)
+      (NP (PRP$ his) (NNS words))
+      (PP (IN about)
+        (NP (PRP you))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD remembered)
+        (NP (PRP you))
+        (ADVP (RB lovingly))
+        (, ,)
+        (PP (IN with)
+          (NP (NN anxiety)))))
+    (: ;)
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB understand)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (PRP he))
+            (VP (VBZ honored)
+              (NP (PRP you)))))))
+    (. ?)))
+(ROOT
+  (SBARQ (CC But)
+    (WHADVP (WRB how))
+    (SQ (VBZ is)
+      (NP
+        (NP (PRP it))
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (VBZ has)
+              (VP (VBN decided)
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP you))
+                    (VP (MD shall)
+                      (VP (VB spend)
+                        (NP
+                          (NP (DT some) (NN time))
+                          (PP (IN in)
+                            (NP (DT the) (NN world))))))))))))))
+    (. ?)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD must)
+      (VP (VB have)
+        (VP (VBN foreseen)
+          (NP
+            (NP (NN something))
+            (PP (IN in)
+              (NP (PRP$ your) (NN destiny)))))))
+    (. !)))
+(ROOT
+  (S
+    (NP
+      (NP (NNP Understand))
+      (, ,)
+      (NP (NNP Alexey))
+      (, ,)
+      (SBAR (IN that)
+        (S
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VB return)
+                (PP (TO to)
+                  (NP (DT the) (NN world))))))
+          (, ,)
+          (NP (PRP it))
+          (VP (MD must)
+            (VP (VB be)
+              (S
+                (VP (TO to)
+                  (VP (VB do)
+                    (NP (DT the) (NN duty))))))))))
+    (VP (VBD laid)
+      (PP (IN upon)
+        (NP (PRP you)))
+      (PP
+        (PP (IN by)
+          (NP (PRP$ your) (NN elder)))
+        (, ,)
+        (CC and)
+        (RB not)
+        (PP (IN for)
+          (NP (JJ frivolous) (NN vanity)
+            (CC and)
+            (NN worldly) (NNS pleasures)))))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Father) (NNP Pa?ssy))
+    (VP (VBD went)
+      (PRT (RP out)))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD had)
+      (NP (DT no) (NN doubt))
+      (SBAR (IN that)
+        (S
+          (NP (NNP Father) (NNP Zossima))
+          (VP (VBD was)
+            (ADJP (VBG dying))
+            (, ,)
+            (SBAR (IN though)
+              (S
+                (NP (PRP he))
+                (VP (MD might)
+                  (VP (VB live)
+                    (NP
+                      (NP (DT another) (NN day))
+                      (CC or)
+                      (NP (CD two)))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP
+      (VP
+        (ADVP
+          (ADVP (RB firmly))
+          (CC and)
+          (ADVP (RB ardently)))
+        (VBD resolved)
+        (SBAR (IN that)
+          (S
+            (PP (IN in)
+              (NP
+                (NP (NN spite))
+                (PP (IN of)
+                  (NP
+                    (NP (PRP$ his) (NNS promises))
+                    (PP (TO to)
+                      (NP
+                        (NP (PRP$ his) (NN father))
+                        (, ,)
+                        (NP (DT the) (NNPS Hohlakovs))
+                        (, ,)
+                        (CC and)
+                        (NP (NNP Katerina) (NNP Ivanovna))))))))
+            (, ,)
+            (NP (PRP he))
+            (VP (MD would) (RB not)
+              (VP (VB leave)
+                (NP (DT the) (NN monastery))
+                (NP (JJ next) (NN day)))))))
+      (, ,)
+      (CC but)
+      (VP (MD would)
+        (VP (VB remain)
+          (PP (IN with)
+            (NP (PRP$ his) (NN elder)))
+          (PP (TO to)
+            (NP (DT the) (NN end))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (NN heart))
+      (VP (VBD glowed)
+        (PP (IN with)
+          (NP (NN love)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD reproached)
+        (NP (PRP himself))
+        (ADVP (RB bitterly))
+        (PP (IN for)
+          (S
+            (VP (VBG having)
+              (VP (VBN been)
+                (ADJP (JJ able)
+                  (PP (IN for)
+                    (NP (CD one) (NN instant))))
+                (S
+                  (VP (TO to)
+                    (VP (VB forget)
+                      (NP (PRP him))
+                      (SBAR
+                        (SBAR
+                          (WHNP (WP whom))
+                          (S
+                            (NP (PRP he))
+                            (VP (VBD had)
+                              (VP (VBN left)
+                                (PP (IN in)
+                                  (NP
+                                    (NP (DT the) (NN monastery))
+                                    (PP (IN on)
+                                      (NP (PRP$ his) (NN deathbed)))))))))
+                        (, ,)
+                        (CC and)
+                        (SBAR
+                          (WHNP (WP whom))
+                          (S
+                            (NP (PRP he))
+                            (ADJP (VBN honored)
+                              (PP (IN above)
+                                (NP (DT every) (NN one))))))))))
+                (PP (IN in)
+                  (NP (DT the) (NN world)))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD went)
+        (PP (IN into)
+          (NP
+            (NP (NNP Father) (NNP Zossima) (POS 's))
+            (NN bedroom))))
+      (, ,)
+      (VP (VBP knelt)
+        (PRT (RP down)))
+      (, ,)
+      (CC and)
+      (VP (VBD bowed)
+        (PP (TO to)
+          (NP (DT the) (NN ground)))
+        (PP (IN before)
+          (NP
+            (NP (DT the) (JJR elder))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD slept)
+                  (ADVP (RB quietly))
+                  (PP (IN without)
+                    (S
+                      (VP (VBG stirring) (, ,)
+                        (PP (IN with)
+                          (NP
+                            (NP (JJ regular))
+                            (, ,)
+                            (NP (RB hardly) (JJ audible) (NN breathing))
+                            (CC and)
+                            (NP (DT a) (JJ peaceful) (NN face))))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD returned)
+      (PP (TO to)
+        (NP (DT the) (JJ other) (NN room)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (NNP Father) (NNP Zossima))
+          (VP (VBD had)
+            (VP (VBN received)
+              (NP (PRP$ his) (NNS guests))
+              (PP (IN in)
+                (NP (DT the) (NN morning))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (VP (VBG Taking)
+        (PRT (RP off))
+        (NP (PRP$ his) (NNS boots))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBP lay)
+      (PRT (RP down))
+      (PP (IN on)
+        (NP
+          (NP (DT the) (JJ hard) (, ,) (JJ narrow) (, ,) (JJ leathern) (NN sofa))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (PRP he))
+              (VP (VBD had)
+                (ADVP (RB long))
+                (VP (VBN used)
+                  (PP (IN as)
+                    (NP (DT a) (NN bed)))))))))
+      (, ,)
+      (S
+        (VP (VBG bringing)
+          (NP
+            (NP (NN nothing))
+            (PP (CC but)
+              (NP (DT a) (NN pillow)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS mattress))
+      (, ,)
+      (SBAR
+        (WHPP (IN about)
+          (WHNP (WDT which)))
+        (S
+          (NP (PRP$ his) (NN father))
+          (VP (VBD had)
+            (VP (VBD shouted)
+              (PP (TO to)
+                (NP (PRP him)))
+              (NP (DT that) (NN morning))))))
+      (, ,))
+    (NP (PRP he))
+    (VP (VBD had)
+      (ADVP (RB long))
+      (VP (VBN forgotten)
+        (S
+          (VP (TO to)
+            (VP (VB lie)
+              (PRT (RP on)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD took)
+      (PRT (RP off))
+      (NP
+        (NP (PRP$ his) (NN cassock))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (PRP he))
+            (VP (VBD used)
+              (PP (IN as)
+                (NP (DT a) (NN covering))))))))
+    (. .)))
+(ROOT
+  (S (CC But)
+    (PP (IN before)
+      (S
+        (VP (VBG going)
+          (PP (TO to)
+            (NP (NN bed))))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD fell)
+        (PP (IN on)
+          (NP (PRP$ his) (NNS knees))))
+      (CC and)
+      (VP (VBD prayed)
+        (NP (DT a) (JJ long) (NN time))))
+    (. .)))
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (PRP$ his) (JJ fervent) (NN prayer)))
+    (NP (PRP he))
+    (VP
+      (VP (VBD did) (RB not)
+        (VP (VB beseech)
+          (S
+            (NP (NNP God))
+            (VP (TO to)
+              (VP (VB lighten)
+                (NP (PRP$ his) (NNS darkness)))))))
+      (CC but)
+      (VP
+        (ADVP (RB only))
+        (VBD thirsted)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (JJ joyous) (NN emotion))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (ADVP (RB always))
+                (VP (VBD visited)
+                  (NP (PRP$ his) (NN soul))
+                  (PP (IN after)
+                    (NP
+                      (NP (DT the) (NN praise)
+                        (CC and)
+                        (NN adoration))
+                      (, ,)
+                      (SBAR
+                        (WHPP (IN of)
+                          (WHNP (WDT which)))
+                        (S
+                          (NP (PRP$ his) (NN evening) (NN prayer))
+                          (ADVP (RB usually))
+                          (VP (VBD consisted)))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT That) (NN joy))
+    (ADVP (RB always))
+    (VP (VBD brought)
+      (NP (PRP him))
+      (PP (NN light)
+        (NP (JJ untroubled) (NN sleep))))
+    (. .)))
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP he))
+        (VP (VBD was)
+          (VP (VBG praying)))))
+    (, ,)
+    (NP (PRP he))
+    (ADVP (RB suddenly))
+    (VP (VBD felt)
+      (PP (IN in)
+        (NP (PRP$ his) (NN pocket)))
+      (NP
+        (NP (DT the) (JJ little) (JJ pink) (NN note))
+        (SBAR
+          (S
+            (NP (DT the) (NN servant))
+            (VP (VBD had)
+              (VP (VBN handed)
+                (NP (PRP him))
+                (SBAR (IN as)
+                  (S
+                    (NP (PRP he))
+                    (VP (VBD left)
+                      (SBAR
+                        (S
+                          (NP (NNP Katerina) (NNP Ivanovna))
+                          (VP (VBZ 's)))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD was)
+        (VP (VBN disturbed)))
+      (, ,)
+      (CC but)
+      (VP (VBD finished)
+        (NP (PRP$ his) (NN prayer))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Then))
+    (, ,)
+    (PP (IN after)
+      (NP (DT some) (NN hesitation)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD opened)
+      (NP (DT the) (NN envelope)))
+    (. .)))
+(ROOT
+  (SINV
+    (PP (IN In)
+      (NP (PRP it)))
+    (VP (VBD was)
+      (NP (DT a) (NN letter))
+      (PP (TO to)
+        (NP
+          (NP (PRP him))
+          (, ,)
+          (VP (VBN signed)
+            (PP (IN by)
+              (NP (NNP Lise))))
+          (, ,))))
+    (NP
+      (NP (DT the) (JJ young) (NN daughter))
+      (PP (IN of)
+        (NP (NNP Madame) (NNP Hohlakov)))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD had)
+            (VP (VBN laughed)
+              (PP (IN at)
+                (NP (PRP him)))
+              (PP (IN before)
+                (NP
+                  (NP (DT the) (JJR elder))
+                  (PP (IN in)
+                    (NP (DT the) (NN morning))))))))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (NNP Alexey) (NNP Fyodorovitch))
+    (, ,) ('' '')
+    (NP (PRP she))
+    (VP (VBD wrote) (, ,) (`` ``)
+      (S
+        (S
+          (NP (PRP I))
+          (VP (VBP am)
+            (VP (VBG writing)
+              (PP (TO to)
+                (NP (PRP you)))
+              (PP (IN without)
+                (NP
+                  (NP (DT any) (NN one) (POS 's))
+                  (NN knowledge))))))
+        (, ,)
+        (ADVP (RB even))
+        (S
+          (NP (NN mamma))
+          (VP (VBZ 's)))
+        (, ,)
+        (CC and)
+        (S
+          (NP (PRP I))
+          (VP (VBP know)
+            (SBAR
+              (WHADVP (WRB how)
+                (ADJP (JJ wrong)))
+              (S
+                (NP (PRP it))
+                (VP (VBZ is))))))))
+    (. .)))
+(ROOT
+  (S (CC But)
+    (S
+      (NP (PRP I))
+      (VP (MD can) (RB not)
+        (VP (VB live)
+          (PP (IN without)
+            (S
+              (VP (VBG telling)
+                (NP (PRP you))
+                (NP
+                  (NP (DT the) (NN feeling))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ has)
+                        (VP (VBN sprung)
+                          (PRT (RP up))
+                          (PP (IN in)
+                            (NP (PRP$ my) (NN heart))))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT this)
+        (NP (DT no) (NN one))
+        (CC but)
+        (NP
+          (NP (PRP us))
+          (NP (CD two))))
+      (VP (MD must)
+        (VP (VB know)
+          (PP (IN for)
+            (NP (DT a) (NN time))))))
+    (. .)))
+(ROOT
+  (SBARQ (CC But)
+    (WHADVP (WRB how))
+    (SQ (VBP am)
+      (NP (PRP I))
+      (S
+        (VP (TO to)
+          (VP (VB say)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP I))
+                (VP (VBP want)
+                  (ADVP (RB so) (RB much))
+                  (S
+                    (VP (TO to)
+                      (VP (VB tell)
+                        (NP (PRP you))))))))))))
+    (. ?)))
+(ROOT
+  (S
+    (S
+      (NP (NNP Paper))
+      (PRN (, ,)
+        (S
+          (NP (PRP they))
+          (VP (VBP say)))
+        (, ,))
+      (VP (VBZ does) (RB not)
+        (VP (VB blush))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VB assure)
+        (NP (PRP you))
+        (SBAR
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ 's) (RB not)
+                (ADJP (JJ true)))))
+          (CC and)
+          (SBAR (IN that)
+            (S
+              (NP (PRP it))
+              (VP (VBZ 's)
+                (VP (VBG blushing)
+                  (SBAR (RB just) (IN as)
+                    (S
+                      (NP (PRP I))
+                      (VP (VBP am)
+                        (ADVP (RB now))
+                        (, ,)
+                        (ADVP (DT all) (RP over))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (NNP Dear) (NNP Alyosha))
+      (PRN (, ,)
+        (S
+          (NP (PRP I))
+          (VP (VBP love)
+            (NP (PRP you))))
+        (, ,))
+      (NP (PRP I))
+      (VP (VBP 've)
+        (VP (VBN loved)
+          (NP (PRP you))
+          (PP (IN from)
+            (NP (PRP$ my) (NN childhood)))
+          (, ,)
+          (PP (IN since)
+            (NP
+              (NP (PRP$ our) (NNP Moscow) (NNS days))
+              (, ,)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP you))
+                  (VP (VBD were)
+                    (ADJP (RB very) (JJ different)
+                      (PP (IN from)
+                        (SBAR
+                          (WHNP (WP what))
+                          (S
+                            (NP (PRP you))
+                            (VP (VBP are)
+                              (ADVP (RB now)))))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (MD shall)
+        (VP (VB love)
+          (NP (PRP you))
+          (NP (PDT all) (PRP$ my) (NN life)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP$ My) (NN heart))
+    (VP (VBZ has)
+      (VP (VBN chosen)
+        (S
+          (NP (PRP you)))
+        (, ,)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB unite)
+                (NP (PRP$ our) (NNS lives)))
+              (, ,)
+              (CC and)
+              (VP (VB pass)
+                (S
+                  (NP (PRP them))
+                  (ADVP (RB together))
+                  (PP (IN till)
+                    (NP (PRP$ our) (JJ old) (NN age))))))))))
+    (. .)))
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP (NN course)))
+    (, ,)
+    (PP (IN on)
+      (NP (NN condition)))
+    (NP (DT that) (PRP you))
+    (VP (MD will)
+      (VP (VB leave)
+        (NP (DT the) (NN monastery))))
+    (. .)))
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN for)
+        (NP (PRP$ our) (NN age))))
+    (NP (PRP we))
+    (VP (MD will)
+      (VP (VB wait)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN time))
+            (VP (VBN fixed)
+              (PP (IN by)
+                (NP (DT the) (NN law))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (PP (IN By)
+        (NP (DT that) (NN time)))
+      (NP (PRP I))
+      (VP (MD shall)
+        (ADVP (RB certainly))
+        (VP (VB be)
+          (ADJP (RB quite) (JJ strong)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD shall)
+      (VP (VB be)
+        (VP (VBG walking)
+          (CC and)
+          (VBG dancing))))
+    (. .)))
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (MD can)
+      (VP (VB be)
+        (NP
+          (NP (DT no) (NN doubt))
+          (PP (IN of)
+            (NP (DT that))))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP You))
+    (VP (VBP see)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (PRP I))
+          (VP (VBP 've)
+            (VP (VBN thought)
+              (PP (IN of)
+                (NP (NN everything))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (NP
+        (NP (RB only) (CD one) (NN thing))
+        (PRN
+          (S
+            (NP (PRP I))
+            (VP (MD ca) (RB n't)
+              (VP (VB imagine)))))
+        (: :)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP (MD 'll)
+              (VP (VB think)
+                (PP (IN of)
+                  (NP (PRP me)))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP read)
+                      (NP (DT this)))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADVP (RB always))
+      (VP
+        (VP (VBG laughing))
+        (CC and)
+        (VP (VBG being)
+          (ADJP (JJ naughty)))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (S
+        (NP (PRP I))
+        (VP (VBD made)
+          (S
+            (NP (PRP you))
+            (ADJP (JJ angry)))
+          (NP (DT this) (NN morning))))
+      (, ,)
+      (CC but)
+      (S
+        (NP (PRP I))
+        (VP (VB assure)
+          (NP (PRP you))
+          (SBAR (IN before)
+            (S
+              (NP (PRP I))
+              (VP (VBD took)
+                (PRT (RP up))
+                (NP (PRP$ my) (NN pen))))))))
+    (PRN (, ,)
+      (S
+        (NP (PRP I))
+        (VP (VBD prayed)
+          (PP (IN before)
+            (NP
+              (NP (DT the) (NN Image))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN Mother))
+                  (PP (IN of)
+                    (NP (NNP God)))))))))
+      (, ,))
+    (CC and)
+    (ADVP (RB now))
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (VP
+          (VP (VBG praying))
+          (, ,)
+          (CC and)
+          (VP
+            (ADVP (RB almost))
+            (VBG crying)))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP$ My) (NN secret))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP (PRP$ your) (NNS hands))))
+    (. .)))
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP you))
+        (VP (VBP come)
+          (NP (NN to?morrow)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (PRP I))
+            (VP (MD shall)
+              (VP (VB look)
+                (PP (IN at)
+                  (NP (PRP you)))))))))
+    (. .)))
+(ROOT
+  (S
+    (INTJ (UH Ah))
+    (, ,)
+    (NP (NNP Alexey) (NNP Fyodorovitch))
+    (, ,)
+    (SBAR
+      (NP (WP what))
+      (IN if)
+      (S
+        (NP (PRP I))
+        (VP (MD ca) (RB n't)
+          (VP (VB restrain)
+            (NP (PRP myself))))))
+    (VP
+      (VP (VB like)
+        (NP (DT a) (JJ silly)))
+      (CC and)
+      (VP (VB laugh)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP I))
+            (VP (VBP look)
+              (PP (IN at)
+                (NP (PRP you)))
+              (SBAR (IN as)
+                (S
+                  (NP (PRP I))
+                  (VP (VBD did)
+                    (ADVP (RB to?day))))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (MD 'll)
+        (VP (VB think)
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBP 'm)
+                (NP
+                  (NP (DT a) (JJ nasty) (NN girl))
+                  (VP (VBG making)
+                    (NP
+                      (NP (NN fun))
+                      (PP (IN of)
+                        (NP (PRP you))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (MD wo) (RB n't)
+        (VP (VB believe)
+          (NP (PRP$ my) (NN letter)))))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (SBAR (RB so)
+      (S
+        (NP (PRP I))
+        (VP (VB beg)
+          (NP (PRP you)))))
+    (, ,)
+    (NP
+      (NP (NNP dear) (CD one))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP 've)
+            (NP
+              (NP (DT any) (NN pity))
+              (PP (IN for)
+                (NP (PRP me))))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP you))
+                (VP (VBP come)
+                  (PP (TO to)
+                    (NP (NN morrow)))))))))
+      (, ,))
+    (VP (VBP do) (RB n't)
+      (VP (VB look)
+        (NP (PRP me))
+        (PP (RB straight) (IN in)
+          (NP
+            (NP (DT the) (NN face))
+            (, ,)
+            (SBAR (IN for)
+              (S
+                (SBAR (IN if)
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP meet)
+                      (NP (PRP$ your) (NNS eyes)))))
+                (, ,)
+                (NP (PRP it))
+                (VP (MD will)
+                  (VP (VB be)
+                    (ADJP (JJ sure)
+                      (S
+                        (VP (TO to)
+                          (VP (VB make)
+                            (S
+                              (NP (PRP me))
+                              (VP (NN laugh)))))))
+                    (, ,)
+                    (SBAR (RB especially) (IN as)
+                      (S
+                        (NP (PRP you))
+                        (VP (MD 'll)
+                          (VP (VB be)
+                            (PP (IN in)
+                              (NP (DT that) (JJ long) (NN gown)))))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP feel)
+        (NP
+          (NP (JJ cold))
+          (PP (DT all)
+            (PP (IN over)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP think)
+                      (PP (IN of)
+                        (NP (PRP it)))))
+                  (, ,) (IN so)
+                  (S
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP come))))
+                    (, ,)
+                    (S
+                      (VP (VBP do) (RB n't)
+                        (VP (VB look)
+                          (PP (IN at)
+                            (NP (PRP me)))
+                          (PP (IN at)
+                            (NP
+                              (NP (DT all))
+                              (PP (IN for)
+                                (NP (DT a) (NN time))))))))
+                    (, ,)
+                    (VP (VBP look)
+                      (PP (IN at)
+                        (NP (NN mamma))))))))
+            (CC or)
+            (PP (IN at)
+              (NP (DT the) (NN window)))))))
+    (: ...)
+    (S (`` ``)
+      (ADVP (RB Here))
+      (NP (PRP I))
+      (VP (VBP 've)
+        (VP (VBN written)
+          (S
+            (NP (PRP you))
+            (NP (DT a) (NN love?letter))))))
+    (. .)))
+(ROOT
+  (SBARQ
+    (FRAG
+      (INTJ (UH Oh))
+      (, ,)
+      (ADVP (RB dear)))
+    (, ,)
+    (SBARQ
+      (WHNP (WP what))
+      (SQ (VBP have)
+        (NP (PRP I))
+        (VP (VBN done))))
+    (. ?)))
+(ROOT
+  (S
+    (NP
+      (NP (NNP Alyosha))
+      (, ,)
+      (SBAR
+        (SBAR
+          (S
+            (VP (VBP do) (RB n't)
+              (VP (VB despise)
+                (NP (PRP me))))))
+        (, ,)
+        (CC and)
+        (SBAR (IN if)
+          (S
+            (NP (PRP I))
+            (VP (VBP 've)
+              (VP
+                (VP (VBN done)
+                  (NP
+                    (NP (NN something))
+                    (ADJP (RB very) (JJ horrid))))
+                (CC and)
+                (VP (VBN wounded)
+                  (NP (PRP you))))))))
+      (, ,))
+    (VP (VB forgive)
+      (NP (PRP me)))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (NP
+      (NP (DT the) (NN secret))
+      (PP (IN of)
+        (NP (PRP$ my) (NN reputation)))
+      (, ,)
+      (VP (VBN ruined)
+        (ADVP (RB perhaps))
+        (PP (IN for)
+          (ADVP (RB ever))))
+      (, ,))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP (PRP$ your) (NNS hands))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (VP (MD shall)
+      (ADVP (RB certainly))
+      (VP (VB cry)
+        (ADVP (RB to?day))))
+    (. .)))
+(ROOT
+  (FRAG
+    (PP
+      (ADVP (RB Good?by))
+      (IN till)
+      (NP (PRP$ our) (NN meeting)))
+    (, ,)
+    (NP (PRP$ our) (JJ awful) (NN meeting))
+    (. .)))
+(ROOT
+  (NP (: --) (NN LISE) (. .)))
+(ROOT
+  (NP
+    (NP (`` ``) (NNP P.S.))
+    (: --)
+    (NP (NNP Alyosha))
+    (. !)))
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP
+      (VP (MD must))
+      (, ,)
+      (VP (MD must))
+      (, ,)
+      (VP (MD must)
+        (VP (VB come))))
+    (. !)))
+(ROOT
+  (S
+    (NP (NNP --))
+    (VP (VBP LISE))
+    (. .) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP
+      (VP (VBD read)
+        (NP (DT the) (NN note))
+        (PP (IN in)
+          (NP (NN amazement))))
+      (, ,)
+      (VP (VBD read)
+        (NP (PRP it))
+        (PP (IN through)
+          (ADVP (RB twice))))
+      (, ,)
+      (VP (VBD thought)
+        (NP (DT a) (JJ little)))
+      (, ,)
+      (CC and)
+      (ADVP (RB suddenly))
+      (VP (VBD laughed)
+        (NP (DT a) (JJ soft) (, ,) (JJ sweet) (NN laugh))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD started))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (NN laugh)
+      (S
+        (S
+          (VP (VBN seemed)
+            (PP (TO to)
+              (NP (PRP him)))))
+        (ADJP (JJ sinful))))
+    (. .)))
+(ROOT
+  (S (CC But)
+    (ADVP
+      (NP (DT a) (NN minute))
+      (RB later))
+    (NP (PRP he))
+    (VP (VBD laughed)
+      (ADVP
+        (ADVP
+          (ADVP (RB again) (RB just))
+          (PP (IN as)
+            (ADVP (RB softly))))
+        (CC and)
+        (ADVP (RB happily))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB slowly))
+    (VP
+      (VP (VBD replaced)
+        (NP (DT the) (NN note))
+        (PP (IN in)
+          (NP (DT the) (NN envelope))))
+      (, ,)
+      (VP (VBD crossed)
+        (NP (PRP himself)))
+      (CC and)
+      (VP (VBD lay)
+        (PRT (RP down))))
+    (. .)))
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN agitation))
+      (PP (IN in)
+        (NP (PRP$ his) (NN heart))))
+    (VP (VBD passed)
+      (PP (IN at)
+        (NP (RB once))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (NNP God))
+    (, ,)
+    (VP
+      (VP (VB have)
+        (NP (NN mercy))
+        (PP (IN upon)
+          (NP
+            (NP (DT all))
+            (PP (IN of)
+              (NP (PRP them))))))
+      (, ,)
+      (VP (VB have)
+        (NP
+          (NP (PDT all) (DT these) (JJ unhappy)
+            (CC and)
+            (JJ turbulent) (NNS souls))
+          (PP (IN in)
+            (NP
+              (NP (NNP Thy))
+              (VP (VBG keeping))))))
+      (, ,)
+      (CC and)
+      (VP (VB set)
+        (NP (PRP them))
+        (PP (IN in)
+          (NP (DT the) (JJ right) (NN path)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT All) (NNS ways))
+    (VP (VBP are)
+      (ADJP (JJ Thine)))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Save)
+      (NP (PRP them))
+      (PP (VBG according)
+        (PP (TO to)
+          (NP (NNP Thy) (NN wisdom)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP Thou))
+    (VP (VBP art)
+      (NP (NN love)))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP Thou))
+    (VP (MD wilt)
+      (VP (VB send)
+        (NP (NN joy))
+        (PP (TO to)
+          (NP (DT all)))))
+    (. !) ('' '')))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD murmured) (, ,)
+      (S
+        (VP
+          (VP (VBG crossing)
+            (NP (PRP himself)))
+          (, ,)
+          (CC and)
+          (VP (VBG falling)
+            (PP (IN into)
+              (NP (JJ peaceful) (NN sleep)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD was)
+      (VP (VBN roused)
+        (ADVP (RB early))
+        (, ,)
+        (PP (IN before)
+          (NP (NN daybreak)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Father) (NNP Zossima))
+    (VP (VBD woke)
+      (PRT (RP up))
+      (S
+        (VP (VBG feeling)
+          (ADJP (RB very) (JJ weak))))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP (PRP he))
+          (VP (VBD wanted)
+            (S
+              (VP (TO to)
+                (VP
+                  (VP (VB get)
+                    (PRT (RP out))
+                    (PP (IN of)
+                      (NP (NN bed))))
+                  (CC and)
+                  (VP (VB sit)
+                    (PRT (RP up))
+                    (PP (IN in)
+                      (NP (DT a) (NN chair)))))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (NN mind))
+      (VP (VBD was)
+        (ADJP (RB quite) (JJ clear))))
+    (: ;)
+    (S
+      (NP (PRP$ his) (NN face))
+      (VP (VBD looked)
+        (ADJP
+          (ADJP (RB very) (JJ tired))
+          (, ,)
+          (CC yet)
+          (ADJP (JJ bright))
+          (CC and)
+          (ADJP (RB almost) (JJ joyful)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD wore)
+      (NP
+        (NP (DT an) (NN expression))
+        (PP (IN of)
+          (NP (NN gayety) (, ,) (NN kindness)
+            (CC and)
+            (NN cordiality)))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (S
+      (ADVP (RB Maybe))
+      (NP (PRP I))
+      (VP (MD shall) (RB not)
+        (VP (VB live)
+          (PP (IN through)
+            (NP (DT the) (VBG coming) (NN day))))))
+    (, ,) ('' '')
+    (NP (PRP he))
+    (VP (VBD said)
+      (PP (TO to)
+        (NP (NNP Alyosha))))
+    (. .)))
+(ROOT
+  (S (RB Then)
+    (NP (PRP he))
+    (VP (VBD desired)
+      (S
+        (VP (TO to)
+          (VP (VB confess)
+            (CC and)
+            (VB take)
+            (NP (DT the) (NN sacrament))
+            (PP (IN at)
+              (NP (RB once)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB always))
+    (VP (VBD confessed)
+      (PP (TO to)
+        (NP (NNP Father) (NNP Pa?ssy))))
+    (. .)))
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG taking)
+          (NP (DT the) (NN communion)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN service))
+      (PP (IN of)
+        (NP (JJ extreme) (NN unction))))
+    (VP (VBD followed))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNS monks))
+      (VP (VBD assembled)))
+    (CC and)
+    (S
+      (NP (DT the) (NN cell))
+      (VP (VBD was)
+        (ADVP (RB gradually))
+        (VP (VBN filled)
+          (PRT (RP up))
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NNS inmates))
+              (PP (IN of)
+                (NP (DT the) (NN hermitage))))))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Meantime))
+    (NP (PRP it))
+    (VP (VBD was)
+      (NP (NN daylight)))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBD began)
+      (S
+        (VP (VBG coming)
+          (PP (IN from)
+            (NP (DT the) (NN monastery))))))
+    (. .)))
+(ROOT
+  (S
+    (SBAR (IN After)
+      (S
+        (NP (DT the) (NN service))
+        (VP (VBD was)
+          (PP (IN over)
+            (NP (DT the) (NN elder))))))
+    (VP (VBD desired)
+      (S
+        (VP (TO to)
+          (VP (VB kiss)
+            (CC and)
+            (VB take)
+            (NP
+              (NP (NN leave))
+              (PP (IN of)
+                (NP (DT every) (NN one))))))))
+    (. .)))
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (DT the) (NN cell))
+        (VP (VBD was)
+          (ADJP (RB so) (JJ small)))))
+    (NP (DT the) (JJR earlier) (NNS visitors))
+    (VP (VBD withdrew)
+      (S
+        (VP (TO to)
+          (VP (VB make)
+            (NP (NN room))
+            (PP (IN for)
+              (NP (NNS others)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD stood)
+      (PP (IN beside)
+        (NP
+          (NP (DT the) (JJR elder))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD was)
+                (VP (VBN seated)
+                  (ADVP (RB again))
+                  (PP (IN in)
+                    (NP (PRP$ his) (NN arm?chair))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD talked)
+      (ADVP (RB as) (RB much))
+      (SBAR (IN as)
+        (S
+          (NP (PRP he))
+          (VP (MD could)))))
+    (. .)))
+(ROOT
+  (S
+    (SBAR (IN Though)
+      (S
+        (NP (PRP$ his) (NN voice))
+        (VP (VBD was)
+          (ADJP (JJ weak)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (ADJP (RB fairly) (JJ steady)))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (S
+      (S
+        (NP (PRP I))
+        (VP (VBP 've)
+          (VP (VBN been)
+            (VP (VBG teaching)
+              (NP (PRP you))
+              (ADVP (RB so)
+                (NP (JJ many) (NNS years)))))))
+      (, ,)
+      (CC and)
+      (S
+        (ADVP (RB therefore))
+        (NP (PRP I))
+        (VP (VBP 've)
+          (VP (VBN been)
+            (VP (VBG talking)
+              (ADVP (RB aloud))
+              (ADVP (RB so)
+                (NP (JJ many) (NNS years)))
+              (, ,)
+              (SBAR
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP 've)
+                      (VP (VBN got)
+                        (PP (IN into)
+                          (NP
+                            (NP (DT the) (NN habit))
+                            (PP (IN of)
+                              (S
+                                (VP (VBG talking))))))))))
+                (, ,)
+                (CC and)
+                (ADVP (RB so) (RB much) (RB so))
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ 's)
+                      (ADJP
+                        (ADJP (RB almost) (RBR more) (JJ difficult))
+                        (PP (IN for)
+                          (NP (PRP me))))
+                      (S
+                        (VP (TO to)
+                          (VP (VB hold)
+                            (NP (PRP$ my) (NN tongue)))))
+                      (SBAR (IN than)
+                        (S
+                          (VP (TO to)
+                            (VP (NN talk)))))
+                      (, ,)
+                      (ADVP (RB even) (RB now))))))
+              (, ,)
+              (PP (IN in)
+                (NP
+                  (NP (NN spite))
+                  (PP (IN of)
+                    (NP
+                      (NP (PRP$ my) (NN weakness))
+                      (, ,)
+                      (NP
+                        (ADJP (RB dear))
+                        (NNS Fathers)
+                        (CC and)
+                        (NNS brothers)))))))))))
+    (, ,) ('' '')
+    (NP (PRP he))
+    (VP (VBD jested) (, ,)
+      (S
+        (VP (VBG looking)
+          (PP (IN with)
+            (NP
+              (NP (NN emotion))
+              (PP (IN at)
+                (NP (DT the) (NN group) (NN round)))))
+          (NP (PRP him)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP Alyosha))
+    (VP (VBD remembered)
+      (ADVP (RB afterwards))
+      (NP
+        (NP (NN something))
+        (PP (IN of)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP he))
+              (VP (VBD said)
+                (PP (TO to)
+                  (NP (PRP them)))))))))
+    (. .)))
+(ROOT
+  (S (CC But)
+    (SBAR (IN though)
+      (S
+        (S
+          (NP (PRP he))
+          (VP (VBD spoke)
+            (S
+              (ADJP (IN out) (RB distinctly)))))
+        (CC and)
+        (S
+          (NP (PRP$ his) (NN voice))
+          (VP (VBD was)
+            (ADJP (RB fairly) (JJ steady))))))
+    (, ,)
+    (NP (PRP$ his) (NN speech))
+    (VP (VBD was)
+      (VP
+        (ADVP (RB somewhat))
+        (VBN disconnected)))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD spoke)
+        (PP (IN of)
+          (NP (JJ many) (NNS things)))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD seemed)
+        (ADJP (JJ anxious))
+        (PP (IN before)
+          (NP
+            (NP (DT the) (NN moment))
+            (PP (IN of)
+              (NP (NN death)))))
+        (S
+          (VP (TO to)
+            (VP (VB say)
+              (NP
+                (NP (NN everything))
+                (SBAR
+                  (S
+                    (NP (PRP he))
+                    (VP (VBD had) (RB not)
+                      (VP (VBN said)
+                        (PP (IN in)
+                          (NP (PRP$ his) (NN life))))))))))))
+      (, ,)
+      (CC and)
+      (RB not)
+      (VP
+        (VP
+          (ADVP (RB simply))
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NN sake))
+              (PP (IN of)
+                (S
+                  (VP
+                    (VP (VBG instructing)
+                      (NP (PRP them)))
+                    (, ,)
+                    (CONJP (CC but)
+                      (RB as))
+                    (VP
+                      (ADVP (RB though))
+                      (VBG thirsting)
+                      (S
+                        (VP (TO to)
+                          (VP (VB share)
+                            (PP (IN with)
+                              (NP
+                                (NP (DT all) (NNS men))
+                                (CC and)
+                                (NP (DT all) (NN creation))))))))
+                    (NP (PRP$ his) (NN joy)
+                      (CC and)
+                      (NN ecstasy))))))))
+        (, ,)
+        (CC and)
+        (VP
+          (ADVP (RB once) (RBR more))
+          (PP (IN in)
+            (NP (PRP$ his) (NN life)
+              (S
+                (VP (TO to)
+                  (VP (VB open)
+                    (NP (PRP$ his) (JJ whole) (NN heart))))))))))
+    (. .)))
+(ROOT
+  (SINV (`` ``)
+    (FRAG
+      (NP
+        (NP (NN Love))
+        (NP (CD one)
+          (NP (DT another))
+          (, ,) (NNS Fathers))))
+    (, ,) ('' '')
+    (VP (VBD said))
+    (NP (NNP Father) (NNP Zossima))
+    (, ,)
+    (SBAR
+      (ADVP (RB as) (RB far))
+      (IN as)
+      (S
+        (NP (NNP Alyosha))
+        (VP (MD could)
+          (VP (VB remember)
+            (ADVP (RB afterwards))))))
+    (. .)))
+(ROOT
+  (S (`` ``)
+    (NP (NNP Love) (NNP God))
+    (VP (VBZ 's)
+      (NP (NNS people)))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (SBAR (IN Because)
+        (S
+          (NP (PRP we))
+          (VP (VBP have)
+            (VP
+              (VP (VBN come)
+                (ADVP (RB here)))
+              (CC and)
+              (VP (VBN shut)
+                (NP (PRP ourselves))
+                (PP (IN within)
+                  (NP (DT these) (NNS walls))))))))
+      (, ,)
+      (NP (PRP we))
+      (VP (VBP are)
+        (NP
+          (NP (DT no) (NN holier))
+          (PP (IN than)
+            (NP
+              (NP (DT those))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP are)
+                    (UCP
+                      (ADVP (RB outside))
+                      (, ,)
+                      (CC but)
+                      (PP (IN on)
+                        (NP (DT the) (NN contrary))))
+                    (, ,)
+                    (PP (IN from)
+                      (NP
+                        (NP (DT the) (JJ very) (NN fact))
+                        (PP (IN of)
+                          (S
+                            (VP (VBG coming)
+                              (ADVP (RB here)))))))))))))))
+    (, ,)
+    (NP
+      (NP (DT each))
+      (PP (IN of)
+        (NP (PRP us))))
+    (VP (VBZ has)
+      (VP (VBD confessed)
+        (PP (TO to)
+          (NP (PRP himself)))
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (VBZ is)
+              (ADJP
+                (ADJP (JJR worse))
+                (PP (IN than)
+                  (NP
+                    (NP (NNS others))
+                    (, ,)
+                    (ADVP (IN than) (DT all))
+                    (NP
+                      (NP (NNS men))
+                      (PP (IN on)
+                        (NP (NN earth))))
+                    (: ...)))))))))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (SBAR
+      (X (DT the) (JJR longer))
+      (S
+        (NP (DT the) (NN monk))
+        (VP (VBZ lives)
+          (PP (IN in)
+            (NP (PRP$ his) (NN seclusion))))))
+    (, ,)
+    (X (DT the) (RBR more) (JJ keenly))
+    (NP (PRP he))
+    (VP (MD must)
+      (VP (VB recognize)
+        (NP (DT that))))
+    (. .)))
+(ROOT
+  (S
+    (NP (RB Else) (PRP he))
+    (VP (MD would)
+      (VP (VB have)
+        (VP (VBN had)
+          (NP (DT no) (NN reason))
+          (S
+            (VP (TO to)
+              (VP (VB come)
+                (ADVP (RB here))))))))
+    (. .)))
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP he))
+        (VP (VBZ realizes)
+          (SBAR
+            (SBAR (IN that)
+              (S
+                (NP (PRP he))
+                (VP (VBZ is) (RB not)
+                  (ADJP
+                    (ADJP (RB only) (JJR worse))
+                    (PP (IN than)
+                      (NP (NNS others)))))))
+            (, ,)
+            (CC but)
+            (SBAR (IN that)
+              (S
+                (NP (PRP he))
+                (VP (VBZ is)
+                  (ADJP (JJ responsible)
+                    (PP (TO to)
+                      (NP
+                        (NP
+                          (NP (DT all) (NNS men))
+                          (PP (IN for)
+                            (NP (DT all))))
+                        (CC and)
+                        (NP (NN everything))
+                        (, ,)
+                        (PP (IN for)
+                          (NP (DT all) (JJ human) (NNS sins)))
+                        (, ,)
+                        (ADJP (JJ national)
+                          (CC and)
+                          (JJ individual))))))))))))
+    (, ,)
+    (NP
+      (NP
+        (NP (RB only) (RB then))
+        (NP (DT the) (NN aim)))
+      (PP (IN of)
+        (NP (PRP$ our) (NN seclusion))))
+    (VP (VBZ is)
+      (VP (VBN attained)))
+    (. .)))
+(ROOT
+  (S
+    (SBAR (IN For)
+      (S
+        (VP (VBP know))))
+    (, ,)
+    (NP
+      (NP (JJ dear) (NNS ones))
+      (, ,)
+      (SBAR (IN that)
+        (FRAG
+          (NP
+            (NP (DT every) (NN one))
+            (PP (IN of)
+              (NP (PRP us)))))))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB undoubtedly) (JJ responsible)
+          (PP
+            (PP (IN for)
+              (NP
+                (NP (DT all) (NNS men)
+                  (CC and)
+                  (NN everything))
+                (PP (IN on)
+                  (NP (NN earth)))))
+            (, ,)
+            (CONJP (RB not) (RB merely))
+            (PP (IN through)
+              (NP
+                (NP (DT the) (JJ general) (NNS sinfulness))
+                (PP (IN of)
+                  (NP (NN creation)))))))
+        (, ,)
+        (CC but)
+        (ADJP
+          (NP
+            (NP (DT each))
+            (NP (CD one)))
+          (RB personally)))
+      (PP (IN for)
+        (NP
+          (NP (DT all) (NN mankind))
+          (CC and)
+          (NP (DT every) (JJ individual) (NN man)))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT This) (NN knowledge))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN crown))
+        (PP (IN of)
+          (NP
+            (NP (NN life))
+            (PP
+              (PP (IN for)
+                (NP (DT the) (NN monk)))
+              (CC and)
+              (PP (IN for)
+                (NP (DT every) (NN man))))))))
+    (. .)))
+(ROOT
+  (S (IN For)
+    (NP (NNS monks))
+    (VP
+      (VP (VBP are)
+        (NP
+          (NP (RB not) (DT a) (JJ special) (NN sort))
+          (PP (IN of)
+            (NP (NNS men)))))
+      (, ,)
+      (CC but)
+      (ADVP (RB only))
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (DT all) (NNS men))
+          (VP (MD ought)
+            (S
+              (VP (TO to)
+                (VP (VB be))))))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Only)
+      (PP (IN through)
+        (NP (DT that) (NN knowledge))))
+    (, ,)
+    (NP (PRP$ our) (NN heart))
+    (VP (VBZ grows)
+      (ADJP (JJ soft)
+        (PP (IN with)
+          (NP (JJ infinite) (, ,) (JJ universal) (, ,) (JJ inexhaustible) (NN love)))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Then))
+    (NP
+      (NP (DT every) (NN one))
+      (PP (IN of)
+        (NP (PRP you))))
+    (VP (MD will)
+      (VP (VB have)
+        (NP (DT the) (NN power)
+          (S
+            (VP
+              (VP (TO to)
+                (VP (VB win)
+                  (PRT (RP over))
+                  (NP (DT the) (JJ whole) (NN world))
+                  (PP (IN by)
+                    (NP (NN love)))))
+              (CC and)
+              (VP (TO to)
+                (VP (VB wash)
+                  (PRT (RP away))
+                  (NP
+                    (NP (DT the) (NNS sins))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NN world))
+                        (PP (IN with)
+                          (NP (PRP$ your) (NNS tears)))))))))))))
+    (: ...) (. .)))
+(ROOT
+  (S
+    (NP
+      (NP (DT Each))
+      (PP (IN of)
+        (NP (PRP you))))
+    (VP
+      (VP (VBP keep)
+        (VP (VB watch)
+          (PRT (RP over))
+          (NP (PRP$ your) (NN heart))))
+      (CC and)
+      (VP (VBZ confess)
+        (NP (PRP$ your) (NNS sins))
+        (PP (TO to)
+          (NP (PRP yourself)))
+        (ADVP (RB unceasingly))))
+    (. .)))
+(ROOT
+  (S
+    (VP
+      (VP (VB Be)
+        (ADJP (RB not) (JJ afraid))
+        (PP (IN of)
+          (NP (PRP$ your) (NNS sins)))
+        (, ,)
+        (SBAR (RB even)
+          (WHADVP (WRB when))
+          (S
+            (VP (VBG perceiving)
+              (NP (PRP them))
+              (, ,)
+              (SBAR (IN if) (RB only)
+                (S
+                  (NP (EX there))
+                  (VP (VB be)
+                    (ADJP (JJ penitence)))))
+              (, ,)))))
+      (CC but)
+      (VP (VB make)
+        (NP (DT no) (NNS conditions))
+        (PP (IN with)
+          (NP (NNP God)))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (RB Again))
+    (PRN
+      (S
+        (NP (PRP I))
+        (VP (VBP say)))
+      (, ,))
+    (VP (VB Be)
+      (ADJP (RB not) (JJ proud)))
+    (. .)))
+(ROOT
+  (S
+    (VP (VB Be)
+      (ADJP (JJ proud)
+        (PP
+          (ADVP (DT neither))
+          (TO to)
+          (NP
+            (NP (DT the) (JJ little) (NN nor))
+            (PP (TO to)
+              (NP (DT the) (JJ great)))))))
+    (. .)))
+(ROOT
+  (S
+    (VP
+      (VP (VB Hate)
+        (NP
+          (NP (RB not) (DT those))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP reject)
+                (NP
+                  (NP (PRP you))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ insult)
+                        (NP (PRP you)))))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ abuse))))))))))
+      (CC and)
+      (VP (VB slander)
+        (NP (PRP you))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (VP (VB Hate)
+        (NP (RB not)
+          (NP
+            (NP (DT the) (NNS atheists))
+            (, ,)
+            (NP
+              (NP (DT the) (NNS teachers))
+              (PP (IN of)
+                (NP (NN evil)))))
+          (, ,)
+          (NP (DT the) (NNS materialists)))))
+    (PRN (: --)
+      (CC and)
+      (S
+        (NP (PRP I))
+        (VP (VBP mean)
+          (ADVP (RB not)
+            (NP (RB only) (DT the) (JJ good) (NNS ones)))
+          (: --)
+          (SBAR (IN for)
+            (S
+              (NP (EX there))
+              (VP (VBP are)
+                (NP
+                  (NP (JJ many) (JJ good) (NNS ones))
+                  (PP (IN among)
+                    (NP (PRP them))))
+                (, ,)
+                (ADVP (RB especially))
+                (PP (IN in)
+                  (NP (PRP$ our) (NN day))))))))
+      (: --))
+    (VP (VBP hate)
+      (ADVP (RB not)
+        (NP (RB even) (DT the) (JJ wicked) (NNS ones))))
+    (. .)))
+(ROOT
+  (S
+    (VP
+      (VP (VB Remember)
+        (NP (PRP them))
+        (PP (IN in)
+          (NP (PRP$ your) (NNS prayers)))
+        (ADVP (RB thus)))
+      (: :)
+      (NP
+        (NP (NNP Save))
+        (, ,)
+        (NP (NNP O) (NNP Lord))
+        (, ,)
+        (NP
+          (NP (PDT all) (DT those))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP have)
+                (NP (NN none)
+                  (S
+                    (VP (TO to)
+                      (VP (VB pray)
+                        (PP (IN for)
+                          (NP (PRP them)))))))))))
+        (, ,)
+        (PP (IN save)
+          (NP
+            (NP (RB too) (PDT all) (DT those))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (MD will) (RB not)
+                  (VP (VB pray)))))))))
+    (. .)))
+(ROOT
+  (S (CC And)
+    (S
+      (VP (VB add)))
+    (: :)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is) (RB not)
+        (PP (IN in)
+          (NP
+            (NP (NN pride))
+            (SBAR (IN that)
+              (S
+                (NP (PRP I))
+                (VP (VBP make)
+                  (NP
+                    (NP (DT this) (NN prayer))
+                    (, ,)
+                    (NP (NNP O) (NNP Lord))
+                    (, ,)
+                    (SBAR (IN for)
+                      (S
+                        (NP (PRP I))
+                        (VP (VBP am)
+                          (ADJP
+                            (ADJP (JJR lower))
+                            (PP (IN than)
+                              (NP (DT all) (NNS men)))))))))))))
+        (: ...)))
+    (. .)))
+(ROOT
+  (S
+    (NP
+      (NP (NNP Love) (NNP God) (POS 's))
+      (NNS people))
+    (, ,)
+    (VP
+      (VP (VBP let) (RB not)
+        (ADVP (RB strangers))
+        (VP (VB draw)
+          (PRT (RP away))
+          (NP (DT the) (NN flock))))
+      (, ,)
+      (SBAR (IN for)
+        (S
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP slumber)
+                (PP (IN in)
+                  (NP
+                    (NP (PRP$ your)
+                      (ADJP (JJ slothfulness)
+                        (CC and)
+                        (JJ disdainful))
+                      (NN pride))
+                    (, ,)
+                    (CC or)
+                    (NP (JJR worse))))
+                (ADVP (RB still))
+                (, ,)
+                (PP (IN in)
+                  (NP (NNS covetousness))))))
+          (, ,)
+          (NP (PRP they))
+          (VP (MD will)
+            (VP
+              (VP (VB come)
+                (PP (IN from)
+                  (NP (DT all) (NNS sides))))
+              (CC and)
+              (VP (VB draw)
+                (PRT (RP away))
+                (NP (PRP$ your) (NN flock))))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Expound) (DT the) (NNP Gospel))
+        (PP (TO to)
+          (NP (DT the) (NNS people))))
+      (VP (VBP unceasingly)))
+    (: ...)
+    (S
+      (VP (VB be)
+        (ADJP (RB not) (JJ extortionate)))
+      (: ...))
+    (. .)))
+(ROOT
+  (SINV
+    (S
+      (VP (VBP Do) (RB not)
+        (VP (VB love)
+          (NP (NN gold)
+            (CC and)
+            (NN silver)))))
+    (, ,)
+    (VP (VBP do) (RB not)
+      (VP (VB hoard)))
+    (NP (PRP them))
+    (: ...) (. .)))
+(ROOT
+  (S
+    (VP (VB Have)
+      (NP (NN faith)))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (VP (VBG Cling)
+        (PP (TO to)
+          (NP (DT the) (NN banner)))))
+    (CC and)
+    (S
+      (VP (VB raise)
+        (NP (PRP it))
+        (PP (IN on)
+          (ADJP (JJ high)))))
+    (. .) ('' '')))
+(ROOT
+  (S (CC But)
+    (NP (DT the) (NN elder))
+    (VP (VBD spoke)
+      (ADJP (RBR more) (JJ disconnectedly))
+      (SBAR (IN than)
+        (S
+          (NP (NNP Alyosha))
+          (VP (VBD reported)
+            (NP (PRP$ his) (NNS words))
+            (ADVP (RB afterwards))))))
+    (. .)))
+(ROOT
+  (S
+    (S
+      (ADVP (RB Sometimes))
+      (NP (PRP he))
+      (VP (VBD broke)
+        (PRT (RP off))
+        (ADVP (RB altogether))
+        (, ,)
+        (SBAR (RB as) (IN though)
+          (S
+            (VP (TO to)
+              (VP
+                (VP (VB take)
+                  (NP (NN breath)))
+                (, ,)
+                (CC and)
+                (VP (VB recover)
+                  (NP (PRP$ his) (NN strength)))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP he))
+      (VP (VBD was)
+        (PP (IN in)
+          (NP
+            (NP (DT a) (NN sort))
+            (PP (IN of)
+              (NP (NN ecstasy)))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD heard)
+      (NP (PRP him))
+      (PP (IN with)
+        (NP (NN emotion)))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP (DT many))
+          (VP
+            (VP (VBD wondered)
+              (PP (IN at)
+                (NP (PRP$ his) (NNS words))))
+            (CC and)
+            (VP (VBD found)
+              (S
+                (NP (PRP them))
+                (ADJP (JJ obscure))))))))
+    (: ...) (. .)))
+(ROOT
+  (S
+    (ADVP (RB Afterwards))
+    (NP (DT all))
+    (VP (VBD remembered)
+      (NP (DT those) (NNS words)))
+    (. .)))
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNP Alyosha))
+        (VP (VBD happened)
+          (PP (IN for)
+            (NP (DT a) (NN moment)))
+          (S
+            (VP (TO to)
+              (VP (VB leave)
+                (NP (DT the) (NN cell))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN struck)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (JJ general) (NN excitement)
+              (CC and)
+              (NN suspense))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNS monks))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBD were)
+                      (VP (VBG crowding)
+                        (PP (IN about)
+                          (NP (PRP it)))))))))))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT This) (NN anticipation))
+    (VP (VBD showed)
+      (NP (PRP itself))
+      (PP (IN in)
+        (NP (DT some)))
+      (PP (IN by)
+        (NP (NN anxiety)))
+      (, ,)
+      (PP (IN in)
+        (NP (NNS others)))
+      (PP (IN by)
+        (NP (JJ devout) (NN solemnity))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT All))
+    (VP (VBD were)
+      (VP (VBG expecting)
+        (SBAR (IN that)
+          (S
+            (NP (DT some) (NN marvel))
+            (VP (MD would)
+              (VP (VB happen)
+                (ADVP (RB immediately))
+                (PP (IN after)
+                  (NP
+                    (NP (DT the) (NN elder) (POS 's))
+                    (NN death)))))))))
+    (. .)))
