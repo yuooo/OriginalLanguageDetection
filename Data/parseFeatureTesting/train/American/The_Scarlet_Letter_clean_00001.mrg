@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN throng))
+      (PP (IN of)
+        (NP (JJ bearded) (NNS men)))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP
+            (NP (JJ sad-coloured) (NNS garments))
+            (CC and)
+            (NP (JJ grey) (JJ steeple-crowned) (NNS hats)))
+          (, ,)
+          (NP
+            (ADJP (JJ inter-mixed)
+              (PP (IN with)
+                (NP
+                  (NP (NNS women))
+                  (, ,)
+                  (NP (DT some)))))
+            (VBG wearing) (NNS hoods))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (NNS others))
+            (VP (VBN bareheaded)))))
+      (, ,))
+    (VP (VBD was)
+      (VP
+        (VP (VBN assembled)
+          (PP (IN in)
+            (NP
+              (NP (NN front))
+              (PP (IN of)
+                (NP
+                  (NP (DT a) (JJ wooden) (NN edifice))
+                  (, ,)
+                  (SBAR
+                    (WHNP
+                      (NP (DT the) (NN door))
+                      (WHPP (IN of)
+                        (WHNP (WDT which))))
+                    (S
+                      (VP (VBD was)
+                        (ADVP (RB heavily))
+                        (VP (VBN timbered)
+                          (PP (IN with)
+                            (NP (NN oak)))))))
+                  (, ,))))))
+        (CC and)
+        (VP (VBN studded)
+          (PP (IN with)
+            (NP (NN iron) (NNS spikes))))))
+    (. .)))

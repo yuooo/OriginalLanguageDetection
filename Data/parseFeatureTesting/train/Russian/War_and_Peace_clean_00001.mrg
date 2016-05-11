@@ -1,0 +1,16 @@
+(ROOT
+  (S (`` ``)
+    (INTJ (UH Well))
+    (, ,)
+    (NP (NNP Prince))
+    (, ,) (RB so)
+    (NP (NNP Genoa)
+      (CC and)
+      (NNP Lucca))
+    (VP (VBP are)
+      (ADVP (RB now))
+      (NP
+        (NP (RB just) (NN family) (NNS estates))
+        (PP (IN of)
+          (NP (DT the) (NNPS Buonapartes)))))
+    (. .)))

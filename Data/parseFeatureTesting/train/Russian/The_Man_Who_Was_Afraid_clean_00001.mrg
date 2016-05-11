@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (ADVP
+      (NP (JJ ABOUT) (NN sixty) (NNS years))
+      (RB ago))
+    (, ,)
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP
+          (NP (NNS fortunes))
+          (PP (IN of)
+            (NP (NNS millions))))
+        (VP (VBD had)
+          (VP (VBN been)
+            (VP (VBN made)
+              (PP (IN on)
+                (NP (DT the) (NNP Volga)))
+              (PP (IN with)
+                (NP (JJ fairy-tale) (NN rapidity))))))))
+    (, ,)
+    (NP
+      (NP (NNP Ignat) (NNP Gordyeeff))
+      (, ,)
+      (NP (DT a) (JJ young) (NN fellow))
+      (, ,))
+    (VP (VBD was)
+      (VP (VBG working)
+        (PP (IN as)
+          (NP (NN water-pumper)))
+        (PP (IN on)
+          (NP
+            (NP (CD one))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNS barges))
+                (PP (IN of)
+                  (NP (DT the) (JJ wealthy) (NN merchant) (NN Zayev)))))))))
+    (. .)))

@@ -1,0 +1,29 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP YOU))
+      (VP (VBP do) (RB n't)
+        (VP (VB know)
+          (PP (IN about)
+            (NP (PRP me)))
+          (SBAR (IN without)
+            (S
+              (NP (PRP you))
+              (VP (VBP have)
+                (VP (VBN read)
+                  (NP (DT a) (NN book))
+                  (PP (IN by)
+                    (NP
+                      (NP (DT the) (NN name))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT The) (NNPS Adventures))
+                          (PP (IN of)
+                            (NP (NNP Tom) (NNP Sawyer))))))))))))))
+    (: ;)
+    (CC but)
+    (S
+      (NP (DT that))
+      (VP (VBP ai) (RB n't)
+        (NP (DT no) (NN matter))))
+    (. .)))
