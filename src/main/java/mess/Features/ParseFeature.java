@@ -1,17 +1,6 @@
 package mess.Features;
 
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.ling.Sentence;
-import edu.stanford.nlp.parser.common.ArgUtils;
-import edu.stanford.nlp.parser.lexparser.EvaluateTreebank;
-import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
-import edu.stanford.nlp.parser.lexparser.Options;
-import edu.stanford.nlp.trees.MemoryTreebank;
 import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.Treebank;
-import edu.stanford.nlp.util.Pair;
-import edu.stanford.nlp.util.Timing;
-import mess.Features.HomemadeFeature;
 import mess.utils.TextPOSTreeTriple;
 import mess.utils.TreeToSentenceHandler;
 import weka.core.Attribute;
@@ -20,8 +9,6 @@ import weka.core.Instance;
 import weka.core.Instances;
 
 import java.io.File;
-import java.io.FileFilter;
-import java.lang.reflect.Array;
 import java.util.*;
 
 
@@ -46,8 +33,6 @@ public class ParseFeature extends Features {
     private  HashMap<String, List<Integer>> featuresCountsTest;
     private final Set<String> clauses; //clauses we need to detect for simple/complex sentences.
     private HomemadeFeature hm; //This goes here because we need parse trees for a few homemade features.
-    private Instances l_parse;
-    private Instances l_parse_test;
     private ArrayList<Attribute> trainedSlices;
 
     private boolean m_isParse_train = false;
@@ -224,15 +209,15 @@ public class ParseFeature extends Features {
                 Attribute a = new Attribute(s);
                 trainedSlices.add(a);
             }
-            l_parse = new Instances("Parse_train", trainedSlices, numFiles);
-            int numAttributes = l_parse.numAttributes();
+            m_allFeat_train = new Instances("Parse_train", trainedSlices, numFiles);
+            int numAttributes = m_allFeat_train.numAttributes();
             for (int i = 0; i < numFiles; i++) {
                 Instance inst = new DenseInstance(numAttributes);
                 for (Attribute a : trainedSlices) {
                     System.out.println(a.name());
                     inst.setValue(a,featuresCountsTrain.get(a.name()).get(i));
                 }
-                l_parse.add(inst);
+                m_allFeat_train.add(inst);
             }
 
             //for the test portion
@@ -241,8 +226,8 @@ public class ParseFeature extends Features {
             m_isParse_test = true;
 
             //now just build another Instances set... we already have Attributes.
-            l_parse_test = new Instances("Parse_test", trainedSlices, numFiles);
-            int numAttributes = l_parse_test.numAttributes();
+            m_allFeat_test = new Instances("Parse_test", trainedSlices, numFiles);
+            int numAttributes = m_allFeat_test.numAttributes();
             for (int i = 0; i < numFiles; i++) {
                 Instance inst = new DenseInstance(numAttributes);
                 //just add only the slices detected in train set.
@@ -253,7 +238,7 @@ public class ParseFeature extends Features {
                         inst.setValue(a, 0);
                     }
                 }
-                l_parse_test.add(inst);
+                m_allFeat_test.add(inst);
             }
         }
         //System.out.println(featuresCounts.toString());
@@ -266,12 +251,12 @@ public class ParseFeature extends Features {
         return hm;
     }
 
-    public Instances getL_parse() {
-        return l_parse;
+    public Instances getm_allFeat_train() {
+        return m_allFeat_train;
     }
 
-    public Instances getL_parse_test() {
-        return l_parse_test;
+    public Instances getm_allFeat_test() {
+        return m_allFeat_test;
     }
 
     public boolean isM_isParse_test() {
@@ -288,12 +273,12 @@ public class ParseFeature extends Features {
         p.parseMe(new File("Data/block_trees/500/train"), "train");
 
         System.out.println("Parse Features after train:");
-        System.out.println(p.l_parse);
+        System.out.println(p.m_allFeat_train);
         System.out.println("Homemade Features after train:");
         System.out.println(hm.getM_homemade());
 
         p.parseMe(new File("Data/block_trees/500/test"), "test");
-        System.out.println(p.l_parse_test);
+        System.out.println(p.m_allFeat_test);
         System.out.println("Homemade Features after test:");
         System.out.println(hm.getM_homemade_test());
 

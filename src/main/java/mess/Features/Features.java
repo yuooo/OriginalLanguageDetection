@@ -116,7 +116,7 @@ public abstract class Features {
     }
 
 
-    private void saveCSV(Instances inst, String fileOut) throws IOException {
+    public void saveCSV(Instances inst, String fileOut) throws IOException {
         CSVSaver saver = new CSVSaver();
         saver.setInstances(inst);
         saver.setFile(new File(fileOut));

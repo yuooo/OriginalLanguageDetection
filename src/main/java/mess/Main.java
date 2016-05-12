@@ -1,8 +1,12 @@
 package mess;
 
 import mess.Algorithm.ClassifierOLI;
+import mess.Features.HomemadeFeature;
 import mess.Features.LexicalFeature;
+import mess.Features.ParseFeature;
 import weka.core.Instances;
+
+import java.io.File;
 
 import static mess.utils.Utils.T;
 import static mess.utils.Utils.pT;
@@ -89,9 +93,22 @@ public class Main {
 
         // computer parse features
         System.out.println("Start parse features.");
+        ParseFeature parseFeat = new ParseFeature();
+        parseFeat.parseMe(new File("Data/block_tree/" + sizeSlice + "train/"), "train");
+        parseFeat.parseMe(new File("Data/block_tree/" + sizeSlice + "test/"), "test");
+
+        Instances parseInst = parseFeat.getL_parse();
+        Instances parseInst_test = parseFeat.getL_parse_test();
+
+
 
         // compute homemade features
         System.out.println("Start homemade features.");
+        HomemadeFeature homeFeat = parseFeat.getHomemadeFeatures();
+        Instances homeFeatInst = homeFeat.getM_homemade();
+        Instances homeFeatInst_test = homeFeat.getM_homemade_test();
+
+
 
 
         // train/test
