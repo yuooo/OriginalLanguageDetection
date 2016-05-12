@@ -97,16 +97,16 @@ public class Main {
         parseFeat.parseMe(new File("Data/block_tree/" + sizeSlice + "train/"), "train");
         parseFeat.parseMe(new File("Data/block_tree/" + sizeSlice + "test/"), "test");
 
-        Instances parseInst = parseFeat.getL_parse();
-        Instances parseInst_test = parseFeat.getL_parse_test();
+        Instances parseInst = parseFeat.trainToWeka();
+        Instances parseInst_test = parseFeat.testToWeka();
 
 
 
         // compute homemade features
         System.out.println("Start homemade features.");
         HomemadeFeature homeFeat = parseFeat.getHomemadeFeatures();
-        Instances homeFeatInst = homeFeat.getM_homemade();
-        Instances homeFeatInst_test = homeFeat.getM_homemade_test();
+        Instances homeFeatInst = homeFeat.trainToWeka();
+        Instances homeFeatInst_test = homeFeat.testToWeka();
 
 
 

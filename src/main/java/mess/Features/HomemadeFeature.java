@@ -2,12 +2,12 @@ package mess.Features;
 
 import mess.utils.POS;
 import mess.utils.TextPOSTreeTriple;
-import mess.utils.TreeToSentenceHandler;
-import weka.core.Attribute;
 import weka.core.Instances;
 
-import java.io.File;
-import java.util.*;
+import java.util.EnumMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Created by jessicahoffmann on 24/04/2016.
@@ -18,10 +18,7 @@ public class HomemadeFeature extends Features {
     private Set<String> wordType;
     boolean m_isHomemade_train = false;
     boolean m_isHomemade_test = false;
-
-    Instances m_homemade;
-    Instances m_homemade_test;
-
+    
 
 
     public HomemadeFeature() {
@@ -207,12 +204,12 @@ public class HomemadeFeature extends Features {
     }
 
 
-    public Instances getM_homemade() {
-        return m_homemade;
+    public Instances getM_allFeat_train() {
+        return m_allFeat_train;
     }
 
-    public Instances getM_homemade_test() {
-        return m_homemade_test;
+    public Instances getM_allFeat_test() {
+        return m_allFeat_test;
     }
 
     /**

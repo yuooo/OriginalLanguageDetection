@@ -85,13 +85,13 @@ public class ParseFeature extends Features {
 
         //initialize parameters based off of train and test.
         if (type.equals("train")) {
-            hm.m_homemade = new Instances("homemade_train", list, numFiles);
-            homemadeInstances = hm.m_homemade;
+            hm.m_allFeat_train = new Instances("homemade_train", list, numFiles);
+            homemadeInstances = hm.m_allFeat_train;
             featuresCounts = featuresCountsTrain;
         }
         else{
-            hm.m_homemade_test = new Instances("homemade_test", list, numFiles);
-            homemadeInstances = hm.m_homemade_test;
+            hm.m_allFeat_test = new Instances("homemade_test", list, numFiles);
+            homemadeInstances = hm.m_allFeat_test;
             featuresCounts = featuresCountsTest;
         }
         Integer flen = files.length;
@@ -246,7 +246,7 @@ public class ParseFeature extends Features {
     }
 
 
-    // use this then hm.getM_homemade() and hm.getM_homemade_test() to get train and test.
+    // use this then hm.getm_allFeat_train() and hm.getm_allFeat_test() to get train and test.
     public HomemadeFeature getHomemadeFeatures() {
         return hm;
     }
@@ -275,12 +275,12 @@ public class ParseFeature extends Features {
         System.out.println("Parse Features after train:");
         System.out.println(p.m_allFeat_train);
         System.out.println("Homemade Features after train:");
-        System.out.println(hm.getM_homemade());
+        System.out.println(hm.trainToWeka());
 
         p.parseMe(new File("Data/block_trees/500/test"), "test");
         System.out.println(p.m_allFeat_test);
         System.out.println("Homemade Features after test:");
-        System.out.println(hm.getM_homemade_test());
+        System.out.println(hm.testToWeka());
 
     }
 }
