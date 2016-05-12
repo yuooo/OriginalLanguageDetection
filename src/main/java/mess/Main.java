@@ -1,8 +1,12 @@
 package mess;
 
 import mess.Algorithm.ClassifierOLI;
+import mess.Features.HomemadeFeature;
 import mess.Features.LexicalFeature;
+import mess.Features.ParseFeature;
 import weka.core.Instances;
+
+import java.io.File;
 
 import static mess.utils.Utils.T;
 import static mess.utils.Utils.pT;
@@ -73,26 +77,59 @@ public class Main {
         // save lexical features
         T();
         System.out.println("Save Lexical features.");
-        feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram.arff", true);
+        feat.saveFeatures("Data/weka/lexica_feat/" + sizeSlice + "lexical.arff", true);
         feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram.csv", true);
-        feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram_test.arff", false);
+        feat.saveFeatures("Data/weka/lexical_feat/" + sizeSlice + "lexical_test.arff", false);
         feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram_test.csv", false);
         pT("Save unigram");
 
 
 
-
-        // combine features
-        System.out.println("Start combining.");
-        Instances allFeat = feat.trainToWeka();
-        Instances allFeat_test = feat.testToWeka();
-
         // computer parse features
+        T();
         System.out.println("Start parse features.");
+        ParseFeature parseFeat = new ParseFeature();
+        parseFeat.parseMe(new File("Data/block_trees/" + sizeSlice + "train/"), "train");
+        parseFeat.parseMe(new File("Data/block_trees/" + sizeSlice + "test/"), "test");
+
+        Instances parseInst = parseFeat.trainToWeka();
+        Instances parseInst_test = parseFeat.testToWeka();
+        pT("Parse Features");
+
+
 
         // compute homemade features
+        T();
         System.out.println("Start homemade features.");
+        HomemadeFeature homeFeat = parseFeat.getHomemadeFeatures();
+        Instances homeFeatInst = homeFeat.trainToWeka();
+        Instances homeFeatInst_test = homeFeat.testToWeka();
+        pT("Homemade Features");
 
+
+        // combine features
+        T();
+        System.out.println("Start combining.");
+        feat.brutalMerge(parseInst, true);
+        feat.brutalMerge(parseInst_test, false);
+        pT("Merged Parse.");
+
+        T();
+        feat.brutalMerge(homeFeatInst, true);
+        feat.brutalMerge(homeFeatInst_test, false);
+        pT("Merged Homemade.");
+
+        // saving
+        T();
+        System.out.println("Save all features.");
+        feat.saveFeatures("Data/weka/all_feat/" + sizeSlice + "allFeat.arff", true);
+        feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "allFeat.csv", true);
+        feat.saveFeatures("Data/weka/all_feat/" + sizeSlice + "allFeat_test.arff", false);
+        feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "allFeat_test.csv", false);
+        pT("Save unigram");
+
+        Instances allFeat = feat.trainToWeka();
+        Instances allFeat_test = feat.testToWeka();
 
         // train/test
         T();

@@ -53,8 +53,8 @@ def print_top(n, clf, class_labels, words):
 #   === Loading Data ===
 #   ===========================================================================
 print "Load Data"
-train = pd.read_csv("Data/csv/500/unigram.csv")
-test = pd.read_csv("Data/csv/500/unigram_test.csv")
+train = pd.read_csv("Data/csv/500/allFeat.csv")
+test = pd.read_csv("Data/csv/500/AllFeat_test.csv")
 
 y_train = train["@@class@@"]
 x_train = train.drop(["@@class@@"],axis=1)
