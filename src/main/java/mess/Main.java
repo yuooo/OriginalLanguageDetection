@@ -85,13 +85,8 @@ public class Main {
 
 
 
-
-        // combine features
-        System.out.println("Start combining.");
-        Instances allFeat = feat.trainToWeka();
-        Instances allFeat_test = feat.testToWeka();
-
         // computer parse features
+        T();
         System.out.println("Start parse features.");
         ParseFeature parseFeat = new ParseFeature();
         parseFeat.parseMe(new File("Data/block_tree/" + sizeSlice + "train/"), "train");
@@ -99,17 +94,33 @@ public class Main {
 
         Instances parseInst = parseFeat.trainToWeka();
         Instances parseInst_test = parseFeat.testToWeka();
+        pT("Parse Features");
 
 
 
         // compute homemade features
+        T();
         System.out.println("Start homemade features.");
         HomemadeFeature homeFeat = parseFeat.getHomemadeFeatures();
         Instances homeFeatInst = homeFeat.trainToWeka();
         Instances homeFeatInst_test = homeFeat.testToWeka();
+        pT("Homemade Features");
 
 
+        // combine features
+        T();
+        System.out.println("Start combining.");
+        feat.brutalMerge(parseInst, true);
+        feat.brutalMerge(parseInst_test, false);
+        pT("Merged Parse.");
 
+        T();
+        feat.brutalMerge(homeFeatInst, true);
+        feat.brutalMerge(homeFeatInst_test, false);
+        pT("Merged Homemade.");
+
+        Instances allFeat = feat.trainToWeka();
+        Instances allFeat_test = feat.testToWeka();
 
         // train/test
         T();
