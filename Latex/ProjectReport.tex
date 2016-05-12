@@ -1,0 +1,152 @@
+\documentclass[10pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{wasysym}
+\usepackage{amssymb }
+\usepackage{caption}
+\usepackage{tikz}
+
+%\usepackage{fontspec}
+%\setmainfont{Hoefler Text}
+
+\newcommand*\Let[2]{\State #1 $\gets$ #2}
+%\algrenewcommand\alglinenumber[1]{
+   % {\sf\footnotesize\addfontfeatures{Colour=888888,Numbers=Monospaced}#1}}
+\algrenewcommand\algorithmicrequire{\textbf{Precondition:}}
+\algrenewcommand\algorithmicensure{\textbf{Postcondition:}}
+
+\RequirePackage[l2tabu, orthodox]{nag}
+
+
+\usepackage{amsmath,amssymb,amsthm}
+
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\let\Pr\relax
+\DeclareMathOperator*{\Pr}{\mathbb{P}}
+
+\newcommand{\eps}{\epsilon}
+\newcommand{\inprod}[1]{\left\langle #1 \right\rangle}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\handout}[5]{
+  \noindent
+  \begin{center}
+  \framebox{
+    \vbox{
+      \hbox to 5.78in { {\bf CS 388: Natural Language Processing} \hfill #2 }
+      \vspace{4mm}
+      \hbox to 5.78in { {\Large \hfill #5  \hfill} }
+      \vspace{2mm}
+      \hbox to 5.78in { {\em #3 \hfill #4} }
+    }
+  }
+  \end{center}
+  \vspace*{4mm}
+}
+
+\newcommand{\ps}[4]{\handout{#1}{#2}{Students: #4}{#3}{Project Report #1}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+
+\renewcommand\thesubsection{(\alph{subsection})}
+
+%%% START
+
+\begin{document}
+
+\ps{--- Original Language Detection}{Spring 2016}{Prof.\ Ray Mooney}{M. Denend, J. Hoffmann, L.Prakash}
+\section{Project description}
+\subsection{Description}
+The goal of this project is to be able to find the original language a text was written in, from the translated English version. We believe that even with completely bilingual translators, languages have a specific structure that will influence the translator in the way he creates the translation. We hope to recover this structure during our task.
+
+\subsection{Methodology}
+From Project Gutenberg, we built a dataset of books written in different languages, and translated into English. We then cut these books into slices of 500 sentences, and compute features on these slices. After feature extraction, we feed these features into a classifier and test it on a completely different set of books. 
+
+\section{Building the dataset}
+\subsection{Pitfalls}
+Since we built it ourselves, our dataset is rather small. We therefore were extremely careful not to overfit on books particularities that are not specific to the language, such as topic, style, author, geographic places, time period. We believe the way we've constructed the dataset satisfies these criteria. 
+\subsection{Description of the dataset}
+When building the dataset, we used books written from 1700 to 1900 to control the time period as best as we can. We made sure that we never used the same author nor translator (?) in train and test, and we tried varying the topics between train and test as much as we could once the previous criteria were met. When using Lexical Features, we only remembered the most common 1000 English words to control overfitting on topics as well.
+The dataset we used is further described on this table:
+
+
+[insert TABLE]
+
+\section{Features}
+\subsection{General Description}
+When computing the features, we cut the books in slices of $n$ sentences. With $n=1$, we get a lot of training examples, but finding out the original language from only 1 sentence seems unreasonable (which was proven by experiment). With the whole book as a sample, we didn't get enough training instances. We chose $n=500$, as it provided good balance between number of train samples, and informativeness of the samples.
+\subsection{Lexical Feature}
+Three different kind of lexical features were used:
+\begin{description}
+\item[1000 most common English words] After overfitting on words like "Moscow" or "Madame" when using unigrams, we decided to only use the 1000 most common words in English to avoid overfitting on topics, local idioms, or geographic places.
+\item[POS unigram] We only used POS unigrams, since we believed using bigram or trigram would just add redundancy with the Parse features.
+\item[Etymology] For each word used, we computed the etymology of the word from parsing Wiktionary \cite{Wiktionary}, and added all possible etymology as a feature. Rational being that if you're translating from a latin language, you may be more likely to use a latin word when choosing between synonyms. We only included the etymologies of nouns, verb, adjective and adverb, since we believed preposition, pronouns  and others wouldn't be significant and would only drown the relevant data.
+\end{description}
+
+\subsection{Parse Features}
+\subsection{Homemade Features}
+
+\section{Classification task}
+\subsection{Features Extraction}
+\subsection{Comparisons of different algorithm}
+
+\section{Experiments}
+\subsection{Description of different experiments}
+We conducted the following experiments:
+\begin{itemize}
+\item using unigrams (overfitting on topics)
+\item using the same books for train and test
+\item using the same author for train and test
+\end{itemize}
+
+On top of that, we also inquired the effect of different features on the dataset:
+\begin{itemize}
+\item Most common words only
+\item Most common + etymology
+\item POS only
+\item All lexical features (Most common words + etymology + POS)
+\item Homemade only
+\item Parse only
+\item Most common + etymology + Homemade
+\item All features
+\end{itemize}
+
+\subsection{Results}
+
+
+[insert TABLE]
+\section{Conclusion}
+
+\bibliographystyle{plain}
+\bibliography{OLI}
+
+\end{document}
