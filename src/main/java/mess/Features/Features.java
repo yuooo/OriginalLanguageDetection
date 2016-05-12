@@ -5,6 +5,8 @@ import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVSaver;
 import weka.core.converters.ConverterUtils;
 import weka.core.converters.TextDirectoryLoader;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.Remove;
 
 import java.io.File;
 import java.io.IOException;
@@ -61,6 +63,25 @@ public abstract class Features {
                 m_allFeat_test = Instances.mergeInstances(m_allFeat_test, inst);
                 m_allFeat_test.setClassIndex(0);
             }
+        }
+    }
+
+    public void brutalMerge(Instances inst, boolean train) throws Exception {
+        // Remove @@class@@
+        Remove rem = new Remove();
+        int[] toRem = {0};
+        rem.setAttributeIndicesArray(toRem);
+        rem.setInputFormat(inst);
+        Instances inst2 = Filter.useFilter(inst, rem);
+
+        if (train) {
+            m_allFeat_train = Instances.mergeInstances(m_allFeat_train, inst2);
+            m_allFeat_train.setClassIndex(0);
+        }
+        else {
+            m_allFeat_test = Instances.mergeInstances(m_allFeat_test, inst);
+            m_allFeat_test.setClassIndex(0);
+
         }
     }
 
