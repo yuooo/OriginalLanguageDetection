@@ -94,7 +94,7 @@ public class ParseFeature extends Features {
         //create Attributes for Homemade Features
         ArrayList<Attribute> list = new ArrayList<>();
         for (HomemadeFeature.HomemadeFeatureRatioNames f : HomemadeFeature.HomemadeFeatureRatioNames.values()) {
-            Attribute a = new Attribute(f.toString());
+            Attribute a = new Attribute("HM: " + f.toString());
             list.add(a);
         }
 
