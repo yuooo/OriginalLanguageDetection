@@ -4,6 +4,7 @@ import mess.utils.POS;
 import mess.utils.TextPOSTreeTriple;
 import mess.utils.TreeToSentenceHandler;
 import weka.core.Attribute;
+import weka.core.Instances;
 
 import java.io.File;
 import java.util.*;
@@ -119,6 +120,12 @@ public class HomemadeFeature extends Features {
     //private EnumMap<POS, Set<String>> map;
     private HomemadeFeatureVector v;
     private Set<String> wordType;
+    boolean m_isHomemade_train = false;
+    boolean m_isHomemade_test = false;
+
+    Instances m_homemade;
+    Instances m_homemade_test;
+
 
 
     public HomemadeFeature() {
@@ -299,9 +306,18 @@ public class HomemadeFeature extends Features {
     }
 
 
-    protected class HomemadeFeatureVector {
+    public Instances getM_homemade() {
+        return m_homemade;
+    }
 
+    public Instances getM_homemade_test() {
+        return m_homemade_test;
+    }
 
+    /**
+     * Helps us store counts that are later computed.
+     */
+    class HomemadeFeatureVector {
         private EnumMap<HomemadeFeatureCounterMapping, Integer> homemadeAttributes;
 
         HomemadeFeatureVector() {
@@ -329,6 +345,9 @@ public class HomemadeFeature extends Features {
 
     }
 
+    /**
+     * Helpful enum that makes counting things much easier.
+     */
     public enum HomemadeFeatureCounterMapping {
         SimpleSentences(0),
         ComplexSentences(1),
@@ -352,6 +371,9 @@ public class HomemadeFeature extends Features {
         }
     }
 
+    /**
+     * Enum that gives names to all of the ratios. These directly get turned into Attributes for Features, so extremely useful.
+     */
     public enum HomemadeFeatureRatioNames {
         simplecomplex,
         simpletotal,
@@ -368,6 +390,10 @@ public class HomemadeFeature extends Features {
         pronounratio,
         typetoken;
 
+        /**
+         * Computes the number of elements in this enum. For loop only is there in case more enums are added.
+         * @return size, which should always be 14, unless if more enums are added.
+         */
         public static int size() {
             int i = 0;
             for (HomemadeFeatureRatioNames h : HomemadeFeatureRatioNames.values()) {

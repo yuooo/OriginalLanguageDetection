@@ -43,7 +43,8 @@ public class ParseFeature extends Features {
      */
 
     //public HashMap<String, Integer[]> featuresCounts;
-    private final Set<String> clauses;
+    private final Set<String> clauses; //clauses we need to detect for simple/complex sentences.
+    private HomemadeFeature hm; //This goes here because we need parse trees for a few homemade features.
 
 
     public ParseFeature() {
@@ -53,6 +54,7 @@ public class ParseFeature extends Features {
         "SINV",
         "SQ");
         clauses = new HashSet<>(temp);
+        hm = new HomemadeFeature();
     }
 
     /**
@@ -70,7 +72,6 @@ public class ParseFeature extends Features {
         File[] files = directory.listFiles();
         Integer n = files.length;
         int numFiles = 0;
-        HomemadeFeature hm = new HomemadeFeature();
         //ALL THIS IS FOR INITIALIZING HOMEMADE INSTANCES (which have a fixed size)
         for (File f: files) {
             File[] temp = f.listFiles();
@@ -82,7 +83,7 @@ public class ParseFeature extends Features {
             list.add(a);
         }
 
-        Instances homemadeIns = new Instances("homemade", list, numFiles);
+        hm.m_homemade = new Instances("homemade", list, numFiles);
         //NOW WE HAVE HOMEMADE INSTANCES
 
         List<HashMap<String, List<Integer>>> sliceMaps = new ArrayList<>();
@@ -170,6 +171,7 @@ public class ParseFeature extends Features {
                     hm.computeHomemadeFeatures(trip, simpleSentence, complexSentence, prepositions, conjunctions);
                 }
 
+                //Now crunch all of the counts for the HomemadeFeatures and the ParseFeatures, and put into instances.
                 EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double> ratios = hm.computePercentages();
                 Instance inst = new DenseInstance(HomemadeFeature.HomemadeFeatureRatioNames.size());
                 int i = 0;
@@ -177,40 +179,14 @@ public class ParseFeature extends Features {
                     inst.setValue(list.get(i), ratios.get(r));
                     i++;
                 }
-                homemadeIns.add(inst);
+                hm.m_homemade.add(inst);
 
             }
-            //Now crunch all of the counts for the HomemadeFeatures and the ParseFeatures.
 
+
+            hm.m_isHomemade_train = true; //TODO: Have code ready for both train and test
             System.out.println(featuresCounts.toString());
         }
-        /*
-        //Compute Homemade Instances
-        Set<HomemadeFeature.HomemadeFeatureRatioNames> s = new TreeSet<>();
-        for (EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double> m : homemadeMaps) {
-            s.addAll(m.keySet());
-        }
-
-
-        //TODO: One Instances class period for the Training Set, and one for the Test set.
-
-        for (int i = 0; i < homemadeMaps.size(); i++) {
-            Instance inst = new DenseInstance(HomemadeFeature.HomemadeFeatureRatioNames.size());
-            for (Attribute a : list) {
-                inst.setValue(a, homemadeMaps.get(i).get(HomemadeFeature.HomemadeFeatureRatioNames.valueOf(a.name())));
-            }
-        }*/
-        //TODO: Compute the instances for slices, and return these?.
-        //TODO: What's there that's left for both the HomemadeFeatures and ParseFeatures?
-        /**
-         * 1. Make sure that the HomemadeFeatures actually work.
-         * 2. Make sure that the ParseFeatures with their changes also work.
-         * 3. Create Instances for ParseFeatures.
-         * 4. Make sure these are correct.
-         * 5. Make tests for both ParseFeatures and HomemadeFeatures.
-         * 6. Have them all merge together???
-         */
-        System.out.println(homemadeIns);
     }
 
     public static Treebank makeTreebankie(String treebankPath, Options op, FileFilter filt) {
@@ -225,6 +201,11 @@ public class ParseFeature extends Features {
 
         Timing.tick("done [read " + trainTreebank.size() + " trees].");
         return trainTreebank;
+    }
+
+    // use this then hm.getM_homemade() and hm.getM_homemade_test() to get train and test.
+    public HomemadeFeature getHomemadeFeaturesInstances() {
+        return hm;
     }
 
     public static void main(String[] args) {
