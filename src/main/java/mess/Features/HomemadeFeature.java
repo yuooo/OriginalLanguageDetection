@@ -163,7 +163,7 @@ public class HomemadeFeature extends Features {
             //}
 
             //kinda ugly, but hey... think this is the cleanest way to prevent punctuation crashing my POS Enum.
-            if (word.matches("([\\.\\?!,;:\\-\\(\\)\\[\\]'`])+")){
+            if (word.matches("([\\.\\?!,;:\\-\\[\\]'`\\*])+|(\\-LRB\\-)")){
                 continue;
             }
             String POSStr = POStags.get(i);
