@@ -42,14 +42,17 @@ public class ParseFeature extends Features {
      * e.g.: java ParserDemo edu/stanford/nlp/models/lexparser/chineseFactored.ser.gz data/chinese-onesent-utf8.txt
      */
 
-    private HashMap<String, List<Integer>> featuresCounts;
+    private  HashMap<String, List<Integer>> featuresCountsTrain;
+    private  HashMap<String, List<Integer>> featuresCountsTest;
     private final Set<String> clauses; //clauses we need to detect for simple/complex sentences.
     private HomemadeFeature hm; //This goes here because we need parse trees for a few homemade features.
     Instances l_parse;
     Instances l_parse_test;
 
     public ParseFeature() {
-        List<String> temp = Arrays.asList("S",
+        featuresCountsTrain = new HashMap<>();
+        featuresCountsTest = new HashMap<>();
+                List<String> temp = Arrays.asList("S",
         "SBAR",
         "SBARQ",
         "SINV",
@@ -64,12 +67,19 @@ public class ParseFeature extends Features {
      * I changed from creating a Treebank to using my built in Treebank method since I also grab the words and POS, which I rely upon
      * heavily in Homemade Features.
      */
-    public void parseMe() {
+    public void parseMe(File source, String type) {
+        HashMap<String, List<Integer>> featuresCounts;
+        if (type.equals("train")) {
+            featuresCounts = featuresCountsTrain;
+        }
+        else{
+            featuresCounts = featuresCountsTest;
+        }
         Options op = new Options();
         op.doDep = false;
         op.doPCFG = true;
         op.setOptions("-goodPCFG", "-evals", "tsv");
-        File directory = new File("Data/parseFeatureTesting/train");
+        File directory = source;
         File[] files = directory.listFiles();
         Integer flen = files.length;
         Integer n = 0;
@@ -89,7 +99,7 @@ public class ParseFeature extends Features {
         hm.m_homemade = new Instances("homemade", list, numFiles);
         //NOW WE HAVE HOMEMADE INSTANCES
 
-        featuresCounts = new HashMap<>();
+        //featuresCounts = new HashMap<>();
         //List<HashMap<String, List<Integer>>> sliceMaps = new ArrayList<>();
         //List<EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double>> homemadeMaps = new ArrayList<>();
         for (int j = 0; j < flen; j++) {
@@ -125,8 +135,8 @@ public class ParseFeature extends Features {
                         boolean prepPhraseFlag = false; //if true, we decrement conjunction count to not double count it.
                         Tree tNode = treeNodes.remove();
                         children = tNode.getChildrenAsList();
-                        System.out.println(tNode.nodeString());
-                        System.out.println("Children: ");
+                        //System.out.println(tNode.nodeString());
+                        //System.out.println("Children: ");
                         String key = tNode.nodeString();
                         //clause check!
                         if (clauses.contains(key)) {
@@ -137,7 +147,7 @@ public class ParseFeature extends Features {
                             prepPhraseFlag = true;
                         }
                         for (Tree child : children) {
-                            System.out.print(child.nodeString() + " ");
+                            //System.out.print(child.nodeString() + " ");
                             if (prepPhraseFlag && child.nodeString().equals("IN")) {
                                 conjunctions--;
                             }
@@ -149,9 +159,9 @@ public class ParseFeature extends Features {
                             //System.out.println(child1.firstChild().firstChild().nodeString());
                             key = key + "_" + child.nodeString();
                         }
-                        System.out.println();
-                        System.out.println(key);
-                        System.out.println("");
+                        //System.out.println();
+                        //System.out.println(key);
+                        //System.out.println("");
                         if (featuresCounts.containsKey(key)) {
                             List<Integer> arr = featuresCounts.get(key);
                             int val = arr.get(j);
@@ -161,8 +171,8 @@ public class ParseFeature extends Features {
                         } else {
                             //Integer[] arr = Collections.nCopies(n, 0).toArray(new Integer[0]); ??????
                             List<Integer> arr = new ArrayList<>(n);
-                            System.out.println("Size of array:");
-                            System.out.println(n);
+                            //System.out.println("Size of array:");
+                            //System.out.println(n);
                             //System.out.println(arr.toString());
                             //arr[j]++;
                             for (int m = 0; m < n; m++) {
@@ -206,19 +216,6 @@ public class ParseFeature extends Features {
 
     }
 
-    public static Treebank makeTreebankie(String treebankPath, Options op, FileFilter filt) {
-        System.err.println("Training a parser from treebank dir: " + treebankPath);
-        Treebank trainTreebank = op.tlpParams.diskTreebank();
-        System.err.print("Reading trees...");
-        if (filt == null) {
-            trainTreebank.loadPath(treebankPath);
-        } else {
-            trainTreebank.loadPath(treebankPath, filt);
-        }
-
-        Timing.tick("done [read " + trainTreebank.size() + " trees].");
-        return trainTreebank;
-    }
 
     // use this then hm.getM_homemade() and hm.getM_homemade_test() to get train and test.
     public HomemadeFeature getHomemadeFeaturesInstances() {
@@ -227,7 +224,11 @@ public class ParseFeature extends Features {
 
     public static void main(String[] args) {
         ParseFeature p = new ParseFeature();
-        p.parseMe();
+
+        p.parseMe(new File("Data/block_trees/500/train"), "train");
+
+        p.parseMe(new File("Data/block_trees/500/test"), "test");
+
     }
 }
 
