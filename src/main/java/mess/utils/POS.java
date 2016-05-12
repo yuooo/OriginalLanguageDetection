@@ -2,10 +2,7 @@ package mess.utils;
 
 import mess.Features.HomemadeFeature;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.StringJoiner;
+import java.util.*;
 
 /**
  * Created by mad4672 on 5/9/16.
@@ -68,5 +65,13 @@ public enum POS {
 
     public List<String> getHomemadeFeatures() {
         return homemadeFeatures;
+    }
+
+    public static boolean contains(String s) {
+        HashSet<String> m = new HashSet<>();
+        for (POS p : POS.values()) {
+            m.add(p.toString());
+        }
+        return m.contains(s);
     }
 }
