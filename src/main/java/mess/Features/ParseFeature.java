@@ -42,7 +42,7 @@ public class ParseFeature extends Features {
      * e.g.: java ParserDemo edu/stanford/nlp/models/lexparser/chineseFactored.ser.gz data/chinese-onesent-utf8.txt
      */
 
-    //public HashMap<String, Integer[]> featuresCounts;
+    private HashMap<String, List<Integer>> featuresCounts;
     private final Set<String> clauses; //clauses we need to detect for simple/complex sentences.
     private HomemadeFeature hm; //This goes here because we need parse trees for a few homemade features.
 
@@ -70,7 +70,8 @@ public class ParseFeature extends Features {
         op.setOptions("-goodPCFG", "-evals", "tsv");
         File directory = new File("Data/parseFeatureTesting/train");
         File[] files = directory.listFiles();
-        Integer n = files.length;
+        Integer flen = files.length;
+
         int numFiles = 0;
         //ALL THIS IS FOR INITIALIZING HOMEMADE INSTANCES (which have a fixed size)
         for (File f: files) {
@@ -86,19 +87,24 @@ public class ParseFeature extends Features {
         hm.m_homemade = new Instances("homemade", list, numFiles);
         //NOW WE HAVE HOMEMADE INSTANCES
 
-        List<HashMap<String, List<Integer>>> sliceMaps = new ArrayList<>();
+        featuresCounts = new HashMap<>();
+        //List<HashMap<String, List<Integer>>> sliceMaps = new ArrayList<>();
         //List<EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double>> homemadeMaps = new ArrayList<>();
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < flen; j++) {
 
-            sliceMaps.add(new HashMap<>());
+            //sliceMaps.add(new HashMap<>());
             //homemadeMaps.add(new EnumMap<>(HomemadeFeature.HomemadeFeatureRatioNames.class));
             //Changed by Matt: Using my function instead since this will make Homemade Computation much easier.
             //Treebank langTreeBank = makeTreebankie(files[j].toString(), op, null);
-            HashMap<String, List<Integer>> featuresCounts = sliceMaps.get(j);
+            //HashMap<String, List<Integer>> featuresCounts = sliceMaps.get(j);
 
             File[] subDirectories  = files[j].listFiles();
+
+            Integer slen = subDirectories.length;
+            Integer n = flen * slen;
             //featuresCounts = new HashMap<>();
-            for (int k = 0; k < subDirectories.length; k++) {
+            for (int k = 0; k < slen; k++) {
+                //System.out.println(subDirectories[k]);
                 hm.resetVector();
 
                 TreeToSentenceHandler ite = new TreeToSentenceHandler(subDirectories[k]);
@@ -148,17 +154,20 @@ public class ParseFeature extends Features {
                             List<Integer> arr = featuresCounts.get(key);
                             int val = arr.get(j);
                             val++;
-                            arr.add(j,val);
+                            arr.set(j*slen+k,val);
                             featuresCounts.put(key, arr);
                         }
                         else {
                             //Integer[] arr = Collections.nCopies(n, 0).toArray(new Integer[0]); ??????
                             List<Integer> arr = new ArrayList<>(n);
+                            System.out.println("Size of array:");
+                            System.out.println(n);
+                            //System.out.println(arr.toString());
                             //arr[j]++;
-                            for (k = 0; k < j; k++) {
-                                arr.add(k, 0);
+                            for (int m = 0; m < n; m++) {
+                                arr.add(m, 0);
                             }
-                            arr.add(j, 1);
+                            arr.set(j*slen+k, 1);
                             featuresCounts.put(key, arr);
                         }
                     }
