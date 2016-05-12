@@ -69,19 +69,37 @@ public class ParseFeature extends Features {
         File directory = new File("Data/parseFeatureTesting/train");
         File[] files = directory.listFiles();
         Integer n = files.length;
+        int numFiles = 0;
+        HomemadeFeature hm = new HomemadeFeature();
+        //ALL THIS IS FOR INITIALIZING HOMEMADE INSTANCES (which have a fixed size)
+        for (File f: files) {
+            File[] temp = f.listFiles();
+            numFiles += temp.length;
+        }
+        ArrayList<Attribute> list = new ArrayList<>();
+        for (HomemadeFeature.HomemadeFeatureRatioNames f : HomemadeFeature.HomemadeFeatureRatioNames.values()) {
+            Attribute a = new Attribute(f.toString());
+            list.add(a);
+        }
+
+        Instances homemadeIns = new Instances("homemade", list, numFiles);
+        //NOW WE HAVE HOMEMADE INSTANCES
+
         List<HashMap<String, List<Integer>>> sliceMaps = new ArrayList<>();
-        List<EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double>> homemadeMaps = new ArrayList<>();
+        //List<EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double>> homemadeMaps = new ArrayList<>();
         for (int j = 0; j < n; j++) {
 
             sliceMaps.add(new HashMap<>());
-            homemadeMaps.add(new EnumMap<>(HomemadeFeature.HomemadeFeatureRatioNames.class));
+            //homemadeMaps.add(new EnumMap<>(HomemadeFeature.HomemadeFeatureRatioNames.class));
             //Changed by Matt: Using my function instead since this will make Homemade Computation much easier.
             //Treebank langTreeBank = makeTreebankie(files[j].toString(), op, null);
             HashMap<String, List<Integer>> featuresCounts = sliceMaps.get(j);
-            HomemadeFeature hm = new HomemadeFeature();
+
             File[] subDirectories  = files[j].listFiles();
             //featuresCounts = new HashMap<>();
             for (int k = 0; k < subDirectories.length; k++) {
+                hm.resetVector();
+
                 TreeToSentenceHandler ite = new TreeToSentenceHandler(subDirectories[k]);
                 List<Tree> children;
                 Tree t1;
@@ -152,11 +170,18 @@ public class ParseFeature extends Features {
                     hm.computeHomemadeFeatures(trip, simpleSentence, complexSentence, prepositions, conjunctions);
                 }
 
+                EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double> ratios = hm.computePercentages();
+                Instance inst = new DenseInstance(HomemadeFeature.HomemadeFeatureRatioNames.size());
+                int i = 0;
+                for (HomemadeFeature.HomemadeFeatureRatioNames r : ratios.keySet()) {
+                    inst.setValue(list.get(i), ratios.get(r));
+                    i++;
+                }
+                homemadeIns.add(inst);
 
             }
             //Now crunch all of the counts for the HomemadeFeatures and the ParseFeatures.
-            EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double> ratios = hm.computePercentages();
-            homemadeMaps.add(ratios);
+
             System.out.println(featuresCounts.toString());
         }
         /*
@@ -165,14 +190,10 @@ public class ParseFeature extends Features {
         for (EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double> m : homemadeMaps) {
             s.addAll(m.keySet());
         }
-        ArrayList<Attribute> list = new ArrayList<>();
-        for (HomemadeFeature.HomemadeFeatureRatioNames f : s) {
-            Attribute a = new Attribute(f.toString());
-            list.add(a);
-        }
 
-        //TODO: One Instances class per directory.
-        Instances homemadeIns = new Instances("homemade", list, homemadeMaps.size());
+
+        //TODO: One Instances class period for the Training Set, and one for the Test set.
+
         for (int i = 0; i < homemadeMaps.size(); i++) {
             Instance inst = new DenseInstance(HomemadeFeature.HomemadeFeatureRatioNames.size());
             for (Attribute a : list) {
@@ -189,6 +210,7 @@ public class ParseFeature extends Features {
          * 5. Make tests for both ParseFeatures and HomemadeFeatures.
          * 6. Have them all merge together???
          */
+        System.out.println(homemadeIns);
     }
 
     public static Treebank makeTreebankie(String treebankPath, Options op, FileFilter filt) {

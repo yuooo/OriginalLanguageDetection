@@ -221,6 +221,10 @@ public class HomemadeFeature extends Features {
 
     }
 
+    public void resetVector() {
+        v = new HomemadeFeatureVector();
+    }
+
 
     //Done counting, now I compute percentages.
     public EnumMap<HomemadeFeatureRatioNames, Double> computePercentages() {
