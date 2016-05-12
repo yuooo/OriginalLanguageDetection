@@ -45,7 +45,8 @@ public class ParseFeature extends Features {
     private HashMap<String, List<Integer>> featuresCounts;
     private final Set<String> clauses; //clauses we need to detect for simple/complex sentences.
     private HomemadeFeature hm; //This goes here because we need parse trees for a few homemade features.
-
+    Instances l_parse;
+    Instances l_parse_test;
 
     public ParseFeature() {
         List<String> temp = Arrays.asList("S",
@@ -71,6 +72,7 @@ public class ParseFeature extends Features {
         File directory = new File("Data/parseFeatureTesting/train");
         File[] files = directory.listFiles();
         Integer flen = files.length;
+        Integer n = 0;
 
         int numFiles = 0;
         //ALL THIS IS FOR INITIALIZING HOMEMADE INSTANCES (which have a fixed size)
@@ -98,10 +100,10 @@ public class ParseFeature extends Features {
             //Treebank langTreeBank = makeTreebankie(files[j].toString(), op, null);
             //HashMap<String, List<Integer>> featuresCounts = sliceMaps.get(j);
 
-            File[] subDirectories  = files[j].listFiles();
+            File[] subDirectories = files[j].listFiles();
 
             Integer slen = subDirectories.length;
-            Integer n = flen * slen;
+            n = flen * slen;
             //featuresCounts = new HashMap<>();
             for (int k = 0; k < slen; k++) {
                 //System.out.println(subDirectories[k]);
@@ -129,7 +131,7 @@ public class ParseFeature extends Features {
                         //clause check!
                         if (clauses.contains(key)) {
                             clauseCount++;
-                        //prepositional phrase check!
+                            //prepositional phrase check!
                         } else if (key.equals("PP")) {
                             prepositions++;
                             prepPhraseFlag = true;
@@ -154,10 +156,9 @@ public class ParseFeature extends Features {
                             List<Integer> arr = featuresCounts.get(key);
                             int val = arr.get(j);
                             val++;
-                            arr.set(j*slen+k,val);
+                            arr.set(j * slen + k, val);
                             featuresCounts.put(key, arr);
-                        }
-                        else {
+                        } else {
                             //Integer[] arr = Collections.nCopies(n, 0).toArray(new Integer[0]); ??????
                             List<Integer> arr = new ArrayList<>(n);
                             System.out.println("Size of array:");
@@ -167,7 +168,7 @@ public class ParseFeature extends Features {
                             for (int m = 0; m < n; m++) {
                                 arr.add(m, 0);
                             }
-                            arr.set(j*slen+k, 1);
+                            arr.set(j * slen + k, 1);
                             featuresCounts.put(key, arr);
                         }
                     }
@@ -191,11 +192,18 @@ public class ParseFeature extends Features {
                 hm.m_homemade.add(inst);
 
             }
-
+        }
+//            Instance parse_inst = new DenseInstance(n);
+//            parse_inst
+//            featuresCounts.values();
+//            for (HomemadeFeature.HomemadeFeatureRatioNames r : ratios.keySet()) {
+//                inst.setValue(list.get(i), ratios.get(r));
+//            }
+//            l_parse.add(parse_inst);
 
             hm.m_isHomemade_train = true; //TODO: Have code ready for both train and test
             System.out.println(featuresCounts.toString());
-        }
+
     }
 
     public static Treebank makeTreebankie(String treebankPath, Options op, FileFilter filt) {
