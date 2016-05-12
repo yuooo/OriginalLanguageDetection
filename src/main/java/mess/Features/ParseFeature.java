@@ -83,6 +83,7 @@ public class ParseFeature extends Features {
         File[] files = directory.listFiles();
         Integer flen = files.length;
         Integer n = 0;
+        Integer totFiles = 0;
 
         int numFiles = 0;
         //ALL THIS IS FOR INITIALIZING HOMEMADE INSTANCES (which have a fixed size)
@@ -164,9 +165,9 @@ public class ParseFeature extends Features {
                         //System.out.println("");
                         if (featuresCounts.containsKey(key)) {
                             List<Integer> arr = featuresCounts.get(key);
-                            int val = arr.get(j);
+                            int val = arr.get(totFiles + k);
                             val++;
-                            arr.set(j * slen + k, val);
+                            arr.set(totFiles + k, val);
                             featuresCounts.put(key, arr);
                         } else {
                             //Integer[] arr = Collections.nCopies(n, 0).toArray(new Integer[0]); ??????
@@ -175,10 +176,10 @@ public class ParseFeature extends Features {
                             //System.out.println(n);
                             //System.out.println(arr.toString());
                             //arr[j]++;
-                            for (int m = 0; m < n; m++) {
+                            for (int m = 0; m < numFiles; m++) {
                                 arr.add(m, 0);
                             }
-                            arr.set(j * slen + k, 1);
+                            arr.set(totFiles + k, 1);
                             featuresCounts.put(key, arr);
                         }
                     }
@@ -202,6 +203,7 @@ public class ParseFeature extends Features {
                 hm.m_homemade.add(inst);
 
             }
+            totFiles = totFiles + slen;
         }
 //            Instance parse_inst = new DenseInstance(n);
 //            parse_inst
@@ -226,8 +228,9 @@ public class ParseFeature extends Features {
         ParseFeature p = new ParseFeature();
 
         p.parseMe(new File("Data/block_trees/500/train"), "train");
-
+        System.out.println("Done with Train");
         p.parseMe(new File("Data/block_trees/500/test"), "test");
+        System.out.println("Done with Test");
 
     }
 }
