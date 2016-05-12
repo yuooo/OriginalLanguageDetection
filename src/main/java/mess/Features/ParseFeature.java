@@ -46,8 +46,16 @@ public class ParseFeature extends Features {
     private  HashMap<String, List<Integer>> featuresCountsTest;
     private final Set<String> clauses; //clauses we need to detect for simple/complex sentences.
     private HomemadeFeature hm; //This goes here because we need parse trees for a few homemade features.
-    Instances l_parse;
-    Instances l_parse_test;
+    private Instances l_parse;
+    private Instances l_parse_test;
+    private ArrayList<Attribute> trainedSlices;
+
+    private boolean m_isParse_train = false;
+    private boolean m_isParse_test = false;
+
+
+
+
 
     public ParseFeature() {
         featuresCountsTrain = new HashMap<>();
@@ -59,6 +67,8 @@ public class ParseFeature extends Features {
         "SQ");
         clauses = new HashSet<>(temp);
         hm = new HomemadeFeature();
+        trainedSlices = new ArrayList<>();
+
     }
 
     /**
@@ -69,52 +79,49 @@ public class ParseFeature extends Features {
      */
     public void parseMe(File source, String type) {
         HashMap<String, List<Integer>> featuresCounts;
-        if (type.equals("train")) {
-            featuresCounts = featuresCountsTrain;
-        }
-        else{
-            featuresCounts = featuresCountsTest;
-        }
-        Options op = new Options();
-        op.doDep = false;
-        op.doPCFG = true;
-        op.setOptions("-goodPCFG", "-evals", "tsv");
+        Instances homemadeInstances;
+
+        //crunch number of files ahead of time
+        int numFiles = 0;
         File directory = source;
         File[] files = directory.listFiles();
-        Integer flen = files.length;
-        Integer n = 0;
-        Integer totFiles = 0;
 
-        int numFiles = 0;
-        //ALL THIS IS FOR INITIALIZING HOMEMADE INSTANCES (which have a fixed size)
         for (File f: files) {
             File[] temp = f.listFiles();
             numFiles += temp.length;
         }
+
+        //create Attributes for Homemade Features
         ArrayList<Attribute> list = new ArrayList<>();
         for (HomemadeFeature.HomemadeFeatureRatioNames f : HomemadeFeature.HomemadeFeatureRatioNames.values()) {
             Attribute a = new Attribute(f.toString());
             list.add(a);
         }
 
-        hm.m_homemade = new Instances("homemade", list, numFiles);
-        //NOW WE HAVE HOMEMADE INSTANCES
+        //initialize parameters based off of train and test.
+        if (type.equals("train")) {
+            hm.m_homemade = new Instances("homemade_train", list, numFiles);
+            homemadeInstances = hm.m_homemade;
+            featuresCounts = featuresCountsTrain;
+        }
+        else{
+            hm.m_homemade_test = new Instances("homemade_test", list, numFiles);
+            homemadeInstances = hm.m_homemade_test;
+            featuresCounts = featuresCountsTest;
+        }
+        Integer flen = files.length;
+        Integer totFiles = 0;
 
-        //featuresCounts = new HashMap<>();
-        //List<HashMap<String, List<Integer>>> sliceMaps = new ArrayList<>();
-        //List<EnumMap<HomemadeFeature.HomemadeFeatureRatioNames, Double>> homemadeMaps = new ArrayList<>();
+
+
+
+        //per file, parse the tree then compute homemade features.
         for (int j = 0; j < flen; j++) {
-
-            //sliceMaps.add(new HashMap<>());
-            //homemadeMaps.add(new EnumMap<>(HomemadeFeature.HomemadeFeatureRatioNames.class));
-            //Changed by Matt: Using my function instead since this will make Homemade Computation much easier.
-            //Treebank langTreeBank = makeTreebankie(files[j].toString(), op, null);
-            //HashMap<String, List<Integer>> featuresCounts = sliceMaps.get(j);
 
             File[] subDirectories = files[j].listFiles();
 
             Integer slen = subDirectories.length;
-            n = flen * slen;
+
             //featuresCounts = new HashMap<>();
             for (int k = 0; k < slen; k++) {
                 //System.out.println(subDirectories[k]);
@@ -171,7 +178,7 @@ public class ParseFeature extends Features {
                             featuresCounts.put(key, arr);
                         } else {
                             //Integer[] arr = Collections.nCopies(n, 0).toArray(new Integer[0]); ??????
-                            List<Integer> arr = new ArrayList<>(n);
+                            List<Integer> arr = new ArrayList<>(numFiles);
                             //System.out.println("Size of array:");
                             //System.out.println(n);
                             //System.out.println(arr.toString());
@@ -200,37 +207,95 @@ public class ParseFeature extends Features {
                     inst.setValue(list.get(i), ratios.get(r));
                     i++;
                 }
-                hm.m_homemade.add(inst);
+                homemadeInstances.add(inst);
 
             }
             totFiles = totFiles + slen;
         }
-//            Instance parse_inst = new DenseInstance(n);
-//            parse_inst
-//            featuresCounts.values();
-//            for (HomemadeFeature.HomemadeFeatureRatioNames r : ratios.keySet()) {
-//                inst.setValue(list.get(i), ratios.get(r));
-//            }
-//            l_parse.add(parse_inst);
 
-            hm.m_isHomemade_train = true; //TODO: Have code ready for both train and test
-            System.out.println(featuresCounts.toString());
+
+        //now, depending on train and test, adjust flags and set up Instances for the Parse Features.
+        if (type.equals("train")) {
+            hm.m_isHomemade_train = true;
+            m_isParse_train = true;
+
+            //create trainedSlices set... if these don't appear in test, we exclude them.
+            for (String s : featuresCountsTrain.keySet()) {
+                Attribute a = new Attribute(s);
+                trainedSlices.add(a);
+            }
+            l_parse = new Instances("Parse_train", trainedSlices, numFiles);
+            int numAttributes = l_parse.numAttributes();
+            for (int i = 0; i < numFiles; i++) {
+                Instance inst = new DenseInstance(numAttributes);
+                for (Attribute a : trainedSlices) {
+                    System.out.println(a.name());
+                    inst.setValue(a,featuresCountsTrain.get(a.name()).get(i));
+                }
+                l_parse.add(inst);
+            }
+
+            //for the test portion
+        } else {
+            hm.m_isHomemade_test = true;
+            m_isParse_test = true;
+
+            //now just build another Instances set... we already have Attributes.
+            l_parse_test = new Instances("Parse_test", trainedSlices, numFiles);
+            int numAttributes = l_parse_test.numAttributes();
+            for (int i = 0; i < numFiles; i++) {
+                Instance inst = new DenseInstance(numAttributes);
+                //just add only the slices detected in train set.
+                for (Attribute a : trainedSlices) {
+                    if (featuresCountsTest.containsKey(a.name())) {
+                        inst.setValue(a, featuresCountsTest.get(a.name()).get(i));
+                    } else {
+                        inst.setValue(a, 0);
+                    }
+                }
+                l_parse_test.add(inst);
+            }
+        }
+        //System.out.println(featuresCounts.toString());
 
     }
 
 
     // use this then hm.getM_homemade() and hm.getM_homemade_test() to get train and test.
-    public HomemadeFeature getHomemadeFeaturesInstances() {
+    public HomemadeFeature getHomemadeFeatures() {
         return hm;
+    }
+
+    public Instances getL_parse() {
+        return l_parse;
+    }
+
+    public Instances getL_parse_test() {
+        return l_parse_test;
+    }
+
+    public boolean isM_isParse_test() {
+        return m_isParse_test;
+    }
+
+    public boolean isM_isParse_train() {
+        return m_isParse_train;
     }
 
     public static void main(String[] args) {
         ParseFeature p = new ParseFeature();
-
+        HomemadeFeature hm = p.getHomemadeFeatures();
         p.parseMe(new File("Data/block_trees/500/train"), "train");
-        System.out.println("Done with Train");
+
+        System.out.println("Parse Features after train:");
+        System.out.println(p.l_parse);
+        System.out.println("Homemade Features after train:");
+        System.out.println(hm.getM_homemade());
+
         p.parseMe(new File("Data/block_trees/500/test"), "test");
-        System.out.println("Done with Test");
+        System.out.println(p.l_parse_test);
+        System.out.println("Homemade Features after test:");
+        System.out.println(hm.getM_homemade_test());
 
     }
 }
