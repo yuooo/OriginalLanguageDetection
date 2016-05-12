@@ -113,7 +113,11 @@ Three different kind of lexical features were used:
 \end{description}
 
 \subsection{Parse Features}
+Inspired by \cite{Parse}, we ran the Stanford parser on our slices, and computed the parse trees. By running a BFS, we then compute the generation rules and count them. We don't take into account the leaves of the trees to avoid redundancy with lexical features (and possible topic overfitting).
+
+
 \subsection{Homemade Features}
+We also computed all the features of \cite{homemade}, which include length of sentences, length of words, ratio of pronouns, nouns, complex sentences etc. [MATT ADD WHATEVER YOU WANT].
 
 \section{Classification task}
 \subsection{Features Extraction}
