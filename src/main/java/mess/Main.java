@@ -77,9 +77,9 @@ public class Main {
         // save lexical features
         T();
         System.out.println("Save Lexical features.");
-        feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram.arff", true);
+        feat.saveFeatures("Data/weka/lexica_feat/" + sizeSlice + "lexical.arff", true);
         feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram.csv", true);
-        feat.saveFeatures("Data/weka/unigram_feat/" + sizeSlice + "unigram_test.arff", false);
+        feat.saveFeatures("Data/weka/lexical_feat/" + sizeSlice + "lexical_test.arff", false);
         feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "unigram_test.csv", false);
         pT("Save unigram");
 
@@ -89,8 +89,8 @@ public class Main {
         T();
         System.out.println("Start parse features.");
         ParseFeature parseFeat = new ParseFeature();
-        parseFeat.parseMe(new File("Data/block_tree/" + sizeSlice + "train/"), "train");
-        parseFeat.parseMe(new File("Data/block_tree/" + sizeSlice + "test/"), "test");
+        parseFeat.parseMe(new File("Data/block_trees/" + sizeSlice + "train/"), "train");
+        parseFeat.parseMe(new File("Data/block_trees/" + sizeSlice + "test/"), "test");
 
         Instances parseInst = parseFeat.trainToWeka();
         Instances parseInst_test = parseFeat.testToWeka();
@@ -118,6 +118,15 @@ public class Main {
         feat.brutalMerge(homeFeatInst, true);
         feat.brutalMerge(homeFeatInst_test, false);
         pT("Merged Homemade.");
+
+        // saving
+        T();
+        System.out.println("Save all features.");
+        feat.saveFeatures("Data/weka/all_feat/" + sizeSlice + "allFeat.arff", true);
+        feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "allFeat.csv", true);
+        feat.saveFeatures("Data/weka/all_feat/" + sizeSlice + "allFeat_test.arff", false);
+        feat.saveFeaturesCSV("Data/csv/" + sizeSlice + "allFeat_test.csv", false);
+        pT("Save unigram");
 
         Instances allFeat = feat.trainToWeka();
         Instances allFeat_test = feat.testToWeka();

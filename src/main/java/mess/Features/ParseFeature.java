@@ -214,7 +214,7 @@ public class ParseFeature extends Features {
             for (int i = 0; i < numFiles; i++) {
                 Instance inst = new DenseInstance(numAttributes);
                 for (Attribute a : trainedSlices) {
-                    System.out.println(a.name());
+//                    System.out.println(a.name());
                     inst.setValue(a,featuresCountsTrain.get(a.name()).get(i));
                 }
                 m_allFeat_train.add(inst);
