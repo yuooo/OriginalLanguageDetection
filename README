@@ -1,3 +1,8 @@
+Matt Denend
+Jessica Hoffmann
+Lakshmi Prakash
+Original Language Detection Project README
+
 Building the features to train upon:
 The parser is located in a class called Main. It is in directory src/main, in package java.mess.Main. It takes no arguments,
 as the data we are loading from is just hardcoded, as the directory structure must be exact in order for our code to be correct.
