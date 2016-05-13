@@ -50,8 +50,8 @@ public class TreeToPOSfiles {
 
 
     public static void main(String[] args) {
-        File root = new File("Data/block_trees");
-        File destination = new File ("Data/block_POS");
+        File root = new File("Data/block_trees/400");
+        File destination = new File ("Data/block_POS/400");
         recurse(root, destination);
 
     }
