@@ -62,13 +62,13 @@ public class ParseFeature extends Features {
      * I changed from creating a Treebank to using my built in Treebank method since I also grab the words and POS, which I rely upon
      * heavily in Homemade Features.
      */
-    public void parseMe(File source, String type) {
+    public void parseMe(String fileParse, String type) {
         HashMap<String, List<Integer>> featuresCounts;
         Instances homemadeInstances;
 
         //crunch number of files ahead of time
         int numFiles = 0;
-        File directory = source;
+        File directory = new File(fileParse);
         File[] files = directory.listFiles();
 
         for (File f: files) {
@@ -270,14 +270,14 @@ public class ParseFeature extends Features {
     public static void main(String[] args) {
         ParseFeature p = new ParseFeature();
         HomemadeFeature hm = p.getHomemadeFeatures();
-        p.parseMe(new File("Data/block_trees/500/train"), "train");
+        p.parseMe("Data/block_trees/500/train", "train");
 
         System.out.println("Parse Features after train:");
         System.out.println(p.m_allFeat_train);
         System.out.println("Homemade Features after train:");
         System.out.println(hm.trainToWeka());
 
-        p.parseMe(new File("Data/block_trees/500/test"), "test");
+        p.parseMe("Data/block_trees/500/test", "test");
         System.out.println(p.m_allFeat_test);
         System.out.println("Homemade Features after test:");
         System.out.println(hm.testToWeka());
