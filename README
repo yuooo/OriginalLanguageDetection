@@ -1,18 +1,26 @@
 README for our project:
 Search for a name to find instructions as explained by that person. So search MATT for code that Matt wrote, JESSICA for Jessica's and LAKSHMI for Lakshmi's.
 
+Building the features to train upon:
+The parser is located in a class called Main. It is in directory src/main, in package java.mess.Main. It takes no arguments,
+as the data we are loading from is just hardcoded, as the directory structure must be exact in order for our code to be correct.
 
-MATT:
-TOC:
-SplitFile
-MassPreprocessor
+To compile it, from this directory, run:
 
-SplitFile: (Now does trees)
-CHANGES:
--two new options: -trainall and -testall. this puts as many complete files as can possibly be put by setting trainFiles/testFile counts to MAX_INT, respectively.
- only one can be selected at a time, otherwise the program will exit.
--Now defaults train and test numbers are 0.
--Doesn't make the directories when they're not needed.
+javac -cp "Jars/*:src/main/java:" -d out mess.Main.java
+
+Then to run it, run:
+
+java -cp "Jars/*:out:" mess.Main.java
+
+The code will run on Weka, generating Lexical Features, Parse Features, and Homemade Features... see report for more details on each one.
+Once these features are computed, we merge them all together. We don't use the Weka toolkit to classify things in Java, we use
+Python to do the actual machine learning (see below for that info).
+
+
+PREPROCESSING CODE (Not as important, but still around in case you want to run it)
+SPLITFILE
+SplitFile:
 
 Allows a user to split either text files or tree files. Both use \n to delimit, but differ slightly in delimitation:
       Text uses \n to delimit per sentence
@@ -43,10 +51,8 @@ source_directory: Needs to have languages in subdirectories, and these languages
 
 destination_directory: Will write into this directory (it doesn't need to exist yet) train/ and test/ directories. From each, the languages, and all chunks of all novels will be written in there.
 
-***************************************
 
-UPDATED: -oneNovelName now takes in the whole path, instead of having to split the name and rootDirectory.
-
+MASSPREPROCESSOR
 MassPreprocessor: This flexible class takes a novel in text format and prints out either one of two things (or possibly both):
     -a tokenized text file (one sentence per line), or
     -a Penn tree file, one sentence per tree.
