@@ -26,6 +26,25 @@ from sklearn.multiclass import OneVsRestClassifier
 os.chdir("/Users/jessicahoffmann/IdeaProjects/OriginalLanguageDetection")
 
 #%% ===========================================================================
+#   === Loading Data ===
+#   ===========================================================================
+print "Load Data"
+train = pd.read_csv("Data/csv/400/allFeat.csv")
+test = pd.read_csv("Data/csv/400/AllFeat_test.csv")
+
+y_train = train["@@class@@"]
+x_train = train.drop(["@@class@@"],axis=1)
+
+y_test = test["@@class@@"]
+x_test = test.drop(["@@class@@"],axis=1)
+
+class_label = ['American', 'French', 'German', 'Russian', 'Spanish']
+
+print "Loaded Data"
+
+
+
+#%% ===========================================================================
 #   === helpers ===
 #   ===========================================================================
 
@@ -39,7 +58,7 @@ def preview(model, x, y, x_t, y_t):
     print "Train score:", model.score(x, y)
     print "Test score:", model.score(x_t, y_t)
     y_hat = model.predict(x_t)
-    print confusion_matrix(y_t, y_hat, labels=['American','French', 'Russian'])
+    print confusion_matrix(y_t, y_hat, labels=class_label)
     
 def print_top(n, clf, class_labels, words):
     """Prints features with the highest coefficient values, per class"""
@@ -48,23 +67,6 @@ def print_top(n, clf, class_labels, words):
         print("%s: %s\n" % (class_label,
               " ".join(words[j] for j in top10)))
     
-
-#%% ===========================================================================
-#   === Loading Data ===
-#   ===========================================================================
-print "Load Data"
-train = pd.read_csv("Data/csv/500/allFeat.csv")
-test = pd.read_csv("Data/csv/500/AllFeat_test.csv")
-
-y_train = train["@@class@@"]
-x_train = train.drop(["@@class@@"],axis=1)
-
-y_test = test["@@class@@"]
-x_test = test.drop(["@@class@@"],axis=1)
-
-class_label = ['American','French', 'Russian']
-
-print "Loaded Data"
 
 
 #%% ===========================================================================
