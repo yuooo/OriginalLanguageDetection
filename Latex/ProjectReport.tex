@@ -253,14 +253,26 @@ Experiment & Accuracy \\
 Unigrams & 61.80 \% \\
 1000 Most common words & 62.92 \%  \\
 1000 Most common words + etymology & 61.80 \%  \\
-1000 Most common words + POS & 61.80 \%  \\
+1000 Most common words + POS & 46.06 \%  \\
 \hline
-Parse features only & \\
+Parse features only & 50.56 \%\\
+\hline
+Homemade only & 33.70 \%\\
+\hline
+1000 most common + Parse & \\
+1000 most common + Homemade & \\
+Parse + Homemade & \\
+\hline
+1000 most common + Parse + Homemade & \\
+1000 most common + Parse + Homemade + etymology & \\
 \hline
 \end{tabular}
 \caption{Lexical Features}
 \end{figure}
-We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely overfitted on topic, as illustrated by the following example: we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books. Contrary to intuition, the etymology feature didn't help at all.
+We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely overfitted on topic, as illustrated by the following example: we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books. Contrary to intuition, the etymology feature didn't help at all, and POS unigram dramatically reduced the accuracy.
+
+
+When using Homemade only, we classify everything as Spanish or Russian, which is even worse than what he already poor result led to believe.
 
 
 \section{Conclusion}

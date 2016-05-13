@@ -137,6 +137,25 @@ public class LexicalFeature extends Features {
         m_allFeat_test = Filter.useFilter(m_unigram_test, filter);
     }
 
+    public void onlyClasses() throws Exception {
+        assert m_isUnigram_train;
+        assert m_isUnigram_test;
+        List<String> functionWordList = Arrays.asList();
+        Remove filter = new Remove();
+        List<Integer> toRemove = new ArrayList<Integer>();
+        for (int i=1; i<m_unigram.numAttributes(); i++) {
+            if (!functionWordList.contains(m_unigram.attribute(i).name())) {
+                toRemove.add(i);
+            }
+        }
+        Integer[] wrapperArr = toRemove.toArray(new Integer[toRemove.size()]);
+        int[] toRem = ArrayUtils.toPrimitive(wrapperArr);
+        filter.setAttributeIndicesArray(toRem);
+        filter.setInputFormat(m_unigram);
+        m_allFeat_train = Filter.useFilter(m_unigram, filter);
+        m_allFeat_test = Filter.useFilter(m_unigram_test, filter);
+    }
+
     public void loadFeatures(String fileIn, boolean train) throws Exception {
         if (train) {
             this.m_allFeat_train = Features.loadARFF(fileIn);

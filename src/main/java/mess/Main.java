@@ -1,7 +1,9 @@
 package mess;
 
 import mess.Algorithm.ClassifierOLI;
+import mess.Features.HomemadeFeature;
 import mess.Features.LexicalFeature;
+import mess.Features.ParseFeature;
 import weka.core.Instances;
 
 import static mess.utils.Utils.T;
@@ -35,11 +37,19 @@ public class Main {
         feat.computeUnigram();
         pT("Compute unigram");
 
-        // function words
+        // only keep the class
         T();
-        System.out.println("Most common words.");
-        feat.computeMostCommon();
-        pT();
+        System.out.println("Cleaning");
+        feat.onlyClasses();
+        pT("Only kept the class");
+
+
+
+//        // function words
+//        T();
+//        System.out.println("Most common words.");
+//        feat.computeMostCommon();
+//        pT();
 
         // etymology
 //        T();
@@ -47,18 +57,18 @@ public class Main {
 //        feat.computeEtymology();
 //        pT("Etymology");
 
-        // load POS
-        T();
-        System.out.println("Load POS.");
-        feat.loadPOS("Data/block_POS/" + sizeSlice +"train/", true);
-        feat.loadPOS("Data/block_POS/" + sizeSlice +"test/", false);
-        pT("Load POS");
-
-        // compute POS
-        T();
-        System.out.println("Compute POS.");
-        feat.computePOS();
-        pT("Compute POS");
+//        // load POS
+//        T();
+//        System.out.println("Load POS.");
+//        feat.loadPOS("Data/block_POS/" + sizeSlice +"train/", true);
+//        feat.loadPOS("Data/block_POS/" + sizeSlice +"test/", false);
+//        pT("Load POS");
+//
+//        // compute POS
+//        T();
+//        System.out.println("Compute POS.");
+//        feat.computePOS();
+//        pT("Compute POS");
 
 //        // save lexical features
 //        T();
@@ -71,26 +81,26 @@ public class Main {
 //
 //
 //
-//        // computer parse features
-//        T();
-//        System.out.println("Start parse features.");
-//        ParseFeature parseFeat = new ParseFeature();
-//        parseFeat.parseMe(new File("Data/block_trees/" + sizeSlice + "train/"), "train");
-//        parseFeat.parseMe(new File("Data/block_trees/" + sizeSlice + "test/"), "test");
+        // computer parse features
+        T();
+        System.out.println("Start parse features.");
+        ParseFeature parseFeat = new ParseFeature();
+        parseFeat.parseMe("Data/block_trees/" + sizeSlice + "train/", "train");
+        parseFeat.parseMe("Data/block_trees/" + sizeSlice + "test/", "test");
+
+        Instances parseInst = parseFeat.trainToWeka();
+        Instances parseInst_test = parseFeat.testToWeka();
+        pT("Parse Features");
 //
-//        Instances parseInst = parseFeat.trainToWeka();
-//        Instances parseInst_test = parseFeat.testToWeka();
-//        pT("Parse Features");
 //
 //
-//
-////        // compute homemade features
-////        T();
-////        System.out.println("Start homemade features.");
-////        HomemadeFeature homeFeat = parseFeat.getHomemadeFeatures();
-////        Instances homeFeatInst = homeFeat.trainToWeka();
-////        Instances homeFeatInst_test = homeFeat.testToWeka();
-////        pT("Homemade Features");
+        // compute homemade features
+        T();
+        System.out.println("Start homemade features.");
+        HomemadeFeature homeFeat = parseFeat.getHomemadeFeatures();
+        Instances homeFeatInst = homeFeat.trainToWeka();
+        Instances homeFeatInst_test = homeFeat.testToWeka();
+        pT("Homemade Features");
 //
 //
 //        // combine features
@@ -100,10 +110,10 @@ public class Main {
 //        feat.brutalMerge(parseInst_test, false);
 //        pT("Merged Parse.");
 
-//        T();
-//        feat.brutalMerge(homeFeatInst, true);
-//        feat.brutalMerge(homeFeatInst_test, false);
-//        pT("Merged Homemade.");
+        T();
+        feat.brutalMerge(homeFeatInst, true);
+        feat.brutalMerge(homeFeatInst_test, false);
+        pT("Merged Homemade.");
 
 //         saving
         T();
