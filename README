@@ -4,11 +4,13 @@ as the data we are loading from is just hardcoded, as the directory structure mu
 
 To compile it, from this directory, run:
 
-javac -cp "Jars/*:src/main/java:" -d out mess.Main.java
+javac -cp "Jars/*:" -d out src/main/java/mess/Main.java src/main/java/mess/Features/* src/main/java/mess/utils/* src/main/java/mess/Algorithm/*
+
 
 Then to run it, run:
 
-java -cp "Jars/*:out:" mess.Main.java
+java -cp "Jars/*:out/:" mess.Main
+
 
 The code will run on Weka, generating Lexical Features, Parse Features, and Homemade Features... see report for more details on each one.
 Once these features are computed, we merge them all together. We don't use the Weka toolkit to classify things in Java, we use
@@ -22,6 +24,37 @@ To obtain the training/testing accuracy of 4 classifiers (Logistic Regression, R
 
 
 PREPROCESSING CODE (Not as important, but still around in case you want to run it)
+
+TO CLEAN TXT: Run txt/mattCleanTxt.sh.
+txt/mattCleanTxt.sh file.txt [regex] [regex] ...
+Arguments:
+file.txt is the file you want cleaned.
+regex is a regular expression for a line that is replaced by blank. used for chapter header removal, and also can remove subtitles to chapter text as well.
+
+
+MASSPREPROCESSOR
+MassPreprocessor: This flexible class takes a novel in text format and prints out either one of two things (or possibly both):
+    -a tokenized text file (one sentence per line), or
+    -a Penn tree file, one sentence per tree.
+
+NOTE: Running -tree on a whole novel can take a very long time. Hence I've included a condor script called condor_more_trees and a script I used to build it, condor_build_trees.sh, to show a practical use for it.
+
+Usage: MassPreprocessor [-text] [-tree] [-oneNovel novelName] [-textDirectory directory] [-treeDirectory directory]  [rootDirectory]
+
+Arguments: (all are optional except for rootDirectory, but you won't get very far without stating either -text or -tree.
+        -text: returns text files.
+        -tree: returns tree files.
+            Both -text and -tree can be called at the same time.
+        -oneNovel novel_file: runs only for novel_file. Please include the path in the name (Local or absolute path names are both OK). Also rootDirectory will not be read anymore.
+        -textDirectory directory: Text output will go into the Data/directory directory instead of the default directory created by the code (txt_sentence_blocks_merged).
+        -treeDirectory directory: Tree output will go into the Data/directory directory instead of the default directory created by the code (trees_merged).
+            NOTE: Only a name must be provided for -textDirectory and -treeDirectory. DO NOT provide the whole directory, otherwise it won't work.
+            These will both write into
+        rootDirectory the directory in which files are to be converted.
+            If doing a batch job, Subdirectories of rootDirectory need to have language names, and in those lie the novels.
+            If running for just one novel, rootDirectory MUST be the language in which the novel originates.
+
+
 SPLITFILE
 SplitFile:
 
@@ -55,24 +88,4 @@ source_directory: Needs to have languages in subdirectories, and these languages
 destination_directory: Will write into this directory (it doesn't need to exist yet) train/ and test/ directories. From each, the languages, and all chunks of all novels will be written in there.
 
 
-MASSPREPROCESSOR
-MassPreprocessor: This flexible class takes a novel in text format and prints out either one of two things (or possibly both):
-    -a tokenized text file (one sentence per line), or
-    -a Penn tree file, one sentence per tree.
-
-Usage: MassPreprocessor [-text] [-tree] [-oneNovel novelName] [-textDirectory directory] [-treeDirectory directory]  [rootDirectory]
-
-Arguments: (all are optional except for rootDirectory, but you won't get very far without stating either -text or -tree.
-        -text: returns text files.
-        -tree: returns tree files.
-            Both -text and -tree can be called at the same time.
-        -oneNovel novel_file: runs only for novel_file. Please include the path in the name (Local or absolute path names are both OK). Also rootDirectory will not be read anymore.
-        -textDirectory directory: Text output will go into the Data/directory directory instead of the default directory created by the code (txt_sentence_blocks_merged).
-        -treeDirectory directory: Tree output will go into the Data/directory directory instead of the default directory created by the code (trees_merged).
-            NOTE: Only a name must be provided for -textDirectory and -treeDirectory. DO NOT provide the whole directory, otherwise it won't work.
-            These will both write into
-        rootDirectory the directory in which files are to be converted.
-            If doing a batch job, Subdirectories of rootDirectory need to have language names, and in those lie the novels.
-            If running for just one novel, rootDirectory MUST be the language in which the novel originates.
-
-
+TREETOPOSFILES:

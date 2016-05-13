@@ -1,0 +1,557 @@
+universe = vanilla
+environment = CLASSPATH=/u/mad4672/NLP/Project/OriginalLanguageDetection/Jars/*:/u/mad4672/NLP/Project/OriginalLanguageDetection/out
+
+Initialdir = /u/mad4672/NLP/Project/OriginalLanguageDetection
+Executable = /usr/bin/java
+
++Group   = "GRAD"
++Project = "INSTRUCTIONAL"
++ProjectDescription = "CS388 Project"
+
+Notification = complete
+Notify_user = mad4672@cs.utexas.edu
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00001.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/American/The_Awakening_clean_00001.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00001.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00001.err
+Queue 1
+
+
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00002.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/American/The_Awakening_clean_00002.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00002.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00002.err
+Queue 1
+
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00003.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/American/The_Awakening_clean_00003.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00003.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00003.err
+Queue 1
+
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00004.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/American/The_Awakening_clean_00004.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00004.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00004.err
+Queue 1
+
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00005.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/American/The_Awakening_clean_00005.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00005.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00005.err
+Queue 1
+
+
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00006.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/American/The_Awakening_clean_00006.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00006.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00006.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00007.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/American/The_Awakening_clean_00007.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00007.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00007.err
+Queue 1
+
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00008.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/American/The_Awakening_clean_00008.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00008.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00008.err
+Queue 1
+
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00009.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/American/The_Awakening_clean_00009.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00009.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00009.err
+Queue 1
+
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00010.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/American/The_Awakening_clean_00010.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00010.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/American/The_Awakening_clean_00010.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00001.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00001.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00001.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00001.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00002.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00002.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00002.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00002.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00003.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00003.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00003.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00003.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00004.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00004.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00004.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00004.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00005.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00005.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00005.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00005.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00006.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00006.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00006.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00006.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00007.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00007.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00007.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00007.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00008.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00008.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00008.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00008.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00009.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00009.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00009.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00009.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00010.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00010.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00010.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00010.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00001.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00001.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00001.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00001.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00002.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00002.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00002.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00002.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00003.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00003.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00003.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00003.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00004.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00004.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00004.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00004.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00005.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00005.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00005.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00005.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00006.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00006.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00006.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00006.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00007.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00007.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00007.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00007.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00008.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00008.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00008.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00008.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00009.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00009.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00009.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00009.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00010.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00010.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00010.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Four_Horsemen_of_the_Apocalypse_clean_00010.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00001.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00001.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00001.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00001.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00002.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00002.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00002.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00002.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00003.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00003.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00003.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00003.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00004.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00004.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00004.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00004.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00005.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00005.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00005.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00005.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00006.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00006.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00006.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00006.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00007.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00007.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00007.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00007.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00008.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00008.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00008.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00008.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00009.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00009.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00009.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00009.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00010.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00010.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00010.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Spanish/The_Fourth_Estate_clean_00010.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00001.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/English/Frankenstein_clean_00001.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00001.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00001.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00002.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/English/Frankenstein_clean_00002.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00002.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00002.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00003.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/English/Frankenstein_clean_00003.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00003.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00003.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00004.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/English/Frankenstein_clean_00004.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00004.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00004.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00005.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/English/Frankenstein_clean_00005.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00005.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00005.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00006.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/English/Frankenstein_clean_00006.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00006.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00006.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00007.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/English/Frankenstein_clean_00007.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00007.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00007.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00008.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/English/Frankenstein_clean_00008.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00008.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/English/Frankenstein_clean_00008.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00001.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00001.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00001.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00001.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00002.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00002.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00002.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00002.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00003.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00003.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00003.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00003.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00004.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00004.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00004.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00004.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00005.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00005.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00005.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00005.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00006.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00006.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00006.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/Spanish/The_Life_of_Lazarillo_of_Tormes_clean_00006.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00001.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00001.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00001.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00001.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00002.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00002.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00002.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00002.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00003.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00003.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00003.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00003.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00004.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00004.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00004.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00004.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00005.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00005.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00005.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00005.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00006.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00006.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00006.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00006.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00007.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00007.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00007.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00007.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00008.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00008.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00008.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00008.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00009.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00009.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00009.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00009.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00010.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00010.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00010.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/Russian/The_Death_of_the_Gods_clean_00010.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00001.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Devil's_Elixir_clean_00001.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00001.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00001.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00002.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Devil's_Elixir_clean_00002.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00002.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00002.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00003.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Devil's_Elixir_clean_00003.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00003.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00003.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00004.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Devil's_Elixir_clean_00004.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00004.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00004.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00005.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Devil's_Elixir_clean_00005.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00005.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00005.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00006.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Devil's_Elixir_clean_00006.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00006.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00006.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00007.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Devil's_Elixir_clean_00007.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00007.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00007.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00008.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Devil's_Elixir_clean_00008.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00008.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00008.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00009.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Devil's_Elixir_clean_00009.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00009.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00009.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00010.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Devil's_Elixir_clean_00010.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00010.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Devil's_Elixir_clean_00010.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00001.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Banished_clean_00001.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00001.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00001.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00002.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Banished_clean_00002.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00002.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00002.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00003.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Banished_clean_00003.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00003.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00003.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00004.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Banished_clean_00004.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00004.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00004.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00005.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Banished_clean_00005.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00005.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00005.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00006.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Banished_clean_00006.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00006.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00006.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00007.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Banished_clean_00007.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00007.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00007.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00008.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Banished_clean_00008.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00008.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00008.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00009.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Banished_clean_00009.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00009.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00009.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00010.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/train/German/The_Banished_clean_00010.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00010.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/train/German/The_Banished_clean_00010.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00001.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00001.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00001.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00001.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00002.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00002.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00002.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00002.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00003.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00003.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00003.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00003.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00004.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00004.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00004.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00004.err
+Queue 1
+
+Log = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00005.log
+Arguments = -mx8g -server mess.preprocessing.MassPreprocessor -tree -oneNovel Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00005.txt
+Output = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00005.out
+Error  = /u/mad4672/NLP/Project/condor_logs/Data/block_text/400/test/German/The_Sorrows_of_Young_Werther_clean_00005.err
+Queue 1
+
