@@ -97,10 +97,10 @@ Our project is to take novels, freely available from Project Gutenberg (CITE THI
 \subsection{Algorithm}
 We take a text format novel from Project Gutenberg. We clean out of it Chapter headings, subheaders following chapters, beginning and end informational text, and anything else that isn't words that we can use to compute. From here, we use the Stanford Parser's PCFG (CITE THIS) to build best-guess parse trees (in Penn Tree format) for the sentences in this novel, and we use the Stanford Parser's tokenizer to build tokenized sentences and detect ends of sentences. Both the tree format and text format are used in our machine learning, but we could just use the tree if space efficiency was a problem. The text format is used to compute word unigrams (using Weka's toolkit to do so), and the tree format is used to compute our parse features and homemade features as well. Both the parse and homemade feature computations were built from scratch with the ideas from  \cite{homemade} and  \cite{Parse}, with some help from Stanford's Parser package to read the Penn Trees. Finally, all the features were combined together and trained/tested upon using our (which?) machine learning algorithm.
 
-\subsection{Methodology}
-From Project Gutenberg, we built a dataset of books written in different languages, and translated into English. We then cut these books into slices of 400 sentences, and compute features on these slices. After feature extraction, we feed these features into a classifier and test it on a completely different set of books. 
+
 
 \section{Building the dataset}
+From Project Gutenberg, we built a dataset of books written in different languages, and translated into English. We decided to add up to 6 languages and at least 6 novels from each language. We ended up with a total of 39 novels. For each novel, we used the Stanford Parser to tokenize sentences, and created 400 sentence chunks of text and parse trees. We chunked by sentences to ensure that we could slice them correctly. In our train set, we wanted to ensure balance between the various source languages so each novel in our train set was required to have 10 slices of 400 sentences (4000 total.) 4000 sentences was chosen per train set novel because it was a reas
 \subsection{Pitfalls}
 Since we built it ourselves, our dataset is rather small. We therefore were extremely careful not to overfit on books particularities that are not specific to the language, such as topic, style, author, geographic places, time period. We believe the way we've constructed the dataset satisfies these criteria. 
 \subsection{Description of the dataset}
@@ -216,6 +216,9 @@ Inspired by \cite{Parse}, we ran the Stanford parser on our slices, and computed
 
 \subsection{Homemade Features}
 We also computed all the features of \cite{homemade}, which include length of sentences, length of words, ratio of pronouns, nouns, complex sentences etc. [MATT ADD WHATEVER YOU WANT].
+
+
+
 
 \section{Classification task}
 \subsection{Features Extraction}
