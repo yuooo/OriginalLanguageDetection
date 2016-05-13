@@ -87,6 +87,27 @@ words = [l_train[i] for i in ind_12]
 x = x[:,ind_12]
 x_t = x_t[:, ind_21]
 
+##%% ===========================================================================
+##   === Feature Extraction ===
+##   ===========================================================================
+#x = np.asarray(x_train)
+#y = np.asarray(y_train)
+#
+#x_t = np.asarray(x_test)
+#y_t = np.asarray(y_test)
+#
+#l_train = list(x_train.columns.values)
+#l_test = list(x_test.columns.values)
+#
+#ind_12 = [i for i,a in enumerate(l_train) if a in l_test]
+#ind_21 = [i for i,a in enumerate(l_test) if a in l_train]
+#
+#words = [l_train[i] for i in ind_12]
+#
+#x = x[:,ind_12]
+#x_t = x_t[:, ind_21]
+
+
 #%% ===========================================================================
 #   === Train Model ===
 #   ===========================================================================
@@ -94,7 +115,7 @@ x_t = x_t[:, ind_21]
 lr = OneVsRestClassifier(LogisticRegression())
 print "lr"
 preview(lr, x, y, x_t, y_t)
-print_top(100, lr, class_label, words)
+print_top(50, lr, class_label, words)
 print
 
 #%%
@@ -104,7 +125,7 @@ preview(rf, x, y, x_t, y_t)
 print
 
 #%%
-xgb = OneVsRestClassifier(XGBClassifier())
+xgb = OneVsRestClassifier(XGBClassifier(max_depth=6, n_estimators=50, colsample_bytree =0.3))
 
 print "xgb"
 preview(xgb, x, y, x_t, y_t)
