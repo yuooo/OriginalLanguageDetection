@@ -57,18 +57,18 @@ public class Main {
 //        feat.computeEtymology();
 //        pT("Etymology");
 
-//        // load POS
-//        T();
-//        System.out.println("Load POS.");
-//        feat.loadPOS("Data/block_POS/" + sizeSlice +"train/", true);
-//        feat.loadPOS("Data/block_POS/" + sizeSlice +"test/", false);
-//        pT("Load POS");
-//
-//        // compute POS
-//        T();
-//        System.out.println("Compute POS.");
-//        feat.computePOS();
-//        pT("Compute POS");
+        // load POS
+        T();
+        System.out.println("Load POS.");
+        feat.loadPOS("Data/block_POS/" + sizeSlice +"train/", true);
+        feat.loadPOS("Data/block_POS/" + sizeSlice +"test/", false);
+        pT("Load POS");
+
+        // compute POS
+        T();
+        System.out.println("Compute POS.");
+        feat.computePOS();
+        pT("Compute POS");
 
 //        // save lexical features
 //        T();
@@ -103,12 +103,12 @@ public class Main {
         pT("Homemade Features");
 
 
-//        // combine features
-//        T();
-//        System.out.println("Start combining.");
-//        feat.brutalMerge(parseInst, true);
-//        feat.brutalMerge(parseInst_test, false);
-//        pT("Merged Parse.");
+        // combine features
+        T();
+        System.out.println("Start combining.");
+        feat.brutalMerge(parseInst, true);
+        feat.brutalMerge(parseInst_test, false);
+        pT("Merged Parse.");
 
         T();
         feat.brutalMerge(homeFeatInst, true);

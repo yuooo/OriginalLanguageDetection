@@ -193,6 +193,7 @@ public class ParseFeature extends Features {
                     i++;
                 }
                 homemadeInstances.add(inst);
+                hm.resetVector();
 
             }
             totFiles = totFiles + slen;
