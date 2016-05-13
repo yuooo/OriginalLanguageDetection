@@ -379,7 +379,7 @@ public class LexicalFeature extends Features {
     }
 
     private boolean goodEntry(IWiktionaryEntry entry) {
-        boolean b = true;
+        boolean b;
         b = ((entry.getPartOfSpeech() == PartOfSpeech.ADJECTIVE) ||
                 (entry.getPartOfSpeech() == PartOfSpeech.ADVERB) || (entry.getPartOfSpeech() == PartOfSpeech.NOUN) ||
                 (entry.getPartOfSpeech() == PartOfSpeech.VERB));
@@ -409,20 +409,6 @@ public class LexicalFeature extends Features {
         return l;
     }
 
-    // TODO
-    public void computeLemma() {
-        assert m_isUnigram_train;
-        assert m_isUnigram_test;
-
-        // Connect to the Wiktionary database.
-        IWiktionaryEdition wkt = JWKTL.openEdition(new File("resources/wikiDirectory"));
-
-
-
-        // Close the database connection.
-        wkt.close();
-
-    }
 
     public void loadPOS(String fileIn, boolean train) throws Exception {
         TextDirectoryLoader txtLoader = new TextDirectoryLoader();
