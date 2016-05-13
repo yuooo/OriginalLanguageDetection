@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Start Loadind.");
         LexicalFeature feat = new LexicalFeature();
 
-        feat.loadRawTxt("Data/block_text/" + sizeSlice + "train/", true);
+        feat.loadRawTxt("Data/same_books/" + sizeSlice + "train/", true);
         pT("Load");
 
 
@@ -25,7 +25,7 @@ public class Main {
         // load data
         T();
         System.out.println("Start Loadind test.");
-        feat.loadRawTxt("Data/block_text/" + sizeSlice + "test/", false);
+        feat.loadRawTxt("Data/same_books/" + sizeSlice + "test/", false);
         pT("Load test.");
 
 
@@ -41,7 +41,7 @@ public class Main {
         feat.computeMostCommon();
         pT();
 
-        // etymology
+//         etymology
 //        T();
 //        System.out.println("Etymology.");
 //        feat.computeEtymology();

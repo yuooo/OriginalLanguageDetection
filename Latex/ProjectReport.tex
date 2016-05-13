@@ -234,17 +234,34 @@ On top of that, we also inquired the effect of different features on the dataset
 \end{itemize}
 
 \subsection{Results}
-
-
-\begin{tabular}{|c|c|c|c|}
+\begin{figure}
+\centering\begin{tabular}{|c|c|c|c|}
 \hline 
 Experiment & Accuracy & Best classifier\\
 \hline 
 Unigrams & 61.80 \% & LR, XGB or SVM \\
-\hline
-1000 Most common words & 54.72 \% & Logistic Regression \\
+1000 Most common words & 62.92 \% & LR \\
+1000 Most common words + etymology & 62.92 \% & LR \\
 \hline
 \end{tabular}
+\caption{Testing and training on the same books (different parts)}
+\end{figure}
+
+
+\begin{figure}
+\centering\begin{tabular}{|c|c|c|c|}
+\hline 
+Experiment & Accuracy & Best classifier\\
+\hline 
+Unigrams & 61.80 \% & LR, XGB or SVM \\
+1000 Most common words & 62.92 \% & LR \\
+1000 Most common words + etymology & 62.92 \% & LR \\
+\hline
+\end{tabular}
+\caption{Real dataset}
+\end{figure}
+
+
 \section{Conclusion}
 
 \bibliographystyle{plain}
