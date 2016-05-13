@@ -128,6 +128,11 @@ public class HomemadeFeature extends Features {
 
     public void resetVector() {
         v = new HomemadeFeatureVector();
+        wordType = new HashSet<>();
+    }
+
+    public HomemadeFeatureVector getV() {
+        return v;
     }
 
 
@@ -241,6 +246,10 @@ public class HomemadeFeature extends Features {
             return homemadeAttributes;
         }
 
+
+        public String toString() {
+            return homemadeAttributes.toString();
+        }
     }
 
     /**

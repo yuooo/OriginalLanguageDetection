@@ -193,6 +193,7 @@ public class ParseFeature extends Features {
                     i++;
                 }
                 homemadeInstances.add(inst);
+                //System.out.println(hm.getV().toString());
                 hm.resetVector();
 
             }

@@ -101,11 +101,11 @@ We take a text format novel from Project Gutenberg. We clean out of it Chapter h
 
 
 \section{Building the dataset}
-From Project Gutenberg, we built a dataset of books written in different languages, and translated into English. We decided to add up to 6 languages and at least 6 novels from each language. We ended up with a total of 39 novels. For each novel, we used the Stanford Parser to tokenize sentences, and created 400 sentence chunks of text and parse trees. We chunked by sentences to ensure that we could slice them correctly. In our train set, we wanted to ensure balance between the various source languages so each novel in our train set was required to have 10 slices of 400 sentences (4000 total.) 4000 sentences was chosen per train set novel because it was a reas
+From Project Gutenberg, we built a dataset of books written in different languages, and translated into English. We decided to add up to 6 languages and at least 6 novels from each language. We ended up with a total of 39 novels. For each novel, we used the Stanford Parser to tokenize sentences, and created 400 sentence chunks of text and parse trees. We chunked by sentences to ensure that we could slice them correctly. 
 \subsection{Pitfalls}
 Since we built it ourselves, our dataset is rather small. We therefore were extremely careful not to overfit on books particularities that are not specific to the language, such as topic, style, author, geographic places, time period. We believe the way we've constructed the dataset satisfies these criteria. 
 \subsection{Description of the dataset}
-When building the dataset, we used books written from 1700 to 1920 to control the time period as best as we can. We made sure that we never used the same author in train and test, and we tried varying the topics between train and test as much as we could once the previous criteria were met. We tried to never use the same translator twice, but couldn't find enough translation data (when the name of the translator was available, we never used the same). When using Lexical Features, we only remembered the most common 1000 English words to control overfitting on topics as well.
+When building the dataset, we emphasized using books written from 1700 to 1920, mostly getting books from the 19th century, to control the time period as best as we can. We made sure that we never used the same author in train and test, and we tried varying the topics between train and test as much as we could once the previous criteria were met. We tried to never use the same translator twice, but couldn't find enough translation data (when the name of the translator was available, we never used the same). When using Lexical Features, we only remembered the most common 1000 English words to control overfitting on topics as well.
 The dataset we used is further described on this table:
 
 
@@ -202,21 +202,47 @@ German & The Banished: A Swabian Historical Tale & Wilhelm Hauff & 1839\tabularn
 
 \section{Features}
 \subsection{General Description}
-When computing the features, we cut the books in slices of $n$ sentences. With $n=1$, we get a lot of training examples, but finding out the original language from only 1 sentence seems unreasonable (which was proven by experiment). With the whole book as a sample, we didn't get enough training instances. We chose $n=400$, as it provided good balance between number of train samples, and informativeness of the samples. In training, we take 8 slices of each book, so that we have the same size of training for each language (most machine learning algorithms are sensitive to unbalanced datasets). In testing, we take all the slices, except the incomplete last one.
+When computing the features, we cut the books in slices of $n$ sentences. With $n=1$, we get a lot of training examples, but finding out the original language from only 1 sentence seems unreasonable (which was proven by experiment). With the whole book as a sample, we didn't get enough training instances. We chose $n=400$, as it provided good balance between number of train samples, and informativeness of the samples. This number also happened to work well given our dataset; enough books had at least 4000 sentences to build a robust set. In training, we take 10 slices of each book, so that we have the same size of training for each language (most machine learning algorithms are sensitive to unbalanced datasets). In testing, we take all the slices, except the incomplete last one.
 \subsection{Lexical Feature}
 Three different kind of lexical features were used:
 \begin{description}
 \item[1000 most common English words] After overfitting on words like "Moscow" or "Madame" when using unigrams, we decided to only use the 1000 most common words in English to avoid overfitting on topics, local idioms, or geographic places.
 \item[POS unigram] We only used POS unigrams, since we believed using bigram or trigram would just add redundancy with the Parse features.
-\item[Etymology] For each word used, we computed the etymology of the word from parsing Wiktionary \cite{Wiktionary}, and added all possible etymology as a feature. Rational being that if you're translating from a latin language, you may be more likely to use a latin word when choosing between synonyms. We only included the etymologies of nouns, verb, adjective and adverb, since we believed preposition, pronouns  and others wouldn't be significant and would only drown the relevant data.
+\item[Etymology] For each word used, we computed the etymology of the word from parsing Wiktionary \cite{Wiktionary}, and added all possible etymology as a feature. Rational being that if you're translating from a Latin language, you may be more likely to use a Latin word when choosing between synonyms. We only included the etymologies of nouns, verb, adjective and adverb, since we believed preposition, pronouns  and others wouldn't be significant and would only drown the relevant data.
 \end{description}
 
 \subsection{Parse Features}
-Inspired by \cite{Parse}, we ran the Stanford parser on our slices, and computed the parse trees. By running a BFS, we then compute the generation rules and count them. We don't take into account the leaves of the trees to avoid redundancy with lexical features (and possible topic overfitting).
+Inspired by \cite{Parse}, we ran the Stanford parser on our slices, and computed the parse trees. By running a BFS on our parse trees, we then compute the generation rules and count them. We don't take into account the leaves of the trees or nodes containing just part-of-speech information to avoid redundancy with lexical features (and possible topic overfitting).
 
 
 \subsection{Homemade Features}
-We also computed all the features of \cite{homemade}, which include length of sentences, length of words, ratio of pronouns, nouns, complex sentences etc. [MATT ADD WHATEVER YOU WANT].
+We also computed most the features of \cite{homemade}, since this paper suggested strong power in their ``Document-level'' features. We did not grab all of these features as some of them (readability metrics, for example) we felt were either not important enough for their complex properties (neither readability metric made the top 50 features), or didn't work well with the Stanford Parser Part-of-Speech toekns (example: discourse markets were tough to detect given the POS). Table ~\ref{HMTable} shows which features we did compute: 14 of the 18 features from \cite{homemade}.
+
+
+\begin{table}[h!]
+\begin{center}
+\label{HMTable}
+\begin{tabular}{|c|c|}
+\hline
+Feature & Computation \\\hline
+simplecomplex & Simple:Complex Sentences \\
+simpletotal & Simple:Total Sentences \\
+complextotal & Complex:Total Sentences \\
+avgsent & Total Words:Total Sentences \\
+avgwordlength & Total Characters: Total Words \\
+fverbratio & Finite Verbs:Total Words\\
+numratio & Numerals:Total Words \\ 
+prepratio & Prepositions:Total Words \\ 
+conjratio & Conjunctions:Total Words \\
+infoload & Open-Class Words:Total Words \\
+nounratio & Nouns: Total Words \\
+grammlex & Open-Class Words:Closed-Class Words \\
+pronounratio & Pronouns:Total Words \\
+typetoken & Word types:Total Words \\\hline
+\end{tabular}
+\caption{ contains homemade features we used in our parsing. }
+\end{center}
+\end{table}
 
 
 
@@ -273,7 +299,7 @@ Parse + Homemade & 51.69 \%\\
 \end{tabular}
 \caption{Lexical Features}
 \end{figure}
-We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely overfitted on topic, as illustrated by the following example: we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books. Contrary to intuition, POS unigram dramatically reduced the accuracy. It's interesting to notice that etymology features decrease the accuracy when considering only lexical features, but increased it when considering everything.
+We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely caused overfitting on the topic. For example, we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books. Contrary to intuition, POS unigram dramatically reduced the accuracy. It's interesting to notice that etymology features decrease the accuracy when considering only lexical features, but increased it when considering everything.
 
 
 When using Homemade only, we classify everything as Spanish or Russian, which is even worse than what the already poor results led to believe. As following results suggest, Homemade features are not informative, and they never appear in the top 100 most relevant features for a language.
