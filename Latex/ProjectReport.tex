@@ -234,32 +234,31 @@ On top of that, we also inquired the effect of different features on the dataset
 \end{itemize}
 
 \subsection{Results}
-\begin{figure}
+\begin{figure}[h]
 \centering\begin{tabular}{|c|c|c|c|}
 \hline 
 Experiment & Accuracy & Best classifier\\
 \hline 
-Unigrams & 61.80 \% & LR, XGB or SVM \\
 1000 Most common words & 96.67 \% & LR \\
-1000 Most common words + etymology & 62.92 \% & LR \\
 \hline
 \end{tabular}
 \caption{Testing and training on the same books (different parts)}
 \end{figure}
+As expected, using the same books for training and testing gives excellent results even when using only the 1000 most common English words. Since we used a lot of books in common with \cite{homemade}, we're wondering how they got such poor results.
 
-
-\begin{figure}
+\begin{figure}[h]
 \centering\begin{tabular}{|c|c|c|c|}
 \hline 
 Experiment & Accuracy & Best classifier\\
 \hline 
 Unigrams & 61.80 \% & LR, XGB or SVM \\
 1000 Most common words & 62.92 \% & LR \\
-1000 Most common words + etymology & 62.92 \% & LR \\
+1000 Most common words + etymology & 61.80 \% & LR \\
 \hline
 \end{tabular}
-\caption{Real dataset}
+\caption{Lexical Features}
 \end{figure}
+We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely overfitted on topic, as illustrated by the following example: we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books.
 
 
 \section{Conclusion}

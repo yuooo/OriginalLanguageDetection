@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Start Loadind.");
         LexicalFeature feat = new LexicalFeature();
 
-        feat.loadRawTxt("Data/same_books/" + sizeSlice + "train/", true);
+        feat.loadRawTxt("Data/block_text/" + sizeSlice + "train/", true);
         pT("Load");
 
 
@@ -25,7 +25,7 @@ public class Main {
         // load data
         T();
         System.out.println("Start Loadind test.");
-        feat.loadRawTxt("Data/same_books/" + sizeSlice + "test/", false);
+        feat.loadRawTxt("Data/block_text/" + sizeSlice + "test/", false);
         pT("Load test.");
 
 
@@ -36,16 +36,16 @@ public class Main {
         pT("Compute unigram");
 
         // function words
-        T();
-        System.out.println("Most common words.");
-        feat.computeMostCommon();
-        pT();
+//        T();
+//        System.out.println("Most common words.");
+//        feat.computeMostCommon();
+//        pT();
 
 //         etymology
-        T();
-        System.out.println("Etymology.");
-        feat.computeEtymology();
-        pT("Etymology");
+//        T();
+//        System.out.println("Etymology.");
+//        feat.computeEtymology();
+//        pT("Etymology");
 
 //        // load POS
 //        T();
