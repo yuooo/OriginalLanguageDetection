@@ -7,3 +7,4 @@ Latex/*.aux
 Latex/*.log
 Latex/*.gz
 Latex/*.bbl
+.DSTORE
