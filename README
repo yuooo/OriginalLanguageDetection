@@ -16,11 +16,16 @@ The code will run on Weka, generating Lexical Features, Parse Features, and Home
 Once these features are computed, we merge them all together. We don't use the Weka toolkit to classify things in Java, we use
 Python to do the actual machine learning (see below for that info). Run:
 
+pip install xgboost
+pip install sklearn
 python src/main/python/analytics.py
 
 To obtain the training/testing accuracy of 4 classifiers (Logistic Regression, Random Forest, XGBoost, SVM), as well as the confusion matrix. The list of the 100 most important class features for LR is also printed.
 
+In case there are difficulties installing xgboost, a xgboost free version also exist:
 
+pip install sklearn
+python src/main/python/analytics_without_xgb.py
 
 
 PREPROCESSING CODE (Not as important, but still around in case you want to run it)

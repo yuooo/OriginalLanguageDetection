@@ -83,7 +83,7 @@
 
 \begin{document}
 
-\ps{--- Original Language Detection}{Spring 2016}{Prof.\ Ray Mooney}{M. Denend, J. Hoffmann, L.Prakash}
+\ps{--- Original Language Detection}{Spring 2016}{Prof.\ Ray Mooney}{M. Denend, J. Hoffmann, L. Prakash}
 \begin{abstract}
 Detecting source language of written text is an interesting potential use for machine learning that has been used in the past. We take some of these past works and attempt to combine them together in order to detect the source language of novels that were translated from their original language into English. A previous work did this successfully, but did not attempt to test outside of the given domain, so we decided to put different novels for the languages we tested in a train set and a test set. We computed features on these novels and used machine learning to calculate the differences. With 5 languages and 4 train set novels per language of same-sentence size, we get a maximum classification accuracy of 65\%.
 \end{abstract}
@@ -202,7 +202,7 @@ Spanish & The Fourth Estate & Armando Palacio Valdés & 1901\tabularnewline
 
 \section{Features}
 \subsection{General Description}
-When computing the features, we cut the books in slices of $n$ sentences. With $n=1$, we get a lot of training examples, but finding out the original language from only 1 sentence seems unreasonable (which was proven by experiment). With the whole book as a sample, we didn't get enough training instances. We chose $n=400$, as it provided good balance between number of train samples, and informativeness of the samples. This number also happened to work well given our dataset; enough books had at least 4000 sentences to build a robust set. In training, we take 10 slices of each book, so that we have the same size of training for each language (most machine learning algorithms are sensitive to unbalanced datasets). In testing, we take all the slices, except the incomplete last one.
+When computing the features, we cut the books in slices of $n$ sentences. With $n=1$, we get a lot of training examples, but finding out the original language from only 1 sentence seems unreasonable (which was proven by experiment). With the whole book as a sample, we didn't get enough training instances. We chose $n=400$, as it provided good balance between number of train samples, and informativeness of the samples. This number also happened to work well given our dataset; enough books had at least 4000 sentences to build a robust set. In training, we take 10 slices of each book, so that we have the same size of training for each language (most machine learning algorithms are sensitive to unbalanced datasets). In testing, we take all the slices. In both cases, we remove the incomplete last slice.
 \subsection{Lexical Feature}
 Three different kind of lexical features were used:
 \begin{description}
@@ -212,7 +212,7 @@ Three different kind of lexical features were used:
 \end{description}
 
 \subsection{Parse Features}
-Inspired by \cite{Parse}, we ran the Stanford parser on our slices, and computed the parse trees. By running a BFS on our parse trees, we then compute the generation rules and count them. We don't take into account the leaves of the trees or nodes containing just part-of-speech information and a child to a word, in order to avoid redundancy with lexical features (and possible topic overfitting).
+Inspired by \cite{Parse}, we ran the Stanford parser on our slices, and computed the parse trees. By running a BFS on our parse trees, we then computed the generation rules and count them. We don't take into account the leaves of the trees or nodes containing just part-of-speech information and a child to a word, in order to avoid redundancy with lexical features (and possible topic overfitting).
 
 
 \subsection{Homemade Features}
@@ -273,7 +273,7 @@ Experiment & Accuracy & Best classifier\\
 \end{figure}
 As expected, using the same books for training and testing gives excellent results even when using only the 1000 most common English words. Since we used a lot of books in common with \cite{homemade}, we're wondering how they got such poor results.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering\begin{tabular}{|c|c|c|c|}
 \hline 
 Experiment & Accuracy \\
@@ -298,7 +298,7 @@ Parse + Homemade & 51.69 \%\\
 \end{tabular}
 \caption{Lexical Features}
 \end{figure}
-We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely caused overfitting on the topic. For example, we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books. Contrary to intuition, POS unigram dramatically reduced the accuracy. It's interesting to notice that etymology features decrease the accuracy when considering only lexical features, but increased it when considering everything.
+In the second experiment, we get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely caused overfitting on the topic. For example, we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books. Contrary to intuition, POS unigram dramatically reduced the accuracy, and we therefore removed it from the mix early on. It's interesting to notice that etymology features decrease the accuracy when considering only lexical features, but increased it when considering everything.
 
 
 When using Homemade only, we classify everything as Spanish or Russian, which is even worse than what the already poor results led to believe. As the results suggest, Homemade features are not informative, and they never appear in the top 100 most relevant features for a language. This surprised us because it was counter-intutive to what \cite{homemade} claimed, and should be further investigated.
@@ -307,7 +307,7 @@ When using Homemade only, we classify everything as Spanish or Russian, which is
 Adding the Parse Features and the etymology got us a 3.37\% increase in accuracy, which correspond in our dataset to 3 new correctly classified slices out of 89, for a total of 58 correctly classified slices.
 
 \section{Future Work}
-While our classifier isn't as strong as it could be, We tried using it across five different closely related languages and still had a decently positive result of 65\%, given our ground truth was 20\%. We think that more work in the future should continue to look at the horizontal slices using parse trees, as that, along with 1000 most common word unigrams, seem to be the strongest predictors of language origin.
+While our classifier isn't as strong as it could be, We tried using it across five different closely related languages and still had a decently positive result of 65\%, given a random truth of 20\%. We think that more work in the future should continue to look at the horizontal slices using parse trees, as that, along with 1000 most common word unigrams, seem to be the strongest predictors of language origin.
 
 \section{Conclusion}
 We have successfully built a scientifically robust experiment for Original Language Detection, which had never been done before. We built a consistent dataset, computed Lexical, Parse and Homemade features, chose the most suitable classification algorithm, and reached 65\% accuracy on our testing set. However, our testing set is made of slices of 400 sentences. For a given book, if we compute those slices and take the majority vote for the whole book (the book is assigned the class that got the most slices), we reach a 100 \% accuracy on our testing set! Obviously, the dataset is not big enough for this experiment to be conclusive, and we wish we had included more languages. Nevertheless, the results are promising!

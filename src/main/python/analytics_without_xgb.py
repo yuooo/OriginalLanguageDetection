@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+Created on Fri May 13 08:37:56 2016
+
+@author: jessicahoffmann
+"""
+
+# -*- coding: utf-8 -*-
+"""
 Created on Sun May  8 12:19:08 2016
 
 @author: jessicahoffmann
@@ -13,8 +20,6 @@ from sklearn.metrics import  confusion_matrix
 import pandas as pd
 import os
 from sklearn.cross_validation import cross_val_score
-from xgboost import XGBClassifier
-import os
 from sklearn.multiclass import OneVsRestClassifier
 
 #os.chdir("/Users/jessicahoffmann/IdeaProjects/OriginalLanguageDetection")
@@ -100,12 +105,6 @@ print "rf"
 preview(rf, x, y, x_t, y_t)
 print
 
-#%%
-xgb = OneVsRestClassifier(XGBClassifier(max_depth=6, n_estimators=50, colsample_bytree =0.3))
-
-print "xgb"
-preview(xgb, x, y, x_t, y_t)
-print
 
 #%%
 svm = OneVsRestClassifier(SVC())
