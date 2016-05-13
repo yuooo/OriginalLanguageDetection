@@ -205,8 +205,8 @@ public class SplitFile {
                     }
                     pw.flush();
                     pw.close();
-                    //if our values are maxed, our reader will reach the end, delete the last file because chances are, it's incomplete.
-                    if (trainNum == Integer.MAX_VALUE || testNum == Integer.MAX_VALUE) {
+                    //if numlines is not equal to maxlines then we'll remove the last file.
+                    if (lineCount != maxLines) {
                         currentFile = createNewNumberedFile(pathToUse + "/" + fileShortName, fileCount);
                         currentFile.delete();
                     }
