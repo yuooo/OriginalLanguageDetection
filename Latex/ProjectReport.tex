@@ -85,18 +85,18 @@
 
 \ps{--- Original Language Detection}{Spring 2016}{Prof.\ Ray Mooney}{M. Denend, J. Hoffmann, L.Prakash}
 \begin{abstract}
-Abstract goes here.
+Detecting source language of written text is an interesting potential use for machine learning that has been used in the past. We take some of these past works and attempt to combine them together in order to detect the source language of novels that were translated from their original language into English. A previous work did this successfully, but did not attempt to test outside of the given domain, so we decided to put different novels for the languages we tested in a train set and a test set. We computed features on these novels and used machine learning to calculate the differences. With 5 languages and 4 train set novels per language of same-sentence size, we get a maximum classification accuracy of 65\%.
 \end{abstract}
 \section{Introduction}
-Our task was to determine the original language of translated text. Determining the language of origin for written text is something that can be of great importance to historians in order to trace back the path in which ancient novels may have been translated from, for example, the Bible. Doing so and using improving machine translation to translate a book back into prior languages may possibly open up avenues of research to better understand intended meanings of the first authors, as meaning can get lost when novels are translated. Furthermore, previous studies have shown that machine translators are much more accurate in identifying whether writing was from an original language, or translated, as mentioned in (I KNOW WHICH PAPER, I JUST NEED TO ACTUALLY CITE IT).
+Our task was to determine the original language of translated text. Determining the language of origin for written text is something that can be of great importance to historians in order to trace back the path in which ancient novels may have been translated from, for example, the Bible. Doing so and using improving machine translation to translate a book back into prior languages may possibly open up avenues of research to better understand intended meanings of the first authors, as meaning can get lost when novels are translated. Furthermore, previous studies have shown that machine translators are much more accurate in identifying whether writing was from an original language, or translated, as mentioned in \cite{trans}.
 Our goal was to build upon past research. In particular, we found that \cite{homemade} had some good results when trying to determine the original language, however, it only tested against slices of the same books, which we felt defeats any generalization ambition. We therefore decided to have our train set and test set computed from completely separate novels, which is one of our major contributions. We reused the horizontal slices of parse trees mentioned in \cite{Parse}, as well as some features from \cite{homemade} and add parse features to this. We built our dataset in a manner like in \cite{homemade}, but decided to extend it by adding a couple more books and two more languages. By combining all our features, we reach a 65 \% accuracy at the slice level.
 
 \section{Problem Definition}
 \subsection{Description}
-Our project is to take novels, freely available from Project Gutenberg (CITE THIS), and translated from a wide variety of languages, and determine which language they originated from. To do this, we take a novel electronically available in plain text format, and run some algorithms to determine various features that we detect from the books. We group these into three types of features (to be elaborated upon more later): lexical features, parse features (horizontal slices), and homemade features. Once we've computed these features for both our train and test sets, we feed them to a machine learning algorithm to see if it can determine the source language for the novels in the test set. 
+Our project is to take novels, freely available from Project Gutenberg \cite{gutenberg}, and translated from a wide variety of languages, and determine which language they originated from. To do this, we take a novel electronically available in plain text format, and run some algorithms to determine various features that we detect from the books. We group these into three types of features (to be elaborated upon more later): lexical features, parse features (horizontal slices), and homemade features. Once we've computed these features for both our train and test sets, we feed them to a machine learning algorithm to see if it can determine the source language for the novels in the test set. 
 
 \subsection{Algorithm}
-We take a text format novel from Project Gutenberg. We clean out of it Chapter headings, subheaders following chapters, beginning and end informational text, and anything else that isn't words that we can use to compute. From here, we use the Stanford Parser's PCFG (CITE THIS) to build best-guess parse trees (in Penn Tree format) for the sentences in this novel, and we use the Stanford Parser's tokenizer to build tokenized sentences and detect ends of sentences. Both the tree format and text format are used in our machine learning, but we could just use the tree if space efficiency was a problem. The text format is used to compute word unigrams (using Weka's toolkit to do so), and the tree format is used to compute our parse features and homemade features as well. Both the parse and homemade feature computations were built from scratch with the ideas from  \cite{homemade} and  \cite{Parse}, with some help from Stanford's Parser package to read the Penn Trees. Finally, all the features were combined together and trained/tested upon using four different machine learning algorithms.
+We take a text format novel from Project Gutenberg. We clean out of it Chapter headings, subheaders following chapters, beginning and end informational text, and anything else that isn't words that we can use to compute. From here, we use the Stanford Parser's PCFG \cite{Stanford} to build best-guess parse trees (in Penn Tree format) for the sentences in this novel, and we use the Stanford Parser's tokenizer to build tokenized sentences and detect ends of sentences. Both the tree format and text format are used in our machine learning, but we could just use the tree if space efficiency was a problem. The text format is used to compute word unigrams, using Weka's toolkit \cite{weka} to do so, and the tree format is used to compute our parse features and homemade features as well. Both the parse and homemade feature computations were built from scratch with the ideas from  \cite{homemade} and  \cite{Parse}, with some help from Stanford's Parser package to read the trees. Finally, all the features were combined together using weka instances and trained/tested upon using four different machine learning algorithms.
 
 
 
@@ -125,7 +125,7 @@ American & Moby Dick & Herman Melville & 1851\tabularnewline
 \hline 
 American & Uncle Toms Cabin & Harriet Beecher Stowe & 1852\tabularnewline
 \hline 
-American & The Narrative of A. G. Pym of Nantucket & Edgar Allen Poe & 1899\tabularnewline
+American & The Awakening & Kate Chopin & 1899\tabularnewline
 \hline 
 \hline 
 English & Great Expectations & Charles Dickens & 1861\tabularnewline
@@ -154,6 +154,19 @@ French & The Man in the Iron Mask & Alexandre Dumas & 1637\tabularnewline
 French & Candide & Voltaire & 1759\tabularnewline
 \hline 
 French & The Red and the Black & Stendahl & 1830\tabularnewline
+\hline
+\hline 
+German & The Devil's Elixir & E. T. A. Hoffmann & 1815\tabularnewline
+\hline 
+German & Debit and Credit & Gustave Freytag  & 1855\tabularnewline
+\hline 
+German & Old Fritz and the New Era & Luise Mühlbach & 1868\tabularnewline
+\hline 
+German & Venus in Furs & Leopold V. Sacher-Masoch  & 1870\tabularnewline
+\hline 
+German & The Sorrows of Young Werther & Johann Wolfgang von Goethe & 1774\tabularnewline
+\hline 
+German & The Banished: A Swabian Historical Tale & Wilhelm Hauff & 1839\tabularnewline
 \hline 
 \hline 
 Russian & Fathers and Children  & Ivan Turgenev  & 1862\tabularnewline
@@ -184,20 +197,7 @@ Spanish & The Four Horsemen of the Apocalypse & Vicente Blasco Ibanez & 1916\tab
 Spanish & Pepita Ximenez & Juan Valera & 1874\tabularnewline
 \hline 
 Spanish & The Fourth Estate & Armando Palacio Valdés & 1901\tabularnewline
-\hline 
-\hline 
-German & The Devil's Elixir & E. T. A. Hoffmann & 1815\tabularnewline
-\hline 
-German & Debit and Credit & Gustave Freytag  & 1855\tabularnewline
-\hline 
-German & Old Fritz and the New Era & Luise Mühlbach & 1868\tabularnewline
-\hline 
-German & Venus in Furs & Leopold V. Sacher-Masoch  & 1870\tabularnewline
-\hline 
-German & The Sorrows of Young Werther & Johann Wolfgang von Goethe & 1774\tabularnewline
-\hline 
-German & The Banished: A Swabian Historical Tale & Wilhelm Hauff & 1839\tabularnewline
-\hline 
+\hline  
 \end{tabular}
 
 \section{Features}
@@ -212,7 +212,7 @@ Three different kind of lexical features were used:
 \end{description}
 
 \subsection{Parse Features}
-Inspired by \cite{Parse}, we ran the Stanford parser on our slices, and computed the parse trees. By running a BFS on our parse trees, we then compute the generation rules and count them. We don't take into account the leaves of the trees or nodes containing just part-of-speech information to avoid redundancy with lexical features (and possible topic overfitting).
+Inspired by \cite{Parse}, we ran the Stanford parser on our slices, and computed the parse trees. By running a BFS on our parse trees, we then compute the generation rules and count them. We don't take into account the leaves of the trees or nodes containing just part-of-speech information and a child to a word, in order to avoid redundancy with lexical features (and possible topic overfitting).
 
 
 \subsection{Homemade Features}
@@ -221,7 +221,6 @@ We also computed most the features of \cite{homemade}, since this paper suggeste
 
 \begin{table}[h!]
 \begin{center}
-\label{HMTable}
 \begin{tabular}{|c|c|}
 \hline
 Feature & Computation \\\hline
@@ -240,7 +239,7 @@ grammlex & Open-Class Words:Closed-Class Words \\
 pronounratio & Pronouns:Total Words \\
 typetoken & Word types:Total Words \\\hline
 \end{tabular}
-\caption{ contains homemade features we used in our parsing. }
+\caption{Contains homemade features we used in our parsing. \label{HMTable}}
 \end{center}
 \end{table}
 
@@ -302,14 +301,16 @@ Parse + Homemade & 51.69 \%\\
 We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely caused overfitting on the topic. For example, we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books. Contrary to intuition, POS unigram dramatically reduced the accuracy. It's interesting to notice that etymology features decrease the accuracy when considering only lexical features, but increased it when considering everything.
 
 
-When using Homemade only, we classify everything as Spanish or Russian, which is even worse than what the already poor results led to believe. As following results suggest, Homemade features are not informative, and they never appear in the top 100 most relevant features for a language.
+When using Homemade only, we classify everything as Spanish or Russian, which is even worse than what the already poor results led to believe. As the results suggest, Homemade features are not informative, and they never appear in the top 100 most relevant features for a language. This surprised us because it was counter-intutive to what \cite{homemade} claimed, and should be further investigated.
 
 
 Adding the Parse Features and the etymology got us a 3.37\% increase in accuracy, which correspond in our dataset to 3 new correctly classified slices out of 89, for a total of 58 correctly classified slices.
 
+\section{Future Work}
+While our classifier isn't as strong as it could be, We tried using it across five different closely related languages and still had a decently positive result of 65\%, given our ground truth was 20\%. We think that more work in the future should continue to look at the horizontal slices using parse trees, as that, along with 1000 most common word unigrams, seem to be the strongest predictors of language origin.
 
 \section{Conclusion}
-We have successfully built a scientifically robust experiment for Original Language Detection, which had never been done before. We built a consistent dataset, computed Lexical, Parse and Homemade features, chose the most suitable classification algorithm, and reached 65\% accuracy on our testing set. However, our testing set is made of slices of 400 sentences. For a given book, if we compute those slices and take the majority vote for the whole book (the book is assigned the class that got the most slices), we reach a 100 \% accuracy on our testing set!!! Obviously, the dataset is not big enough for this experiment to be conclusive, and we wish we had included more languages. Nevertheless, the results are extremely promising!
+We have successfully built a scientifically robust experiment for Original Language Detection, which had never been done before. We built a consistent dataset, computed Lexical, Parse and Homemade features, chose the most suitable classification algorithm, and reached 65\% accuracy on our testing set. However, our testing set is made of slices of 400 sentences. For a given book, if we compute those slices and take the majority vote for the whole book (the book is assigned the class that got the most slices), we reach a 100 \% accuracy on our testing set! Obviously, the dataset is not big enough for this experiment to be conclusive, and we wish we had included more languages. Nevertheless, the results are promising!
 
 \bibliographystyle{plain}
 \bibliography{OLI}
