@@ -1,6 +1,3 @@
-README for our project:
-Search for a name to find instructions as explained by that person. So search MATT for code that Matt wrote, JESSICA for Jessica's and LAKSHMI for Lakshmi's.
-
 Building the features to train upon:
 The parser is located in a class called Main. It is in directory src/main, in package java.mess.Main. It takes no arguments,
 as the data we are loading from is just hardcoded, as the directory structure must be exact in order for our code to be correct.
@@ -15,7 +12,13 @@ java -cp "Jars/*:out:" mess.Main.java
 
 The code will run on Weka, generating Lexical Features, Parse Features, and Homemade Features... see report for more details on each one.
 Once these features are computed, we merge them all together. We don't use the Weka toolkit to classify things in Java, we use
-Python to do the actual machine learning (see below for that info).
+Python to do the actual machine learning (see below for that info). Run:
+
+python src/main/python/analytics.py
+
+To obtain the training/testing accuracy of 4 classifiers (Logistic Regression, Random Forest, XGBoost, SVM), as well as the confusion matrix. The list of the 100 most important class features for LR is also printed.
+
+
 
 
 PREPROCESSING CODE (Not as important, but still around in case you want to run it)
@@ -73,13 +76,3 @@ Arguments: (all are optional except for rootDirectory, but you won't get very fa
             If running for just one novel, rootDirectory MUST be the language in which the novel originates.
 
 
-
-JESSICA:
-
-
-
-
-
-
-
-LAKSHMI:

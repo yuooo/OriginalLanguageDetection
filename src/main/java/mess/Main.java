@@ -1,6 +1,7 @@
 package mess;
 
 import mess.Algorithm.ClassifierOLI;
+import mess.Features.HomemadeFeature;
 import mess.Features.LexicalFeature;
 import mess.Features.ParseFeature;
 import weka.core.Instances;
@@ -90,29 +91,29 @@ public class Main {
         Instances parseInst = parseFeat.trainToWeka();
         Instances parseInst_test = parseFeat.testToWeka();
         pT("Parse Features");
-//
-//
-//
-//        // compute homemade features
-//        T();
-//        System.out.println("Start homemade features.");
-//        HomemadeFeature homeFeat = parseFeat.getHomemadeFeatures();
-//        Instances homeFeatInst = homeFeat.trainToWeka();
-//        Instances homeFeatInst_test = homeFeat.testToWeka();
-//        pT("Homemade Features");
-//
-//
-        // combine features
-        T();
-        System.out.println("Start combining.");
-        feat.brutalMerge(parseInst, true);
-        feat.brutalMerge(parseInst_test, false);
-        pT("Merged Parse.");
 
+
+
+        // compute homemade features
+        T();
+        System.out.println("Start homemade features.");
+        HomemadeFeature homeFeat = parseFeat.getHomemadeFeatures();
+        Instances homeFeatInst = homeFeat.trainToWeka();
+        Instances homeFeatInst_test = homeFeat.testToWeka();
+        pT("Homemade Features");
+
+
+//        // combine features
 //        T();
-//        feat.brutalMerge(homeFeatInst, true);
-//        feat.brutalMerge(homeFeatInst_test, false);
-//        pT("Merged Homemade.");
+//        System.out.println("Start combining.");
+//        feat.brutalMerge(parseInst, true);
+//        feat.brutalMerge(parseInst_test, false);
+//        pT("Merged Parse.");
+
+        T();
+        feat.brutalMerge(homeFeatInst, true);
+        feat.brutalMerge(homeFeatInst_test, false);
+        pT("Merged Homemade.");
 
 //         saving
         T();
