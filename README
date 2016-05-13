@@ -93,4 +93,8 @@ source_directory: Needs to have languages in subdirectories, and these languages
 destination_directory: Will write into this directory (it doesn't need to exist yet) train/ and test/ directories. From each, the languages, and all chunks of all novels will be written in there.
 
 
-TREETOPOSFILES:
+The Rest of our code that we wrote:
+Algorithm.Classifier_OLI: The classifier that we use for this project.
+Features package: We have the Features Abstract Class, and our three sets of features discussed in our paper: Homemade, Lexical, and Parse.
+preprocessing package: Elements explained above, excpet ParseWikitionary, which helps us compute etymology.
+utils: Useful classes in here. POS is an enum used to compute HomemadeFeatures. TextPOSTreeTriple, for one sentence, returns a tree, POS, and text variations. TreetoSentenceHandler is a wrapper for the Stanford Parser treebank, and Utils has various utility functions used in Main.
