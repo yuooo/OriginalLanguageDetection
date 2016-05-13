@@ -7,23 +7,17 @@ Created on Sun May  8 12:19:08 2016
 
 import numpy as np
 from sklearn.linear_model import LogisticRegression
-import time
 from sklearn.svm import SVC
-from sklearn.preprocessing import OneHotEncoder
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import roc_auc_score, confusion_matrix
+from sklearn.metrics import  confusion_matrix
 import pandas as pd
 import os
-from sklearn.feature_selection import chi2, f_classif, RFECV
-import pandas as pd
 from sklearn.cross_validation import cross_val_score
-from sklearn.grid_search import GridSearchCV
-from sklearn.preprocessing import StandardScaler
 from xgboost import XGBClassifier
 import os
 from sklearn.multiclass import OneVsRestClassifier
 
-#os.chdir("/Users/jessicahoffmann/IdeaProjects/OriginalLanguageDetection")
+os.chdir("/Users/jessicahoffmann/IdeaProjects/OriginalLanguageDetection")
 
 #%% ===========================================================================
 #   === Loading Data ===
@@ -117,7 +111,7 @@ x_t = x_t[:, ind_21]
 lr = OneVsRestClassifier(LogisticRegression())
 print "lr"
 preview(lr, x, y, x_t, y_t)
-print_top(50, lr, class_label, words)
+print_top(10, lr, class_label, words)
 print
 
 #%%
