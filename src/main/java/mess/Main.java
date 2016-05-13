@@ -36,29 +36,29 @@ public class Main {
         pT("Compute unigram");
 
         // function words
-//        T();
-//        System.out.println("Most common words.");
-//        feat.computeMostCommon();
-//        pT();
+        T();
+        System.out.println("Most common words.");
+        feat.computeMostCommon();
+        pT();
 
-//         etymology
+        // etymology
 //        T();
 //        System.out.println("Etymology.");
 //        feat.computeEtymology();
 //        pT("Etymology");
 
-//        // load POS
-//        T();
-//        System.out.println("Load POS.");
-//        feat.loadPOS("Data/block_POS/" + sizeSlice +"train/", true);
-//        feat.loadPOS("Data/block_POS/" + sizeSlice +"test/", false);
-//        pT("Load POS");
-//
-//        // compute POS
-//        T();
-//        System.out.println("Compute POS.");
-//        feat.computePOS();
-//        pT("Compute POS");
+        // load POS
+        T();
+        System.out.println("Load POS.");
+        feat.loadPOS("Data/block_POS/" + sizeSlice +"train/", true);
+        feat.loadPOS("Data/block_POS/" + sizeSlice +"test/", false);
+        pT("Load POS");
+
+        // compute POS
+        T();
+        System.out.println("Compute POS.");
+        feat.computePOS();
+        pT("Compute POS");
 
 //        // save lexical features
 //        T();

@@ -89,7 +89,7 @@
 The goal of this project is to be able to find the original language a text was written in, from the translated English version. We believe that even with completely bilingual translators, languages have a specific structure that will influence the translator in the way he creates the translation. We hope to recover this structure during our task.
 
 \subsection{Methodology}
-From Project Gutenberg, we built a dataset of books written in different languages, and translated into English. We then cut these books into slices of 500 sentences, and compute features on these slices. After feature extraction, we feed these features into a classifier and test it on a completely different set of books. 
+From Project Gutenberg, we built a dataset of books written in different languages, and translated into English. We then cut these books into slices of 400 sentences, and compute features on these slices. After feature extraction, we feed these features into a classifier and test it on a completely different set of books. 
 
 \section{Building the dataset}
 \subsection{Pitfalls}
@@ -192,7 +192,7 @@ German & The Banished: A Swabian Historical Tale & Wilhelm Hauff & 1839\tabularn
 
 \section{Features}
 \subsection{General Description}
-When computing the features, we cut the books in slices of $n$ sentences. With $n=1$, we get a lot of training examples, but finding out the original language from only 1 sentence seems unreasonable (which was proven by experiment). With the whole book as a sample, we didn't get enough training instances. We chose $n=500$, as it provided good balance between number of train samples, and informativeness of the samples. In training, we take 8 slices of each book, so that we have the same size of training for each language. In testing, we take all the slices, except the incomplete last one.
+When computing the features, we cut the books in slices of $n$ sentences. With $n=1$, we get a lot of training examples, but finding out the original language from only 1 sentence seems unreasonable (which was proven by experiment). With the whole book as a sample, we didn't get enough training instances. We chose $n=400$, as it provided good balance between number of train samples, and informativeness of the samples. In training, we take 8 slices of each book, so that we have the same size of training for each language. In testing, we take all the slices, except the incomplete last one.
 \subsection{Lexical Feature}
 Three different kind of lexical features were used:
 \begin{description}
@@ -218,7 +218,6 @@ We conducted the following experiments:
 \begin{itemize}
 \item using unigrams (overfitting on topics)
 \item using the same books for train and test
-\item using the same author for train and test
 \end{itemize}
 
 On top of that, we also inquired the effect of different features on the dataset:
@@ -249,16 +248,19 @@ As expected, using the same books for training and testing gives excellent resul
 \begin{figure}[h]
 \centering\begin{tabular}{|c|c|c|c|}
 \hline 
-Experiment & Accuracy & Best classifier\\
+Experiment & Accuracy \\
 \hline 
-Unigrams & 61.80 \% & LR, XGB or SVM \\
-1000 Most common words & 62.92 \% & LR \\
-1000 Most common words + etymology & 61.80 \% & LR \\
+Unigrams & 61.80 \% \\
+1000 Most common words & 62.92 \%  \\
+1000 Most common words + etymology & 61.80 \%  \\
+1000 Most common words + POS & 61.80 \%  \\
+\hline
+Parse features only & \\
 \hline
 \end{tabular}
 \caption{Lexical Features}
 \end{figure}
-We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely overfitted on topic, as illustrated by the following example: we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books.
+We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely overfitted on topic, as illustrated by the following example: we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books. Contrary to intuition, the etymology feature didn't help at all.
 
 
 \section{Conclusion}
