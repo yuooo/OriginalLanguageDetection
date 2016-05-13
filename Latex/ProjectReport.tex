@@ -210,27 +210,17 @@ We also computed all the features of \cite{homemade}, which include length of se
 
 \section{Classification task}
 \subsection{Features Extraction}
+Following \cite{Parse}, we were ready to use Information gain for feature extraction. However, it turned out that we didn't have that many features and could run all the algorithms on our dataset. Using Information Gain or Anova didn't help the results, so we finally removed this step.
+
 \subsection{Comparisons of different algorithm}
+We compared the results of a Logistic Regression, a Random Forest, a SVM with gaussian kernel and XGBoost with trees. Surprisingly enough, even if XGBoost is known to perform extremely well for classification tasks, the Logistic Regression always outperformed all the other classifiers, whatever number of features we picked.
 
 \section{Experiments}
 \subsection{Description of different experiments}
-We conducted the following experiments:
-\begin{itemize}
-\item using unigrams (overfitting on topics)
-\item using the same books for train and test
-\end{itemize}
+We first decided to reproduce the experimental conditions of \cite{homemade}, to show that they're non representative of the task.
 
-On top of that, we also inquired the effect of different features on the dataset:
-\begin{itemize}
-\item Most common words only
-\item Most common + etymology
-\item POS only
-\item All lexical features (Most common words + etymology + POS)
-\item Homemade only
-\item Parse only
-\item Most common + etymology + Homemade
-\item All features
-\end{itemize}
+
+We then experimented with the different kind of features we computed, to pick the best possible mix.
 
 \subsection{Results}
 \begin{figure}[h]
@@ -261,21 +251,23 @@ Homemade only & 33.70 \%\\
 \hline
 1000 most common + Parse & \\
 1000 most common + Homemade & \\
-Parse + Homemade & \\
+Parse + Homemade & 51.69 \%\\
 \hline
-1000 most common + Parse + Homemade & \\
-1000 most common + Parse + Homemade + etymology & \\
+1000 most common + Parse + Homemade & 64.04 \% \\
+1000 most common + Parse + Homemade + etymology & 65.17 \\
+1000 most common + Parse + etymology & 65.17 \\
 \hline
 \end{tabular}
 \caption{Lexical Features}
 \end{figure}
-We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely overfitted on topic, as illustrated by the following example: we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books. Contrary to intuition, the etymology feature didn't help at all, and POS unigram dramatically reduced the accuracy.
+We get better results when using only the 1000 most common English words, as opposed to all the words (Unigrams). This was a very positive result, since it suggests that we did built our dataset in a robust way. Indeed, using unigrams completely overfitted on topic, as illustrated by the following example: we used Moby Dick in our training, and therefore \emph{whale} is the third most relevant feature for American books. Contrary to intuition, POS unigram dramatically reduced the accuracy. It's interesting to notice that etymology features decrease the accuracy when considering only lexical features, but increased it when considering everything.
 
 
-When using Homemade only, we classify everything as Spanish or Russian, which is even worse than what he already poor result led to believe.
+When using Homemade only, we classify everything as Spanish or Russian, which is even worse than what the already poor results led to believe. As following results suggest, Homemade features are not informative, and they never appear in the top 100 most relevant features for a language.
 
 
 \section{Conclusion}
+We have successfully built a scientifically robust experiment for Original Language Detection, which had never been done before. We built a consistent dataset, computed Lexical, Parse and Homemade features, chose the most suitable classification algorithm, and reached 65\% accuracy on our testing set. However, our testing set is made of slices of 400 sentences. For a given book, if we compute those slices and take the majority vote for the whole book (the book is assigned the class that got the most slices), we reach a 100 \% accuracy on our testing set!!! Obviously, the dataset is not big enough for this experiment to be conclusive, and we wish we had included more languages. Nevertheless, the results are extremely promising!
 
 \bibliographystyle{plain}
 \bibliography{OLI}

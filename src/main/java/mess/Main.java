@@ -1,7 +1,6 @@
 package mess;
 
 import mess.Algorithm.ClassifierOLI;
-import mess.Features.HomemadeFeature;
 import mess.Features.LexicalFeature;
 import mess.Features.ParseFeature;
 import weka.core.Instances;
@@ -37,19 +36,19 @@ public class Main {
         feat.computeUnigram();
         pT("Compute unigram");
 
-        // only keep the class
-        T();
-        System.out.println("Cleaning");
-        feat.onlyClasses();
-        pT("Only kept the class");
-
-
-
-//        // function words
+//        // only keep the class
 //        T();
-//        System.out.println("Most common words.");
-//        feat.computeMostCommon();
-//        pT();
+//        System.out.println("Cleaning");
+//        feat.onlyClasses();
+//        pT("Only kept the class");
+
+
+
+        // function words
+        T();
+        System.out.println("Most common words.");
+        feat.computeMostCommon();
+        pT();
 
         // etymology
 //        T();
@@ -94,26 +93,26 @@ public class Main {
 //
 //
 //
-        // compute homemade features
-        T();
-        System.out.println("Start homemade features.");
-        HomemadeFeature homeFeat = parseFeat.getHomemadeFeatures();
-        Instances homeFeatInst = homeFeat.trainToWeka();
-        Instances homeFeatInst_test = homeFeat.testToWeka();
-        pT("Homemade Features");
-//
-//
-//        // combine features
+//        // compute homemade features
 //        T();
-//        System.out.println("Start combining.");
-//        feat.brutalMerge(parseInst, true);
-//        feat.brutalMerge(parseInst_test, false);
-//        pT("Merged Parse.");
-
+//        System.out.println("Start homemade features.");
+//        HomemadeFeature homeFeat = parseFeat.getHomemadeFeatures();
+//        Instances homeFeatInst = homeFeat.trainToWeka();
+//        Instances homeFeatInst_test = homeFeat.testToWeka();
+//        pT("Homemade Features");
+//
+//
+        // combine features
         T();
-        feat.brutalMerge(homeFeatInst, true);
-        feat.brutalMerge(homeFeatInst_test, false);
-        pT("Merged Homemade.");
+        System.out.println("Start combining.");
+        feat.brutalMerge(parseInst, true);
+        feat.brutalMerge(parseInst_test, false);
+        pT("Merged Parse.");
+
+//        T();
+//        feat.brutalMerge(homeFeatInst, true);
+//        feat.brutalMerge(homeFeatInst_test, false);
+//        pT("Merged Homemade.");
 
 //         saving
         T();
