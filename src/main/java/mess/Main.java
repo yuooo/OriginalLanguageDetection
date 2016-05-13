@@ -42,10 +42,10 @@ public class Main {
         pT();
 
 //         etymology
-//        T();
-//        System.out.println("Etymology.");
-//        feat.computeEtymology();
-//        pT("Etymology");
+        T();
+        System.out.println("Etymology.");
+        feat.computeEtymology();
+        pT("Etymology");
 
 //        // load POS
 //        T();
