@@ -95,15 +95,104 @@ From Project Gutenberg, we built a dataset of books written in different languag
 \subsection{Pitfalls}
 Since we built it ourselves, our dataset is rather small. We therefore were extremely careful not to overfit on books particularities that are not specific to the language, such as topic, style, author, geographic places, time period. We believe the way we've constructed the dataset satisfies these criteria. 
 \subsection{Description of the dataset}
-When building the dataset, we used books written from 1700 to 1900 to control the time period as best as we can. We made sure that we never used the same author nor translator (?) in train and test, and we tried varying the topics between train and test as much as we could once the previous criteria were met. When using Lexical Features, we only remembered the most common 1000 English words to control overfitting on topics as well.
+When building the dataset, we used books written from 1700 to 1920 to control the time period as best as we can. We made sure that we never used the same author nor translator (?) in train and test, and we tried varying the topics between train and test as much as we could once the previous criteria were met. When using Lexical Features, we only remembered the most common 1000 English words to control overfitting on topics as well.
 The dataset we used is further described on this table:
 
 
-[insert TABLE]
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Language & Title & Author & Pub.Date\tabularnewline
+\hline 
+\hline 
+American & The Adventures of Huckleberry Finn & Mark Twain & 1884\tabularnewline
+\hline 
+American & The Invisible Man  & Orson Wells & 1897\tabularnewline
+\hline 
+American & The Scarlet Letter & Nathaniel Hawthorne & 1850\tabularnewline
+\hline 
+American & Moby Dick & Herman Melville & 1851\tabularnewline
+\hline 
+American & Uncle Toms Cabin & Harriet Beecher Stowe & 1852\tabularnewline
+\hline 
+American & The Narrative of A. G. Pym of Nantucket & Edgar Allen Poe & 1899\tabularnewline
+\hline 
+\hline 
+English & Great Expectations & Charles Dickens & 1861\tabularnewline
+\hline 
+English & The Picture of Dorian Gray & Oscar Wilde & 1891\tabularnewline
+\hline 
+English & Jude the Obscure & Thomas Hardy & 1895\tabularnewline
+\hline 
+English & Treasure Island & R.L Stevenson & 1883\tabularnewline
+\hline 
+English & Middlemarch & George Eliot (M. Evans) & 1874\tabularnewline
+\hline 
+English & Frankenstein & Mary Wollstonecraft Shelley & 1818\tabularnewline
+\hline
+\hline  
+French & Around the world in 80 days & Jules Verne  & 1873\tabularnewline
+\hline 
+French & Father Goriot  & Balzac & 1835\tabularnewline
+\hline 
+French & Les Miserables  & Victor Hugo & 1862\tabularnewline
+\hline 
+French & Madame Bovary & Gustave Flaubert  & 1857\tabularnewline
+\hline 
+French & The Man in the Iron Mask & Alexandre Dumas & 1637\tabularnewline
+\hline 
+French & Candide & Voltaire & 1759\tabularnewline
+\hline 
+French & The Red and the Black & Stendahl & 1830\tabularnewline
+\hline 
+\hline 
+Russian & Fathers and Children  & Ivan Turgenev  & 1862\tabularnewline
+\hline 
+Russian & The Man who was afraid  & Maxim Gorky  & 1899\tabularnewline
+\hline 
+Russian & War and Peace & Leo Tolstoy & 1869\tabularnewline
+\hline 
+Russian & The Brothers Karamazov & Fyodor Dostoyevsky & 1880\tabularnewline
+\hline 
+Russian & A hero of Our Time  & M. Y. Lermontov & 1840\tabularnewline
+\hline 
+Russian & The Death of the Gods & Dmitri Mérejkowski & 1895\tabularnewline
+\hline 
+\hline 
+Spanish & Don Quixote & Miguel de Cervantes & 1605\tabularnewline
+\hline 
+Spanish & Dona Perfecta & Benito Pérez Galdós & 1876\tabularnewline
+\hline 
+Spanish & The Visions of Quevedo & Francisco de Quevedo & 1626\tabularnewline
+\hline 
+Spanish & Tragic Sense of Life & Miguel de Unamuno & 1912\tabularnewline
+\hline 
+Spanish & The Life of Lazarillo of Tormes & Lazarillo of Tormes & 1554\tabularnewline
+\hline 
+Spanish & The Four Horsemen of the Apocalypse & Vicente Blasco Ibanez & 1916\tabularnewline
+\hline 
+Spanish & Pepita Ximenez & Juan Valera & 1874\tabularnewline
+\hline 
+Spanish & The Fourth Estate & Armando Palacio Valdés & 1901\tabularnewline
+\hline 
+\hline 
+German & The Devil's Elixir & E. T. A. Hoffmann & 1815\tabularnewline
+\hline 
+German & Debit and Credit & Gustave Freytag  & 1855\tabularnewline
+\hline 
+German & Old Fritz and the New Era & Luise Mühlbach & 1868\tabularnewline
+\hline 
+German & Venus in Furs & Leopold V. Sacher-Masoch  & 1870\tabularnewline
+\hline 
+German & The Sorrows of Young Werther & Johann Wolfgang von Goethe & 1774\tabularnewline
+\hline 
+German & The Banished: A Swabian Historical Tale & Wilhelm Hauff & 1839\tabularnewline
+\hline 
+\end{tabular}
 
 \section{Features}
 \subsection{General Description}
-When computing the features, we cut the books in slices of $n$ sentences. With $n=1$, we get a lot of training examples, but finding out the original language from only 1 sentence seems unreasonable (which was proven by experiment). With the whole book as a sample, we didn't get enough training instances. We chose $n=500$, as it provided good balance between number of train samples, and informativeness of the samples.
+When computing the features, we cut the books in slices of $n$ sentences. With $n=1$, we get a lot of training examples, but finding out the original language from only 1 sentence seems unreasonable (which was proven by experiment). With the whole book as a sample, we didn't get enough training instances. We chose $n=500$, as it provided good balance between number of train samples, and informativeness of the samples. In training, we take 8 slices of each book, so that we have the same size of training for each language. In testing, we take all the slices, except the incomplete last one.
 \subsection{Lexical Feature}
 Three different kind of lexical features were used:
 \begin{description}
@@ -147,7 +236,15 @@ On top of that, we also inquired the effect of different features on the dataset
 \subsection{Results}
 
 
-[insert TABLE]
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Experiment & Accuracy & Best classifier\\
+\hline 
+Unigrams & 61.80 \% & LR, XGB or SVM \\
+\hline
+1000 Most common words & 54.72 \% & Logistic Regression \\
+\hline
+\end{tabular}
 \section{Conclusion}
 
 \bibliographystyle{plain}
