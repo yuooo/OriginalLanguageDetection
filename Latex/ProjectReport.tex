@@ -258,13 +258,13 @@ Parse features only & 50.56 \%\\
 \hline
 Homemade only & 33.70 \%\\
 \hline
-1000 most common + Parse & \\
-1000 most common + Homemade & \\
+1000 most common + Parse & 64.04 \%\\
+1000 most common + Homemade & 62.92 \%\\
 Parse + Homemade & 51.69 \%\\
 \hline
 1000 most common + Parse + Homemade & 64.04 \% \\
 1000 most common + Parse + Homemade + etymology & 65.17 \\
-1000 most common + Parse + etymology & 65.17 \\
+1000 most common + Parse + etymology & \textbf{65.17} \\
 \hline
 \end{tabular}
 \caption{Lexical Features}
@@ -273,6 +273,9 @@ We get better results when using only the 1000 most common English words, as opp
 
 
 When using Homemade only, we classify everything as Spanish or Russian, which is even worse than what the already poor results led to believe. As following results suggest, Homemade features are not informative, and they never appear in the top 100 most relevant features for a language.
+
+
+Adding the Parse Features and the etymology got us a 3.37\% increase in accuracy, which correspond in our dataset to 3 new correctly classified slices out of 89, for a total of 58 correctly classified slices.
 
 
 \section{Conclusion}
